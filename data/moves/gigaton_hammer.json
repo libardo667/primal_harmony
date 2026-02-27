@@ -1,0 +1,15 @@
+{
+  "id": "gigaton_hammer",
+  "name": "Gigaton Hammer",
+  "type": "Steel",
+  "category": "physical",
+  "power": 160,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Cannot be used twice in a row.",
+  "is_custom": false
+}

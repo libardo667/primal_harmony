@@ -1,0 +1,15 @@
+{
+  "id": "disable",
+  "name": "Disable",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Opponent can't use its last attack for a few turns.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "kinesis",
+  "name": "Kinesis",
+  "type": "Psychic",
+  "category": "status",
+  "power": null,
+  "accuracy": 80,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Lowers opponent's Accuracy.",
+  "is_custom": false
+}

@@ -1,0 +1,204 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://battle/ui/BattleScene.gd" id="1_script"]
+[ext_resource type="Texture" path="res://assets/sprites/ui/battle_bg_default.png" id="2_bg"]
+[ext_resource type="Texture" path="res://assets/sprites/ui/move_panel_bg.png" id="3_panel"]
+
+[node name="BattleScene" type="CanvasLayer"]
+script = ExtResource("1_script")
+
+[node name="Background" type="TextureRect" parent="."]
+offset_right = 240.0
+offset_bottom = 160.0
+texture = ExtResource("2_bg")
+stretch_mode = 2
+
+[node name="EnemyAnchor" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 152.0
+offset_top = 30.0
+offset_right = 232.0
+offset_bottom = 110.0
+
+[node name="Sprite" type="TextureRect" parent="EnemyAnchor"]
+layout_mode = 0
+offset_right = 80.0
+offset_bottom = 80.0
+stretch_mode = 5
+
+[node name="EnemyHUD" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 112.0
+offset_bottom = 38.0
+
+[node name="NameLabel" type="Label" parent="EnemyHUD"]
+layout_mode = 0
+offset_right = 76.0
+offset_bottom = 9.0
+theme_override_font_sizes/font_size = 7
+
+[node name="LevelLabel" type="Label" parent="EnemyHUD"]
+layout_mode = 0
+offset_left = 76.0
+offset_right = 108.0
+offset_bottom = 9.0
+theme_override_font_sizes/font_size = 7
+
+[node name="HPBar" type="TextureProgressBar" parent="EnemyHUD"]
+layout_mode = 0
+offset_top = 12.0
+offset_right = 92.0
+offset_bottom = 20.0
+
+[node name="StatusIcon" type="TextureRect" parent="EnemyHUD"]
+layout_mode = 0
+offset_left = 94.0
+offset_top = 4.0
+offset_right = 108.0
+offset_bottom = 18.0
+
+[node name="PlayerAnchor" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 8.0
+offset_top = 44.0
+offset_right = 104.0
+offset_bottom = 110.0
+
+[node name="Sprite" type="TextureRect" parent="PlayerAnchor"]
+layout_mode = 0
+offset_right = 96.0
+offset_bottom = 66.0
+stretch_mode = 5
+
+[node name="PlayerHUD" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 118.0
+offset_top = 76.0
+offset_right = 238.0
+offset_bottom = 112.0
+
+[node name="NameLabel" type="Label" parent="PlayerHUD"]
+layout_mode = 0
+offset_right = 82.0
+offset_bottom = 9.0
+theme_override_font_sizes/font_size = 7
+
+[node name="LevelLabel" type="Label" parent="PlayerHUD"]
+layout_mode = 0
+offset_left = 82.0
+offset_right = 120.0
+offset_bottom = 9.0
+theme_override_font_sizes/font_size = 7
+
+[node name="HPBar" type="TextureProgressBar" parent="PlayerHUD"]
+layout_mode = 0
+offset_top = 12.0
+offset_right = 92.0
+offset_bottom = 20.0
+
+[node name="HPLabel" type="Label" parent="PlayerHUD"]
+layout_mode = 0
+offset_top = 20.0
+offset_right = 92.0
+offset_bottom = 27.0
+theme_override_font_sizes/font_size = 7
+
+[node name="ExpBar" type="ProgressBar" parent="PlayerHUD"]
+layout_mode = 0
+offset_top = 29.0
+offset_right = 120.0
+offset_bottom = 34.0
+show_percentage = false
+
+[node name="StatusIcon" type="TextureRect" parent="PlayerHUD"]
+layout_mode = 0
+offset_left = 94.0
+offset_top = 12.0
+offset_right = 108.0
+offset_bottom = 26.0
+
+[node name="BottomPanel" type="TextureRect" parent="."]
+visible = false
+offset_left = 0.0
+offset_top = 112.0
+offset_right = 240.0
+offset_bottom = 160.0
+texture = ExtResource("3_panel")
+
+[node name="Text" type="Label" parent="BottomPanel"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 3.0
+offset_right = 114.0
+offset_bottom = 25.0
+autowrap_mode = 2
+theme_override_font_sizes/font_size = 8
+
+[node name="BtnFlee" type="Button" parent="BottomPanel"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 27.0
+offset_right = 37.0
+offset_bottom = 44.0
+text = "Flee"
+theme_override_font_sizes/font_size = 7
+
+[node name="BtnParty" type="Button" parent="BottomPanel"]
+layout_mode = 0
+offset_left = 39.0
+offset_top = 27.0
+offset_right = 77.0
+offset_bottom = 44.0
+text = "Party"
+theme_override_font_sizes/font_size = 7
+
+[node name="BtnBag" type="Button" parent="BottomPanel"]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 27.0
+offset_right = 115.0
+offset_bottom = 44.0
+text = "Bag"
+theme_override_font_sizes/font_size = 7
+
+[node name="Move1" type="Button" parent="BottomPanel"]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 3.0
+offset_right = 177.0
+offset_bottom = 24.0
+text = "Move 1"
+theme_override_font_sizes/font_size = 7
+
+[node name="Move2" type="Button" parent="BottomPanel"]
+layout_mode = 0
+offset_left = 179.0
+offset_top = 3.0
+offset_right = 238.0
+offset_bottom = 24.0
+text = "Move 2"
+theme_override_font_sizes/font_size = 7
+
+[node name="Move3" type="Button" parent="BottomPanel"]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 26.0
+offset_right = 177.0
+offset_bottom = 45.0
+text = "Move 3"
+theme_override_font_sizes/font_size = 7
+
+[node name="Move4" type="Button" parent="BottomPanel"]
+layout_mode = 0
+offset_left = 179.0
+offset_top = 26.0
+offset_right = 238.0
+offset_bottom = 45.0
+text = "Move 4"
+theme_override_font_sizes/font_size = 7

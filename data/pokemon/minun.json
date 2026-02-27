@@ -1,0 +1,67 @@
+{
+  "id": "minun",
+  "name": "Minun",
+  "national_dex": 312,
+  "types": [
+    "Electric"
+  ],
+  "base_stats": {
+    "hp": 60,
+    "atk": 40,
+    "def": 50,
+    "spa": 75,
+    "spd": 85,
+    "spe": 95
+  },
+  "abilities": [
+    "Minus"
+  ],
+  "hidden_ability": "Volt Absorb",
+  "learnset": [
+    {
+      "move_id": "pound",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "growl",
+      "method": "level",
+      "level": 4
+    },
+    {
+      "move_id": "thunder_wave",
+      "method": "level",
+      "level": 9
+    },
+    {
+      "move_id": "spark",
+      "method": "level",
+      "level": 13
+    },
+    {
+      "move_id": "volt_switch",
+      "method": "level",
+      "level": 21
+    }
+  ],
+  "evolution": null,
+  "dex_entry": "Minun loves to cheer on its partner in battle. It gives off sparks from its body while it is doing so.",
+  "catch_rate": 200,
+  "base_exp": 142,
+  "growth_rate": "medium_fast",
+  "egg_groups": [
+    "Fairy"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "static_sprawl",
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/minun/front.png",
+    "back": "res://assets/sprites/pokemon/minun/back.png",
+    "icon": "res://assets/sprites/pokemon/minun/icon.png"
+  }
+}

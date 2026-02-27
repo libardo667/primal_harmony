@@ -1,0 +1,15 @@
+{
+  "id": "blaze_kick",
+  "name": "Blaze Kick",
+  "type": "Fire",
+  "category": "physical",
+  "power": 85,
+  "accuracy": 90,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "High critical hit ratio. May burn opponent.",
+  "is_custom": false
+}

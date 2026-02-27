@@ -1,0 +1,15 @@
+{
+  "id": "shadow_claw",
+  "name": "Shadow Claw",
+  "type": "Ghost",
+  "category": "physical",
+  "power": 70,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "High critical hit ratio.",
+  "is_custom": false
+}

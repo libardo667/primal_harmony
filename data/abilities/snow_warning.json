@@ -1,0 +1,6 @@
+{
+  "id": "snow_warning",
+  "name": "Snow Warning",
+  "description": "The Pok\u00e9mon summons a hailstorm in battle.",
+  "hooks": []
+}

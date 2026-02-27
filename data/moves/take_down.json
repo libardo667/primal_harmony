@@ -1,0 +1,15 @@
+{
+  "id": "take_down",
+  "name": "Take Down",
+  "type": "Normal",
+  "category": "physical",
+  "power": 90,
+  "accuracy": 85,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User receives recoil damage.",
+  "is_custom": false
+}

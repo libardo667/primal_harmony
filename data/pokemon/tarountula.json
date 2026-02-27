@@ -1,0 +1,36 @@
+{
+  "id": "tarountula",
+  "name": "Tarountula",
+  "national_dex": 917,
+  "types": [
+    "Bug"
+  ],
+  "base_stats": {
+    "hp": 35,
+    "atk": 41,
+    "def": 45,
+    "spa": 29,
+    "spd": 40,
+    "spe": 20
+  },
+  "abilities": [
+    "TBD"
+  ],
+  "hidden_ability": null,
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "TBD",
+  "catch_rate": 45,
+  "base_exp": 60,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "TBD"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": false,
+  "native_zone": null,
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null
+}

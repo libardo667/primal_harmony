@@ -1,0 +1,15 @@
+{
+  "id": "bonemerang",
+  "name": "Bonemerang",
+  "type": "Ground",
+  "category": "physical",
+  "power": 50,
+  "accuracy": 90,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Hits twice in one turn.",
+  "is_custom": false
+}

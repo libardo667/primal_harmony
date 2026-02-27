@@ -1,0 +1,15 @@
+{
+  "id": "buzzy_buzz",
+  "name": "Buzzy Buzz",
+  "type": "Electric",
+  "category": "special",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Paralyzes the opponent.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "fusion_flare",
+  "name": "Fusion Flare",
+  "type": "Fire",
+  "category": "special",
+  "power": 100,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Power increases if Fusion Bolt is used in the same turn.",
+  "is_custom": false
+}

@@ -1,0 +1,37 @@
+{
+  "id": "lanturn",
+  "name": "Lanturn",
+  "national_dex": 171,
+  "types": [
+    "Water",
+    "Electric"
+  ],
+  "base_stats": {
+    "hp": 125,
+    "atk": 58,
+    "def": 58,
+    "spa": 76,
+    "spd": 76,
+    "spe": 67
+  },
+  "abilities": [
+    "TBD"
+  ],
+  "hidden_ability": null,
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "TBD",
+  "catch_rate": 45,
+  "base_exp": 60,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "TBD"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": false,
+  "native_zone": null,
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null
+}

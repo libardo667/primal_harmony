@@ -1,0 +1,13 @@
+{
+    "id": "potion",
+    "name": "Potion",
+    "category": "medicine",
+    "effect": "heal_hp",
+    "effect_value": 20,
+    "description": "Restores the HP of one Pokémon by 20 points.",
+    "buy_price": 300,
+    "sell_price": 150,
+    "is_key_item": false,
+    "is_custom": false,
+    "zone_association": null
+}

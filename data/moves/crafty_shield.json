@@ -1,0 +1,15 @@
+{
+  "id": "crafty_shield",
+  "name": "Crafty Shield",
+  "type": "Fairy",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Protects the Pok\u00e9mon from status moves.",
+  "is_custom": false
+}

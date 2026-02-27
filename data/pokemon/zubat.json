@@ -1,0 +1,37 @@
+{
+  "id": "zubat",
+  "name": "Zubat",
+  "national_dex": 41,
+  "types": [
+    "Poison",
+    "Flying"
+  ],
+  "base_stats": {
+    "hp": 40,
+    "atk": 45,
+    "def": 35,
+    "spa": 30,
+    "spd": 40,
+    "spe": 55
+  },
+  "abilities": [
+    "TBD"
+  ],
+  "hidden_ability": null,
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "TBD",
+  "catch_rate": 45,
+  "base_exp": 60,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "TBD"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": false,
+  "native_zone": null,
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null
+}

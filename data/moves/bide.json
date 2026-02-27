@@ -1,0 +1,15 @@
+{
+  "id": "bide",
+  "name": "Bide",
+  "type": "Normal",
+  "category": "physical",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User takes damage for two turns then strikes back double.",
+  "is_custom": false
+}

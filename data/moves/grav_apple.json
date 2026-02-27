@@ -1,0 +1,15 @@
+{
+  "id": "grav_apple",
+  "name": "Grav Apple",
+  "type": "Grass",
+  "category": "physical",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Lowers the opponent's Defense stat.",
+  "is_custom": false
+}

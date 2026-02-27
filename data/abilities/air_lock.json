@@ -1,0 +1,6 @@
+{
+  "id": "air_lock",
+  "name": "Air Lock",
+  "description": "Eliminates the effects of weather.",
+  "hooks": []
+}

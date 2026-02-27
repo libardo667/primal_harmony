@@ -1,0 +1,13 @@
+{
+    "id": "spirit_candle",
+    "name": "Spirit Candle",
+    "category": "key",
+    "effect": "break_dread_shore_fog",
+    "effect_value": null,
+    "description": "A candle that burns with a pale-white flame. Its light parts the heavy spiritual fog of the Dread Shore.",
+    "buy_price": null,
+    "sell_price": null,
+    "is_key_item": true,
+    "is_custom": true,
+    "zone_association": "dread_shore"
+}

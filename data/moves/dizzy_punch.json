@@ -1,0 +1,15 @@
+{
+  "id": "dizzy_punch",
+  "name": "Dizzy Punch",
+  "type": "Normal",
+  "category": "physical",
+  "power": 70,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May confuse opponent.",
+  "is_custom": false
+}

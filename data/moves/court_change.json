@@ -1,0 +1,15 @@
+{
+  "id": "court_change",
+  "name": "Court Change",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Swaps the effects on either side of the field.",
+  "is_custom": false
+}

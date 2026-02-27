@@ -1,0 +1,15 @@
+{
+  "id": "horn_attack",
+  "name": "Horn Attack",
+  "type": "Normal",
+  "category": "physical",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 25,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "",
+  "is_custom": false
+}

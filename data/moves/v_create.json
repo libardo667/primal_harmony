@@ -1,0 +1,15 @@
+{
+  "id": "v_create",
+  "name": "V-create",
+  "type": "Fire",
+  "category": "physical",
+  "power": 180,
+  "accuracy": 95,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Lowers user's Defense, Special Defense and Speed.",
+  "is_custom": false
+}

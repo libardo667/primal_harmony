@@ -1,0 +1,15 @@
+{
+  "id": "quash",
+  "name": "Quash",
+  "type": "Dark",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Makes the target act last this turn.",
+  "is_custom": false
+}

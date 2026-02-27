@@ -1,0 +1,15 @@
+{
+  "id": "lunar_dance",
+  "name": "Lunar Dance",
+  "type": "Psychic",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The user faints but the next Pok\u00e9mon released is fully healed.",
+  "is_custom": false
+}

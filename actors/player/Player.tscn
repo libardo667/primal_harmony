@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://actors/player/Player.gd" id="1_player_script"]
+[ext_resource type="SpriteFrames" uid="uid://dg14bkhydpygv" path="res://assets/sprites/player/brendan/brendan_spriteframes.tres" id="2_spriteframes"]
+
+[sub_resource type="RectangleShape2D" id="Shape_player_body"]
+size = Vector2(14, 8)
+
+[sub_resource type="RectangleShape2D" id="Shape_detector"]
+size = Vector2(14, 8)
+
+[node name="Player" type="CharacterBody2D"]
+z_index = 1
+collision_layer = 1
+collision_mask = 1
+script = ExtResource("1_player_script")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -8)
+sprite_frames = ExtResource("2_spriteframes")
+animation = &"idle_down"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("Shape_player_body")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+position_smoothing_speed = 5.0
+
+[node name="EncounterDetector" type="Area2D" parent="."]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="EncounterDetector"]
+position = Vector2(0, 4)
+shape = SubResource("Shape_detector")

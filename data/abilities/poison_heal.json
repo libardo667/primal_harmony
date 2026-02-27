@@ -1,0 +1,6 @@
+{
+  "id": "poison_heal",
+  "name": "Poison Heal",
+  "description": "Restores HP if the Pok\u00e9mon is poisoned.",
+  "hooks": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "iron_tail",
+  "name": "Iron Tail",
+  "type": "Steel",
+  "category": "physical",
+  "power": 100,
+  "accuracy": 75,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May lower opponent's Defense.",
+  "is_custom": false
+}

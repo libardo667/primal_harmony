@@ -1,0 +1,15 @@
+{
+  "id": "max_rockfall",
+  "name": "Max Rockfall",
+  "type": "Rock",
+  "category": "physical",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Rock type Dynamax move. Summons a sandstorm.",
+  "is_custom": false
+}

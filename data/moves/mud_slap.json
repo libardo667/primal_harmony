@@ -1,0 +1,16 @@
+{
+  "id": "mud_slap",
+  "name": "Mud-Slap",
+  "type": "Ground",
+  "category": "special",
+  "power": 20,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "stat_drop_acc_1",
+  "flags": [],
+  "description": "The user hurls mud in the target's face to inflict damage and lower its accuracy.",
+  "is_custom": false,
+  "base_power": 20
+}

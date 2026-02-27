@@ -1,0 +1,6 @@
+{
+  "id": "flame_body",
+  "name": "Flame Body",
+  "description": "Contact with the Pok\u00e9mon may burn the attacker.",
+  "hooks": []
+}

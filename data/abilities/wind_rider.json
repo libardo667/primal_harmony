@@ -1,0 +1,6 @@
+{
+  "id": "wind_rider",
+  "name": "Wind Rider",
+  "description": "Takes no damage from wind moves, and boosts Attack if hit by one.",
+  "hooks": []
+}

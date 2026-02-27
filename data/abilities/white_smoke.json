@@ -1,0 +1,6 @@
+{
+  "id": "white_smoke",
+  "name": "White Smoke",
+  "description": "Prevents other Pok\u00e9mon from lowering its stats.",
+  "hooks": []
+}

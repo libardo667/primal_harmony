@@ -1,0 +1,75 @@
+{
+  "id": "shroomish",
+  "name": "Shroomish",
+  "national_dex": 285,
+  "types": [
+    "Grass"
+  ],
+  "base_stats": {
+    "hp": 60,
+    "atk": 40,
+    "def": 60,
+    "spa": 40,
+    "spd": 60,
+    "spe": 35
+  },
+  "abilities": [
+    "Effect Spore",
+    "Poison Heal"
+  ],
+  "hidden_ability": "Quick Feet",
+  "learnset": [
+    {
+      "move_id": "absorb",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "tackle",
+      "method": "level",
+      "level": 4
+    },
+    {
+      "move_id": "poison_sting",
+      "method": "level",
+      "level": 8
+    },
+    {
+      "move_id": "sludge",
+      "method": "level",
+      "level": 15
+    },
+    {
+      "move_id": "toxic",
+      "method": "level",
+      "level": 22
+    }
+  ],
+  "evolution": {
+    "method": "level",
+    "level": 23,
+    "item": null,
+    "condition": null,
+    "into": "breloom"
+  },
+  "dex_entry": "Shroomish live in damp soil in the dark depths of forests. If it senses danger, it shoots spores from the top of its head.",
+  "catch_rate": 255,
+  "base_exp": 59,
+  "growth_rate": "fluctuating",
+  "egg_groups": [
+    "Fairy",
+    "Grass"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "the_murk",
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/shroomish/front.png",
+    "back": "res://assets/sprites/pokemon/shroomish/back.png",
+    "icon": "res://assets/sprites/pokemon/shroomish/icon.png"
+  }
+}

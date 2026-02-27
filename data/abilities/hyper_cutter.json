@@ -1,0 +1,6 @@
+{
+  "id": "hyper_cutter",
+  "name": "Hyper Cutter",
+  "description": "Prevents other Pok\u00e9mon from lowering Attack stat.",
+  "hooks": []
+}

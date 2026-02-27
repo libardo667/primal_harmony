@@ -1,0 +1,6 @@
+{
+  "id": "pickup",
+  "name": "Pickup",
+  "description": "The Pok\u00e9mon may pick up items.",
+  "hooks": []
+}

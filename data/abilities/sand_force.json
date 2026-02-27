@@ -1,0 +1,6 @@
+{
+  "id": "sand_force",
+  "name": "Sand Force",
+  "description": "Boosts certain moves' power in a sandstorm.",
+  "hooks": []
+}

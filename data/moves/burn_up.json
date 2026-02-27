@@ -1,0 +1,15 @@
+{
+  "id": "burn_up",
+  "name": "Burn Up",
+  "type": "Fire",
+  "category": "special",
+  "power": 130,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "To inflict massive damage, the user burns itself out. After using this move, the user will no longer be Fire type.",
+  "is_custom": false
+}

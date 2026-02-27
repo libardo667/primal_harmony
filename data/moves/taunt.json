@@ -1,0 +1,15 @@
+{
+  "id": "taunt",
+  "name": "Taunt",
+  "type": "Dark",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Opponent can only use moves that attack.",
+  "is_custom": false
+}

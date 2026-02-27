@@ -1,0 +1,13 @@
+{
+    "id": "repel",
+    "name": "Repel",
+    "category": "consumable",
+    "effect": "suppress_encounters_steps",
+    "effect_value": 100,
+    "description": "A spray-type repel that prevents weak wild Pokémon from appearing for 100 steps.",
+    "buy_price": 350,
+    "sell_price": 175,
+    "is_key_item": false,
+    "is_custom": false,
+    "zone_association": null
+}

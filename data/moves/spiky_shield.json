@@ -1,0 +1,15 @@
+{
+  "id": "spiky_shield",
+  "name": "Spiky Shield",
+  "type": "Grass",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Protects the user and inflicts damage on contact.",
+  "is_custom": false
+}

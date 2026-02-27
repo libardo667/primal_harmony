@@ -1,0 +1,15 @@
+{
+  "id": "corrosive_gas",
+  "name": "Corrosive Gas",
+  "type": "Poison",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 40,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Removes opponent's items.",
+  "is_custom": false
+}

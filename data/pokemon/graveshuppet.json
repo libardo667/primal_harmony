@@ -1,0 +1,64 @@
+{
+  "id": "graveshuppet",
+  "name": "Graveshuppet",
+  "national_dex": null,
+  "types": [
+    "Dark",
+    "Ghost"
+  ],
+  "base_stats": {
+    "hp": 44,
+    "atk": 95,
+    "def": 40,
+    "spa": 75,
+    "spd": 40,
+    "spe": 60
+  },
+  "abilities": [
+    "Cursed Body",
+    "Infiltrator"
+  ],
+  "hidden_ability": "Prankster",
+  "learnset": [
+    {
+      "move_id": "astonish",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "pursuit",
+      "method": "level",
+      "level": 4
+    },
+    {
+      "move_id": "night_shade",
+      "method": "level",
+      "level": 13
+    },
+    {
+      "move_id": "faint_attack",
+      "method": "level",
+      "level": 20
+    }
+  ],
+  "evolution": null,
+  "dex_entry": "Shuppet's beak has grown sharp and its grudge-feeding has turned from passive absorption to active extraction. It seeks out sadness rather than waiting for it. It stopped waiting. That was the change.",
+  "catch_rate": 185,
+  "base_exp": 75,
+  "growth_rate": "fast",
+  "egg_groups": [
+    "Amorphous"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "dread_shore",
+  "is_corrupted": true,
+  "corruption_zone": "dread_shore",
+  "corruption_path": null,
+  "base_species": "shuppet",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/graveshuppet/front.png",
+    "back": "res://assets/sprites/pokemon/graveshuppet/back.png",
+    "icon": "res://assets/sprites/pokemon/graveshuppet/icon.png"
+  }
+}

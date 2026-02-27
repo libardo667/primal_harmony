@@ -1,0 +1,15 @@
+{
+  "id": "max_wyrmwind",
+  "name": "Max Wyrmwind",
+  "type": "Dragon",
+  "category": "physical",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Dragon type Dynamax move. Lowers the target's Attack.",
+  "is_custom": false
+}

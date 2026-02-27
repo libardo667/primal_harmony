@@ -1,0 +1,6 @@
+{
+  "id": "rough_skin",
+  "name": "Rough Skin",
+  "description": "Inflicts damage to the attacker on contact.",
+  "hooks": []
+}

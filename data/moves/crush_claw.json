@@ -1,0 +1,15 @@
+{
+  "id": "crush_claw",
+  "name": "Crush Claw",
+  "type": "Normal",
+  "category": "physical",
+  "power": 75,
+  "accuracy": 95,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May lower opponent's Defense.",
+  "is_custom": false
+}

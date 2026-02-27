@@ -1,0 +1,15 @@
+{
+  "id": "gastro_acid",
+  "name": "Gastro Acid",
+  "type": "Poison",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Cancels out the effect of the opponent's Ability.",
+  "is_custom": false
+}

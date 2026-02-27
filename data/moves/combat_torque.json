@@ -1,0 +1,15 @@
+{
+  "id": "combat_torque",
+  "name": "Combat Torque",
+  "type": "Fighting",
+  "category": "physical",
+  "power": 100,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May paralyze the opponent.",
+  "is_custom": false
+}

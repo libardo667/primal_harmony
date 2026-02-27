@@ -1,0 +1,19 @@
+{
+  "id": "bite",
+  "name": "Bite",
+  "type": "Dark",
+  "category": "physical",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 25,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "flinch_30",
+  "flags": [
+    "contact",
+    "bite"
+  ],
+  "description": "The target is bitten with viciously sharp fangs. This may make the target flinch.",
+  "is_custom": false,
+  "base_power": 60
+}

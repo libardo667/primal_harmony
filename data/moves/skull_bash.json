@@ -1,0 +1,15 @@
+{
+  "id": "skull_bash",
+  "name": "Skull Bash",
+  "type": "Normal",
+  "category": "physical",
+  "power": 130,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Raises Defense on first turn, attacks on second.",
+  "is_custom": false
+}

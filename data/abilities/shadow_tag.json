@@ -1,0 +1,6 @@
+{
+  "id": "shadow_tag",
+  "name": "Shadow Tag",
+  "description": "Prevents the foe from escaping.",
+  "hooks": []
+}

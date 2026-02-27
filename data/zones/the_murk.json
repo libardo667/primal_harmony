@@ -1,0 +1,211 @@
+{
+    "zone_id": "the_murk",
+    "zone_name": "The Murk",
+    "zone_number": 6,
+    "dominant_type": "Poison",
+    "location": "Petalburg Woods / Route 104",
+    "ehi_local": 0.0,
+    "ehi_thresholds": {
+        "infested": [
+            0,
+            33
+        ],
+        "partial": [
+            34,
+            66
+        ],
+        "restored": [
+            67,
+            100
+        ]
+    },
+    "encounter_table": {
+        "infested": [
+            {
+                "species_id": "venomish",
+                "level_range": [
+                    6,
+                    10
+                ],
+                "weight": 25,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "toxloth",
+                "level_range": [
+                    6,
+                    10
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "hazewing",
+                "level_range": [
+                    5,
+                    9
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "grimer",
+                "level_range": [
+                    5,
+                    9
+                ],
+                "weight": 15,
+                "time_of_day": "night"
+            },
+            {
+                "species_id": "tentacool",
+                "level_range": [
+                    7,
+                    11
+                ],
+                "weight": 10,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "koffing",
+                "level_range": [
+                    6,
+                    10
+                ],
+                "weight": 10,
+                "time_of_day": "any"
+            }
+        ],
+        "partial": [
+            {
+                "species_id": "shroomish",
+                "level_range": [
+                    6,
+                    10
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "slakoth",
+                "level_range": [
+                    6,
+                    10
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "wurmple",
+                "level_range": [
+                    4,
+                    8
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "taillow",
+                "level_range": [
+                    5,
+                    9
+                ],
+                "weight": 15,
+                "time_of_day": "day"
+            },
+            {
+                "species_id": "venomish",
+                "level_range": [
+                    6,
+                    10
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "hazewing",
+                "level_range": [
+                    5,
+                    9
+                ],
+                "weight": 10,
+                "time_of_day": "any"
+            }
+        ],
+        "restored": [
+            {
+                "species_id": "shroomish",
+                "level_range": [
+                    6,
+                    10
+                ],
+                "weight": 30,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "slakoth",
+                "level_range": [
+                    6,
+                    10
+                ],
+                "weight": 25,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "wurmple",
+                "level_range": [
+                    4,
+                    8
+                ],
+                "weight": 25,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "taillow",
+                "level_range": [
+                    5,
+                    9
+                ],
+                "weight": 20,
+                "time_of_day": "day"
+            }
+        ]
+    },
+    "native_species": [
+        "shroomish",
+        "slakoth",
+        "wurmple",
+        "taillow"
+    ],
+    "corrupted_variants": [
+        "venomish",
+        "toxloth",
+        "hazewing"
+    ],
+    "quell_types": [
+        "Ground",
+        "Steel"
+    ],
+    "traversal_hazards": [
+        {
+            "hazard_id": "miasma_poison",
+            "description": "Poisoned status applied to all party members without Antidote or Poison immunity every 30 steps.",
+            "mitigation": "Gas Mask key item (from Devon Corporation)"
+        },
+        {
+            "hazard_id": "spore_obstacles",
+            "description": "Spore-releasing mutated trees block certain paths.",
+            "mitigation": "Specific moves or items to clear spore obstacles"
+        }
+    ],
+    "key_items": [
+        "gas_mask"
+    ],
+    "relocation_terminals": [
+        "Petalburg City Pokemon Center",
+        "Rustboro City Pokemon Center"
+    ],
+    "ehi_restoration_effect": "First major EHI milestone. Reopens Petalburg Woods as a safe travel route and triggers the first Aqua/Magma faction introduction scene.",
+    "narrative_role": "The first zone the player is directed toward — tutorial for the relocation mechanic. Restoring it is the game's first major EHI milestone.",
+    "story_gate": null
+}

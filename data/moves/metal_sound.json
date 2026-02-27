@@ -1,0 +1,15 @@
+{
+  "id": "metal_sound",
+  "name": "Metal Sound",
+  "type": "Steel",
+  "category": "status",
+  "power": null,
+  "accuracy": 85,
+  "pp": 40,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Sharply lowers opponent's Special Defense.",
+  "is_custom": false
+}

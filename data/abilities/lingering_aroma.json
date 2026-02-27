@@ -1,0 +1,6 @@
+{
+  "id": "lingering_aroma",
+  "name": "Lingering Aroma",
+  "description": "Contact changes the attacker's Ability to Lingering Aroma.",
+  "hooks": []
+}

@@ -1,0 +1,6 @@
+{
+  "id": "toxic_debris",
+  "name": "Toxic Debris",
+  "description": "Scatters poison spikes at the feet of the opposing team when the Pok\u00e9mon takes damage from physical moves.",
+  "hooks": []
+}

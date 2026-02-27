@@ -1,0 +1,15 @@
+{
+  "id": "pain_split",
+  "name": "Pain Split",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The user's and opponent's HP becomes the average of both.",
+  "is_custom": false
+}

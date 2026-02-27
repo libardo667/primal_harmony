@@ -1,0 +1,15 @@
+{
+  "id": "extreme_evoboost",
+  "name": "Extreme Evoboost",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 1,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "",
+  "is_custom": false
+}

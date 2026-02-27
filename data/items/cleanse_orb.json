@@ -1,0 +1,13 @@
+{
+    "id": "cleanse_orb",
+    "name": "Cleanse Orb",
+    "category": "ball",
+    "effect": "catch_corrupted_3x",
+    "effect_value": 6,
+    "description": "A special orb imbued with restorative energy. More effective at capturing corrupted Pokémon. Required for initiating the first cleanse on starter corruption paths.",
+    "buy_price": null,
+    "sell_price": null,
+    "is_key_item": false,
+    "is_custom": true,
+    "zone_association": null
+}

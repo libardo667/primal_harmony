@@ -1,0 +1,37 @@
+{
+  "id": "hydrapple",
+  "name": "Hydrapple",
+  "national_dex": 1019,
+  "types": [
+    "Grass",
+    "Dragon"
+  ],
+  "base_stats": {
+    "hp": 106,
+    "atk": 80,
+    "def": 110,
+    "spa": 120,
+    "spd": 80,
+    "spe": 44
+  },
+  "abilities": [
+    "TBD"
+  ],
+  "hidden_ability": null,
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "TBD",
+  "catch_rate": 45,
+  "base_exp": 60,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "TBD"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": false,
+  "native_zone": null,
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null
+}

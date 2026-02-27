@@ -1,0 +1,6 @@
+{
+  "id": "pickpocket",
+  "name": "Pickpocket",
+  "description": "Steals an item when hit by another Pok\u00e9mon.",
+  "hooks": []
+}

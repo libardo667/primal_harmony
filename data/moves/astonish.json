@@ -1,0 +1,18 @@
+{
+  "id": "astonish",
+  "name": "Astonish",
+  "type": "Ghost",
+  "category": "physical",
+  "power": 30,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "flinch_30",
+  "flags": [
+    "contact"
+  ],
+  "description": "The user attacks the target while shouting in a startling fashion. This may also make the target flinch.",
+  "is_custom": false,
+  "base_power": 30
+}

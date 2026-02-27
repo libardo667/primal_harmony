@@ -1,0 +1,15 @@
+{
+  "id": "aqua_ring",
+  "name": "Aqua Ring",
+  "type": "Water",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Restores a little HP each turn.",
+  "is_custom": false
+}

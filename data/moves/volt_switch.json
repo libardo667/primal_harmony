@@ -1,0 +1,16 @@
+{
+  "id": "volt_switch",
+  "name": "Volt Switch",
+  "type": "Electric",
+  "category": "special",
+  "power": 70,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "switch_out",
+  "flags": [],
+  "description": "After making its attack, the user rushes back to switch places with a party Pok\u00e9mon in waiting.",
+  "is_custom": false,
+  "base_power": 70
+}

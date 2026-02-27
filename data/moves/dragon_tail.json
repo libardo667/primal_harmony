@@ -1,0 +1,15 @@
+{
+  "id": "dragon_tail",
+  "name": "Dragon Tail",
+  "type": "Dragon",
+  "category": "physical",
+  "power": 60,
+  "accuracy": 90,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "In battles, the opponent switches. In the wild, the Pok\u00e9mon runs.",
+  "is_custom": false
+}

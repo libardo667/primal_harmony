@@ -1,0 +1,15 @@
+{
+  "id": "power_shift",
+  "name": "Power Shift",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Switches Attack and Defense stats.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "snipe_shot",
+  "name": "Snipe Shot",
+  "type": "Water",
+  "category": "special",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Ignores moves and abilities that draw in moves. High critical hit ratio.",
+  "is_custom": false
+}

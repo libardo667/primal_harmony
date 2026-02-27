@@ -1,0 +1,15 @@
+{
+  "id": "torch_song",
+  "name": "Torch Song",
+  "type": "Fire",
+  "category": "special",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Raises user's Special Attack.",
+  "is_custom": false
+}

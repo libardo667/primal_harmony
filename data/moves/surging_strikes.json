@@ -1,0 +1,15 @@
+{
+  "id": "surging_strikes",
+  "name": "Surging Strikes",
+  "type": "Water",
+  "category": "physical",
+  "power": 25,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Always results in a critical hit and ignores stat changes.",
+  "is_custom": false
+}

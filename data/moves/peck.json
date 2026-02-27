@@ -1,0 +1,18 @@
+{
+  "id": "peck",
+  "name": "Peck",
+  "type": "Flying",
+  "category": "physical",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 35,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [
+    "contact"
+  ],
+  "description": "The target is jabbed with a sharply pointed beak or horn.",
+  "is_custom": false,
+  "base_power": 35
+}

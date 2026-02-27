@@ -1,0 +1,42 @@
+{
+  "id": "flygon",
+  "name": "Flygon",
+  "national_dex": 330,
+  "types": [
+    "Ground",
+    "Dragon"
+  ],
+  "base_stats": {
+    "hp": 80,
+    "atk": 100,
+    "def": 80,
+    "spa": 80,
+    "spd": 80,
+    "spe": 100
+  },
+  "abilities": [
+    "Levitate"
+  ],
+  "hidden_ability": null,
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "Flygon is nicknamed 'the mystic sandstorm.' When it flaps its wings, a haze of dust blots out the sun.",
+  "catch_rate": 45,
+  "base_exp": 234,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Bug"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "static_sky",
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/flygon/front.png",
+    "back": "res://assets/sprites/pokemon/flygon/back.png",
+    "icon": "res://assets/sprites/pokemon/flygon/icon.png"
+  }
+}

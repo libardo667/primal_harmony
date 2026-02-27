@@ -1,0 +1,15 @@
+{
+  "id": "splishy_splash",
+  "name": "Splishy Splash",
+  "type": "Water",
+  "category": "special",
+  "power": 90,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May paralyze opponent.",
+  "is_custom": false
+}

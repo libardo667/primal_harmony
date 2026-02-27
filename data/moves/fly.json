@@ -1,0 +1,15 @@
+{
+  "id": "fly",
+  "name": "Fly",
+  "type": "Flying",
+  "category": "physical",
+  "power": 90,
+  "accuracy": 95,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Flies up on first turn, attacks on second turn.",
+  "is_custom": false
+}

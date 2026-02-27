@@ -1,0 +1,6 @@
+{
+  "id": "water_absorb",
+  "name": "Water Absorb",
+  "description": "Restores HP if hit by a Water-type move.",
+  "hooks": []
+}

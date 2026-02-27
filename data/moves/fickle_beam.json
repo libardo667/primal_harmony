@@ -1,0 +1,15 @@
+{
+  "id": "fickle_beam",
+  "name": "Fickle Beam",
+  "type": "Dragon",
+  "category": "special",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May deal double damage.",
+  "is_custom": false
+}

@@ -1,0 +1,16 @@
+{
+  "id": "rock_throw",
+  "name": "Rock Throw",
+  "type": "Rock",
+  "category": "physical",
+  "power": 50,
+  "accuracy": 90,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The user picks up and throws a small rock at the target to attack.",
+  "is_custom": false,
+  "base_power": 50
+}

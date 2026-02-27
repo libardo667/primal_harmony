@@ -1,0 +1,15 @@
+{
+  "id": "shift_gear",
+  "name": "Shift Gear",
+  "type": "Steel",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Raises user's Attack and sharply raises Speed.",
+  "is_custom": false
+}

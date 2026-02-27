@@ -1,0 +1,6 @@
+{
+  "id": "anger_shell",
+  "name": "Anger Shell",
+  "description": "Lowers Defense/Sp. Def and raises Attack/Sp. Atk/Speed when HP drops below half.",
+  "hooks": []
+}

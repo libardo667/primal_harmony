@@ -1,0 +1,6 @@
+{
+  "id": "toxic_boost",
+  "name": "Toxic Boost",
+  "description": "Powers up physical attacks when poisoned.",
+  "hooks": []
+}

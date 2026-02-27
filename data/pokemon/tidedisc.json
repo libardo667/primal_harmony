@@ -1,0 +1,43 @@
+{
+  "id": "tidedisc",
+  "name": "Tidedisc",
+  "national_dex": null,
+  "types": [
+    "Water",
+    "Psychic"
+  ],
+  "base_stats": {
+    "hp": 50,
+    "atk": 30,
+    "def": 65,
+    "spa": 100,
+    "spd": 80,
+    "spe": 115
+  },
+  "abilities": [
+    "Synchronize",
+    "Swift Swim"
+  ],
+  "hidden_ability": "Telepathy",
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "Luvdisc caught in Kyogre's aura have absorbed trace psychic resonance. They now move in perfectly synchronized formations — dozens at a time, as if sharing a single mind.",
+  "catch_rate": 185,
+  "base_exp": 130,
+  "growth_rate": "fast",
+  "egg_groups": [
+    "Water 2"
+  ],
+  "gender_ratio": 25,
+  "is_native_hoenn": true,
+  "native_zone": "abyss_bloom",
+  "is_corrupted": true,
+  "corruption_zone": "abyss_bloom",
+  "corruption_path": null,
+  "base_species": "luvdisc",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/tidedisc/front.png",
+    "back": "res://assets/sprites/pokemon/tidedisc/back.png",
+    "icon": "res://assets/sprites/pokemon/tidedisc/icon.png"
+  }
+}

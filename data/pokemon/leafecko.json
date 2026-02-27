@@ -1,0 +1,49 @@
+{
+  "id": "leafecko",
+  "name": "Leafecko",
+  "national_dex": null,
+  "types": [
+    "Grass"
+  ],
+  "base_stats": {
+    "hp": 40,
+    "atk": 35,
+    "def": 35,
+    "spa": 65,
+    "spd": 45,
+    "spe": 75
+  },
+  "abilities": [
+    "Overgrow",
+    "Chlorophyll"
+  ],
+  "hidden_ability": "Unburden",
+  "learnset": [],
+  "evolution": {
+    "method": "level",
+    "level": 36,
+    "item": null,
+    "condition": null,
+    "into": "verdacko"
+  },
+  "dex_entry": "The chitin has shed completely, replaced by healthy vibrant scales and broad leaf-pads on the feet. Dex: \"It returned to itself. The shape of the return is not quite the shape it left.\"",
+  "catch_rate": 45,
+  "base_exp": 65,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Monster",
+    "Dragon"
+  ],
+  "gender_ratio": 12.5,
+  "is_native_hoenn": true,
+  "native_zone": null,
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": "C",
+  "base_species": "treecko",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/leafecko/front.png",
+    "back": "res://assets/sprites/pokemon/leafecko/back.png",
+    "icon": "res://assets/sprites/pokemon/leafecko/icon.png"
+  }
+}

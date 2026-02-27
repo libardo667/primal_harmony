@@ -1,0 +1,15 @@
+{
+  "id": "quick_guard",
+  "name": "Quick Guard",
+  "type": "Fighting",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Protects the user's team from high-priority moves.",
+  "is_custom": false
+}

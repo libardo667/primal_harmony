@@ -1,0 +1,30 @@
+{
+  "id": "effect_spore",
+  "name": "Effect Spore",
+  "description": "Contact may inflict poison, sleep, or paralysis.",
+  "hooks": [
+    {
+      "trigger": "on_damage_taken",
+      "effect_type": "status_inflict_random",
+      "params": {
+        "target": "attacker",
+        "statuses": [
+          {
+            "status": "poison",
+            "weight": 1
+          },
+          {
+            "status": "sleep",
+            "weight": 1
+          },
+          {
+            "status": "paralysis",
+            "weight": 1
+          }
+        ],
+        "chance": 0.3,
+        "contact_required": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "id": "gale_wings",
+  "name": "Gale Wings",
+  "description": "Gives priority to Flying-type moves.",
+  "hooks": []
+}

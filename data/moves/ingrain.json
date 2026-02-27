@@ -1,0 +1,15 @@
+{
+  "id": "ingrain",
+  "name": "Ingrain",
+  "type": "Grass",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User restores HP each turn. User cannot escape/switch.",
+  "is_custom": false
+}

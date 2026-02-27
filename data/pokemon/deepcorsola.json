@@ -1,0 +1,44 @@
+{
+  "id": "deepcorsola",
+  "name": "Deepcorsola",
+  "national_dex": null,
+  "types": [
+    "Water",
+    "Ghost"
+  ],
+  "base_stats": {
+    "hp": 55,
+    "atk": 55,
+    "def": 100,
+    "spa": 70,
+    "spd": 100,
+    "spe": 25
+  },
+  "abilities": [
+    "Cursed Body",
+    "Natural Cure"
+  ],
+  "hidden_ability": "Perish Body",
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "Corsola that have been submerged under Kyogre's overflow for too long have bleached completely — white-pale and hollow, their branch-coral now sharp and skeletal. They drift rather than swim. Dex: \"The warmth left first. Then the color. Then it stopped noticing either.\"",
+  "catch_rate": 45,
+  "base_exp": 160,
+  "growth_rate": "fast",
+  "egg_groups": [
+    "Water 1",
+    "Water 3"
+  ],
+  "gender_ratio": 25,
+  "is_native_hoenn": true,
+  "native_zone": "abyss_bloom",
+  "is_corrupted": true,
+  "corruption_zone": "abyss_bloom",
+  "corruption_path": null,
+  "base_species": "corsola",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/deepcorsola/front.png",
+    "back": "res://assets/sprites/pokemon/deepcorsola/back.png",
+    "icon": "res://assets/sprites/pokemon/deepcorsola/icon.png"
+  }
+}

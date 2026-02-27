@@ -1,0 +1,16 @@
+{
+  "id": "leer",
+  "name": "Leer",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 30,
+  "priority": 0,
+  "target": "all_opponents",
+  "effect": "stat_drop_def_1",
+  "flags": [],
+  "description": "The user gives opposing Pok\u00e9mon an intimidating leer that lowers the Defense stat of those Pok\u00e9mon.",
+  "is_custom": false,
+  "base_power": 0
+}

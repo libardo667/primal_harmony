@@ -1,0 +1,15 @@
+{
+  "id": "dragon_dance",
+  "name": "Dragon Dance",
+  "type": "Dragon",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Raises user's Attack and Speed.",
+  "is_custom": false
+}

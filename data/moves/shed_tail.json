@@ -1,0 +1,15 @@
+{
+  "id": "shed_tail",
+  "name": "Shed Tail",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Creates a substitute, then swaps places with a party Pok\u00e9mon in waiting.",
+  "is_custom": false
+}

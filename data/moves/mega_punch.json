@@ -1,0 +1,15 @@
+{
+  "id": "mega_punch",
+  "name": "Mega Punch",
+  "type": "Normal",
+  "category": "physical",
+  "power": 80,
+  "accuracy": 85,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "",
+  "is_custom": false
+}

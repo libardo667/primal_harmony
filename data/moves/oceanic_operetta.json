@@ -1,0 +1,15 @@
+{
+  "id": "oceanic_operetta",
+  "name": "Oceanic Operetta",
+  "type": "Water",
+  "category": "special",
+  "power": 195,
+  "accuracy": null,
+  "pp": 1,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "",
+  "is_custom": false
+}

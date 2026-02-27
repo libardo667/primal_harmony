@@ -1,0 +1,15 @@
+{
+  "id": "hyper_drill",
+  "name": "Hyper Drill",
+  "type": "Normal",
+  "category": "physical",
+  "power": 100,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Can strike through Protect/Detect.",
+  "is_custom": false
+}

@@ -1,0 +1,16 @@
+{
+  "id": "fire_spin",
+  "name": "Fire Spin",
+  "type": "Fire",
+  "category": "special",
+  "power": 35,
+  "accuracy": 85,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "trap_4_to_5_turns",
+  "flags": [],
+  "description": "The target becomes trapped within a fierce vortex of fire that rages for four to five turns.",
+  "is_custom": false,
+  "base_power": 35
+}

@@ -1,0 +1,15 @@
+{
+  "id": "no_retreat",
+  "name": "No Retreat",
+  "type": "Fighting",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Raises all stats but user cannot switch out.",
+  "is_custom": false
+}

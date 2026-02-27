@@ -1,0 +1,6 @@
+{
+  "id": "steam_engine",
+  "name": "Steam Engine",
+  "description": "Drastically raises Speed when hit by a Fire- or Water-type move.",
+  "hooks": []
+}

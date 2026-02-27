@@ -1,0 +1,15 @@
+{
+  "id": "reflect_type",
+  "name": "Reflect Type",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User becomes the target's type.",
+  "is_custom": false
+}

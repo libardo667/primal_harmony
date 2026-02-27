@@ -1,0 +1,15 @@
+{
+  "id": "laser_focus",
+  "name": "Laser Focus",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 30,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User's next attack is guaranteed to result in a critical hit.",
+  "is_custom": false
+}

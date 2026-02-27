@@ -1,0 +1,74 @@
+{
+  "id": "taillow",
+  "name": "Taillow",
+  "national_dex": 276,
+  "types": [
+    "Normal",
+    "Flying"
+  ],
+  "base_stats": {
+    "hp": 40,
+    "atk": 55,
+    "def": 30,
+    "spa": 30,
+    "spd": 30,
+    "spe": 85
+  },
+  "abilities": [
+    "Guts"
+  ],
+  "hidden_ability": "Scrappy",
+  "learnset": [
+    {
+      "move_id": "peck",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "growl",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "quick_attack",
+      "method": "level",
+      "level": 5
+    },
+    {
+      "move_id": "wing_attack",
+      "method": "level",
+      "level": 13
+    },
+    {
+      "move_id": "aerial_ace",
+      "method": "level",
+      "level": 21
+    }
+  ],
+  "evolution": {
+    "method": "level",
+    "level": 22,
+    "item": null,
+    "condition": null,
+    "into": "swellow"
+  },
+  "dex_entry": "Taillow courageously stands its ground against foes, even if they are larger. It gutsy.",
+  "catch_rate": 200,
+  "base_exp": 54,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Flying"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "the_murk",
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/taillow/front.png",
+    "back": "res://assets/sprites/pokemon/taillow/back.png",
+    "icon": "res://assets/sprites/pokemon/taillow/icon.png"
+  }
+}

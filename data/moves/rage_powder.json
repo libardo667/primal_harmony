@@ -1,0 +1,15 @@
+{
+  "id": "rage_powder",
+  "name": "Rage Powder",
+  "type": "Bug",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Forces attacks to hit user, not team-mates.",
+  "is_custom": false
+}

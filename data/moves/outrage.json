@@ -1,0 +1,15 @@
+{
+  "id": "outrage",
+  "name": "Outrage",
+  "type": "Dragon",
+  "category": "physical",
+  "power": 120,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User attacks for 2-3 turns but then becomes confused.",
+  "is_custom": false
+}

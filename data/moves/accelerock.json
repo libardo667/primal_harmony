@@ -1,0 +1,15 @@
+{
+  "id": "accelerock",
+  "name": "Accelerock",
+  "type": "Rock",
+  "category": "physical",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User attacks first.",
+  "is_custom": false
+}

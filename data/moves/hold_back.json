@@ -1,0 +1,15 @@
+{
+  "id": "hold_back",
+  "name": "Hold Back",
+  "type": "Normal",
+  "category": "physical",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 40,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Always leaves opponent with at least 1 HP.",
+  "is_custom": false
+}

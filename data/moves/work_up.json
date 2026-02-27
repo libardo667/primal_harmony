@@ -1,0 +1,15 @@
+{
+  "id": "work_up",
+  "name": "Work Up",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 30,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Raises user's Attack and Special Attack.",
+  "is_custom": false
+}

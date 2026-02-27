@@ -1,0 +1,15 @@
+{
+  "id": "diamond_storm",
+  "name": "Diamond Storm",
+  "type": "Rock",
+  "category": "physical",
+  "power": 100,
+  "accuracy": 95,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May sharply raise user's Defense.",
+  "is_custom": false
+}

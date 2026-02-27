@@ -1,0 +1,15 @@
+{
+  "id": "dig",
+  "name": "Dig",
+  "type": "Ground",
+  "category": "physical",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Digs underground on first turn, attacks on second. Can also escape from caves.",
+  "is_custom": false
+}

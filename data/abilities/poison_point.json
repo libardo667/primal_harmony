@@ -1,0 +1,17 @@
+{
+  "id": "poison_point",
+  "name": "Poison Point",
+  "description": "The Pokemon may poison an attacker that makes direct contact.",
+  "hooks": [
+    {
+      "trigger": "on_damage_taken",
+      "effect_type": "status_inflict",
+      "params": {
+        "target": "attacker",
+        "status": "poison",
+        "chance": 0.3,
+        "contact_required": true
+      }
+    }
+  ]
+}

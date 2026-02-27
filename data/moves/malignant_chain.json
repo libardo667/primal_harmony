@@ -1,0 +1,15 @@
+{
+  "id": "malignant_chain",
+  "name": "Malignant Chain",
+  "type": "Poison",
+  "category": "special",
+  "power": 100,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May poison the opponent.",
+  "is_custom": false
+}

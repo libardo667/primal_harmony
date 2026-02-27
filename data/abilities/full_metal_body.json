@@ -1,0 +1,6 @@
+{
+  "id": "full_metal_body",
+  "name": "Full Metal Body",
+  "description": "Prevents other Pok\u00e9mon from lowering its stats.",
+  "hooks": []
+}

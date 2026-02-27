@@ -1,0 +1,37 @@
+{
+  "id": "litwick",
+  "name": "Litwick",
+  "national_dex": 607,
+  "types": [
+    "Ghost",
+    "Fire"
+  ],
+  "base_stats": {
+    "hp": 50,
+    "atk": 30,
+    "def": 55,
+    "spa": 65,
+    "spd": 55,
+    "spe": 20
+  },
+  "abilities": [
+    "TBD"
+  ],
+  "hidden_ability": null,
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "TBD",
+  "catch_rate": 45,
+  "base_exp": 60,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "TBD"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": false,
+  "native_zone": null,
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null
+}

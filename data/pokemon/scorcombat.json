@@ -1,0 +1,43 @@
+{
+  "id": "scorcombat",
+  "name": "Scorcombat",
+  "national_dex": null,
+  "types": [
+    "Fire",
+    "Fighting"
+  ],
+  "base_stats": {
+    "hp": 75,
+    "atk": 110,
+    "def": 75,
+    "spa": 110,
+    "spd": 70,
+    "spe": 95
+  },
+  "abilities": [
+    "Blaze",
+    "Tough Claws"
+  ],
+  "hidden_ability": "Iron Fist",
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "A blazing warrior-bird where fire and steel coexist — ember-bright plating, burning talons, fierce and beautiful. Dex: \"Two natures, neither surrendered. It decided the tension was a weapon.\"",
+  "catch_rate": 45,
+  "base_exp": 239,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Field"
+  ],
+  "gender_ratio": 12.5,
+  "is_native_hoenn": true,
+  "native_zone": null,
+  "is_corrupted": true,
+  "corruption_zone": "emberscar",
+  "corruption_path": "B",
+  "base_species": "torchic",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/scorcombat/front.png",
+    "back": "res://assets/sprites/pokemon/scorcombat/back.png",
+    "icon": "res://assets/sprites/pokemon/scorcombat/icon.png"
+  }
+}

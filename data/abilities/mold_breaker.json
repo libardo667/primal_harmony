@@ -1,0 +1,6 @@
+{
+  "id": "mold_breaker",
+  "name": "Mold Breaker",
+  "description": "Moves can be used regardless of Abilities.",
+  "hooks": []
+}

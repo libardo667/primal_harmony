@@ -1,0 +1,15 @@
+{
+  "id": "judgment",
+  "name": "Judgment",
+  "type": "Normal",
+  "category": "special",
+  "power": 100,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Type depends on the Arceus Plate being held.",
+  "is_custom": false
+}

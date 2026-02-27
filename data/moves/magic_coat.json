@@ -1,0 +1,15 @@
+{
+  "id": "magic_coat",
+  "name": "Magic Coat",
+  "type": "Psychic",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Reflects moves that cause status conditions back to the attacker.",
+  "is_custom": false
+}

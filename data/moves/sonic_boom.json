@@ -1,0 +1,15 @@
+{
+  "id": "sonic_boom",
+  "name": "Sonic Boom",
+  "type": "Normal",
+  "category": "special",
+  "power": null,
+  "accuracy": 90,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Always inflicts 20 HP.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "hold_hands",
+  "name": "Hold Hands",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 40,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Makes the user and an ally very happy.",
+  "is_custom": false
+}

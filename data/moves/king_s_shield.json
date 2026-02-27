@@ -1,0 +1,15 @@
+{
+  "id": "king_s_shield",
+  "name": "King's Shield",
+  "type": "Steel",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Protects the user and lowers opponent's Attack on contact.",
+  "is_custom": false
+}

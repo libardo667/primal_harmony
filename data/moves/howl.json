@@ -1,0 +1,15 @@
+{
+  "id": "howl",
+  "name": "Howl",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 40,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Raises Attack of allies.",
+  "is_custom": false
+}

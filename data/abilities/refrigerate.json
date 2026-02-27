@@ -1,0 +1,6 @@
+{
+  "id": "refrigerate",
+  "name": "Refrigerate",
+  "description": "Turns Normal-type moves into Ice-type moves.",
+  "hooks": []
+}

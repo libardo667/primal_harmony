@@ -1,0 +1,6 @@
+{
+  "id": "guard_dog",
+  "name": "Guard Dog",
+  "description": "Boosts Attack if intimidated, and prevents being forced to switch out.",
+  "hooks": []
+}

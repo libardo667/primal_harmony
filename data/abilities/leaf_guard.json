@@ -1,0 +1,6 @@
+{
+  "id": "leaf_guard",
+  "name": "Leaf Guard",
+  "description": "Prevents problems with status in sunny weather.",
+  "hooks": []
+}

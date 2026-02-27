@@ -1,0 +1,15 @@
+{
+  "id": "feather_dance",
+  "name": "Feather Dance",
+  "type": "Flying",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Sharply lowers opponent's Attack.",
+  "is_custom": false
+}

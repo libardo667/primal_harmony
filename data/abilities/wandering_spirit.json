@@ -1,0 +1,6 @@
+{
+  "id": "wandering_spirit",
+  "name": "Wandering Spirit",
+  "description": "Swaps abilities with opponents on contact.",
+  "hooks": []
+}

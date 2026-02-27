@@ -1,0 +1,15 @@
+{
+  "id": "rest",
+  "name": "Rest",
+  "type": "Psychic",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User sleeps for 2 turns, but user is fully healed.",
+  "is_custom": false
+}

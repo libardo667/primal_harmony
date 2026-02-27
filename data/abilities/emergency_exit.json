@@ -1,0 +1,6 @@
+{
+  "id": "emergency_exit",
+  "name": "Emergency Exit",
+  "description": "Switches out when HP falls below 50%.",
+  "hooks": []
+}

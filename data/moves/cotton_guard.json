@@ -1,0 +1,15 @@
+{
+  "id": "cotton_guard",
+  "name": "Cotton Guard",
+  "type": "Grass",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Drastically raises user's Defense.",
+  "is_custom": false
+}

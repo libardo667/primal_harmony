@@ -1,0 +1,15 @@
+{
+  "id": "power_up_punch",
+  "name": "Power-Up Punch",
+  "type": "Fighting",
+  "category": "physical",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Raises Attack.",
+  "is_custom": false
+}

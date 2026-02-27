@@ -1,0 +1,6 @@
+{
+  "id": "purifying_salt",
+  "name": "Purifying Salt",
+  "description": "Protects from status conditions and halves damage from Ghost-type moves.",
+  "hooks": []
+}

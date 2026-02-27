@@ -1,0 +1,15 @@
+{
+  "id": "strength_sap",
+  "name": "Strength Sap",
+  "type": "Grass",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The user restores its HP by the same amount as the target's Attack stat. It also lowers the target's Attack stat.",
+  "is_custom": false
+}

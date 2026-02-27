@@ -1,0 +1,15 @@
+{
+  "id": "forest_s_curse",
+  "name": "Forest's Curse",
+  "type": "Grass",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Adds Grass type to opponent.",
+  "is_custom": false
+}

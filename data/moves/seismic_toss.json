@@ -1,0 +1,15 @@
+{
+  "id": "seismic_toss",
+  "name": "Seismic Toss",
+  "type": "Fighting",
+  "category": "physical",
+  "power": null,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Inflicts damage equal to user's level.",
+  "is_custom": false
+}

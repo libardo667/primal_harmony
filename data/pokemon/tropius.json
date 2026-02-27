@@ -1,0 +1,44 @@
+{
+  "id": "tropius",
+  "name": "Tropius",
+  "national_dex": 357,
+  "types": [
+    "Grass",
+    "Flying"
+  ],
+  "base_stats": {
+    "hp": 99,
+    "atk": 68,
+    "def": 83,
+    "spa": 72,
+    "spd": 87,
+    "spe": 51
+  },
+  "abilities": [
+    "Chlorophyll",
+    "Solar Power"
+  ],
+  "hidden_ability": "Harvest",
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "Tropius's long neck and leaf wings allow it to pluck fruit from high branches. The fruit growing on its neck are deeply sweet.",
+  "catch_rate": 200,
+  "base_exp": 161,
+  "growth_rate": "slow",
+  "egg_groups": [
+    "Monster",
+    "Grass"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "the_overgrowth",
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/tropius/front.png",
+    "back": "res://assets/sprites/pokemon/tropius/back.png",
+    "icon": "res://assets/sprites/pokemon/tropius/icon.png"
+  }
+}

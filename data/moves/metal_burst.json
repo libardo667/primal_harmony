@@ -1,0 +1,15 @@
+{
+  "id": "metal_burst",
+  "name": "Metal Burst",
+  "type": "Steel",
+  "category": "physical",
+  "power": null,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Deals damage equal to 1.5x opponent's attack.",
+  "is_custom": false
+}

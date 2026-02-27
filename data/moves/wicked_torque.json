@@ -1,0 +1,15 @@
+{
+  "id": "wicked_torque",
+  "name": "Wicked Torque",
+  "type": "Dark",
+  "category": "physical",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May put opponent to sleep.",
+  "is_custom": false
+}

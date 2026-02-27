@@ -1,0 +1,6 @@
+{
+  "id": "prankster",
+  "name": "Prankster",
+  "description": "Gives priority to a status move.",
+  "hooks": []
+}

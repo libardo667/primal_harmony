@@ -1,0 +1,37 @@
+{
+  "id": "cobalion",
+  "name": "Cobalion",
+  "national_dex": 638,
+  "types": [
+    "Steel",
+    "Fighting"
+  ],
+  "base_stats": {
+    "hp": 91,
+    "atk": 90,
+    "def": 129,
+    "spa": 90,
+    "spd": 72,
+    "spe": 108
+  },
+  "abilities": [
+    "TBD"
+  ],
+  "hidden_ability": null,
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "TBD",
+  "catch_rate": 45,
+  "base_exp": 60,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "TBD"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": false,
+  "native_zone": null,
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null
+}

@@ -1,0 +1,15 @@
+{
+  "id": "dual_chop",
+  "name": "Dual Chop",
+  "type": "Dragon",
+  "category": "physical",
+  "power": 40,
+  "accuracy": 90,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Hits twice in one turn.",
+  "is_custom": false
+}

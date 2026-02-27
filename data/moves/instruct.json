@@ -1,0 +1,15 @@
+{
+  "id": "instruct",
+  "name": "Instruct",
+  "type": "Psychic",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Allows an ally to use a move instead.",
+  "is_custom": false
+}

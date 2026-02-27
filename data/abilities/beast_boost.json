@@ -1,0 +1,6 @@
+{
+  "id": "beast_boost",
+  "name": "Beast Boost",
+  "description": "The Pok\u00e9mon boosts its most proficient stat each time it knocks out a Pok\u00e9mon.",
+  "hooks": []
+}

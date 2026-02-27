@@ -1,0 +1,15 @@
+{
+  "id": "odor_sleuth",
+  "name": "Odor Sleuth",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 40,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Resets opponent's Evasiveness, and allows Normal- and Fighting-type attacks to hit Ghosts.",
+  "is_custom": false
+}

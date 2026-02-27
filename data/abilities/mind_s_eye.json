@@ -1,0 +1,6 @@
+{
+  "id": "mind_s_eye",
+  "name": "Mind's Eye",
+  "description": "Ignores opponent's Evasiveness, and allows Normal- and Fighting-type attacks to hit Ghosts.",
+  "hooks": []
+}

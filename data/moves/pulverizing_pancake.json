@@ -1,0 +1,15 @@
+{
+  "id": "pulverizing_pancake",
+  "name": "Pulverizing Pancake",
+  "type": "Normal",
+  "category": "physical",
+  "power": 210,
+  "accuracy": null,
+  "pp": 1,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "",
+  "is_custom": false
+}

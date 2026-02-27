@@ -1,0 +1,15 @@
+{
+  "id": "spirit_shackle",
+  "name": "Spirit Shackle",
+  "type": "Ghost",
+  "category": "physical",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Prevents the opponent from switching out.",
+  "is_custom": false
+}

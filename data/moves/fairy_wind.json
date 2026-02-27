@@ -1,0 +1,16 @@
+{
+  "id": "fairy_wind",
+  "name": "Fairy Wind",
+  "type": "Fairy",
+  "category": "special",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 30,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The user stirs up a fairy wind and strikes the target with it.",
+  "is_custom": false,
+  "base_power": 40
+}

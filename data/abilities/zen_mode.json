@@ -1,0 +1,6 @@
+{
+  "id": "zen_mode",
+  "name": "Zen Mode",
+  "description": "Changes form when HP drops below half.",
+  "hooks": []
+}

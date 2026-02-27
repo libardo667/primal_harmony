@@ -1,0 +1,15 @@
+{
+  "id": "ivy_cudgel",
+  "name": "Ivy Cudgel",
+  "type": "Grass",
+  "category": "physical",
+  "power": 100,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "High critical hit ratio. Type changes based on form.",
+  "is_custom": false
+}

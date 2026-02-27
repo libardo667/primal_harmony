@@ -1,0 +1,6 @@
+{
+  "id": "propeller_tail",
+  "name": "Propeller Tail",
+  "description": "Ignores moves and abilities that draw in moves.",
+  "hooks": []
+}

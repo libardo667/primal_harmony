@@ -1,0 +1,37 @@
+{
+  "id": "sky_forme",
+  "name": "Sky Forme",
+  "national_dex": 492,
+  "types": [
+    "Grass",
+    "Flying"
+  ],
+  "base_stats": {
+    "hp": 100,
+    "atk": 103,
+    "def": 75,
+    "spa": 120,
+    "spd": 75,
+    "spe": 127
+  },
+  "abilities": [
+    "TBD"
+  ],
+  "hidden_ability": null,
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "TBD",
+  "catch_rate": 45,
+  "base_exp": 60,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "TBD"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": false,
+  "native_zone": null,
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null
+}

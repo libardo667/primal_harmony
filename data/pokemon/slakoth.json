@@ -1,0 +1,68 @@
+{
+  "id": "slakoth",
+  "name": "Slakoth",
+  "national_dex": 287,
+  "types": [
+    "Normal"
+  ],
+  "base_stats": {
+    "hp": 60,
+    "atk": 60,
+    "def": 60,
+    "spa": 35,
+    "spd": 35,
+    "spe": 30
+  },
+  "abilities": [
+    "Truant"
+  ],
+  "hidden_ability": null,
+  "learnset": [
+    {
+      "move_id": "scratch",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "slack_off",
+      "method": "level",
+      "level": 6
+    },
+    {
+      "move_id": "pound",
+      "method": "level",
+      "level": 13
+    },
+    {
+      "move_id": "swagger",
+      "method": "level",
+      "level": 19
+    }
+  ],
+  "evolution": {
+    "method": "level",
+    "level": 18,
+    "item": null,
+    "condition": null,
+    "into": "vigoroth"
+  },
+  "dex_entry": "Slakoth's heart beats just once a minute. Whatever it does, it does lethargically. It makes its nest by bending a large tree.",
+  "catch_rate": 255,
+  "base_exp": 56,
+  "growth_rate": "slow",
+  "egg_groups": [
+    "Field"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "the_murk",
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/slakoth/front.png",
+    "back": "res://assets/sprites/pokemon/slakoth/back.png",
+    "icon": "res://assets/sprites/pokemon/slakoth/icon.png"
+  }
+}

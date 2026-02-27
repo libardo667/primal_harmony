@@ -1,0 +1,12 @@
+{
+  "tileset": "primary_building",
+  "fps": 7.5,
+  "bottom_atlas": "res://assets/tilesets/anim/primary_building_anim_bottom.png",
+  "top_atlas": "res://assets/tilesets/anim/primary_building_anim_top.png",
+  "animated_metatiles": {
+    "3": {
+      "row": 0,
+      "frame_count": 2
+    }
+  }
+}

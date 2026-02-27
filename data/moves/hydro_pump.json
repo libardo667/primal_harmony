@@ -1,0 +1,15 @@
+{
+  "id": "hydro_pump",
+  "name": "Hydro Pump",
+  "type": "Water",
+  "category": "special",
+  "power": 110,
+  "accuracy": 80,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "",
+  "is_custom": false
+}

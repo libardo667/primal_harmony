@@ -1,0 +1,69 @@
+{
+  "id": "staticorb",
+  "name": "Staticorb",
+  "national_dex": null,
+  "types": [
+    "Electric",
+    "Ghost"
+  ],
+  "base_stats": {
+    "hp": 40,
+    "atk": 20,
+    "def": 55,
+    "spa": 90,
+    "spd": 65,
+    "spe": 95
+  },
+  "abilities": [
+    "Levitate",
+    "Static"
+  ],
+  "hidden_ability": "Cursed Body",
+  "learnset": [
+    {
+      "move_id": "tackle",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "charge",
+      "method": "level",
+      "level": 4
+    },
+    {
+      "move_id": "spark",
+      "method": "level",
+      "level": 13
+    },
+    {
+      "move_id": "screech",
+      "method": "level",
+      "level": 22
+    },
+    {
+      "move_id": "discharge",
+      "method": "level",
+      "level": 26
+    }
+  ],
+  "evolution": null,
+  "dex_entry": "The surge has hollowed Voltorb out — it is now partially incorporeal, its interior a void of flickering light. It no longer Self-Destructs but instead releases a massive EMP pulse. Something left when the current came in.",
+  "catch_rate": 160,
+  "base_exp": 80,
+  "growth_rate": "medium_fast",
+  "egg_groups": [
+    "Mineral"
+  ],
+  "gender_ratio": -1,
+  "is_native_hoenn": true,
+  "native_zone": "static_sprawl",
+  "is_corrupted": true,
+  "corruption_zone": "static_sprawl",
+  "corruption_path": null,
+  "base_species": "voltorb",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/staticorb/front.png",
+    "back": "res://assets/sprites/pokemon/staticorb/back.png",
+    "icon": "res://assets/sprites/pokemon/staticorb/icon.png"
+  }
+}

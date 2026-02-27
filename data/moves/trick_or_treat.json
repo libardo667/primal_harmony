@@ -1,0 +1,15 @@
+{
+  "id": "trick_or_treat",
+  "name": "Trick-or-Treat",
+  "type": "Ghost",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Adds Ghost type to opponent.",
+  "is_custom": false
+}

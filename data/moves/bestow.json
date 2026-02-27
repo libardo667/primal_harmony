@@ -1,0 +1,15 @@
+{
+  "id": "bestow",
+  "name": "Bestow",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Gives the user's held item to the target.",
+  "is_custom": false
+}

@@ -1,0 +1,73 @@
+{
+  "id": "vulpix",
+  "name": "Vulpix",
+  "national_dex": 37,
+  "types": [
+    "Fire"
+  ],
+  "base_stats": {
+    "hp": 38,
+    "atk": 41,
+    "def": 40,
+    "spa": 50,
+    "spd": 65,
+    "spe": 65
+  },
+  "abilities": [
+    "Flash Fire"
+  ],
+  "hidden_ability": "Drought",
+  "learnset": [
+    {
+      "move_id": "ember",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "quick_attack",
+      "method": "level",
+      "level": 4
+    },
+    {
+      "move_id": "confuse_ray",
+      "method": "level",
+      "level": 11
+    },
+    {
+      "move_id": "fire_spin",
+      "method": "level",
+      "level": 15
+    },
+    {
+      "move_id": "flame_wheel",
+      "method": "level",
+      "level": 20
+    }
+  ],
+  "evolution": {
+    "method": "item",
+    "level": null,
+    "item": "fire_stone",
+    "condition": null,
+    "into": "ninetales"
+  },
+  "dex_entry": "At birth, it has one white tail. When Vulpix is loved, its tail splits into six. The tails become gorgeously curly.",
+  "catch_rate": 190,
+  "base_exp": 60,
+  "growth_rate": "medium_fast",
+  "egg_groups": [
+    "Field"
+  ],
+  "gender_ratio": 25,
+  "is_native_hoenn": true,
+  "native_zone": "dread_shore",
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/vulpix/front.png",
+    "back": "res://assets/sprites/pokemon/vulpix/back.png",
+    "icon": "res://assets/sprites/pokemon/vulpix/icon.png"
+  }
+}

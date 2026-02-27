@@ -1,0 +1,15 @@
+{
+  "id": "captivate",
+  "name": "Captivate",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Sharply lowers opponent's Special Attack if opposite gender.",
+  "is_custom": false
+}

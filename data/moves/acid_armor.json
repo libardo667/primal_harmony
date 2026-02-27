@@ -1,0 +1,15 @@
+{
+  "id": "acid_armor",
+  "name": "Acid Armor",
+  "type": "Poison",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Sharply raises user's Defense.",
+  "is_custom": false
+}

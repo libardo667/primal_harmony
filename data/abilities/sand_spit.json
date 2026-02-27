@@ -1,0 +1,6 @@
+{
+  "id": "sand_spit",
+  "name": "Sand Spit",
+  "description": "Creates a sandstorm when hit by an attack.",
+  "hooks": []
+}

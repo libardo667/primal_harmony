@@ -1,0 +1,6 @@
+{
+  "id": "color_change",
+  "name": "Color Change",
+  "description": "Changes the Pok\u00e9mon's type to the foe's move.",
+  "hooks": []
+}

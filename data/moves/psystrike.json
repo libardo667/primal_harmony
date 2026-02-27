@@ -1,0 +1,15 @@
+{
+  "id": "psystrike",
+  "name": "Psystrike",
+  "type": "Psychic",
+  "category": "special",
+  "power": 100,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Inflicts damage based on the target's Defense, not Special Defense.",
+  "is_custom": false
+}

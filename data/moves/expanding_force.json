@@ -1,0 +1,15 @@
+{
+  "id": "expanding_force",
+  "name": "Expanding Force",
+  "type": "Psychic",
+  "category": "special",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Increases power and hits all opponents on Psychic Terrain.",
+  "is_custom": false
+}

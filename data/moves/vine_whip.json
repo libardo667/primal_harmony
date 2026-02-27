@@ -1,0 +1,15 @@
+{
+  "id": "vine_whip",
+  "name": "Vine Whip",
+  "type": "Grass",
+  "category": "physical",
+  "power": 45,
+  "accuracy": 100,
+  "pp": 25,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "",
+  "is_custom": false
+}

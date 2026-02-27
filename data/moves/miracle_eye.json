@@ -1,0 +1,15 @@
+{
+  "id": "miracle_eye",
+  "name": "Miracle Eye",
+  "type": "Psychic",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 40,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Resets opponent's Evasiveness, removes Dark's Psychic immunity.",
+  "is_custom": false
+}

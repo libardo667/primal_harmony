@@ -1,0 +1,6 @@
+{
+  "id": "screen_cleaner",
+  "name": "Screen Cleaner",
+  "description": "Nullifies effects of Light Screen, Reflect, and Aurora Veil.",
+  "hooks": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "rapid_spin",
+  "name": "Rapid Spin",
+  "type": "Normal",
+  "category": "physical",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 40,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Raises user's Speed and removes entry hazards and trap move effects.",
+  "is_custom": false
+}

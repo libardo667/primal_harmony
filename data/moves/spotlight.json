@@ -1,0 +1,15 @@
+{
+  "id": "spotlight",
+  "name": "Spotlight",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The user shines a spotlight on the target so that only the target will be attacked during the turn.",
+  "is_custom": false
+}

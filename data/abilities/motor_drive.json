@@ -1,0 +1,6 @@
+{
+  "id": "motor_drive",
+  "name": "Motor Drive",
+  "description": "Raises Speed if hit by an Electric-type move.",
+  "hooks": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "will_o_wisp",
+  "name": "Will-O-Wisp",
+  "type": "Fire",
+  "category": "status",
+  "power": null,
+  "accuracy": 85,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Burns opponent.",
+  "is_custom": false
+}

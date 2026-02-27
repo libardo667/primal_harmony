@@ -1,0 +1,2195 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" path="res://assets/tilesets/primary_general_bottom.png" id="1_pory6"]
+[ext_resource type="Texture2D" path="res://assets/tilesets/primary_general_top.png" id="2_57ccv"]
+[ext_resource type="Texture2D" path="res://assets/tilesets/secondary_inside_ship_bottom.png" id="3_lh42n"]
+[ext_resource type="Texture2D" path="res://assets/tilesets/secondary_inside_ship_top.png" id="4_2k7ly"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_36on3"]
+texture = ExtResource("1_pory6")
+0:0/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+0:3/0 = 0
+0:4/0 = 0
+0:5/0 = 0
+0:6/0 = 0
+0:7/0 = 0
+0:8/0 = 0
+0:9/0 = 0
+0:10/0 = 0
+0:11/0 = 0
+0:12/0 = 0
+0:13/0 = 0
+0:14/0 = 0
+0:15/0 = 0
+0:16/0 = 0
+0:17/0 = 0
+0:18/0 = 0
+0:19/0 = 0
+0:20/0 = 0
+0:21/0 = 0
+0:22/0 = 0
+0:23/0 = 0
+0:24/0 = 0
+0:25/0 = 0
+0:26/0 = 0
+0:27/0 = 0
+0:28/0 = 0
+0:29/0 = 0
+0:30/0 = 0
+0:31/0 = 0
+0:32/0 = 0
+0:33/0 = 0
+0:34/0 = 0
+0:35/0 = 0
+0:36/0 = 0
+0:37/0 = 0
+0:38/0 = 0
+0:39/0 = 0
+0:40/0 = 0
+0:41/0 = 0
+0:42/0 = 0
+0:43/0 = 0
+0:44/0 = 0
+0:45/0 = 0
+0:46/0 = 0
+0:47/0 = 0
+0:48/0 = 0
+0:49/0 = 0
+0:50/0 = 0
+0:51/0 = 0
+0:52/0 = 0
+0:53/0 = 0
+0:54/0 = 0
+0:55/0 = 0
+0:56/0 = 0
+0:57/0 = 0
+0:58/0 = 0
+0:59/0 = 0
+0:60/0 = 0
+0:61/0 = 0
+0:62/0 = 0
+0:63/0 = 0
+1:0/0 = 0
+1:1/0 = 0
+1:2/0 = 0
+1:3/0 = 0
+1:4/0 = 0
+1:5/0 = 0
+1:6/0 = 0
+1:7/0 = 0
+1:8/0 = 0
+1:9/0 = 0
+1:10/0 = 0
+1:11/0 = 0
+1:12/0 = 0
+1:13/0 = 0
+1:14/0 = 0
+1:15/0 = 0
+1:16/0 = 0
+1:17/0 = 0
+1:18/0 = 0
+1:19/0 = 0
+1:20/0 = 0
+1:21/0 = 0
+1:22/0 = 0
+1:23/0 = 0
+1:24/0 = 0
+1:25/0 = 0
+1:26/0 = 0
+1:27/0 = 0
+1:28/0 = 0
+1:29/0 = 0
+1:30/0 = 0
+1:31/0 = 0
+1:32/0 = 0
+1:33/0 = 0
+1:34/0 = 0
+1:35/0 = 0
+1:36/0 = 0
+1:37/0 = 0
+1:38/0 = 0
+1:39/0 = 0
+1:40/0 = 0
+1:41/0 = 0
+1:42/0 = 0
+1:43/0 = 0
+1:44/0 = 0
+1:45/0 = 0
+1:46/0 = 0
+1:47/0 = 0
+1:48/0 = 0
+1:49/0 = 0
+1:50/0 = 0
+1:51/0 = 0
+1:52/0 = 0
+1:53/0 = 0
+1:54/0 = 0
+1:55/0 = 0
+1:56/0 = 0
+1:57/0 = 0
+1:58/0 = 0
+1:59/0 = 0
+1:60/0 = 0
+1:61/0 = 0
+1:62/0 = 0
+1:63/0 = 0
+2:0/0 = 0
+2:1/0 = 0
+2:2/0 = 0
+2:3/0 = 0
+2:4/0 = 0
+2:5/0 = 0
+2:6/0 = 0
+2:7/0 = 0
+2:8/0 = 0
+2:9/0 = 0
+2:10/0 = 0
+2:11/0 = 0
+2:12/0 = 0
+2:13/0 = 0
+2:14/0 = 0
+2:15/0 = 0
+2:16/0 = 0
+2:17/0 = 0
+2:18/0 = 0
+2:19/0 = 0
+2:20/0 = 0
+2:21/0 = 0
+2:22/0 = 0
+2:23/0 = 0
+2:24/0 = 0
+2:25/0 = 0
+2:26/0 = 0
+2:27/0 = 0
+2:28/0 = 0
+2:29/0 = 0
+2:30/0 = 0
+2:31/0 = 0
+2:32/0 = 0
+2:33/0 = 0
+2:34/0 = 0
+2:35/0 = 0
+2:36/0 = 0
+2:37/0 = 0
+2:38/0 = 0
+2:39/0 = 0
+2:40/0 = 0
+2:41/0 = 0
+2:42/0 = 0
+2:43/0 = 0
+2:44/0 = 0
+2:45/0 = 0
+2:46/0 = 0
+2:47/0 = 0
+2:48/0 = 0
+2:49/0 = 0
+2:50/0 = 0
+2:51/0 = 0
+2:52/0 = 0
+2:53/0 = 0
+2:54/0 = 0
+2:55/0 = 0
+2:56/0 = 0
+2:57/0 = 0
+2:58/0 = 0
+2:59/0 = 0
+2:60/0 = 0
+2:61/0 = 0
+2:62/0 = 0
+2:63/0 = 0
+3:0/0 = 0
+3:1/0 = 0
+3:2/0 = 0
+3:3/0 = 0
+3:4/0 = 0
+3:5/0 = 0
+3:6/0 = 0
+3:7/0 = 0
+3:8/0 = 0
+3:9/0 = 0
+3:10/0 = 0
+3:11/0 = 0
+3:12/0 = 0
+3:13/0 = 0
+3:14/0 = 0
+3:15/0 = 0
+3:16/0 = 0
+3:17/0 = 0
+3:18/0 = 0
+3:19/0 = 0
+3:20/0 = 0
+3:21/0 = 0
+3:22/0 = 0
+3:23/0 = 0
+3:24/0 = 0
+3:25/0 = 0
+3:26/0 = 0
+3:27/0 = 0
+3:28/0 = 0
+3:29/0 = 0
+3:30/0 = 0
+3:31/0 = 0
+3:32/0 = 0
+3:33/0 = 0
+3:34/0 = 0
+3:35/0 = 0
+3:36/0 = 0
+3:37/0 = 0
+3:38/0 = 0
+3:39/0 = 0
+3:40/0 = 0
+3:41/0 = 0
+3:42/0 = 0
+3:43/0 = 0
+3:44/0 = 0
+3:45/0 = 0
+3:46/0 = 0
+3:47/0 = 0
+3:48/0 = 0
+3:49/0 = 0
+3:50/0 = 0
+3:51/0 = 0
+3:52/0 = 0
+3:53/0 = 0
+3:54/0 = 0
+3:55/0 = 0
+3:56/0 = 0
+3:57/0 = 0
+3:58/0 = 0
+3:59/0 = 0
+3:60/0 = 0
+3:61/0 = 0
+3:62/0 = 0
+3:63/0 = 0
+4:0/0 = 0
+4:1/0 = 0
+4:2/0 = 0
+4:3/0 = 0
+4:4/0 = 0
+4:5/0 = 0
+4:6/0 = 0
+4:7/0 = 0
+4:8/0 = 0
+4:9/0 = 0
+4:10/0 = 0
+4:11/0 = 0
+4:12/0 = 0
+4:13/0 = 0
+4:14/0 = 0
+4:15/0 = 0
+4:16/0 = 0
+4:17/0 = 0
+4:18/0 = 0
+4:19/0 = 0
+4:20/0 = 0
+4:21/0 = 0
+4:22/0 = 0
+4:23/0 = 0
+4:24/0 = 0
+4:25/0 = 0
+4:26/0 = 0
+4:27/0 = 0
+4:28/0 = 0
+4:29/0 = 0
+4:30/0 = 0
+4:31/0 = 0
+4:32/0 = 0
+4:33/0 = 0
+4:34/0 = 0
+4:35/0 = 0
+4:36/0 = 0
+4:37/0 = 0
+4:38/0 = 0
+4:39/0 = 0
+4:40/0 = 0
+4:41/0 = 0
+4:42/0 = 0
+4:43/0 = 0
+4:44/0 = 0
+4:45/0 = 0
+4:46/0 = 0
+4:47/0 = 0
+4:48/0 = 0
+4:49/0 = 0
+4:50/0 = 0
+4:51/0 = 0
+4:52/0 = 0
+4:53/0 = 0
+4:54/0 = 0
+4:55/0 = 0
+4:56/0 = 0
+4:57/0 = 0
+4:58/0 = 0
+4:59/0 = 0
+4:60/0 = 0
+4:61/0 = 0
+4:62/0 = 0
+4:63/0 = 0
+5:0/0 = 0
+5:1/0 = 0
+5:2/0 = 0
+5:3/0 = 0
+5:4/0 = 0
+5:5/0 = 0
+5:6/0 = 0
+5:7/0 = 0
+5:8/0 = 0
+5:9/0 = 0
+5:10/0 = 0
+5:11/0 = 0
+5:12/0 = 0
+5:13/0 = 0
+5:14/0 = 0
+5:15/0 = 0
+5:16/0 = 0
+5:17/0 = 0
+5:18/0 = 0
+5:19/0 = 0
+5:20/0 = 0
+5:21/0 = 0
+5:22/0 = 0
+5:23/0 = 0
+5:24/0 = 0
+5:25/0 = 0
+5:26/0 = 0
+5:27/0 = 0
+5:28/0 = 0
+5:29/0 = 0
+5:30/0 = 0
+5:31/0 = 0
+5:32/0 = 0
+5:33/0 = 0
+5:34/0 = 0
+5:35/0 = 0
+5:36/0 = 0
+5:37/0 = 0
+5:38/0 = 0
+5:39/0 = 0
+5:40/0 = 0
+5:41/0 = 0
+5:42/0 = 0
+5:43/0 = 0
+5:44/0 = 0
+5:45/0 = 0
+5:46/0 = 0
+5:47/0 = 0
+5:48/0 = 0
+5:49/0 = 0
+5:50/0 = 0
+5:51/0 = 0
+5:52/0 = 0
+5:53/0 = 0
+5:54/0 = 0
+5:55/0 = 0
+5:56/0 = 0
+5:57/0 = 0
+5:58/0 = 0
+5:59/0 = 0
+5:60/0 = 0
+5:61/0 = 0
+5:62/0 = 0
+5:63/0 = 0
+6:0/0 = 0
+6:1/0 = 0
+6:2/0 = 0
+6:3/0 = 0
+6:4/0 = 0
+6:5/0 = 0
+6:6/0 = 0
+6:7/0 = 0
+6:8/0 = 0
+6:9/0 = 0
+6:10/0 = 0
+6:11/0 = 0
+6:12/0 = 0
+6:13/0 = 0
+6:14/0 = 0
+6:15/0 = 0
+6:16/0 = 0
+6:17/0 = 0
+6:18/0 = 0
+6:19/0 = 0
+6:20/0 = 0
+6:21/0 = 0
+6:22/0 = 0
+6:23/0 = 0
+6:24/0 = 0
+6:25/0 = 0
+6:26/0 = 0
+6:27/0 = 0
+6:28/0 = 0
+6:29/0 = 0
+6:30/0 = 0
+6:31/0 = 0
+6:32/0 = 0
+6:33/0 = 0
+6:34/0 = 0
+6:35/0 = 0
+6:36/0 = 0
+6:37/0 = 0
+6:38/0 = 0
+6:39/0 = 0
+6:40/0 = 0
+6:41/0 = 0
+6:42/0 = 0
+6:43/0 = 0
+6:44/0 = 0
+6:45/0 = 0
+6:46/0 = 0
+6:47/0 = 0
+6:48/0 = 0
+6:49/0 = 0
+6:50/0 = 0
+6:51/0 = 0
+6:52/0 = 0
+6:53/0 = 0
+6:54/0 = 0
+6:55/0 = 0
+6:56/0 = 0
+6:57/0 = 0
+6:58/0 = 0
+6:59/0 = 0
+6:60/0 = 0
+6:61/0 = 0
+6:62/0 = 0
+6:63/0 = 0
+7:0/0 = 0
+7:1/0 = 0
+7:2/0 = 0
+7:3/0 = 0
+7:4/0 = 0
+7:5/0 = 0
+7:6/0 = 0
+7:7/0 = 0
+7:8/0 = 0
+7:9/0 = 0
+7:10/0 = 0
+7:11/0 = 0
+7:12/0 = 0
+7:13/0 = 0
+7:14/0 = 0
+7:15/0 = 0
+7:16/0 = 0
+7:17/0 = 0
+7:18/0 = 0
+7:19/0 = 0
+7:20/0 = 0
+7:21/0 = 0
+7:22/0 = 0
+7:23/0 = 0
+7:24/0 = 0
+7:25/0 = 0
+7:26/0 = 0
+7:27/0 = 0
+7:28/0 = 0
+7:29/0 = 0
+7:30/0 = 0
+7:31/0 = 0
+7:32/0 = 0
+7:33/0 = 0
+7:34/0 = 0
+7:35/0 = 0
+7:36/0 = 0
+7:37/0 = 0
+7:38/0 = 0
+7:39/0 = 0
+7:40/0 = 0
+7:41/0 = 0
+7:42/0 = 0
+7:43/0 = 0
+7:44/0 = 0
+7:45/0 = 0
+7:46/0 = 0
+7:47/0 = 0
+7:48/0 = 0
+7:49/0 = 0
+7:50/0 = 0
+7:51/0 = 0
+7:52/0 = 0
+7:53/0 = 0
+7:54/0 = 0
+7:55/0 = 0
+7:56/0 = 0
+7:57/0 = 0
+7:58/0 = 0
+7:59/0 = 0
+7:60/0 = 0
+7:61/0 = 0
+7:62/0 = 0
+7:63/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hnv5o"]
+texture = ExtResource("2_57ccv")
+0:0/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+0:3/0 = 0
+0:4/0 = 0
+0:5/0 = 0
+0:6/0 = 0
+0:7/0 = 0
+0:8/0 = 0
+0:9/0 = 0
+0:10/0 = 0
+0:11/0 = 0
+0:12/0 = 0
+0:13/0 = 0
+0:14/0 = 0
+0:15/0 = 0
+0:16/0 = 0
+0:17/0 = 0
+0:18/0 = 0
+0:19/0 = 0
+0:20/0 = 0
+0:21/0 = 0
+0:22/0 = 0
+0:23/0 = 0
+0:24/0 = 0
+0:25/0 = 0
+0:26/0 = 0
+0:27/0 = 0
+0:28/0 = 0
+0:29/0 = 0
+0:30/0 = 0
+0:31/0 = 0
+0:32/0 = 0
+0:33/0 = 0
+0:34/0 = 0
+0:35/0 = 0
+0:36/0 = 0
+0:37/0 = 0
+0:38/0 = 0
+0:39/0 = 0
+0:40/0 = 0
+0:41/0 = 0
+0:42/0 = 0
+0:43/0 = 0
+0:44/0 = 0
+0:45/0 = 0
+0:46/0 = 0
+0:47/0 = 0
+0:48/0 = 0
+0:49/0 = 0
+0:50/0 = 0
+0:51/0 = 0
+0:52/0 = 0
+0:53/0 = 0
+0:54/0 = 0
+0:55/0 = 0
+0:56/0 = 0
+0:57/0 = 0
+0:58/0 = 0
+0:59/0 = 0
+0:60/0 = 0
+0:61/0 = 0
+0:62/0 = 0
+0:63/0 = 0
+1:0/0 = 0
+1:1/0 = 0
+1:2/0 = 0
+1:3/0 = 0
+1:4/0 = 0
+1:5/0 = 0
+1:6/0 = 0
+1:7/0 = 0
+1:8/0 = 0
+1:9/0 = 0
+1:10/0 = 0
+1:11/0 = 0
+1:12/0 = 0
+1:13/0 = 0
+1:14/0 = 0
+1:15/0 = 0
+1:16/0 = 0
+1:17/0 = 0
+1:18/0 = 0
+1:19/0 = 0
+1:20/0 = 0
+1:21/0 = 0
+1:22/0 = 0
+1:23/0 = 0
+1:24/0 = 0
+1:25/0 = 0
+1:26/0 = 0
+1:27/0 = 0
+1:28/0 = 0
+1:29/0 = 0
+1:30/0 = 0
+1:31/0 = 0
+1:32/0 = 0
+1:33/0 = 0
+1:34/0 = 0
+1:35/0 = 0
+1:36/0 = 0
+1:37/0 = 0
+1:38/0 = 0
+1:39/0 = 0
+1:40/0 = 0
+1:41/0 = 0
+1:42/0 = 0
+1:43/0 = 0
+1:44/0 = 0
+1:45/0 = 0
+1:46/0 = 0
+1:47/0 = 0
+1:48/0 = 0
+1:49/0 = 0
+1:50/0 = 0
+1:51/0 = 0
+1:52/0 = 0
+1:53/0 = 0
+1:54/0 = 0
+1:55/0 = 0
+1:56/0 = 0
+1:57/0 = 0
+1:58/0 = 0
+1:59/0 = 0
+1:60/0 = 0
+1:61/0 = 0
+1:62/0 = 0
+1:63/0 = 0
+2:0/0 = 0
+2:1/0 = 0
+2:2/0 = 0
+2:3/0 = 0
+2:4/0 = 0
+2:5/0 = 0
+2:6/0 = 0
+2:7/0 = 0
+2:8/0 = 0
+2:9/0 = 0
+2:10/0 = 0
+2:11/0 = 0
+2:12/0 = 0
+2:13/0 = 0
+2:14/0 = 0
+2:15/0 = 0
+2:16/0 = 0
+2:17/0 = 0
+2:18/0 = 0
+2:19/0 = 0
+2:20/0 = 0
+2:21/0 = 0
+2:22/0 = 0
+2:23/0 = 0
+2:24/0 = 0
+2:25/0 = 0
+2:26/0 = 0
+2:27/0 = 0
+2:28/0 = 0
+2:29/0 = 0
+2:30/0 = 0
+2:31/0 = 0
+2:32/0 = 0
+2:33/0 = 0
+2:34/0 = 0
+2:35/0 = 0
+2:36/0 = 0
+2:37/0 = 0
+2:38/0 = 0
+2:39/0 = 0
+2:40/0 = 0
+2:41/0 = 0
+2:42/0 = 0
+2:43/0 = 0
+2:44/0 = 0
+2:45/0 = 0
+2:46/0 = 0
+2:47/0 = 0
+2:48/0 = 0
+2:49/0 = 0
+2:50/0 = 0
+2:51/0 = 0
+2:52/0 = 0
+2:53/0 = 0
+2:54/0 = 0
+2:55/0 = 0
+2:56/0 = 0
+2:57/0 = 0
+2:58/0 = 0
+2:59/0 = 0
+2:60/0 = 0
+2:61/0 = 0
+2:62/0 = 0
+2:63/0 = 0
+3:0/0 = 0
+3:1/0 = 0
+3:2/0 = 0
+3:3/0 = 0
+3:4/0 = 0
+3:5/0 = 0
+3:6/0 = 0
+3:7/0 = 0
+3:8/0 = 0
+3:9/0 = 0
+3:10/0 = 0
+3:11/0 = 0
+3:12/0 = 0
+3:13/0 = 0
+3:14/0 = 0
+3:15/0 = 0
+3:16/0 = 0
+3:17/0 = 0
+3:18/0 = 0
+3:19/0 = 0
+3:20/0 = 0
+3:21/0 = 0
+3:22/0 = 0
+3:23/0 = 0
+3:24/0 = 0
+3:25/0 = 0
+3:26/0 = 0
+3:27/0 = 0
+3:28/0 = 0
+3:29/0 = 0
+3:30/0 = 0
+3:31/0 = 0
+3:32/0 = 0
+3:33/0 = 0
+3:34/0 = 0
+3:35/0 = 0
+3:36/0 = 0
+3:37/0 = 0
+3:38/0 = 0
+3:39/0 = 0
+3:40/0 = 0
+3:41/0 = 0
+3:42/0 = 0
+3:43/0 = 0
+3:44/0 = 0
+3:45/0 = 0
+3:46/0 = 0
+3:47/0 = 0
+3:48/0 = 0
+3:49/0 = 0
+3:50/0 = 0
+3:51/0 = 0
+3:52/0 = 0
+3:53/0 = 0
+3:54/0 = 0
+3:55/0 = 0
+3:56/0 = 0
+3:57/0 = 0
+3:58/0 = 0
+3:59/0 = 0
+3:60/0 = 0
+3:61/0 = 0
+3:62/0 = 0
+3:63/0 = 0
+4:0/0 = 0
+4:1/0 = 0
+4:2/0 = 0
+4:3/0 = 0
+4:4/0 = 0
+4:5/0 = 0
+4:6/0 = 0
+4:7/0 = 0
+4:8/0 = 0
+4:9/0 = 0
+4:10/0 = 0
+4:11/0 = 0
+4:12/0 = 0
+4:13/0 = 0
+4:14/0 = 0
+4:15/0 = 0
+4:16/0 = 0
+4:17/0 = 0
+4:18/0 = 0
+4:19/0 = 0
+4:20/0 = 0
+4:21/0 = 0
+4:22/0 = 0
+4:23/0 = 0
+4:24/0 = 0
+4:25/0 = 0
+4:26/0 = 0
+4:27/0 = 0
+4:28/0 = 0
+4:29/0 = 0
+4:30/0 = 0
+4:31/0 = 0
+4:32/0 = 0
+4:33/0 = 0
+4:34/0 = 0
+4:35/0 = 0
+4:36/0 = 0
+4:37/0 = 0
+4:38/0 = 0
+4:39/0 = 0
+4:40/0 = 0
+4:41/0 = 0
+4:42/0 = 0
+4:43/0 = 0
+4:44/0 = 0
+4:45/0 = 0
+4:46/0 = 0
+4:47/0 = 0
+4:48/0 = 0
+4:49/0 = 0
+4:50/0 = 0
+4:51/0 = 0
+4:52/0 = 0
+4:53/0 = 0
+4:54/0 = 0
+4:55/0 = 0
+4:56/0 = 0
+4:57/0 = 0
+4:58/0 = 0
+4:59/0 = 0
+4:60/0 = 0
+4:61/0 = 0
+4:62/0 = 0
+4:63/0 = 0
+5:0/0 = 0
+5:1/0 = 0
+5:2/0 = 0
+5:3/0 = 0
+5:4/0 = 0
+5:5/0 = 0
+5:6/0 = 0
+5:7/0 = 0
+5:8/0 = 0
+5:9/0 = 0
+5:10/0 = 0
+5:11/0 = 0
+5:12/0 = 0
+5:13/0 = 0
+5:14/0 = 0
+5:15/0 = 0
+5:16/0 = 0
+5:17/0 = 0
+5:18/0 = 0
+5:19/0 = 0
+5:20/0 = 0
+5:21/0 = 0
+5:22/0 = 0
+5:23/0 = 0
+5:24/0 = 0
+5:25/0 = 0
+5:26/0 = 0
+5:27/0 = 0
+5:28/0 = 0
+5:29/0 = 0
+5:30/0 = 0
+5:31/0 = 0
+5:32/0 = 0
+5:33/0 = 0
+5:34/0 = 0
+5:35/0 = 0
+5:36/0 = 0
+5:37/0 = 0
+5:38/0 = 0
+5:39/0 = 0
+5:40/0 = 0
+5:41/0 = 0
+5:42/0 = 0
+5:43/0 = 0
+5:44/0 = 0
+5:45/0 = 0
+5:46/0 = 0
+5:47/0 = 0
+5:48/0 = 0
+5:49/0 = 0
+5:50/0 = 0
+5:51/0 = 0
+5:52/0 = 0
+5:53/0 = 0
+5:54/0 = 0
+5:55/0 = 0
+5:56/0 = 0
+5:57/0 = 0
+5:58/0 = 0
+5:59/0 = 0
+5:60/0 = 0
+5:61/0 = 0
+5:62/0 = 0
+5:63/0 = 0
+6:0/0 = 0
+6:1/0 = 0
+6:2/0 = 0
+6:3/0 = 0
+6:4/0 = 0
+6:5/0 = 0
+6:6/0 = 0
+6:7/0 = 0
+6:8/0 = 0
+6:9/0 = 0
+6:10/0 = 0
+6:11/0 = 0
+6:12/0 = 0
+6:13/0 = 0
+6:14/0 = 0
+6:15/0 = 0
+6:16/0 = 0
+6:17/0 = 0
+6:18/0 = 0
+6:19/0 = 0
+6:20/0 = 0
+6:21/0 = 0
+6:22/0 = 0
+6:23/0 = 0
+6:24/0 = 0
+6:25/0 = 0
+6:26/0 = 0
+6:27/0 = 0
+6:28/0 = 0
+6:29/0 = 0
+6:30/0 = 0
+6:31/0 = 0
+6:32/0 = 0
+6:33/0 = 0
+6:34/0 = 0
+6:35/0 = 0
+6:36/0 = 0
+6:37/0 = 0
+6:38/0 = 0
+6:39/0 = 0
+6:40/0 = 0
+6:41/0 = 0
+6:42/0 = 0
+6:43/0 = 0
+6:44/0 = 0
+6:45/0 = 0
+6:46/0 = 0
+6:47/0 = 0
+6:48/0 = 0
+6:49/0 = 0
+6:50/0 = 0
+6:51/0 = 0
+6:52/0 = 0
+6:53/0 = 0
+6:54/0 = 0
+6:55/0 = 0
+6:56/0 = 0
+6:57/0 = 0
+6:58/0 = 0
+6:59/0 = 0
+6:60/0 = 0
+6:61/0 = 0
+6:62/0 = 0
+6:63/0 = 0
+7:0/0 = 0
+7:1/0 = 0
+7:2/0 = 0
+7:3/0 = 0
+7:4/0 = 0
+7:5/0 = 0
+7:6/0 = 0
+7:7/0 = 0
+7:8/0 = 0
+7:9/0 = 0
+7:10/0 = 0
+7:11/0 = 0
+7:12/0 = 0
+7:13/0 = 0
+7:14/0 = 0
+7:15/0 = 0
+7:16/0 = 0
+7:17/0 = 0
+7:18/0 = 0
+7:19/0 = 0
+7:20/0 = 0
+7:21/0 = 0
+7:22/0 = 0
+7:23/0 = 0
+7:24/0 = 0
+7:25/0 = 0
+7:26/0 = 0
+7:27/0 = 0
+7:28/0 = 0
+7:29/0 = 0
+7:30/0 = 0
+7:31/0 = 0
+7:32/0 = 0
+7:33/0 = 0
+7:34/0 = 0
+7:35/0 = 0
+7:36/0 = 0
+7:37/0 = 0
+7:38/0 = 0
+7:39/0 = 0
+7:40/0 = 0
+7:41/0 = 0
+7:42/0 = 0
+7:43/0 = 0
+7:44/0 = 0
+7:45/0 = 0
+7:46/0 = 0
+7:47/0 = 0
+7:48/0 = 0
+7:49/0 = 0
+7:50/0 = 0
+7:51/0 = 0
+7:52/0 = 0
+7:53/0 = 0
+7:54/0 = 0
+7:55/0 = 0
+7:56/0 = 0
+7:57/0 = 0
+7:58/0 = 0
+7:59/0 = 0
+7:60/0 = 0
+7:61/0 = 0
+7:62/0 = 0
+7:63/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ji2fv"]
+texture = ExtResource("3_lh42n")
+0:0/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+0:3/0 = 0
+0:4/0 = 0
+0:5/0 = 0
+0:6/0 = 0
+0:7/0 = 0
+0:8/0 = 0
+0:9/0 = 0
+0:10/0 = 0
+0:11/0 = 0
+0:12/0 = 0
+0:13/0 = 0
+0:14/0 = 0
+0:15/0 = 0
+0:16/0 = 0
+0:17/0 = 0
+0:18/0 = 0
+0:19/0 = 0
+0:20/0 = 0
+0:21/0 = 0
+0:22/0 = 0
+0:23/0 = 0
+0:24/0 = 0
+0:25/0 = 0
+0:26/0 = 0
+0:27/0 = 0
+0:28/0 = 0
+0:29/0 = 0
+0:30/0 = 0
+0:31/0 = 0
+1:0/0 = 0
+1:1/0 = 0
+1:2/0 = 0
+1:3/0 = 0
+1:4/0 = 0
+1:5/0 = 0
+1:6/0 = 0
+1:7/0 = 0
+1:8/0 = 0
+1:9/0 = 0
+1:10/0 = 0
+1:11/0 = 0
+1:12/0 = 0
+1:13/0 = 0
+1:14/0 = 0
+1:15/0 = 0
+1:16/0 = 0
+1:17/0 = 0
+1:18/0 = 0
+1:19/0 = 0
+1:20/0 = 0
+1:21/0 = 0
+1:22/0 = 0
+1:23/0 = 0
+1:24/0 = 0
+1:25/0 = 0
+1:26/0 = 0
+1:27/0 = 0
+1:28/0 = 0
+1:29/0 = 0
+1:30/0 = 0
+1:31/0 = 0
+2:0/0 = 0
+2:1/0 = 0
+2:2/0 = 0
+2:3/0 = 0
+2:4/0 = 0
+2:5/0 = 0
+2:6/0 = 0
+2:7/0 = 0
+2:8/0 = 0
+2:9/0 = 0
+2:10/0 = 0
+2:11/0 = 0
+2:12/0 = 0
+2:13/0 = 0
+2:14/0 = 0
+2:15/0 = 0
+2:16/0 = 0
+2:17/0 = 0
+2:18/0 = 0
+2:19/0 = 0
+2:20/0 = 0
+2:21/0 = 0
+2:22/0 = 0
+2:23/0 = 0
+2:24/0 = 0
+2:25/0 = 0
+2:26/0 = 0
+2:27/0 = 0
+2:28/0 = 0
+2:29/0 = 0
+2:30/0 = 0
+2:31/0 = 0
+3:0/0 = 0
+3:1/0 = 0
+3:2/0 = 0
+3:3/0 = 0
+3:4/0 = 0
+3:5/0 = 0
+3:6/0 = 0
+3:7/0 = 0
+3:8/0 = 0
+3:9/0 = 0
+3:10/0 = 0
+3:11/0 = 0
+3:12/0 = 0
+3:13/0 = 0
+3:14/0 = 0
+3:15/0 = 0
+3:16/0 = 0
+3:17/0 = 0
+3:18/0 = 0
+3:19/0 = 0
+3:20/0 = 0
+3:21/0 = 0
+3:22/0 = 0
+3:23/0 = 0
+3:24/0 = 0
+3:25/0 = 0
+3:26/0 = 0
+3:27/0 = 0
+3:28/0 = 0
+3:29/0 = 0
+3:30/0 = 0
+3:31/0 = 0
+4:0/0 = 0
+4:1/0 = 0
+4:2/0 = 0
+4:3/0 = 0
+4:4/0 = 0
+4:5/0 = 0
+4:6/0 = 0
+4:7/0 = 0
+4:8/0 = 0
+4:9/0 = 0
+4:10/0 = 0
+4:11/0 = 0
+4:12/0 = 0
+4:13/0 = 0
+4:14/0 = 0
+4:15/0 = 0
+4:16/0 = 0
+4:17/0 = 0
+4:18/0 = 0
+4:19/0 = 0
+4:20/0 = 0
+4:21/0 = 0
+4:22/0 = 0
+4:23/0 = 0
+4:24/0 = 0
+4:25/0 = 0
+4:26/0 = 0
+4:27/0 = 0
+4:28/0 = 0
+4:29/0 = 0
+4:30/0 = 0
+4:31/0 = 0
+5:0/0 = 0
+5:1/0 = 0
+5:2/0 = 0
+5:3/0 = 0
+5:4/0 = 0
+5:5/0 = 0
+5:6/0 = 0
+5:7/0 = 0
+5:8/0 = 0
+5:9/0 = 0
+5:10/0 = 0
+5:11/0 = 0
+5:12/0 = 0
+5:13/0 = 0
+5:14/0 = 0
+5:15/0 = 0
+5:16/0 = 0
+5:17/0 = 0
+5:18/0 = 0
+5:19/0 = 0
+5:20/0 = 0
+5:21/0 = 0
+5:22/0 = 0
+5:23/0 = 0
+5:24/0 = 0
+5:25/0 = 0
+5:26/0 = 0
+5:27/0 = 0
+5:28/0 = 0
+5:29/0 = 0
+5:30/0 = 0
+5:31/0 = 0
+6:0/0 = 0
+6:1/0 = 0
+6:2/0 = 0
+6:3/0 = 0
+6:4/0 = 0
+6:5/0 = 0
+6:6/0 = 0
+6:7/0 = 0
+6:8/0 = 0
+6:9/0 = 0
+6:10/0 = 0
+6:11/0 = 0
+6:12/0 = 0
+6:13/0 = 0
+6:14/0 = 0
+6:15/0 = 0
+6:16/0 = 0
+6:17/0 = 0
+6:18/0 = 0
+6:19/0 = 0
+6:20/0 = 0
+6:21/0 = 0
+6:22/0 = 0
+6:23/0 = 0
+6:24/0 = 0
+6:25/0 = 0
+6:26/0 = 0
+6:27/0 = 0
+6:28/0 = 0
+6:29/0 = 0
+6:30/0 = 0
+6:31/0 = 0
+7:0/0 = 0
+7:1/0 = 0
+7:2/0 = 0
+7:3/0 = 0
+7:4/0 = 0
+7:5/0 = 0
+7:6/0 = 0
+7:7/0 = 0
+7:8/0 = 0
+7:9/0 = 0
+7:10/0 = 0
+7:11/0 = 0
+7:12/0 = 0
+7:13/0 = 0
+7:14/0 = 0
+7:15/0 = 0
+7:16/0 = 0
+7:17/0 = 0
+7:18/0 = 0
+7:19/0 = 0
+7:20/0 = 0
+7:21/0 = 0
+7:22/0 = 0
+7:23/0 = 0
+7:24/0 = 0
+7:25/0 = 0
+7:26/0 = 0
+7:27/0 = 0
+7:28/0 = 0
+7:29/0 = 0
+7:30/0 = 0
+7:31/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_njg18"]
+texture = ExtResource("4_2k7ly")
+0:0/0 = 0
+0:1/0 = 0
+0:2/0 = 0
+0:3/0 = 0
+0:4/0 = 0
+0:5/0 = 0
+0:6/0 = 0
+0:7/0 = 0
+0:8/0 = 0
+0:9/0 = 0
+0:10/0 = 0
+0:11/0 = 0
+0:12/0 = 0
+0:13/0 = 0
+0:14/0 = 0
+0:15/0 = 0
+0:16/0 = 0
+0:17/0 = 0
+0:18/0 = 0
+0:19/0 = 0
+0:20/0 = 0
+0:21/0 = 0
+0:22/0 = 0
+0:23/0 = 0
+0:24/0 = 0
+0:25/0 = 0
+0:26/0 = 0
+0:27/0 = 0
+0:28/0 = 0
+0:29/0 = 0
+0:30/0 = 0
+0:31/0 = 0
+1:0/0 = 0
+1:1/0 = 0
+1:2/0 = 0
+1:3/0 = 0
+1:4/0 = 0
+1:5/0 = 0
+1:6/0 = 0
+1:7/0 = 0
+1:8/0 = 0
+1:9/0 = 0
+1:10/0 = 0
+1:11/0 = 0
+1:12/0 = 0
+1:13/0 = 0
+1:14/0 = 0
+1:15/0 = 0
+1:16/0 = 0
+1:17/0 = 0
+1:18/0 = 0
+1:19/0 = 0
+1:20/0 = 0
+1:21/0 = 0
+1:22/0 = 0
+1:23/0 = 0
+1:24/0 = 0
+1:25/0 = 0
+1:26/0 = 0
+1:27/0 = 0
+1:28/0 = 0
+1:29/0 = 0
+1:30/0 = 0
+1:31/0 = 0
+2:0/0 = 0
+2:1/0 = 0
+2:2/0 = 0
+2:3/0 = 0
+2:4/0 = 0
+2:5/0 = 0
+2:6/0 = 0
+2:7/0 = 0
+2:8/0 = 0
+2:9/0 = 0
+2:10/0 = 0
+2:11/0 = 0
+2:12/0 = 0
+2:13/0 = 0
+2:14/0 = 0
+2:15/0 = 0
+2:16/0 = 0
+2:17/0 = 0
+2:18/0 = 0
+2:19/0 = 0
+2:20/0 = 0
+2:21/0 = 0
+2:22/0 = 0
+2:23/0 = 0
+2:24/0 = 0
+2:25/0 = 0
+2:26/0 = 0
+2:27/0 = 0
+2:28/0 = 0
+2:29/0 = 0
+2:30/0 = 0
+2:31/0 = 0
+3:0/0 = 0
+3:1/0 = 0
+3:2/0 = 0
+3:3/0 = 0
+3:4/0 = 0
+3:5/0 = 0
+3:6/0 = 0
+3:7/0 = 0
+3:8/0 = 0
+3:9/0 = 0
+3:10/0 = 0
+3:11/0 = 0
+3:12/0 = 0
+3:13/0 = 0
+3:14/0 = 0
+3:15/0 = 0
+3:16/0 = 0
+3:17/0 = 0
+3:18/0 = 0
+3:19/0 = 0
+3:20/0 = 0
+3:21/0 = 0
+3:22/0 = 0
+3:23/0 = 0
+3:24/0 = 0
+3:25/0 = 0
+3:26/0 = 0
+3:27/0 = 0
+3:28/0 = 0
+3:29/0 = 0
+3:30/0 = 0
+3:31/0 = 0
+4:0/0 = 0
+4:1/0 = 0
+4:2/0 = 0
+4:3/0 = 0
+4:4/0 = 0
+4:5/0 = 0
+4:6/0 = 0
+4:7/0 = 0
+4:8/0 = 0
+4:9/0 = 0
+4:10/0 = 0
+4:11/0 = 0
+4:12/0 = 0
+4:13/0 = 0
+4:14/0 = 0
+4:15/0 = 0
+4:16/0 = 0
+4:17/0 = 0
+4:18/0 = 0
+4:19/0 = 0
+4:20/0 = 0
+4:21/0 = 0
+4:22/0 = 0
+4:23/0 = 0
+4:24/0 = 0
+4:25/0 = 0
+4:26/0 = 0
+4:27/0 = 0
+4:28/0 = 0
+4:29/0 = 0
+4:30/0 = 0
+4:31/0 = 0
+5:0/0 = 0
+5:1/0 = 0
+5:2/0 = 0
+5:3/0 = 0
+5:4/0 = 0
+5:5/0 = 0
+5:6/0 = 0
+5:7/0 = 0
+5:8/0 = 0
+5:9/0 = 0
+5:10/0 = 0
+5:11/0 = 0
+5:12/0 = 0
+5:13/0 = 0
+5:14/0 = 0
+5:15/0 = 0
+5:16/0 = 0
+5:17/0 = 0
+5:18/0 = 0
+5:19/0 = 0
+5:20/0 = 0
+5:21/0 = 0
+5:22/0 = 0
+5:23/0 = 0
+5:24/0 = 0
+5:25/0 = 0
+5:26/0 = 0
+5:27/0 = 0
+5:28/0 = 0
+5:29/0 = 0
+5:30/0 = 0
+5:31/0 = 0
+6:0/0 = 0
+6:1/0 = 0
+6:2/0 = 0
+6:3/0 = 0
+6:4/0 = 0
+6:5/0 = 0
+6:6/0 = 0
+6:7/0 = 0
+6:8/0 = 0
+6:9/0 = 0
+6:10/0 = 0
+6:11/0 = 0
+6:12/0 = 0
+6:13/0 = 0
+6:14/0 = 0
+6:15/0 = 0
+6:16/0 = 0
+6:17/0 = 0
+6:18/0 = 0
+6:19/0 = 0
+6:20/0 = 0
+6:21/0 = 0
+6:22/0 = 0
+6:23/0 = 0
+6:24/0 = 0
+6:25/0 = 0
+6:26/0 = 0
+6:27/0 = 0
+6:28/0 = 0
+6:29/0 = 0
+6:30/0 = 0
+6:31/0 = 0
+7:0/0 = 0
+7:1/0 = 0
+7:2/0 = 0
+7:3/0 = 0
+7:4/0 = 0
+7:5/0 = 0
+7:6/0 = 0
+7:7/0 = 0
+7:8/0 = 0
+7:9/0 = 0
+7:10/0 = 0
+7:11/0 = 0
+7:12/0 = 0
+7:13/0 = 0
+7:14/0 = 0
+7:15/0 = 0
+7:16/0 = 0
+7:17/0 = 0
+7:18/0 = 0
+7:19/0 = 0
+7:20/0 = 0
+7:21/0 = 0
+7:22/0 = 0
+7:23/0 = 0
+7:24/0 = 0
+7:25/0 = 0
+7:26/0 = 0
+7:27/0 = 0
+7:28/0 = 0
+7:29/0 = 0
+7:30/0 = 0
+7:31/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_38gxo"]
+texture = ExtResource("1_pory6")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_vshku"]
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 0
+sources/0 = SubResource("TileSetAtlasSource_36on3")
+sources/1 = SubResource("TileSetAtlasSource_hnv5o")
+sources/2 = SubResource("TileSetAtlasSource_ji2fv")
+sources/3 = SubResource("TileSetAtlasSource_njg18")
+sources/4 = SubResource("TileSetAtlasSource_38gxo")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_44sx2"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h6eu4"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_drsgl"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8y366"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2ais8"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uwyk8"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nihof"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tixqg"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y7hio"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_swtm7"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xayya"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h4ry5"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6uxgu"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tb710"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n1l8e"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ipcp"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p41nm"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7hyu1"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nce4t"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4m82a"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6i5m7"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1hohv"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_la21c"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yxo70"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lwgxt"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qhxs8"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yced1"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gosy2"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sy0xx"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8rxw1"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_icw5i"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_54ai4"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vvjbv"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4fhfa"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xqamw"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aev2s"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qdr3k"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mddbh"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v3xiv"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dock2"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lb4km"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uobxa"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i4a5v"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q5d2c"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_et4d2"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xxlbh"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dno00"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uiknt"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_usq4l"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a8wjo"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wrclj"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_83jn0"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ad0f7"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ye1sj"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3usln"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vms66"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pwbsh"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jfs7p"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_li5ps"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qv80d"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_axqvh"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gxugu"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kv8di"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0wncs"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4070h"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vgmwd"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d3mbx"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rdcnn"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7iono"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5sbkj"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1jd3k"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n00ma"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dgu3q"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2tybi"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_swk5w"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0k7m8"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qccb7"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8tvd5"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7oaje"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ro0wr"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_52peb"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_64o0r"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mamur"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ary8v"]
+size = Vector2(16, 16)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ifi7v"]
+size = Vector2(16, 16)
+
+[node name="AbandonedShip_Rooms2_1F" type="Node2D" unique_id=482359547]
+metadata/zone_id = ""
+metadata/tile_size = 16
+metadata/map_dimensions_px = Vector2i(144, 272)
+
+[node name="TileMapTerrain" type="TileMap" parent="." unique_id=107182404]
+tile_set = SubResource("TileSet_vshku")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 393218, 6, 1, 2, 8, 2, 196610, 13, 3, 327682, 18, 4, 196610, 12, 5, 393218, 18, 6, 458754, 4, 7, 458754, 4, 8, 458754, 6, 65536, 393218, 7, 65537, 2, 9, 65538, 196610, 14, 65539, 327682, 19, 65540, 458754, 18, 65541, 393218, 19, 65542, 458754, 5, 65543, 458754, 5, 65544, 458754, 7, 131072, 393218, 7, 131073, 2, 10, 131074, 65538, 10, 131075, 131074, 7, 131076, 196610, 7, 131077, 196610, 7, 131078, 196610, 7, 131079, 196610, 7, 131080, 458754, 7, 196608, 393218, 7, 196609, 2, 11, 196610, 65538, 11, 196611, 327682, 7, 196612, 2, 7, 196613, 2, 7, 196614, 2, 7, 196615, 2, 7, 196616, 458754, 7, 262144, 393218, 7, 262145, 393218, 3, 262146, 196610, 7, 262147, 262146, 7, 262148, 2, 7, 262149, 2, 7, 262150, 65538, 12, 262151, 2, 7, 262152, 458754, 7, 327680, 393218, 7, 327681, 327682, 7, 327682, 2, 7, 327683, 2, 7, 327684, 2, 7, 327685, 2, 7, 327686, 2, 7, 327687, 2, 7, 327688, 458754, 7, 393216, 393218, 7, 393217, 327682, 7, 393218, 2, 7, 393219, 131074, 12, 393220, 2, 7, 393221, 65538, 12, 393222, 2, 7, 393223, 2, 7, 393224, 458754, 7, 458752, 393218, 7, 458753, 327682, 7, 458754, 2, 7, 458755, 2, 7, 458756, 2, 7, 458757, 2, 7, 458758, 2, 7, 458759, 2, 7, 458760, 458754, 7, 524288, 65538, 0, 524289, 65538, 0, 524290, 65538, 0, 524291, 65538, 0, 524292, 327682, 7, 524293, 65538, 0, 524294, 65538, 0, 524295, 65538, 0, 524296, 65538, 0, 589824, 393218, 6, 589825, 458754, 4, 589826, 458754, 4, 589827, 458754, 4, 589828, 327682, 7, 589829, 458754, 4, 589830, 458754, 4, 589831, 458754, 4, 589832, 458754, 6, 655360, 393218, 7, 655361, 458754, 5, 655362, 458754, 5, 655363, 458754, 5, 655364, 327682, 7, 655365, 458754, 5, 655366, 458754, 5, 655367, 458754, 5, 655368, 458754, 7, 720896, 393218, 7, 720897, 131074, 7, 720898, 196610, 7, 720899, 196610, 7, 720900, 262146, 7, 720901, 196610, 7, 720902, 196610, 7, 720903, 196610, 7, 720904, 458754, 7, 786432, 393218, 7, 786433, 327682, 7, 786434, 2, 7, 786435, 2, 7, 786436, 2, 7, 786437, 2, 7, 786438, 2, 7, 786439, 2, 7, 786440, 458754, 7, 851968, 393218, 7, 851969, 327682, 7, 851970, 393218, 10, 851971, 458754, 10, 851972, 2, 7, 851973, 65538, 12, 851974, 2, 7, 851975, 2, 7, 851976, 458754, 7, 917504, 393218, 7, 917505, 327682, 7, 917506, 393218, 11, 917507, 458754, 11, 917508, 65538, 12, 917509, 2, 7, 917510, 2, 7, 917511, 2, 7, 917512, 458754, 7, 983040, 393218, 7, 983041, 327682, 7, 983042, 2, 7, 983043, 2, 7, 983044, 2, 7, 983045, 2, 7, 983046, 2, 7, 983047, 2, 7, 983048, 458754, 7, 1048576, 393218, 7, 1048577, 327682, 7, 1048578, 2, 7, 1048579, 2, 7, 1048580, 262146, 12, 1048581, 327682, 12, 1048582, 2, 7, 1048583, 2, 7, 1048584, 458754, 7)
+layer_1/name = "Layer1"
+layer_1/tile_data = PackedInt32Array(2, 196611, 13, 3, 327683, 18, 5, 393219, 18, 65537, 3, 9, 65538, 196611, 14, 65539, 327683, 19, 65541, 393219, 19, 131073, 3, 10, 131074, 65539, 10, 196609, 3, 11, 196610, 65539, 11, 262145, 393219, 3, 262150, 65539, 12, 393219, 131075, 12, 393221, 65539, 12, 851970, 393219, 10, 851971, 458755, 10, 851973, 65539, 12, 917506, 393219, 11, 917507, 458755, 11, 917508, 65539, 12, 1048580, 262147, 12, 1048581, 327683, 12)
+
+[node name="TileMapDecoration" type="TileMap" parent="." unique_id=2029164306]
+z_index = 1
+tile_set = SubResource("TileSet_vshku")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 393219, 6, 1, 3, 8, 4, 196611, 12, 6, 458755, 4, 7, 458755, 4, 8, 458755, 6, 65536, 393219, 7, 65540, 458755, 18, 65542, 458755, 5, 65543, 458755, 5, 65544, 458755, 7, 131072, 393219, 7, 131075, 131075, 7, 131076, 196611, 7, 131077, 196611, 7, 131078, 196611, 7, 131079, 196611, 7, 131080, 458755, 7, 196608, 393219, 7, 196611, 327683, 7, 196612, 3, 7, 196613, 3, 7, 196614, 3, 7, 196615, 3, 7, 196616, 458755, 7, 262144, 393219, 7, 262146, 196611, 7, 262147, 262147, 7, 262148, 3, 7, 262149, 3, 7, 262151, 3, 7, 262152, 458755, 7, 327680, 393219, 7, 327681, 327683, 7, 327682, 3, 7, 327683, 3, 7, 327684, 3, 7, 327685, 3, 7, 327686, 3, 7, 327687, 3, 7, 327688, 458755, 7, 393216, 393219, 7, 393217, 327683, 7, 393218, 3, 7, 393220, 3, 7, 393222, 3, 7, 393223, 3, 7, 393224, 458755, 7, 458752, 393219, 7, 458753, 327683, 7, 458754, 3, 7, 458755, 3, 7, 458756, 3, 7, 458757, 3, 7, 458758, 3, 7, 458759, 3, 7, 458760, 458755, 7, 524288, 65539, 0, 524289, 65539, 0, 524290, 65539, 0, 524291, 65539, 0, 524292, 327683, 7, 524293, 65539, 0, 524294, 65539, 0, 524295, 65539, 0, 524296, 65539, 0, 589824, 393219, 6, 589825, 458755, 4, 589826, 458755, 4, 589827, 458755, 4, 589828, 327683, 7, 589829, 458755, 4, 589830, 458755, 4, 589831, 458755, 4, 589832, 458755, 6, 655360, 393219, 7, 655361, 458755, 5, 655362, 458755, 5, 655363, 458755, 5, 655364, 327683, 7, 655365, 458755, 5, 655366, 458755, 5, 655367, 458755, 5, 655368, 458755, 7, 720896, 393219, 7, 720897, 131075, 7, 720898, 196611, 7, 720899, 196611, 7, 720900, 262147, 7, 720901, 196611, 7, 720902, 196611, 7, 720903, 196611, 7, 720904, 458755, 7, 786432, 393219, 7, 786433, 327683, 7, 786434, 3, 7, 786435, 3, 7, 786436, 3, 7, 786437, 3, 7, 786438, 3, 7, 786439, 3, 7, 786440, 458755, 7, 851968, 393219, 7, 851969, 327683, 7, 851972, 3, 7, 851974, 3, 7, 851975, 3, 7, 851976, 458755, 7, 917504, 393219, 7, 917505, 327683, 7, 917509, 3, 7, 917510, 3, 7, 917511, 3, 7, 917512, 458755, 7, 983040, 393219, 7, 983041, 327683, 7, 983042, 3, 7, 983043, 3, 7, 983044, 3, 7, 983045, 3, 7, 983046, 3, 7, 983047, 3, 7, 983048, 458755, 7, 1048576, 393219, 7, 1048577, 327683, 7, 1048578, 3, 7, 1048579, 3, 7, 1048582, 3, 7, 1048583, 3, 7, 1048584, 458755, 7)
+
+[node name="TileMapCollision" type="TileMap" parent="." unique_id=1695137882]
+visible = false
+tile_set = SubResource("TileSet_vshku")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 4, 0, 1, 4, 0, 2, 4, 0, 3, 4, 0, 4, 4, 0, 5, 4, 0, 6, 4, 0, 7, 4, 0, 8, 4, 0, 65536, 4, 0, 65537, 4, 0, 65538, 4, 0, 65539, 4, 0, 65541, 4, 0, 65542, 4, 0, 65543, 4, 0, 65544, 4, 0, 131072, 4, 0, 131073, 4, 0, 131074, 4, 0, 131080, 4, 0, 196608, 4, 0, 196609, 4, 0, 196610, 4, 0, 196616, 4, 0, 262144, 4, 0, 262152, 4, 0, 327680, 4, 0, 327688, 4, 0, 393216, 4, 0, 393219, 4, 0, 393224, 4, 0, 458752, 4, 0, 458760, 4, 0, 524288, 4, 0, 524289, 4, 0, 524290, 4, 0, 524291, 4, 0, 524293, 4, 0, 524294, 4, 0, 524295, 4, 0, 524296, 4, 0, 589824, 4, 0, 589825, 4, 0, 589826, 4, 0, 589827, 4, 0, 589829, 4, 0, 589830, 4, 0, 589831, 4, 0, 589832, 4, 0, 655360, 4, 0, 655361, 4, 0, 655362, 4, 0, 655363, 4, 0, 655365, 4, 0, 655366, 4, 0, 655367, 4, 0, 655368, 4, 0, 720896, 4, 0, 720904, 4, 0, 786432, 4, 0, 786440, 4, 0, 851968, 4, 0, 851970, 4, 0, 851971, 4, 0, 851976, 4, 0, 917504, 4, 0, 917506, 4, 0, 917507, 4, 0, 917512, 4, 0, 983040, 4, 0, 983048, 4, 0, 1048576, 4, 0, 1048584, 4, 0)
+
+[node name="EncounterZones" type="Node2D" parent="." unique_id=924484513]
+
+[node name="IndoorEncounterZone" type="Area2D" parent="EncounterZones" unique_id=2077835443]
+collision_layer = 4
+collision_mask = 0
+metadata/zone_id = ""
+metadata/encounter_type = "indoor"
+
+[node name="@CollisionShape2D@66477" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=257089720]
+position = Vector2(40, 8)
+shape = SubResource("RectangleShape2D_44sx2")
+
+[node name="@CollisionShape2D@66478" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=666189276]
+position = Vector2(56, 8)
+shape = SubResource("RectangleShape2D_h6eu4")
+
+[node name="@CollisionShape2D@66479" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1222600019]
+position = Vector2(88, 8)
+shape = SubResource("RectangleShape2D_drsgl")
+
+[node name="@CollisionShape2D@66480" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1204037415]
+position = Vector2(56, 24)
+shape = SubResource("RectangleShape2D_8y366")
+
+[node name="@CollisionShape2D@66481" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=2092678095]
+position = Vector2(88, 24)
+shape = SubResource("RectangleShape2D_2ais8")
+
+[node name="@CollisionShape2D@66482" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1274195869]
+position = Vector2(56, 40)
+shape = SubResource("RectangleShape2D_uwyk8")
+
+[node name="@CollisionShape2D@66483" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=947357510]
+position = Vector2(72, 40)
+shape = SubResource("RectangleShape2D_nihof")
+
+[node name="@CollisionShape2D@66484" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=982474985]
+position = Vector2(88, 40)
+shape = SubResource("RectangleShape2D_tixqg")
+
+[node name="@CollisionShape2D@66485" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=2010602849]
+position = Vector2(104, 40)
+shape = SubResource("RectangleShape2D_y7hio")
+
+[node name="@CollisionShape2D@66486" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1547891767]
+position = Vector2(120, 40)
+shape = SubResource("RectangleShape2D_swtm7")
+
+[node name="@CollisionShape2D@66487" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=2057381428]
+position = Vector2(56, 56)
+shape = SubResource("RectangleShape2D_xayya")
+
+[node name="@CollisionShape2D@66488" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1927581138]
+position = Vector2(72, 56)
+shape = SubResource("RectangleShape2D_h4ry5")
+
+[node name="@CollisionShape2D@66489" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=41867851]
+position = Vector2(88, 56)
+shape = SubResource("RectangleShape2D_6uxgu")
+
+[node name="@CollisionShape2D@66490" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1461798745]
+position = Vector2(104, 56)
+shape = SubResource("RectangleShape2D_tb710")
+
+[node name="@CollisionShape2D@66491" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=547150901]
+position = Vector2(120, 56)
+shape = SubResource("RectangleShape2D_n1l8e")
+
+[node name="@CollisionShape2D@66492" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=267968094]
+position = Vector2(24, 72)
+shape = SubResource("RectangleShape2D_8ipcp")
+
+[node name="@CollisionShape2D@66493" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1029231865]
+position = Vector2(40, 72)
+shape = SubResource("RectangleShape2D_p41nm")
+
+[node name="@CollisionShape2D@66494" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=366240728]
+position = Vector2(56, 72)
+shape = SubResource("RectangleShape2D_7hyu1")
+
+[node name="@CollisionShape2D@66495" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1335008713]
+position = Vector2(72, 72)
+shape = SubResource("RectangleShape2D_nce4t")
+
+[node name="@CollisionShape2D@66496" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=767162896]
+position = Vector2(88, 72)
+shape = SubResource("RectangleShape2D_4m82a")
+
+[node name="@CollisionShape2D@66497" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=126499427]
+position = Vector2(104, 72)
+shape = SubResource("RectangleShape2D_6i5m7")
+
+[node name="@CollisionShape2D@66498" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1247345864]
+position = Vector2(120, 72)
+shape = SubResource("RectangleShape2D_1hohv")
+
+[node name="@CollisionShape2D@66499" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1075519206]
+position = Vector2(24, 88)
+shape = SubResource("RectangleShape2D_la21c")
+
+[node name="@CollisionShape2D@66500" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=330103564]
+position = Vector2(40, 88)
+shape = SubResource("RectangleShape2D_yxo70")
+
+[node name="@CollisionShape2D@66501" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=5096190]
+position = Vector2(56, 88)
+shape = SubResource("RectangleShape2D_lwgxt")
+
+[node name="@CollisionShape2D@66502" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=2116541629]
+position = Vector2(72, 88)
+shape = SubResource("RectangleShape2D_qhxs8")
+
+[node name="@CollisionShape2D@66503" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=773454479]
+position = Vector2(88, 88)
+shape = SubResource("RectangleShape2D_yced1")
+
+[node name="@CollisionShape2D@66504" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=790051126]
+position = Vector2(104, 88)
+shape = SubResource("RectangleShape2D_gosy2")
+
+[node name="@CollisionShape2D@66505" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1730138343]
+position = Vector2(120, 88)
+shape = SubResource("RectangleShape2D_sy0xx")
+
+[node name="@CollisionShape2D@66506" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=2092108424]
+position = Vector2(24, 104)
+shape = SubResource("RectangleShape2D_8rxw1")
+
+[node name="@CollisionShape2D@66507" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=931455848]
+position = Vector2(40, 104)
+shape = SubResource("RectangleShape2D_icw5i")
+
+[node name="@CollisionShape2D@66508" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1398494768]
+position = Vector2(72, 104)
+shape = SubResource("RectangleShape2D_54ai4")
+
+[node name="@CollisionShape2D@66509" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=490078706]
+position = Vector2(88, 104)
+shape = SubResource("RectangleShape2D_vvjbv")
+
+[node name="@CollisionShape2D@66510" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=240978009]
+position = Vector2(104, 104)
+shape = SubResource("RectangleShape2D_4fhfa")
+
+[node name="@CollisionShape2D@66511" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=642701447]
+position = Vector2(120, 104)
+shape = SubResource("RectangleShape2D_xqamw")
+
+[node name="@CollisionShape2D@66512" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1824434489]
+position = Vector2(24, 120)
+shape = SubResource("RectangleShape2D_aev2s")
+
+[node name="@CollisionShape2D@66513" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1960010433]
+position = Vector2(40, 120)
+shape = SubResource("RectangleShape2D_qdr3k")
+
+[node name="@CollisionShape2D@66514" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=504814799]
+position = Vector2(56, 120)
+shape = SubResource("RectangleShape2D_mddbh")
+
+[node name="@CollisionShape2D@66515" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=24011905]
+position = Vector2(72, 120)
+shape = SubResource("RectangleShape2D_v3xiv")
+
+[node name="@CollisionShape2D@66516" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=119738684]
+position = Vector2(88, 120)
+shape = SubResource("RectangleShape2D_dock2")
+
+[node name="@CollisionShape2D@66517" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=396219093]
+position = Vector2(104, 120)
+shape = SubResource("RectangleShape2D_lb4km")
+
+[node name="@CollisionShape2D@66518" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1301940668]
+position = Vector2(120, 120)
+shape = SubResource("RectangleShape2D_uobxa")
+
+[node name="@CollisionShape2D@66519" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=106471633]
+position = Vector2(72, 136)
+shape = SubResource("RectangleShape2D_i4a5v")
+
+[node name="@CollisionShape2D@66520" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=825406590]
+position = Vector2(72, 152)
+shape = SubResource("RectangleShape2D_q5d2c")
+
+[node name="@CollisionShape2D@66521" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1772714629]
+position = Vector2(72, 168)
+shape = SubResource("RectangleShape2D_et4d2")
+
+[node name="@CollisionShape2D@66522" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=685316603]
+position = Vector2(24, 184)
+shape = SubResource("RectangleShape2D_xxlbh")
+
+[node name="@CollisionShape2D@66523" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=2051446806]
+position = Vector2(40, 184)
+shape = SubResource("RectangleShape2D_dno00")
+
+[node name="@CollisionShape2D@66524" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=966863760]
+position = Vector2(56, 184)
+shape = SubResource("RectangleShape2D_uiknt")
+
+[node name="@CollisionShape2D@66525" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=387369301]
+position = Vector2(72, 184)
+shape = SubResource("RectangleShape2D_usq4l")
+
+[node name="@CollisionShape2D@66526" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=802943998]
+position = Vector2(88, 184)
+shape = SubResource("RectangleShape2D_a8wjo")
+
+[node name="@CollisionShape2D@66527" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=488383318]
+position = Vector2(104, 184)
+shape = SubResource("RectangleShape2D_wrclj")
+
+[node name="@CollisionShape2D@66528" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=507529129]
+position = Vector2(120, 184)
+shape = SubResource("RectangleShape2D_83jn0")
+
+[node name="@CollisionShape2D@66529" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=399646980]
+position = Vector2(24, 200)
+shape = SubResource("RectangleShape2D_ad0f7")
+
+[node name="@CollisionShape2D@66530" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1017131096]
+position = Vector2(40, 200)
+shape = SubResource("RectangleShape2D_ye1sj")
+
+[node name="@CollisionShape2D@66531" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=667494771]
+position = Vector2(56, 200)
+shape = SubResource("RectangleShape2D_3usln")
+
+[node name="@CollisionShape2D@66532" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1357379653]
+position = Vector2(72, 200)
+shape = SubResource("RectangleShape2D_vms66")
+
+[node name="@CollisionShape2D@66533" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=4171316]
+position = Vector2(88, 200)
+shape = SubResource("RectangleShape2D_pwbsh")
+
+[node name="@CollisionShape2D@66534" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=490629323]
+position = Vector2(104, 200)
+shape = SubResource("RectangleShape2D_jfs7p")
+
+[node name="@CollisionShape2D@66535" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=2015763718]
+position = Vector2(120, 200)
+shape = SubResource("RectangleShape2D_li5ps")
+
+[node name="@CollisionShape2D@66536" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1875913500]
+position = Vector2(24, 216)
+shape = SubResource("RectangleShape2D_qv80d")
+
+[node name="@CollisionShape2D@66537" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=427576802]
+position = Vector2(40, 216)
+shape = SubResource("RectangleShape2D_axqvh")
+
+[node name="@CollisionShape2D@66538" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1472039329]
+position = Vector2(56, 216)
+shape = SubResource("RectangleShape2D_gxugu")
+
+[node name="@CollisionShape2D@66539" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=458460794]
+position = Vector2(72, 216)
+shape = SubResource("RectangleShape2D_kv8di")
+
+[node name="@CollisionShape2D@66540" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=211164905]
+position = Vector2(88, 216)
+shape = SubResource("RectangleShape2D_0wncs")
+
+[node name="@CollisionShape2D@66541" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1263827815]
+position = Vector2(104, 216)
+shape = SubResource("RectangleShape2D_4070h")
+
+[node name="@CollisionShape2D@66542" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=2007956498]
+position = Vector2(120, 216)
+shape = SubResource("RectangleShape2D_vgmwd")
+
+[node name="@CollisionShape2D@66543" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1487550798]
+position = Vector2(24, 232)
+shape = SubResource("RectangleShape2D_d3mbx")
+
+[node name="@CollisionShape2D@66544" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1245669952]
+position = Vector2(40, 232)
+shape = SubResource("RectangleShape2D_rdcnn")
+
+[node name="@CollisionShape2D@66545" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=355862028]
+position = Vector2(56, 232)
+shape = SubResource("RectangleShape2D_7iono")
+
+[node name="@CollisionShape2D@66546" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=194784562]
+position = Vector2(72, 232)
+shape = SubResource("RectangleShape2D_5sbkj")
+
+[node name="@CollisionShape2D@66547" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=2042012155]
+position = Vector2(88, 232)
+shape = SubResource("RectangleShape2D_1jd3k")
+
+[node name="@CollisionShape2D@66548" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1806513550]
+position = Vector2(104, 232)
+shape = SubResource("RectangleShape2D_n00ma")
+
+[node name="@CollisionShape2D@66549" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=756856293]
+position = Vector2(120, 232)
+shape = SubResource("RectangleShape2D_dgu3q")
+
+[node name="@CollisionShape2D@66550" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1866115995]
+position = Vector2(24, 248)
+shape = SubResource("RectangleShape2D_2tybi")
+
+[node name="@CollisionShape2D@66551" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1373473108]
+position = Vector2(40, 248)
+shape = SubResource("RectangleShape2D_swk5w")
+
+[node name="@CollisionShape2D@66552" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1331642962]
+position = Vector2(56, 248)
+shape = SubResource("RectangleShape2D_0k7m8")
+
+[node name="@CollisionShape2D@66553" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1645841661]
+position = Vector2(72, 248)
+shape = SubResource("RectangleShape2D_qccb7")
+
+[node name="@CollisionShape2D@66554" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1973405014]
+position = Vector2(88, 248)
+shape = SubResource("RectangleShape2D_8tvd5")
+
+[node name="@CollisionShape2D@66555" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1080236393]
+position = Vector2(104, 248)
+shape = SubResource("RectangleShape2D_7oaje")
+
+[node name="@CollisionShape2D@66556" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=577185068]
+position = Vector2(120, 248)
+shape = SubResource("RectangleShape2D_ro0wr")
+
+[node name="@CollisionShape2D@66557" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=623571824]
+position = Vector2(24, 264)
+shape = SubResource("RectangleShape2D_52peb")
+
+[node name="@CollisionShape2D@66558" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=235172134]
+position = Vector2(40, 264)
+shape = SubResource("RectangleShape2D_64o0r")
+
+[node name="@CollisionShape2D@66559" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=894800081]
+position = Vector2(56, 264)
+shape = SubResource("RectangleShape2D_mamur")
+
+[node name="@CollisionShape2D@66560" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=928389631]
+position = Vector2(104, 264)
+shape = SubResource("RectangleShape2D_ary8v")
+
+[node name="@CollisionShape2D@66561" type="CollisionShape2D" parent="EncounterZones/IndoorEncounterZone" unique_id=1827637381]
+position = Vector2(120, 264)
+shape = SubResource("RectangleShape2D_ifi7v")

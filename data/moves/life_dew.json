@@ -1,0 +1,15 @@
+{
+  "id": "life_dew",
+  "name": "Life Dew",
+  "type": "Water",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User and teammates recover HP.",
+  "is_custom": false
+}

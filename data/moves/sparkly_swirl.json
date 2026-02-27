@@ -1,0 +1,15 @@
+{
+  "id": "sparkly_swirl",
+  "name": "Sparkly Swirl",
+  "type": "Fairy",
+  "category": "special",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Cures all status problems in the party Pok\u00e9mon.",
+  "is_custom": false
+}

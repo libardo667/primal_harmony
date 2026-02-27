@@ -1,0 +1,15 @@
+{
+  "id": "ruination",
+  "name": "Ruination",
+  "type": "Dark",
+  "category": "special",
+  "power": null,
+  "accuracy": 90,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Halves the opponent's HP.",
+  "is_custom": false
+}

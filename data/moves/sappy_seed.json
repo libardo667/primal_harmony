@@ -1,0 +1,15 @@
+{
+  "id": "sappy_seed",
+  "name": "Sappy Seed",
+  "type": "Grass",
+  "category": "physical",
+  "power": 100,
+  "accuracy": 90,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Drains HP from opponent each turn.",
+  "is_custom": false
+}

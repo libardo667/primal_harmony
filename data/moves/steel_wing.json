@@ -1,0 +1,15 @@
+{
+  "id": "steel_wing",
+  "name": "Steel Wing",
+  "type": "Steel",
+  "category": "physical",
+  "power": 70,
+  "accuracy": 90,
+  "pp": 25,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May raise user's Defense.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "protect",
+  "name": "Protect",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Protects the user, but may fail if used consecutively.",
+  "is_custom": false
+}

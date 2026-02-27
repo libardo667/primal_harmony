@@ -1,0 +1,15 @@
+{
+  "id": "feint",
+  "name": "Feint",
+  "type": "Normal",
+  "category": "physical",
+  "power": 30,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Only hits if opponent uses Protect or Detect in the same turn.",
+  "is_custom": false
+}

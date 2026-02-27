@@ -1,0 +1,15 @@
+{
+  "id": "twister",
+  "name": "Twister",
+  "type": "Dragon",
+  "category": "special",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May cause flinching. Hits Pok\u00e9mon using Fly/Bounce with double power.",
+  "is_custom": false
+}

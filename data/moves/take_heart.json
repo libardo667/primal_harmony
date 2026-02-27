@@ -1,0 +1,15 @@
+{
+  "id": "take_heart",
+  "name": "Take Heart",
+  "type": "Psychic",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Heals user's status conditions and raises its stats.",
+  "is_custom": false
+}

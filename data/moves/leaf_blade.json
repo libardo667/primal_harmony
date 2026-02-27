@@ -1,0 +1,15 @@
+{
+  "id": "leaf_blade",
+  "name": "Leaf Blade",
+  "type": "Grass",
+  "category": "physical",
+  "power": 90,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "High critical hit ratio.",
+  "is_custom": false
+}

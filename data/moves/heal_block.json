@@ -1,0 +1,15 @@
+{
+  "id": "heal_block",
+  "name": "Heal Block",
+  "type": "Psychic",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Prevents the opponent from restoring HP for 5 turns.",
+  "is_custom": false
+}

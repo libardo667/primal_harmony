@@ -1,0 +1,6 @@
+{
+  "id": "electric_surge",
+  "name": "Electric Surge",
+  "description": "The Pok\u00e9mon creates an Electric Terrain when it enters a battle.",
+  "hooks": []
+}

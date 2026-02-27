@@ -1,0 +1,15 @@
+{
+  "id": "conversion",
+  "name": "Conversion",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 30,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Changes user's type to that of its first move.",
+  "is_custom": false
+}

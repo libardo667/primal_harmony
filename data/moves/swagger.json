@@ -1,0 +1,16 @@
+{
+  "id": "swagger",
+  "name": "Swagger",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": 85,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "confuse_and_atk_up_2",
+  "flags": [],
+  "description": "The user enrages and confuses the target. However, this also sharply raises the target's Attack stat.",
+  "is_custom": false,
+  "base_power": 0
+}

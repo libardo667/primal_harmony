@@ -1,0 +1,69 @@
+{
+  "id": "pyrcoal",
+  "name": "Pyrcoal",
+  "national_dex": null,
+  "types": [
+    "Fire",
+    "Ground"
+  ],
+  "base_stats": {
+    "hp": 80,
+    "atk": 90,
+    "def": 145,
+    "spa": 80,
+    "spd": 65,
+    "spe": 10
+  },
+  "abilities": [
+    "Magma Armor",
+    "Rock Head"
+  ],
+  "hidden_ability": "Desolate Land",
+  "learnset": [
+    {
+      "move_id": "smog",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "ember",
+      "method": "level",
+      "level": 4
+    },
+    {
+      "move_id": "mud_slap",
+      "method": "level",
+      "level": 10
+    },
+    {
+      "move_id": "fire_spin",
+      "method": "level",
+      "level": 17
+    },
+    {
+      "move_id": "magnitude",
+      "method": "level",
+      "level": 25
+    }
+  ],
+  "evolution": null,
+  "dex_entry": "Torkoal's shell has cracked under the heat, filled in with hardened magma. It moves slower than ever but radiates intense ground-heating that scorches the earth beneath it. It carries the mountain now. The mountain is not gentle.",
+  "catch_rate": 70,
+  "base_exp": 185,
+  "growth_rate": "medium_fast",
+  "egg_groups": [
+    "Field"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "emberscar",
+  "is_corrupted": true,
+  "corruption_zone": "emberscar",
+  "corruption_path": null,
+  "base_species": "torkoal",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/pyrcoal/front.png",
+    "back": "res://assets/sprites/pokemon/pyrcoal/back.png",
+    "icon": "res://assets/sprites/pokemon/pyrcoal/icon.png"
+  }
+}

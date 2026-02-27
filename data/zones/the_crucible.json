@@ -1,0 +1,212 @@
+{
+    "zone_id": "the_crucible",
+    "zone_name": "The Crucible",
+    "zone_number": 7,
+    "dominant_type": "Ground",
+    "location": "Route 111 Desert / Mirage Tower",
+    "ehi_local": 0.0,
+    "ehi_thresholds": {
+        "infested": [
+            0,
+            33
+        ],
+        "partial": [
+            34,
+            66
+        ],
+        "restored": [
+            67,
+            100
+        ]
+    },
+    "encounter_table": {
+        "infested": [
+            {
+                "species_id": "trembloch",
+                "level_range": [
+                    25,
+                    29
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "fossilcnea",
+                "level_range": [
+                    25,
+                    29
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "ruintoy",
+                "level_range": [
+                    24,
+                    28
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "sandile",
+                "level_range": [
+                    22,
+                    26
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "hippopotas",
+                "level_range": [
+                    24,
+                    28
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "vibrava",
+                "level_range": [
+                    27,
+                    31
+                ],
+                "weight": 10,
+                "time_of_day": "day"
+            }
+        ],
+        "partial": [
+            {
+                "species_id": "trapinch",
+                "level_range": [
+                    25,
+                    29
+                ],
+                "weight": 25,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "cacnea",
+                "level_range": [
+                    25,
+                    29
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "baltoy",
+                "level_range": [
+                    24,
+                    28
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "sandshrew",
+                "level_range": [
+                    22,
+                    26
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "trembloch",
+                "level_range": [
+                    25,
+                    29
+                ],
+                "weight": 10,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "fossilcnea",
+                "level_range": [
+                    25,
+                    29
+                ],
+                "weight": 10,
+                "time_of_day": "any"
+            }
+        ],
+        "restored": [
+            {
+                "species_id": "trapinch",
+                "level_range": [
+                    25,
+                    29
+                ],
+                "weight": 35,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "cacnea",
+                "level_range": [
+                    25,
+                    29
+                ],
+                "weight": 25,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "baltoy",
+                "level_range": [
+                    24,
+                    28
+                ],
+                "weight": 25,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "sandshrew",
+                "level_range": [
+                    22,
+                    26
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            }
+        ]
+    },
+    "native_species": [
+        "trapinch",
+        "cacnea",
+        "baltoy",
+        "sandshrew"
+    ],
+    "corrupted_variants": [
+        "trembloch",
+        "fossilcnea",
+        "ruintoy"
+    ],
+    "quell_types": [
+        "Water",
+        "Grass",
+        "Ice"
+    ],
+    "traversal_hazards": [
+        {
+            "hazard_id": "sandstorm_damage",
+            "description": "Permanent sandstorm deals damage every step (not turn) and near-zero visibility.",
+            "mitigation": "Goggles key item"
+        },
+        {
+            "hazard_id": "shifting_paths",
+            "description": "Desert layout shifts daily — some paths buried, others newly exposed.",
+            "mitigation": "Dig move or Goggles to navigate"
+        }
+    ],
+    "key_items": [
+        "goggles"
+    ],
+    "relocation_terminals": [
+        "Mauville City Pokemon Center",
+        "Lavaridge Town Pokemon Center"
+    ],
+    "ehi_restoration_effect": "Unlocks the Fossil Revival system — ancient Hoenn fossils disturbed by the surge can be recovered and revived.",
+    "narrative_role": "Restoring the Crucible stabilizes the Mirage Tower permanently and unlocks the Fossil Revival system.",
+    "story_gate": null
+}

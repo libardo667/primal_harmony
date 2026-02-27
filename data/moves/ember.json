@@ -1,0 +1,16 @@
+{
+  "id": "ember",
+  "name": "Ember",
+  "type": "Fire",
+  "category": "special",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 25,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "burn_10",
+  "flags": [],
+  "description": "The target is attacked with small flames. This may also leave the target with a burn.",
+  "is_custom": false,
+  "base_power": 40
+}

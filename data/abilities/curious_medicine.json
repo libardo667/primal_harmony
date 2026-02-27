@@ -1,0 +1,6 @@
+{
+  "id": "curious_medicine",
+  "name": "Curious Medicine",
+  "description": "Resets all stat changes upon entering battlefield.",
+  "hooks": []
+}

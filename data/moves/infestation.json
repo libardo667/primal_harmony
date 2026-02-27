@@ -1,0 +1,15 @@
+{
+  "id": "infestation",
+  "name": "Infestation",
+  "type": "Bug",
+  "category": "special",
+  "power": 20,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Traps opponent, damaging them for 4-5 turns.",
+  "is_custom": false
+}

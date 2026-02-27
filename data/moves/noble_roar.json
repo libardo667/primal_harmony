@@ -1,0 +1,15 @@
+{
+  "id": "noble_roar",
+  "name": "Noble Roar",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 30,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Lowers opponent's Attack and Special Attack.",
+  "is_custom": false
+}

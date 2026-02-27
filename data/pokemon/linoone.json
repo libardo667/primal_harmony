@@ -1,0 +1,42 @@
+{
+  "id": "linoone",
+  "name": "Linoone",
+  "national_dex": 264,
+  "types": [
+    "Normal"
+  ],
+  "base_stats": {
+    "hp": 78,
+    "atk": 70,
+    "def": 61,
+    "spa": 50,
+    "spd": 61,
+    "spe": 100
+  },
+  "abilities": [
+    "Pickup",
+    "Gluttony"
+  ],
+  "hidden_ability": "Quick Feet",
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "Linoone runs at 60 mph in a straight line \u2014 but it loses complete control when it tries to turn.",
+  "catch_rate": 90,
+  "base_exp": 147,
+  "growth_rate": "medium_fast",
+  "egg_groups": [
+    "Field"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "the_overgrowth",
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/linoone/front.png",
+    "back": "res://assets/sprites/pokemon/linoone/back.png",
+    "icon": "res://assets/sprites/pokemon/linoone/icon.png"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "levitate",
+  "name": "Levitate",
+  "description": "Gives full immunity to all Ground-type moves.",
+  "hooks": [
+    {
+      "trigger": "passive",
+      "effect_type": "type_immunity",
+      "params": {
+        "move_type": "Ground"
+      }
+    }
+  ]
+}

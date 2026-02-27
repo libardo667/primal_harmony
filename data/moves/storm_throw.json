@@ -1,0 +1,15 @@
+{
+  "id": "storm_throw",
+  "name": "Storm Throw",
+  "type": "Fighting",
+  "category": "physical",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Always results in a critical hit.",
+  "is_custom": false
+}

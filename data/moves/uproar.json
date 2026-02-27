@@ -1,0 +1,15 @@
+{
+  "id": "uproar",
+  "name": "Uproar",
+  "type": "Normal",
+  "category": "special",
+  "power": 90,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User attacks for 3 turns and prevents sleep.",
+  "is_custom": false
+}

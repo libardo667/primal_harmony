@@ -1,0 +1,15 @@
+{
+  "id": "jump_kick",
+  "name": "Jump Kick",
+  "type": "Fighting",
+  "category": "physical",
+  "power": 100,
+  "accuracy": 95,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "If it misses, the user loses half their HP.",
+  "is_custom": false
+}

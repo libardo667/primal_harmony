@@ -1,0 +1,15 @@
+{
+  "id": "crabhammer",
+  "name": "Crabhammer",
+  "type": "Water",
+  "category": "physical",
+  "power": 100,
+  "accuracy": 90,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "High critical hit ratio.",
+  "is_custom": false
+}

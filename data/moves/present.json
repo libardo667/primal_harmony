@@ -1,0 +1,15 @@
+{
+  "id": "present",
+  "name": "Present",
+  "type": "Normal",
+  "category": "physical",
+  "power": null,
+  "accuracy": 90,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Either deals damage or heals.",
+  "is_custom": false
+}

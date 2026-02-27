@@ -1,0 +1,15 @@
+{
+  "id": "dire_claw",
+  "name": "Dire Claw",
+  "type": "Poison",
+  "category": "physical",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May poison, paralyze or put the opponent to sleep.",
+  "is_custom": false
+}

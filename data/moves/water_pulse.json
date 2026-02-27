@@ -1,0 +1,15 @@
+{
+  "id": "water_pulse",
+  "name": "Water Pulse",
+  "type": "Water",
+  "category": "special",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May confuse opponent.",
+  "is_custom": false
+}

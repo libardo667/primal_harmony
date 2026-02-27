@@ -1,0 +1,15 @@
+{
+  "id": "lunar_blessing",
+  "name": "Lunar Blessing",
+  "type": "Psychic",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Heals user's status conditions and recovers HP.",
+  "is_custom": false
+}

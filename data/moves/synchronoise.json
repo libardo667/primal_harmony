@@ -1,0 +1,15 @@
+{
+  "id": "synchronoise",
+  "name": "Synchronoise",
+  "type": "Psychic",
+  "category": "special",
+  "power": 120,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Hits any Pok\u00e9mon that shares a type with the user.",
+  "is_custom": false
+}

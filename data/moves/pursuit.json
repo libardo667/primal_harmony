@@ -1,0 +1,18 @@
+{
+  "id": "pursuit",
+  "name": "Pursuit",
+  "type": "Dark",
+  "category": "physical",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "double_power_if_switching",
+  "flags": [
+    "contact"
+  ],
+  "description": "The power of this attack move is doubled if it's used on a target that's switching out of battle.",
+  "is_custom": false,
+  "base_power": 40
+}

@@ -1,0 +1,15 @@
+{
+  "id": "max_steelspike",
+  "name": "Max Steelspike",
+  "type": "Steel",
+  "category": "physical",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Steel type Dynamax move. Raises the team's Defense.",
+  "is_custom": false
+}

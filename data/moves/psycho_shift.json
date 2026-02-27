@@ -1,0 +1,15 @@
+{
+  "id": "psycho_shift",
+  "name": "Psycho Shift",
+  "type": "Psychic",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Transfers user's status condition to the opponent.",
+  "is_custom": false
+}

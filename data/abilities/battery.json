@@ -1,0 +1,6 @@
+{
+  "id": "battery",
+  "name": "Battery",
+  "description": "Raises power of teammates' Special moves.",
+  "hooks": []
+}

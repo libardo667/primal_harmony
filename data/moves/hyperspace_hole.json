@@ -1,0 +1,15 @@
+{
+  "id": "hyperspace_hole",
+  "name": "Hyperspace Hole",
+  "type": "Psychic",
+  "category": "special",
+  "power": 80,
+  "accuracy": null,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Can strike through Protect/Detect.",
+  "is_custom": false
+}

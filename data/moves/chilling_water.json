@@ -1,0 +1,15 @@
+{
+  "id": "chilling_water",
+  "name": "Chilling Water",
+  "type": "Water",
+  "category": "special",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Lowers opponent's Attack.",
+  "is_custom": false
+}

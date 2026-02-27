@@ -1,0 +1,15 @@
+{
+  "id": "freeze_shock",
+  "name": "Freeze Shock",
+  "type": "Ice",
+  "category": "physical",
+  "power": 140,
+  "accuracy": 90,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Charges on first turn, attacks on second. May paralyze opponent.",
+  "is_custom": false
+}

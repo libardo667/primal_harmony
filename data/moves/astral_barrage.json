@@ -1,0 +1,15 @@
+{
+  "id": "astral_barrage",
+  "name": "Astral Barrage",
+  "type": "Ghost",
+  "category": "special",
+  "power": 120,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The user attacks by sending a frightful amount of small ghosts at opposing Pok\u00e9mon.",
+  "is_custom": false
+}

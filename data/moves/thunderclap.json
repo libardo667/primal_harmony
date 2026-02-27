@@ -1,0 +1,15 @@
+{
+  "id": "thunderclap",
+  "name": "Thunderclap",
+  "type": "Electric",
+  "category": "special",
+  "power": 70,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Strikes before a target's move.",
+  "is_custom": false
+}

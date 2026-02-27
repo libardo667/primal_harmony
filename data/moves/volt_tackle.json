@@ -1,0 +1,15 @@
+{
+  "id": "volt_tackle",
+  "name": "Volt Tackle",
+  "type": "Electric",
+  "category": "physical",
+  "power": 120,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User receives recoil damage. May paralyze opponent.",
+  "is_custom": false
+}

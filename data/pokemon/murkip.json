@@ -1,0 +1,50 @@
+{
+  "id": "murkip",
+  "name": "Murkip",
+  "national_dex": null,
+  "types": [
+    "Water",
+    "Ghost"
+  ],
+  "base_stats": {
+    "hp": 60,
+    "atk": 35,
+    "def": 45,
+    "spa": 60,
+    "spd": 50,
+    "spe": 45
+  },
+  "abilities": [
+    "Torrent",
+    "Cursed Body"
+  ],
+  "hidden_ability": "Damp",
+  "learnset": [],
+  "evolution": {
+    "method": "level",
+    "level": 36,
+    "item": null,
+    "condition": null,
+    "into": "tidemere"
+  },
+  "dex_entry": "Mudkip's form is solidifying but still partially translucent. It can interact with physical objects reliably but occasionally phases through walls when startled. Dex: \"It is finding its edges again. They are not always where it expects them.\"",
+  "catch_rate": 45,
+  "base_exp": 62,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Monster",
+    "Water 1"
+  ],
+  "gender_ratio": 12.5,
+  "is_native_hoenn": true,
+  "native_zone": null,
+  "is_corrupted": true,
+  "corruption_zone": "dread_shore",
+  "corruption_path": "B",
+  "base_species": "mudkip",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/murkip/front.png",
+    "back": "res://assets/sprites/pokemon/murkip/back.png",
+    "icon": "res://assets/sprites/pokemon/murkip/icon.png"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "mystical_power",
+  "name": "Mystical Power",
+  "type": "Psychic",
+  "category": "special",
+  "power": 70,
+  "accuracy": 90,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Raises user's Special Attack.",
+  "is_custom": false
+}

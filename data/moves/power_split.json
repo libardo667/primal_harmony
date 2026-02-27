@@ -1,0 +1,15 @@
+{
+  "id": "power_split",
+  "name": "Power Split",
+  "type": "Psychic",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Averages Attack and Special Attack with the target.",
+  "is_custom": false
+}

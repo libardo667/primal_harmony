@@ -1,0 +1,6 @@
+{
+  "id": "mycelium_might",
+  "name": "Mycelium Might",
+  "description": "Status moves go last, but are not affected by the opponent's ability.",
+  "hooks": []
+}

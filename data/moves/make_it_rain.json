@@ -1,0 +1,15 @@
+{
+  "id": "make_it_rain",
+  "name": "Make It Rain",
+  "type": "Steel",
+  "category": "special",
+  "power": 120,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Lowers user's Special Attack. Money is earned after the battle.",
+  "is_custom": false
+}

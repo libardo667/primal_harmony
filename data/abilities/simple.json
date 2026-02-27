@@ -1,0 +1,6 @@
+{
+  "id": "simple",
+  "name": "Simple",
+  "description": "Doubles all stat changes.",
+  "hooks": []
+}

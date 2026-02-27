@@ -1,0 +1,15 @@
+{
+  "id": "metronome",
+  "name": "Metronome",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User performs almost any move in the game at random.",
+  "is_custom": false
+}

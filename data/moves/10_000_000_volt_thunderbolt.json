@@ -1,0 +1,15 @@
+{
+  "id": "10_000_000_volt_thunderbolt",
+  "name": "10,000,000 Volt Thunderbolt",
+  "type": "Electric",
+  "category": "special",
+  "power": 195,
+  "accuracy": null,
+  "pp": 1,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "",
+  "is_custom": false
+}

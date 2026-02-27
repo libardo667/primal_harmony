@@ -1,0 +1,15 @@
+{
+  "id": "draining_kiss",
+  "name": "Draining Kiss",
+  "type": "Fairy",
+  "category": "special",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User recovers most the HP inflicted on opponent.",
+  "is_custom": false
+}

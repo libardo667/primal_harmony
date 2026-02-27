@@ -1,0 +1,15 @@
+{
+  "id": "head_charge",
+  "name": "Head Charge",
+  "type": "Normal",
+  "category": "physical",
+  "power": 120,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User receives recoil damage.",
+  "is_custom": false
+}

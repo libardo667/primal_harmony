@@ -1,0 +1,15 @@
+{
+  "id": "psyshield_bash",
+  "name": "Psyshield Bash",
+  "type": "Psychic",
+  "category": "physical",
+  "power": 70,
+  "accuracy": 90,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Raises user's Defense and Special Defense.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "solar_blade",
+  "name": "Solar Blade",
+  "type": "Grass",
+  "category": "physical",
+  "power": 125,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Charges on first turn, attacks on second.",
+  "is_custom": false
+}

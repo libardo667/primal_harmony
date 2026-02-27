@@ -1,0 +1,15 @@
+{
+  "id": "wild_charge",
+  "name": "Wild Charge",
+  "type": "Electric",
+  "category": "physical",
+  "power": 90,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User receives recoil damage.",
+  "is_custom": false
+}

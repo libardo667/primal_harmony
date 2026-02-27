@@ -1,0 +1,49 @@
+{
+  "id": "clearkip",
+  "name": "Clearkip",
+  "national_dex": null,
+  "types": [
+    "Water"
+  ],
+  "base_stats": {
+    "hp": 65,
+    "atk": 60,
+    "def": 55,
+    "spa": 40,
+    "spd": 50,
+    "spe": 35
+  },
+  "abilities": [
+    "Torrent",
+    "Swift Swim"
+  ],
+  "hidden_ability": "Hydration",
+  "learnset": [],
+  "evolution": {
+    "method": "level",
+    "level": 36,
+    "item": null,
+    "condition": null,
+    "into": "marshborn"
+  },
+  "dex_entry": "Fully solid, vibrant blue — the spectral quality entirely gone. There is a steadiness about it that newly-restored Pokemon often carry. Dex: \"It found its weight again. It keeps checking, just to be sure. It is always there.\"",
+  "catch_rate": 45,
+  "base_exp": 62,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Monster",
+    "Water 1"
+  ],
+  "gender_ratio": 12.5,
+  "is_native_hoenn": true,
+  "native_zone": null,
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": "C",
+  "base_species": "mudkip",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/clearkip/front.png",
+    "back": "res://assets/sprites/pokemon/clearkip/back.png",
+    "icon": "res://assets/sprites/pokemon/clearkip/icon.png"
+  }
+}

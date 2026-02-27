@@ -1,0 +1,16 @@
+{
+  "id": "thunder_wave",
+  "name": "Thunder Wave",
+  "type": "Electric",
+  "category": "status",
+  "power": null,
+  "accuracy": 90,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "paralyze",
+  "flags": [],
+  "description": "The user launches a weak jolt of electricity that paralyzes the target.",
+  "is_custom": false,
+  "base_power": 0
+}

@@ -1,0 +1,15 @@
+{
+  "id": "genesis_supernova",
+  "name": "Genesis Supernova",
+  "type": "Psychic",
+  "category": "special",
+  "power": 185,
+  "accuracy": null,
+  "pp": 1,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "",
+  "is_custom": false
+}

@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://t0x6a5k788na"
+
+[deps]
+
+files=["res://all_pokemon.Name.translation", "res://all_pokemon.Type.translation", "res://all_pokemon.Total.translation", "res://all_pokemon.HP.translation", "res://all_pokemon.Attack.translation", "res://all_pokemon.Defense.translation", "res://all_pokemon.Sp. Atk.translation", "res://all_pokemon.Sp. Def.translation", "res://all_pokemon.Speed.translation"]
+
+source_file="res://all_pokemon.csv"
+dest_files=["res://all_pokemon.Name.translation", "res://all_pokemon.Type.translation", "res://all_pokemon.Total.translation", "res://all_pokemon.HP.translation", "res://all_pokemon.Attack.translation", "res://all_pokemon.Defense.translation", "res://all_pokemon.Sp. Atk.translation", "res://all_pokemon.Sp. Def.translation", "res://all_pokemon.Speed.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

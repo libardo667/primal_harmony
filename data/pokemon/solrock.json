@@ -1,0 +1,63 @@
+{
+  "id": "solrock",
+  "name": "Solrock",
+  "national_dex": 338,
+  "types": [
+    "Rock",
+    "Psychic"
+  ],
+  "base_stats": {
+    "hp": 90,
+    "atk": 95,
+    "def": 85,
+    "spa": 55,
+    "spd": 65,
+    "spe": 70
+  },
+  "abilities": [
+    "Levitate"
+  ],
+  "hidden_ability": null,
+  "learnset": [
+    {
+      "move_id": "tackle",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "confusion",
+      "method": "level",
+      "level": 5
+    },
+    {
+      "move_id": "rock_throw",
+      "method": "level",
+      "level": 9
+    },
+    {
+      "move_id": "fire_spin",
+      "method": "level",
+      "level": 17
+    }
+  ],
+  "evolution": null,
+  "dex_entry": "Sunlight is the source of Solrock's power. It is said to absorb solar energy during the daytime.",
+  "catch_rate": 45,
+  "base_exp": 161,
+  "growth_rate": "fast",
+  "egg_groups": [
+    "Mineral"
+  ],
+  "gender_ratio": -1,
+  "is_native_hoenn": true,
+  "native_zone": "the_veil",
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/solrock/front.png",
+    "back": "res://assets/sprites/pokemon/solrock/back.png",
+    "icon": "res://assets/sprites/pokemon/solrock/icon.png"
+  }
+}

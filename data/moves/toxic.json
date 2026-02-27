@@ -1,0 +1,16 @@
+{
+  "id": "toxic",
+  "name": "Toxic",
+  "type": "Poison",
+  "category": "status",
+  "power": null,
+  "accuracy": 90,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "bad_poison",
+  "flags": [],
+  "description": "A move that leaves the target badly poisoned. Its poison damage worsens every turn.",
+  "is_custom": false,
+  "base_power": 0
+}

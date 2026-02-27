@@ -1,0 +1,15 @@
+{
+  "id": "kowtow_cleave",
+  "name": "Kowtow Cleave",
+  "type": "Dark",
+  "category": "physical",
+  "power": 85,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Always hits.",
+  "is_custom": false
+}

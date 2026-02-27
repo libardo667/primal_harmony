@@ -1,0 +1,15 @@
+{
+  "id": "raging_bull",
+  "name": "Raging Bull",
+  "type": "Normal",
+  "category": "physical",
+  "power": 90,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Type depends on the user\u2019s form. Breaks through Reflect and Light Screen barriers.",
+  "is_custom": false
+}

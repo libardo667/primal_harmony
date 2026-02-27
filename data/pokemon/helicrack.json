@@ -1,0 +1,69 @@
+{
+  "id": "helicrack",
+  "name": "Helicrack",
+  "national_dex": null,
+  "types": [
+    "Psychic",
+    "Fire"
+  ],
+  "base_stats": {
+    "hp": 90,
+    "atk": 80,
+    "def": 85,
+    "spa": 95,
+    "spd": 60,
+    "spe": 50
+  },
+  "abilities": [
+    "Drought",
+    "Flash Fire"
+  ],
+  "hidden_ability": "Solar Power",
+  "learnset": [
+    {
+      "move_id": "tackle",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "confusion",
+      "method": "level",
+      "level": 5
+    },
+    {
+      "move_id": "fire_spin",
+      "method": "level",
+      "level": 9
+    },
+    {
+      "move_id": "psybeam",
+      "method": "level",
+      "level": 17
+    },
+    {
+      "move_id": "flame_wheel",
+      "method": "level",
+      "level": 25
+    }
+  ],
+  "evolution": null,
+  "dex_entry": "Solrock that overcharged on ambient psychic energy now radiates intense heat alongside mental pressure. Its corona of light has become erratic and blinding. Cannot sleep.",
+  "catch_rate": 35,
+  "base_exp": 185,
+  "growth_rate": "fast",
+  "egg_groups": [
+    "Mineral"
+  ],
+  "gender_ratio": -1,
+  "is_native_hoenn": true,
+  "native_zone": "the_veil",
+  "is_corrupted": true,
+  "corruption_zone": "the_veil",
+  "corruption_path": null,
+  "base_species": "solrock",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/helicrack/front.png",
+    "back": "res://assets/sprites/pokemon/helicrack/back.png",
+    "icon": "res://assets/sprites/pokemon/helicrack/icon.png"
+  }
+}

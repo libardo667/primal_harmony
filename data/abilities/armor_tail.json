@@ -1,0 +1,6 @@
+{
+  "id": "armor_tail",
+  "name": "Armor Tail",
+  "description": "Prevents opponent using priority moves.",
+  "hooks": []
+}

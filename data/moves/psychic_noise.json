@@ -1,0 +1,15 @@
+{
+  "id": "psychic_noise",
+  "name": "Psychic Noise",
+  "type": "Psychic",
+  "category": "special",
+  "power": 75,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Deals damage and prevents target from healing.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "obstruct",
+  "name": "Obstruct",
+  "type": "Dark",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Protects the user and sharply lowers Defence on contact.",
+  "is_custom": false
+}

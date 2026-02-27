@@ -1,0 +1,15 @@
+{
+  "id": "psychic_terrain",
+  "name": "Psychic Terrain",
+  "type": "Psychic",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Prevents priority moves from being used for 5 turns.",
+  "is_custom": false
+}

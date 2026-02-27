@@ -1,0 +1,15 @@
+{
+  "id": "hyper_fang",
+  "name": "Hyper Fang",
+  "type": "Normal",
+  "category": "physical",
+  "power": 80,
+  "accuracy": 90,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May cause flinching.",
+  "is_custom": false
+}

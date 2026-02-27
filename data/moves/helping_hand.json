@@ -1,0 +1,15 @@
+{
+  "id": "helping_hand",
+  "name": "Helping Hand",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "In Double Battles, boosts the power of the partner's move.",
+  "is_custom": false
+}

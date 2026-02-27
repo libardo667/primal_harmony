@@ -1,0 +1,44 @@
+{
+  "id": "wraithdew",
+  "name": "Wraithdew",
+  "national_dex": null,
+  "types": [
+    "Ghost",
+    "Fairy"
+  ],
+  "base_stats": {
+    "hp": 100,
+    "atk": 45,
+    "def": 75,
+    "spa": 110,
+    "spd": 130,
+    "spe": 40
+  },
+  "abilities": [
+    "Levitate",
+    "Cursed Body"
+  ],
+  "hidden_ability": "Misty Surge",
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "A luminous, spectral marsh-creature trailing glowing mist. Fully incorporeal; physical moves pass through it. Its fin has become a flowing spectral veil. Most defensively powerful of the three final forms. Dex: \"The water it came from still calls it. It cannot quite reach back. It has learned to find that beautiful.\"",
+  "catch_rate": 45,
+  "base_exp": 239,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Monster",
+    "Water 1"
+  ],
+  "gender_ratio": 12.5,
+  "is_native_hoenn": true,
+  "native_zone": null,
+  "is_corrupted": true,
+  "corruption_zone": "dread_shore",
+  "corruption_path": "A",
+  "base_species": "mudkip",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/wraithdew/front.png",
+    "back": "res://assets/sprites/pokemon/wraithdew/back.png",
+    "icon": "res://assets/sprites/pokemon/wraithdew/icon.png"
+  }
+}

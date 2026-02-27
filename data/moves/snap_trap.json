@@ -1,0 +1,15 @@
+{
+  "id": "snap_trap",
+  "name": "Snap Trap",
+  "type": "Grass",
+  "category": "physical",
+  "power": 35,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Traps opponent, damaging them for 4-5 turns.",
+  "is_custom": false
+}

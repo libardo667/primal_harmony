@@ -1,0 +1,6 @@
+{
+  "id": "defiant",
+  "name": "Defiant",
+  "description": "Sharply raises Attack when the Pok\u00e9mon's stats are lowered.",
+  "hooks": []
+}

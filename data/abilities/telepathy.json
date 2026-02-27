@@ -1,0 +1,6 @@
+{
+  "id": "telepathy",
+  "name": "Telepathy",
+  "description": "Anticipates an ally's attack and dodges it.",
+  "hooks": []
+}

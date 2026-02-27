@@ -1,0 +1,6 @@
+{
+  "id": "tera_shell",
+  "name": "Tera Shell",
+  "description": "Moves are not very effective when HP is full.",
+  "hooks": []
+}

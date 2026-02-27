@@ -1,0 +1,15 @@
+{
+  "id": "after_you",
+  "name": "After You",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Gives target priority in the next turn.",
+  "is_custom": false
+}

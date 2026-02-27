@@ -1,0 +1,15 @@
+{
+  "id": "shell_trap",
+  "name": "Shell Trap",
+  "type": "Fire",
+  "category": "special",
+  "power": 150,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Deals more damage to opponent if hit by a Physical move.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "splintered_stormshards",
+  "name": "Splintered Stormshards",
+  "type": "Rock",
+  "category": "physical",
+  "power": 190,
+  "accuracy": null,
+  "pp": 1,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "",
+  "is_custom": false
+}

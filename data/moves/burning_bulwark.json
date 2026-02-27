@@ -1,0 +1,15 @@
+{
+  "id": "burning_bulwark",
+  "name": "Burning Bulwark",
+  "type": "Fire",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "",
+  "is_custom": false
+}

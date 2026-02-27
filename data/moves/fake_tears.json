@@ -1,0 +1,15 @@
+{
+  "id": "fake_tears",
+  "name": "Fake Tears",
+  "type": "Dark",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Sharply lowers opponent's Special Defense.",
+  "is_custom": false
+}

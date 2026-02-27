@@ -1,0 +1,15 @@
+{
+  "id": "drum_beating",
+  "name": "Drum Beating",
+  "type": "Grass",
+  "category": "physical",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Lowers opponent's Speed.",
+  "is_custom": false
+}

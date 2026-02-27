@@ -1,0 +1,15 @@
+{
+  "id": "spin_out",
+  "name": "Spin Out",
+  "type": "Steel",
+  "category": "physical",
+  "power": 100,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Harshly lowers user\u2019s Speed.",
+  "is_custom": false
+}

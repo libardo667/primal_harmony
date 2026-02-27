@@ -1,0 +1,15 @@
+{
+  "id": "foul_play",
+  "name": "Foul Play",
+  "type": "Dark",
+  "category": "physical",
+  "power": 95,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Uses the opponent's Attack stat.",
+  "is_custom": false
+}

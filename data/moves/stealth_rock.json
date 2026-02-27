@@ -1,0 +1,15 @@
+{
+  "id": "stealth_rock",
+  "name": "Stealth Rock",
+  "type": "Rock",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Damages opponents switching into battle.",
+  "is_custom": false
+}

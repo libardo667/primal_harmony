@@ -1,0 +1,15 @@
+{
+  "id": "flame_burst",
+  "name": "Flame Burst",
+  "type": "Fire",
+  "category": "special",
+  "power": 70,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May also injure nearby Pok\u00e9mon.",
+  "is_custom": false
+}

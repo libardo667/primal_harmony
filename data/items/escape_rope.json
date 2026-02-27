@@ -1,0 +1,13 @@
+{
+    "id": "escape_rope",
+    "name": "Escape Rope",
+    "category": "consumable",
+    "effect": "teleport_to_last_heal",
+    "effect_value": null,
+    "description": "A long and durable rope. Use it to escape instantly from locations like caves or dungeon-like areas.",
+    "buy_price": 550,
+    "sell_price": 275,
+    "is_key_item": false,
+    "is_custom": false,
+    "zone_association": null
+}

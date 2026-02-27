@@ -1,0 +1,15 @@
+{
+  "id": "air_cutter",
+  "name": "Air Cutter",
+  "type": "Flying",
+  "category": "special",
+  "power": 60,
+  "accuracy": 95,
+  "pp": 25,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "High critical hit ratio.",
+  "is_custom": false
+}

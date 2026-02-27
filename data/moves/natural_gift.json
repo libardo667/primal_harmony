@@ -1,0 +1,15 @@
+{
+  "id": "natural_gift",
+  "name": "Natural Gift",
+  "type": "Normal",
+  "category": "physical",
+  "power": null,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Power and type depend on the user's held berry.",
+  "is_custom": false
+}

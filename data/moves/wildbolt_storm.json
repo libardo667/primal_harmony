@@ -1,0 +1,15 @@
+{
+  "id": "wildbolt_storm",
+  "name": "Wildbolt Storm",
+  "type": "Electric",
+  "category": "special",
+  "power": 100,
+  "accuracy": 80,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May paralyze target.",
+  "is_custom": false
+}

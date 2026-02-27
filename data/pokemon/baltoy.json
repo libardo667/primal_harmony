@@ -1,0 +1,48 @@
+{
+  "id": "baltoy",
+  "name": "Baltoy",
+  "national_dex": 343,
+  "types": [
+    "Ground",
+    "Psychic"
+  ],
+  "base_stats": {
+    "hp": 40,
+    "atk": 40,
+    "def": 55,
+    "spa": 40,
+    "spd": 70,
+    "spe": 55
+  },
+  "abilities": [
+    "Levitate"
+  ],
+  "hidden_ability": null,
+  "learnset": [],
+  "evolution": {
+    "method": "level",
+    "level": 36,
+    "item": null,
+    "condition": null,
+    "into": "claydol"
+  },
+  "dex_entry": "Baltoy moves by spinning while standing on one foot. It uses psychic abilities to communicate. Baltoy lived with primitive people long ago.",
+  "catch_rate": 120,
+  "base_exp": 60,
+  "growth_rate": "medium_fast",
+  "egg_groups": [
+    "Mineral"
+  ],
+  "gender_ratio": -1,
+  "is_native_hoenn": true,
+  "native_zone": "the_crucible",
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/baltoy/front.png",
+    "back": "res://assets/sprites/pokemon/baltoy/back.png",
+    "icon": "res://assets/sprites/pokemon/baltoy/icon.png"
+  }
+}

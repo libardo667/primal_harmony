@@ -1,0 +1,6 @@
+{
+  "id": "power_construct",
+  "name": "Power Construct",
+  "description": "Changes form when HP drops below half.",
+  "hooks": []
+}

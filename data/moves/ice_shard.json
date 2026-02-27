@@ -1,0 +1,15 @@
+{
+  "id": "ice_shard",
+  "name": "Ice Shard",
+  "type": "Ice",
+  "category": "physical",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 30,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User attacks first.",
+  "is_custom": false
+}

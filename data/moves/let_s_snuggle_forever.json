@@ -1,0 +1,15 @@
+{
+  "id": "let_s_snuggle_forever",
+  "name": "Let's Snuggle Forever",
+  "type": "Fairy",
+  "category": "physical",
+  "power": 190,
+  "accuracy": null,
+  "pp": 1,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "",
+  "is_custom": false
+}

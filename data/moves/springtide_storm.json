@@ -1,0 +1,15 @@
+{
+  "id": "springtide_storm",
+  "name": "Springtide Storm",
+  "type": "Fairy",
+  "category": "special",
+  "power": 100,
+  "accuracy": 80,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Boosts user's stats in Incarnate Forme, or lowers opponent's stats in Therian Forme.",
+  "is_custom": false
+}

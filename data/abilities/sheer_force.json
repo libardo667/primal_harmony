@@ -1,0 +1,6 @@
+{
+  "id": "sheer_force",
+  "name": "Sheer Force",
+  "description": "Removes added effects to increase move damage.",
+  "hooks": []
+}

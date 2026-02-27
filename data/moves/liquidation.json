@@ -1,0 +1,15 @@
+{
+  "id": "liquidation",
+  "name": "Liquidation",
+  "type": "Water",
+  "category": "physical",
+  "power": 85,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May lower opponent's Defense.",
+  "is_custom": false
+}

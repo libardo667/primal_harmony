@@ -1,0 +1,15 @@
+{
+  "id": "sludge_bomb",
+  "name": "Sludge Bomb",
+  "type": "Poison",
+  "category": "special",
+  "power": 90,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May poison opponent.",
+  "is_custom": false
+}

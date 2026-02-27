@@ -1,0 +1,15 @@
+{
+  "id": "fiery_dance",
+  "name": "Fiery Dance",
+  "type": "Fire",
+  "category": "special",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May raise user's Special Attack.",
+  "is_custom": false
+}

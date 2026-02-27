@@ -1,0 +1,6 @@
+{
+  "id": "grass_pelt",
+  "name": "Grass Pelt",
+  "description": "Boosts the Defense stat in Grassy Terrain.",
+  "hooks": []
+}

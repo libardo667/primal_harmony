@@ -1,0 +1,15 @@
+{
+  "id": "cosmic_power",
+  "name": "Cosmic Power",
+  "type": "Psychic",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Raises user's Defense and Special Defense.",
+  "is_custom": false
+}

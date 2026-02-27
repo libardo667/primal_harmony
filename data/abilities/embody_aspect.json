@@ -1,0 +1,6 @@
+{
+  "id": "embody_aspect",
+  "name": "Embody Aspect",
+  "description": "Boosts Attack/Defense/Sp. Def/Speed depending on the form.",
+  "hooks": []
+}

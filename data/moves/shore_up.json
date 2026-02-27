@@ -1,0 +1,15 @@
+{
+  "id": "shore_up",
+  "name": "Shore Up",
+  "type": "Ground",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The user regains up to half of its max HP. It restores more HP in a sandstorm.",
+  "is_custom": false
+}

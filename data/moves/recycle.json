@@ -1,0 +1,15 @@
+{
+  "id": "recycle",
+  "name": "Recycle",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User's used hold item is restored.",
+  "is_custom": false
+}

@@ -1,0 +1,6 @@
+{
+  "id": "ice_body",
+  "name": "Ice Body",
+  "description": "The Pok\u00e9mon gradually regains HP in a hailstorm.",
+  "hooks": []
+}

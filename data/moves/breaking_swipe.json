@@ -1,0 +1,15 @@
+{
+  "id": "breaking_swipe",
+  "name": "Breaking Swipe",
+  "type": "Dragon",
+  "category": "physical",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Hits multiple opponents and lowers their attack.",
+  "is_custom": false
+}

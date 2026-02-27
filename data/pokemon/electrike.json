@@ -1,0 +1,74 @@
+{
+  "id": "electrike",
+  "name": "Electrike",
+  "national_dex": 309,
+  "types": [
+    "Electric"
+  ],
+  "base_stats": {
+    "hp": 40,
+    "atk": 45,
+    "def": 40,
+    "spa": 65,
+    "spd": 40,
+    "spe": 65
+  },
+  "abilities": [
+    "Static",
+    "Lightning Rod"
+  ],
+  "hidden_ability": "Minus",
+  "learnset": [
+    {
+      "move_id": "tackle",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "thunder_wave",
+      "method": "level",
+      "level": 4
+    },
+    {
+      "move_id": "leer",
+      "method": "level",
+      "level": 9
+    },
+    {
+      "move_id": "spark",
+      "method": "level",
+      "level": 13
+    },
+    {
+      "move_id": "bite",
+      "method": "level",
+      "level": 17
+    }
+  ],
+  "evolution": {
+    "method": "level",
+    "level": 26,
+    "item": null,
+    "condition": null,
+    "into": "manectric"
+  },
+  "dex_entry": "Electrike stores static electricity in its fur for releasing bursts of power. It stimulates its own muscles with this electricity.",
+  "catch_rate": 120,
+  "base_exp": 59,
+  "growth_rate": "slow",
+  "egg_groups": [
+    "Field"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "static_sprawl",
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/electrike/front.png",
+    "back": "res://assets/sprites/pokemon/electrike/back.png",
+    "icon": "res://assets/sprites/pokemon/electrike/icon.png"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "confuse_ray",
+  "name": "Confuse Ray",
+  "type": "Ghost",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "confuse",
+  "flags": [],
+  "description": "The target is exposed to a sinister ray that triggers confusion. The target can't attack until it snaps out.",
+  "is_custom": false,
+  "base_power": 0
+}

@@ -1,0 +1,15 @@
+{
+  "id": "revival_blessing",
+  "name": "Revival Blessing",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 1,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Revives a fainted party Pok\u00e9mon to half HP.",
+  "is_custom": false
+}

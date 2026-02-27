@@ -1,0 +1,15 @@
+{
+  "id": "poison_gas",
+  "name": "Poison Gas",
+  "type": "Poison",
+  "category": "status",
+  "power": null,
+  "accuracy": 90,
+  "pp": 40,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Poisons opponent.",
+  "is_custom": false
+}

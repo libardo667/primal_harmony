@@ -1,0 +1,15 @@
+{
+  "id": "knock_off",
+  "name": "Knock Off",
+  "type": "Dark",
+  "category": "physical",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Removes opponent's held item for the rest of the battle.",
+  "is_custom": false
+}

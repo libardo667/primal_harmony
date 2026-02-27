@@ -1,0 +1,6 @@
+{
+  "id": "hunger_switch",
+  "name": "Hunger Switch",
+  "description": "Changes forms each turn.",
+  "hooks": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "doodle",
+  "name": "Doodle",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Changes the abilities of the user and its teammates to that of the target.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "rock_smash",
+  "name": "Rock Smash",
+  "type": "Fighting",
+  "category": "physical",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May lower opponent's Defense.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "guard_swap",
+  "name": "Guard Swap",
+  "type": "Psychic",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User and opponent swap Defense and Special Defense.",
+  "is_custom": false
+}

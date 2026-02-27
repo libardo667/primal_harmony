@@ -1,0 +1,37 @@
+{
+  "id": "tapu_lele",
+  "name": "Tapu Lele",
+  "national_dex": 786,
+  "types": [
+    "Psychic",
+    "Fairy"
+  ],
+  "base_stats": {
+    "hp": 70,
+    "atk": 85,
+    "def": 75,
+    "spa": 130,
+    "spd": 115,
+    "spe": 95
+  },
+  "abilities": [
+    "TBD"
+  ],
+  "hidden_ability": null,
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "TBD",
+  "catch_rate": 45,
+  "base_exp": 60,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "TBD"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": false,
+  "native_zone": null,
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null
+}

@@ -1,0 +1,15 @@
+{
+  "id": "rock_climb",
+  "name": "Rock Climb",
+  "type": "Normal",
+  "category": "physical",
+  "power": 90,
+  "accuracy": 85,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May confuse opponent.",
+  "is_custom": false
+}

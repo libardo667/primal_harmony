@@ -1,0 +1,15 @@
+{
+  "id": "photon_geyser",
+  "name": "Photon Geyser",
+  "type": "Psychic",
+  "category": "special",
+  "power": 100,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Uses Attack or Special Attack stat, whichever is higher.",
+  "is_custom": false
+}

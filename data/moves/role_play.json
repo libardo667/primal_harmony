@@ -1,0 +1,15 @@
+{
+  "id": "role_play",
+  "name": "Role Play",
+  "type": "Psychic",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User copies the opponent's Ability.",
+  "is_custom": false
+}

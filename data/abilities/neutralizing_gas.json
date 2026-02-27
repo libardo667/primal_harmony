@@ -1,0 +1,6 @@
+{
+  "id": "neutralizing_gas",
+  "name": "Neutralizing Gas",
+  "description": "Neutralizes abilities of all Pok\u00e9mon in battle.",
+  "hooks": []
+}

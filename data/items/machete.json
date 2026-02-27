@@ -1,0 +1,13 @@
+{
+    "id": "machete",
+    "name": "Machete",
+    "category": "key",
+    "effect": "clear_overgrowth_dense_tiles",
+    "effect_value": null,
+    "description": "A broad-bladed cutting tool. Clears dense undergrowth blocking paths in the Overgrowth.",
+    "buy_price": null,
+    "sell_price": null,
+    "is_key_item": true,
+    "is_custom": true,
+    "zone_association": "the_overgrowth"
+}

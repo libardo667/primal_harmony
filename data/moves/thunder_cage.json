@@ -1,0 +1,15 @@
+{
+  "id": "thunder_cage",
+  "name": "Thunder Cage",
+  "type": "Electric",
+  "category": "special",
+  "power": 80,
+  "accuracy": 90,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Deals damage and traps opponent, damaging them for 4-5 turns.",
+  "is_custom": false
+}

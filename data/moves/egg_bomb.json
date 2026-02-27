@@ -1,0 +1,15 @@
+{
+  "id": "egg_bomb",
+  "name": "Egg Bomb",
+  "type": "Normal",
+  "category": "physical",
+  "power": 100,
+  "accuracy": 75,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "",
+  "is_custom": false
+}

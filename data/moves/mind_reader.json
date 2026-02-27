@@ -1,0 +1,15 @@
+{
+  "id": "mind_reader",
+  "name": "Mind Reader",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User's next attack is guaranteed to hit.",
+  "is_custom": false
+}

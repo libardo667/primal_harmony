@@ -1,0 +1,15 @@
+{
+  "id": "behemoth_blade",
+  "name": "Behemoth Blade",
+  "type": "Steel",
+  "category": "physical",
+  "power": 100,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Damage doubles if target is Dynamaxed.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "trick",
+  "name": "Trick",
+  "type": "Psychic",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Swaps held items with the opponent.",
+  "is_custom": false
+}

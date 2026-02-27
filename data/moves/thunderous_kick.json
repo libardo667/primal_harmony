@@ -1,0 +1,15 @@
+{
+  "id": "thunderous_kick",
+  "name": "Thunderous Kick",
+  "type": "Fighting",
+  "category": "physical",
+  "power": 90,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Lowers opponent's Defense.",
+  "is_custom": false
+}

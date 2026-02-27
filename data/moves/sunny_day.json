@@ -1,0 +1,15 @@
+{
+  "id": "sunny_day",
+  "name": "Sunny Day",
+  "type": "Fire",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Makes it sunny for 5 turns.",
+  "is_custom": false
+}

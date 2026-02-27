@@ -1,0 +1,15 @@
+{
+  "id": "lucky_chant",
+  "name": "Lucky Chant",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 30,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Opponent cannot land critical hits for 5 turns.",
+  "is_custom": false
+}

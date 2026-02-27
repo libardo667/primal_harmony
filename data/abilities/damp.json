@@ -1,0 +1,6 @@
+{
+  "id": "damp",
+  "name": "Damp",
+  "description": "Prevents the use of self-destructing moves.",
+  "hooks": []
+}

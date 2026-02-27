@@ -1,0 +1,13 @@
+{
+    "id": "poke_ball",
+    "name": "Poké Ball",
+    "category": "ball",
+    "effect": "catch_1x",
+    "effect_value": 1,
+    "description": "A device for catching wild Pokémon. It is thrown like a ball at the target.",
+    "buy_price": 200,
+    "sell_price": 100,
+    "is_key_item": false,
+    "is_custom": false,
+    "zone_association": null
+}

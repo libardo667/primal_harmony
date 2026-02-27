@@ -1,0 +1,69 @@
+{
+  "id": "mirrortone",
+  "name": "Mirrortone",
+  "national_dex": null,
+  "types": [
+    "Psychic",
+    "Ghost"
+  ],
+  "base_stats": {
+    "hp": 90,
+    "atk": 40,
+    "def": 80,
+    "spa": 110,
+    "spd": 95,
+    "spe": 55
+  },
+  "abilities": [
+    "Levitate",
+    "Magic Bounce"
+  ],
+  "hidden_ability": "Shadow Tag",
+  "learnset": [
+    {
+      "move_id": "tackle",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "confusion",
+      "method": "level",
+      "level": 5
+    },
+    {
+      "move_id": "astonish",
+      "method": "level",
+      "level": 9
+    },
+    {
+      "move_id": "psybeam",
+      "method": "level",
+      "level": 17
+    },
+    {
+      "move_id": "night_shade",
+      "method": "level",
+      "level": 25
+    }
+  ],
+  "evolution": null,
+  "dex_entry": "Lunatone now casts a visible duplicate of itself that acts one turn behind — a psychic echo. Its face has gone blank. It no longer knows which of itself is real.",
+  "catch_rate": 35,
+  "base_exp": 185,
+  "growth_rate": "fast",
+  "egg_groups": [
+    "Mineral"
+  ],
+  "gender_ratio": -1,
+  "is_native_hoenn": true,
+  "native_zone": "the_veil",
+  "is_corrupted": true,
+  "corruption_zone": "the_veil",
+  "corruption_path": null,
+  "base_species": "lunatone",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/mirrortone/front.png",
+    "back": "res://assets/sprites/pokemon/mirrortone/back.png",
+    "icon": "res://assets/sprites/pokemon/mirrortone/icon.png"
+  }
+}

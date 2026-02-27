@@ -1,0 +1,222 @@
+{
+    "zone_id": "the_veil",
+    "zone_name": "The Veil",
+    "zone_number": 4,
+    "dominant_type": "Psychic",
+    "location": "Mossdeep Island / Route 124",
+    "ehi_local": 0.0,
+    "ehi_thresholds": {
+        "infested": [
+            0,
+            33
+        ],
+        "partial": [
+            34,
+            66
+        ],
+        "restored": [
+            67,
+            100
+        ]
+    },
+    "encounter_table": {
+        "infested": [
+            {
+                "species_id": "mirrortone",
+                "level_range": [
+                    30,
+                    34
+                ],
+                "weight": 20,
+                "time_of_day": "night"
+            },
+            {
+                "species_id": "helicrack",
+                "level_range": [
+                    30,
+                    34
+                ],
+                "weight": 20,
+                "time_of_day": "day"
+            },
+            {
+                "species_id": "spirallt",
+                "level_range": [
+                    28,
+                    32
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "ralts",
+                "level_range": [
+                    27,
+                    31
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "abra",
+                "level_range": [
+                    28,
+                    32
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "jynx",
+                "level_range": [
+                    30,
+                    34
+                ],
+                "weight": 10,
+                "time_of_day": "night"
+            },
+            {
+                "species_id": "espeon",
+                "level_range": [
+                    30,
+                    34
+                ],
+                "weight": 5,
+                "time_of_day": "day"
+            }
+        ],
+        "partial": [
+            {
+                "species_id": "lunatone",
+                "level_range": [
+                    30,
+                    34
+                ],
+                "weight": 20,
+                "time_of_day": "night"
+            },
+            {
+                "species_id": "solrock",
+                "level_range": [
+                    30,
+                    34
+                ],
+                "weight": 20,
+                "time_of_day": "day"
+            },
+            {
+                "species_id": "wynaut",
+                "level_range": [
+                    28,
+                    32
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "duskull",
+                "level_range": [
+                    28,
+                    32
+                ],
+                "weight": 15,
+                "time_of_day": "night"
+            },
+            {
+                "species_id": "mirrortone",
+                "level_range": [
+                    30,
+                    34
+                ],
+                "weight": 15,
+                "time_of_day": "night"
+            },
+            {
+                "species_id": "ralts",
+                "level_range": [
+                    27,
+                    31
+                ],
+                "weight": 15,
+                "time_of_day": "day"
+            }
+        ],
+        "restored": [
+            {
+                "species_id": "lunatone",
+                "level_range": [
+                    30,
+                    34
+                ],
+                "weight": 30,
+                "time_of_day": "night"
+            },
+            {
+                "species_id": "solrock",
+                "level_range": [
+                    30,
+                    34
+                ],
+                "weight": 30,
+                "time_of_day": "day"
+            },
+            {
+                "species_id": "wynaut",
+                "level_range": [
+                    28,
+                    32
+                ],
+                "weight": 25,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "duskull",
+                "level_range": [
+                    28,
+                    32
+                ],
+                "weight": 15,
+                "time_of_day": "night"
+            }
+        ]
+    },
+    "native_species": [
+        "lunatone",
+        "solrock",
+        "wynaut",
+        "duskull"
+    ],
+    "corrupted_variants": [
+        "mirrortone",
+        "helicrack",
+        "spirallt"
+    ],
+    "quell_types": [
+        "Dark"
+    ],
+    "traversal_hazards": [
+        {
+            "hazard_id": "perception_distortion",
+            "description": "Routes loop unexpectedly — the island's geography feels subtly wrong.",
+            "mitigation": "Clarity Lens key item"
+        },
+        {
+            "hazard_id": "ambient_encounter_trigger",
+            "description": "Wild encounters can be triggered by standing still.",
+            "mitigation": "Clarity Lens key item reduces ambient trigger rate"
+        }
+    ],
+    "key_items": [
+        "clarity_lens"
+    ],
+    "relocation_terminals": [
+        "Mossdeep City Pokemon Center"
+    ],
+    "ehi_restoration_effect": "Stabilizes the Space Center, unlocking a late-game story event involving signals from outside Hoenn, and clarifies the Mirage Island location.",
+    "narrative_role": "Restoring stabilizes the Space Center and unlocks a late-game story event. Access to The Veil requires story progression.",
+    "story_gate": {
+        "required_ehi_global": null,
+        "required_story_beat": "post_sixth_badge",
+        "required_badges": 6
+    }
+}

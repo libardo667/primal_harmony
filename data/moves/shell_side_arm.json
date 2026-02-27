@@ -1,0 +1,15 @@
+{
+  "id": "shell_side_arm",
+  "name": "Shell Side Arm",
+  "type": "Poison",
+  "category": "special",
+  "power": 90,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May poison opponent. Inflicts either Special or Physical damage, whichever is better.",
+  "is_custom": false
+}

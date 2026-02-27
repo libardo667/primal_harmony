@@ -1,0 +1,15 @@
+{
+  "id": "floaty_fall",
+  "name": "Floaty Fall",
+  "type": "Flying",
+  "category": "physical",
+  "power": 90,
+  "accuracy": 95,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May cause flinching.",
+  "is_custom": false
+}

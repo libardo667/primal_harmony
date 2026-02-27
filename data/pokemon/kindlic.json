@@ -1,0 +1,48 @@
+{
+  "id": "kindlic",
+  "name": "Kindlic",
+  "national_dex": null,
+  "types": [
+    "Fire"
+  ],
+  "base_stats": {
+    "hp": 45,
+    "atk": 40,
+    "def": 35,
+    "spa": 70,
+    "spd": 50,
+    "spe": 70
+  },
+  "abilities": [
+    "Blaze",
+    "Speed Boost"
+  ],
+  "hidden_ability": "Solar Power",
+  "learnset": [],
+  "evolution": {
+    "method": "level",
+    "level": 36,
+    "item": null,
+    "condition": null,
+    "into": "blazeborn"
+  },
+  "dex_entry": "The steel has fully shed, fallen away in flakes that glow briefly before going cold. Fluffy, warm, ember-bright — recognizably Torchic again. Dex: \"It remembers the cold. That is why the warmth means more now.\"",
+  "catch_rate": 45,
+  "base_exp": 62,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Field"
+  ],
+  "gender_ratio": 12.5,
+  "is_native_hoenn": true,
+  "native_zone": null,
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": "C",
+  "base_species": "torchic",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/kindlic/front.png",
+    "back": "res://assets/sprites/pokemon/kindlic/back.png",
+    "icon": "res://assets/sprites/pokemon/kindlic/icon.png"
+  }
+}

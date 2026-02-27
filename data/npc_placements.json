@@ -1,0 +1,31 @@
+{
+  "MAP_LITTLEROOT_TOWN": [
+    {
+      "id": "littleroot_twin",
+      "sprite": "res://assets/sprites/npcs/twin_spriteframes.tres",
+      "x": 16, "y": 10,
+      "facing": "down",
+      "movement": "wander",
+      "range_x": 1, "range_y": 2,
+      "speaker": "Young Woman",
+      "dialogue": [
+        "I grew up here, but I left for a while after everything with Pacifidlog...",
+        "The delta there is barely recognizable now. Too much water, too fast.",
+        "This town still feels the same somehow. I needed that."
+      ]
+    },
+    {
+      "id": "littleroot_boy",
+      "sprite": "res://assets/sprites/npcs/boy_1_spriteframes.tres",
+      "x": 9, "y": 8,
+      "facing": "right",
+      "movement": "look_around",
+      "range_x": 0, "range_y": 0,
+      "speaker": "Boy",
+      "dialogue": [
+        "Professor Birch keeps saying the Pokémon in the tall grass are different now.",
+        "I haven't seen a Poochyena in weeks. Dad says they moved south."
+      ]
+    }
+  ]
+}

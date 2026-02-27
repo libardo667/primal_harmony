@@ -1,0 +1,15 @@
+{
+  "id": "roar_of_time",
+  "name": "Roar of Time",
+  "type": "Dragon",
+  "category": "special",
+  "power": 150,
+  "accuracy": 90,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User must recharge next turn.",
+  "is_custom": false
+}

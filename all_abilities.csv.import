@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://4osgdssehrgm"
+
+[deps]
+
+files=["res://all_abilities.# of Pokémon.translation", "res://all_abilities.Description.translation", "res://all_abilities.Gen..translation"]
+
+source_file="res://all_abilities.csv"
+dest_files=["res://all_abilities.# of Pokémon.translation", "res://all_abilities.Description.translation", "res://all_abilities.Gen..translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

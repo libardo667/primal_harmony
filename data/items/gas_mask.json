@@ -1,0 +1,13 @@
+{
+    "id": "gas_mask",
+    "name": "Gas Mask",
+    "category": "key",
+    "effect": "prevent_murk_auto_poison",
+    "effect_value": null,
+    "description": "A sealed respirator. Prevents automatic poisoning from the Murk's toxic spore clouds.",
+    "buy_price": null,
+    "sell_price": null,
+    "is_key_item": true,
+    "is_custom": true,
+    "zone_association": "the_murk"
+}

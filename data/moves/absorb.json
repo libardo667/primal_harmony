@@ -1,0 +1,16 @@
+{
+  "id": "absorb",
+  "name": "Absorb",
+  "type": "Grass",
+  "category": "special",
+  "power": 20,
+  "accuracy": 100,
+  "pp": 25,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "drain_50pct",
+  "flags": [],
+  "description": "A nutrient-draining attack. The user's HP is restored by half the damage taken by the target.",
+  "is_custom": false,
+  "base_power": 20
+}

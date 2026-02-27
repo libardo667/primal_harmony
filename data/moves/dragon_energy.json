@@ -1,0 +1,15 @@
+{
+  "id": "dragon_energy",
+  "name": "Dragon Energy",
+  "type": "Dragon",
+  "category": "special",
+  "power": 150,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The higher the user's HP, the higher the power.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "healing_wish",
+  "name": "Healing Wish",
+  "type": "Psychic",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The user faints and the next Pok\u00e9mon released is fully healed.",
+  "is_custom": false
+}

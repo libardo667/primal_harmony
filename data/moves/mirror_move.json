@@ -1,0 +1,15 @@
+{
+  "id": "mirror_move",
+  "name": "Mirror Move",
+  "type": "Flying",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User performs the opponent's last move.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "transform",
+  "name": "Transform",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User takes on the form and attacks of the opponent.",
+  "is_custom": false
+}

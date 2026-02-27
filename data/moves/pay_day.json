@@ -1,0 +1,15 @@
+{
+  "id": "pay_day",
+  "name": "Pay Day",
+  "type": "Normal",
+  "category": "physical",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Money is earned after the battle.",
+  "is_custom": false
+}

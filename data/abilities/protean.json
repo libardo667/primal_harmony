@@ -1,0 +1,6 @@
+{
+  "id": "protean",
+  "name": "Protean",
+  "description": "Changes the Pok\u00e9mon's type to its last used move.",
+  "hooks": []
+}

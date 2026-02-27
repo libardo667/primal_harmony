@@ -1,0 +1,15 @@
+{
+  "id": "lovely_kiss",
+  "name": "Lovely Kiss",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": 75,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Puts opponent to sleep.",
+  "is_custom": false
+}

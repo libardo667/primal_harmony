@@ -1,0 +1,15 @@
+{
+  "id": "burning_jealousy",
+  "name": "Burning Jealousy",
+  "type": "Fire",
+  "category": "special",
+  "power": 70,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Hits all opponents, and burns any that have had their stats boosted.",
+  "is_custom": false
+}

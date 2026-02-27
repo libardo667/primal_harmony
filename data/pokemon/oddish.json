@@ -1,0 +1,48 @@
+{
+  "id": "oddish",
+  "name": "Oddish",
+  "national_dex": 43,
+  "types": [
+    "Grass",
+    "Poison"
+  ],
+  "base_stats": {
+    "hp": 45,
+    "atk": 50,
+    "def": 55,
+    "spa": 75,
+    "spd": 65,
+    "spe": 30
+  },
+  "abilities": [
+    "Chlorophyll"
+  ],
+  "hidden_ability": "Run Away",
+  "learnset": [],
+  "evolution": {
+    "method": "level",
+    "level": 21,
+    "item": null,
+    "condition": null,
+    "into": "gloom"
+  },
+  "dex_entry": "Oddish grows by soaking up moonlight. During the day it buries itself under the ground to rest.",
+  "catch_rate": 255,
+  "base_exp": 64,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Grass"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "the_overgrowth",
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/oddish/front.png",
+    "back": "res://assets/sprites/pokemon/oddish/back.png",
+    "icon": "res://assets/sprites/pokemon/oddish/icon.png"
+  }
+}

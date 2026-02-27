@@ -1,0 +1,15 @@
+{
+  "id": "follow_me",
+  "name": "Follow Me",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "In Double Battle, the user takes all the attacks.",
+  "is_custom": false
+}

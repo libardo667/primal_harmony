@@ -1,0 +1,15 @@
+{
+  "id": "final_gambit",
+  "name": "Final Gambit",
+  "type": "Fighting",
+  "category": "special",
+  "power": null,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Inflicts damage equal to the user's remaining HP. User faints.",
+  "is_custom": false
+}

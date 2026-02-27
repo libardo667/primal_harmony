@@ -1,0 +1,16 @@
+{
+  "id": "overgrow",
+  "name": "Overgrow",
+  "description": "Powers up Grass-type moves in a pinch.",
+  "hooks": [
+    {
+      "trigger": "on_attack",
+      "effect_type": "damage_multiplier",
+      "params": {
+        "move_type": "Grass",
+        "multiplier": 1.5,
+        "hp_threshold": 0.33
+      }
+    }
+  ]
+}

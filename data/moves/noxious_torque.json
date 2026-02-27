@@ -1,0 +1,15 @@
+{
+  "id": "noxious_torque",
+  "name": "Noxious Torque",
+  "type": "Poison",
+  "category": "physical",
+  "power": 100,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May poison the opponent.",
+  "is_custom": false
+}

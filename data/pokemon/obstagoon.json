@@ -1,0 +1,37 @@
+{
+  "id": "obstagoon",
+  "name": "Obstagoon",
+  "national_dex": 862,
+  "types": [
+    "Dark",
+    "Normal"
+  ],
+  "base_stats": {
+    "hp": 93,
+    "atk": 90,
+    "def": 101,
+    "spa": 60,
+    "spd": 81,
+    "spe": 95
+  },
+  "abilities": [
+    "TBD"
+  ],
+  "hidden_ability": null,
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "TBD",
+  "catch_rate": 45,
+  "base_exp": 60,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "TBD"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": false,
+  "native_zone": null,
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null
+}

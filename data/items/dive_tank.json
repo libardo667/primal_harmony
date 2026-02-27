@@ -1,0 +1,13 @@
+{
+    "id": "dive_tank",
+    "name": "Dive Tank",
+    "category": "key",
+    "effect": "extend_dive_duration",
+    "effect_value": null,
+    "description": "A compressed-air diving apparatus. Extends the time the player can spend underwater in the Abyss Bloom's lower depths.",
+    "buy_price": null,
+    "sell_price": null,
+    "is_key_item": true,
+    "is_custom": true,
+    "zone_association": "abyss_bloom"
+}

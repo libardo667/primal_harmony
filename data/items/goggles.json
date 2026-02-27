@@ -1,0 +1,13 @@
+{
+    "id": "goggles",
+    "name": "Sand Goggles",
+    "category": "key",
+    "effect": "prevent_crucible_sandstorm_blind",
+    "effect_value": null,
+    "description": "Heavy-duty tinted goggles. Maintains visibility during the Crucible's permanent sandstorm.",
+    "buy_price": null,
+    "sell_price": null,
+    "is_key_item": true,
+    "is_custom": true,
+    "zone_association": "the_crucible"
+}

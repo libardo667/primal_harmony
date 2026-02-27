@@ -1,0 +1,15 @@
+{
+  "id": "baneful_bunker",
+  "name": "Baneful Bunker",
+  "type": "Poison",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Protects the user and poisons opponent on contact.",
+  "is_custom": false
+}

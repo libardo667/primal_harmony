@@ -1,0 +1,6 @@
+{
+  "id": "commander",
+  "name": "Commander",
+  "description": "Goes inside the mouth of an ally Dondozo if one is on the field.",
+  "hooks": []
+}

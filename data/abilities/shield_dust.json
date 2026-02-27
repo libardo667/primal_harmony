@@ -1,0 +1,6 @@
+{
+  "id": "shield_dust",
+  "name": "Shield Dust",
+  "description": "Blocks the added effects of attacks taken.",
+  "hooks": []
+}

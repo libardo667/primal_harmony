@@ -1,0 +1,15 @@
+{
+  "id": "mortal_spin",
+  "name": "Mortal Spin",
+  "type": "Poison",
+  "category": "physical",
+  "power": 30,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Removes entry hazards and trap move effects, and poisons opposing Pok\u00e9mon.",
+  "is_custom": false
+}

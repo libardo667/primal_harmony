@@ -1,0 +1,15 @@
+{
+  "id": "stored_power",
+  "name": "Stored Power",
+  "type": "Psychic",
+  "category": "special",
+  "power": 20,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Power increases when user's stats have been raised.",
+  "is_custom": false
+}

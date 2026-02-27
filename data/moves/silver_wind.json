@@ -1,0 +1,16 @@
+{
+  "id": "silver_wind",
+  "name": "Silver Wind",
+  "type": "Bug",
+  "category": "special",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "stat_boost_all_1_10pct",
+  "flags": [],
+  "description": "The target is attacked with powdery scales blown by the wind. This may also raise all the user's stats.",
+  "is_custom": false,
+  "base_power": 60
+}

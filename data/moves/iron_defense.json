@@ -1,0 +1,15 @@
+{
+  "id": "iron_defense",
+  "name": "Iron Defense",
+  "type": "Steel",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Sharply raises user's Defense.",
+  "is_custom": false
+}

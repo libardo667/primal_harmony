@@ -1,0 +1,15 @@
+{
+  "id": "wicked_blow",
+  "name": "Wicked Blow",
+  "type": "Dark",
+  "category": "physical",
+  "power": 75,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Always results in a critical hit and ignores stat changes.",
+  "is_custom": false
+}

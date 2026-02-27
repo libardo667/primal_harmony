@@ -1,0 +1,15 @@
+{
+  "id": "horn_leech",
+  "name": "Horn Leech",
+  "type": "Grass",
+  "category": "physical",
+  "power": 75,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User recovers half the HP inflicted on opponent.",
+  "is_custom": false
+}

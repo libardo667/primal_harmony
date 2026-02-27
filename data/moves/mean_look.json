@@ -1,0 +1,15 @@
+{
+  "id": "mean_look",
+  "name": "Mean Look",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Opponent cannot flee or switch.",
+  "is_custom": false
+}

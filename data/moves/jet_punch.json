@@ -1,0 +1,15 @@
+{
+  "id": "jet_punch",
+  "name": "Jet Punch",
+  "type": "Water",
+  "category": "physical",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Always goes first.",
+  "is_custom": false
+}

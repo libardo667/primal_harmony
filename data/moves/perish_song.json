@@ -1,0 +1,15 @@
+{
+  "id": "perish_song",
+  "name": "Perish Song",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Any Pok\u00e9mon in play when this attack is used faints in 3 turns.",
+  "is_custom": false
+}

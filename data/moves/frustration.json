@@ -1,0 +1,15 @@
+{
+  "id": "frustration",
+  "name": "Frustration",
+  "type": "Normal",
+  "category": "physical",
+  "power": null,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Power decreases with higher Friendship.",
+  "is_custom": false
+}

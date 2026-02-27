@@ -1,0 +1,6 @@
+{
+  "id": "super_luck",
+  "name": "Super Luck",
+  "description": "Heightens the critical-hit ratios of moves.",
+  "hooks": []
+}

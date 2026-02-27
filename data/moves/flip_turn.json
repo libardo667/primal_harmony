@@ -1,0 +1,15 @@
+{
+  "id": "flip_turn",
+  "name": "Flip Turn",
+  "type": "Water",
+  "category": "physical",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "After making its attack, the user rushes back to switch places with a party Pok\u00e9mon in waiting.",
+  "is_custom": false
+}

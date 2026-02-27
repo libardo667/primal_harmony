@@ -1,0 +1,15 @@
+{
+  "id": "acrobatics",
+  "name": "Acrobatics",
+  "type": "Flying",
+  "category": "physical",
+  "power": 55,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Stronger when the user does not have a held item.",
+  "is_custom": false
+}

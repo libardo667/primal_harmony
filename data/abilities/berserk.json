@@ -1,0 +1,6 @@
+{
+  "id": "berserk",
+  "name": "Berserk",
+  "description": "Raises Special Attack when HP drops below half.",
+  "hooks": []
+}

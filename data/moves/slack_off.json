@@ -1,0 +1,16 @@
+{
+  "id": "slack_off",
+  "name": "Slack Off",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 5,
+  "priority": 0,
+  "target": "self",
+  "effect": "heal_50pct",
+  "flags": [],
+  "description": "The user slacks off, restoring its own HP by up to half of its max HP.",
+  "is_custom": false,
+  "base_power": 0
+}

@@ -1,0 +1,6 @@
+{
+  "id": "magic_bounce",
+  "name": "Magic Bounce",
+  "description": "Reflects status- changing moves.",
+  "hooks": []
+}

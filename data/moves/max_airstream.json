@@ -1,0 +1,15 @@
+{
+  "id": "max_airstream",
+  "name": "Max Airstream",
+  "type": "Flying",
+  "category": "physical",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Flying type Dynamax move. Raises the team's Speed.",
+  "is_custom": false
+}

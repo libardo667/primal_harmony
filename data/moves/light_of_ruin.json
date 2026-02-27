@@ -1,0 +1,15 @@
+{
+  "id": "light_of_ruin",
+  "name": "Light of Ruin",
+  "type": "Fairy",
+  "category": "special",
+  "power": 140,
+  "accuracy": 90,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User receives recoil damage.",
+  "is_custom": false
+}

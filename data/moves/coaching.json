@@ -1,0 +1,15 @@
+{
+  "id": "coaching",
+  "name": "Coaching",
+  "type": "Fighting",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Boosts Attack and Defense of a teammate.",
+  "is_custom": false
+}

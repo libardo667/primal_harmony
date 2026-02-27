@@ -1,0 +1,15 @@
+{
+  "id": "tidy_up",
+  "name": "Tidy Up",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Removes the effects of entry hazards and Substitute, and boosts user\u2019s Attack and Speed.",
+  "is_custom": false
+}

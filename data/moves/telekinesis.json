@@ -1,0 +1,15 @@
+{
+  "id": "telekinesis",
+  "name": "Telekinesis",
+  "type": "Psychic",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Ignores opponent's Evasiveness for three turns, add Ground immunity.",
+  "is_custom": false
+}

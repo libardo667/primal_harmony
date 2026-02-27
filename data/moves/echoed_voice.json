@@ -1,0 +1,15 @@
+{
+  "id": "echoed_voice",
+  "name": "Echoed Voice",
+  "type": "Normal",
+  "category": "special",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Power increases each turn.",
+  "is_custom": false
+}

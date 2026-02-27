@@ -1,0 +1,15 @@
+{
+  "id": "haze",
+  "name": "Haze",
+  "type": "Ice",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 30,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Resets all stat changes.",
+  "is_custom": false
+}

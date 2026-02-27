@@ -1,0 +1,15 @@
+{
+  "id": "belch",
+  "name": "Belch",
+  "type": "Poison",
+  "category": "special",
+  "power": 120,
+  "accuracy": 90,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User must have consumed a Berry.",
+  "is_custom": false
+}

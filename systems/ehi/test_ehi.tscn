@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dadbdp717ilhu"]
+
+[ext_resource type="Script" uid="uid://cppa6yxubw5ci" path="res://systems/ehi/test_ehi.gd" id="1"]
+
+[node name="TestEHI" type="Node" unique_id=785161236]
+script = ExtResource("1")

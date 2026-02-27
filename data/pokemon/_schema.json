@@ -1,0 +1,162 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "primal_harmony/pokemon",
+  "title": "Pokémon Species Data",
+  "description": "Schema for all Pokémon species files in data/pokemon/. One file per species, named by species ID (e.g. treecko.json).",
+  "type": "object",
+  "required": ["id", "name", "types", "base_stats", "abilities", "hidden_ability", "learnset", "evolution", "dex_entry", "catch_rate", "base_exp", "growth_rate", "egg_groups", "gender_ratio", "is_native_hoenn", "is_corrupted", "corruption_zone", "corruption_path", "base_species"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique species identifier, lowercase_snake_case. e.g. 'treecko', 'frostinda', 'scleecko'",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "name": {
+      "type": "string",
+      "description": "Display name. e.g. 'Treecko', 'Frostinda'"
+    },
+    "national_dex": {
+      "type": ["integer", "null"],
+      "description": "National Pokédex number. Null for Corrupted Variants and custom species."
+    },
+    "types": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": ["Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", "Poison", "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", "Dragon", "Dark", "Steel", "Fairy"]
+      },
+      "minItems": 1,
+      "maxItems": 2,
+      "description": "Primary type first, secondary type second."
+    },
+    "base_stats": {
+      "type": "object",
+      "required": ["hp", "atk", "def", "spa", "spd", "spe"],
+      "properties": {
+        "hp":  { "type": "integer", "minimum": 1 },
+        "atk": { "type": "integer", "minimum": 1 },
+        "def": { "type": "integer", "minimum": 1 },
+        "spa": { "type": "integer", "minimum": 1 },
+        "spd": { "type": "integer", "minimum": 1 },
+        "spe": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": false
+    },
+    "abilities": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "maxItems": 2,
+      "description": "Standard abilities (slot 1 and optional slot 2)."
+    },
+    "hidden_ability": {
+      "type": ["string", "null"],
+      "description": "Hidden ability. Null if none."
+    },
+    "learnset": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["move_id", "method"],
+        "properties": {
+          "move_id": { "type": "string", "description": "Reference to a move ID in data/moves/" },
+          "method": {
+            "type": "string",
+            "enum": ["level", "tm", "hm", "tutor", "egg", "event"],
+            "description": "How this move is learned."
+          },
+          "level": {
+            "type": ["integer", "null"],
+            "description": "Level learned at (only for method 'level'). Null otherwise."
+          }
+        }
+      },
+      "description": "Ordered list of learnable moves."
+    },
+    "evolution": {
+      "type": ["object", "null"],
+      "description": "Evolution data. Null if fully evolved or no evolution.",
+      "properties": {
+        "method": {
+          "type": "string",
+          "enum": ["level", "item", "trade", "happiness", "time_of_day", "cleanse"],
+          "description": "'cleanse' is unique to Primal Harmony starter rehabilitation paths."
+        },
+        "level": {
+          "type": ["integer", "null"],
+          "description": "Level threshold. Null if not level-based."
+        },
+        "item": {
+          "type": ["string", "null"],
+          "description": "Item ID required. Null if not item-based."
+        },
+        "condition": {
+          "type": ["string", "null"],
+          "description": "Additional condition text, e.g. 'day', 'night', 'max_happiness', 'one_cleanse', 'two_cleanses'."
+        },
+        "into": {
+          "type": "string",
+          "description": "Species ID of the evolution target."
+        }
+      },
+      "required": ["method", "into"]
+    },
+    "dex_entry": {
+      "type": "string",
+      "description": "Pokédex / Ecological Survey entry text."
+    },
+    "catch_rate": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 255,
+      "description": "Base catch rate (1–255)."
+    },
+    "base_exp": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Base experience yield on defeat."
+    },
+    "growth_rate": {
+      "type": "string",
+      "enum": ["erratic", "fast", "medium_fast", "medium_slow", "slow", "fluctuating"],
+      "description": "Experience growth curve."
+    },
+    "egg_groups": {
+      "type": "array",
+      "items": { "type": "string" },
+      "maxItems": 2,
+      "description": "Breeding egg groups."
+    },
+    "gender_ratio": {
+      "type": "number",
+      "minimum": -1,
+      "maximum": 100,
+      "description": "Percentage male. -1 for genderless."
+    },
+    "is_native_hoenn": {
+      "type": "boolean",
+      "description": "True if this species is native to Hoenn. Used by Ecological Survey Tool and relocation logic."
+    },
+    "native_zone": {
+      "type": ["string", "null"],
+      "description": "Zone ID where this species naturally lives. Used for relocation targeting. Null if non-native."
+    },
+    "is_corrupted": {
+      "type": "boolean",
+      "description": "True if this is a Corrupted Regional Variant."
+    },
+    "corruption_zone": {
+      "type": ["string", "null"],
+      "description": "Zone ID of the TOZ that caused corruption. Null if not corrupted."
+    },
+    "corruption_path": {
+      "type": ["string", "null"],
+      "description": "For starters: 'corrupted', 'partial', or 'restored'. Null for non-starters."
+    },
+    "base_species": {
+      "type": ["string", "null"],
+      "description": "Species ID of the uncorrupted base form. Null if not a variant."
+    }
+  },
+  "additionalProperties": false
+}

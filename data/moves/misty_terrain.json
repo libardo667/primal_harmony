@@ -1,0 +1,15 @@
+{
+  "id": "misty_terrain",
+  "name": "Misty Terrain",
+  "type": "Fairy",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Protects the field from status conditions for 5 turns.",
+  "is_custom": false
+}

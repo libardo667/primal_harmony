@@ -1,0 +1,15 @@
+{
+  "id": "swallow",
+  "name": "Swallow",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The more times the user has performed Stockpile, the more HP is recovered.",
+  "is_custom": false
+}

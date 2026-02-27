@@ -1,0 +1,16 @@
+{
+  "id": "charge",
+  "name": "Charge",
+  "type": "Electric",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "self",
+  "effect": "charge_spdef",
+  "flags": [],
+  "description": "The user boosts the power of the Electric move it uses on the next turn. This also raises the user's Special Defense stat.",
+  "is_custom": false,
+  "base_power": 0
+}

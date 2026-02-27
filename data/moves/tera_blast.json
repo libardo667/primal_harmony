@@ -1,0 +1,15 @@
+{
+  "id": "tera_blast",
+  "name": "Tera Blast",
+  "type": "Normal",
+  "category": "special",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "",
+  "is_custom": false
+}

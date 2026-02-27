@@ -1,0 +1,15 @@
+{
+  "id": "charge_beam",
+  "name": "Charge Beam",
+  "type": "Electric",
+  "category": "special",
+  "power": 50,
+  "accuracy": 90,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May raise user's Special Attack.",
+  "is_custom": false
+}

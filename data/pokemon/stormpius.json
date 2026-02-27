@@ -1,0 +1,44 @@
+{
+  "id": "stormpius",
+  "name": "Stormpius",
+  "national_dex": null,
+  "types": [
+    "Grass",
+    "Dragon"
+  ],
+  "base_stats": {
+    "hp": 109,
+    "atk": 85,
+    "def": 90,
+    "spa": 90,
+    "spd": 95,
+    "spe": 36
+  },
+  "abilities": [
+    "Chlorophyll",
+    "Dragon Force"
+  ],
+  "hidden_ability": "Intimidate",
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "Tropius that absorbed the surge's excess energy have grown dramatically — their leaf wings have expanded to tree-canopy scale. They are no longer gentle. It remembers being small. It does not miss it.",
+  "catch_rate": 160,
+  "base_exp": 190,
+  "growth_rate": "slow",
+  "egg_groups": [
+    "Monster",
+    "Grass"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "the_overgrowth",
+  "is_corrupted": true,
+  "corruption_zone": "the_overgrowth",
+  "corruption_path": null,
+  "base_species": "tropius",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/stormpius/front.png",
+    "back": "res://assets/sprites/pokemon/stormpius/back.png",
+    "icon": "res://assets/sprites/pokemon/stormpius/icon.png"
+  }
+}

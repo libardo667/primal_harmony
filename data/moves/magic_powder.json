@@ -1,0 +1,15 @@
+{
+  "id": "magic_powder",
+  "name": "Magic Powder",
+  "type": "Psychic",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Changes target's type to Psychic.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "light_screen",
+  "name": "Light Screen",
+  "type": "Psychic",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 30,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Halves damage from Special attacks for 5 turns.",
+  "is_custom": false
+}

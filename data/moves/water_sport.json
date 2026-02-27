@@ -1,0 +1,15 @@
+{
+  "id": "water_sport",
+  "name": "Water Sport",
+  "type": "Water",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Weakens the power of Fire-type moves.",
+  "is_custom": false
+}

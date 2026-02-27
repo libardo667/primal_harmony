@@ -1,0 +1,44 @@
+{
+  "id": "silkvine",
+  "name": "Silkvine",
+  "national_dex": null,
+  "types": [
+    "Grass",
+    "Bug"
+  ],
+  "base_stats": {
+    "hp": 65,
+    "atk": 60,
+    "def": 65,
+    "spa": 110,
+    "spd": 85,
+    "spe": 100
+  },
+  "abilities": [
+    "Chlorophyll",
+    "Compound Eyes"
+  ],
+  "hidden_ability": "Regenerator",
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "A sleek, vine-covered gecko with silk-strand webbing between its limbs used for gliding. Dex: \"Half-remembered. Half-becoming. It has decided both halves are worth keeping.\"",
+  "catch_rate": 45,
+  "base_exp": 239,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Monster",
+    "Dragon"
+  ],
+  "gender_ratio": 12.5,
+  "is_native_hoenn": true,
+  "native_zone": null,
+  "is_corrupted": true,
+  "corruption_zone": "the_crucible",
+  "corruption_path": "B",
+  "base_species": "treecko",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/silkvine/front.png",
+    "back": "res://assets/sprites/pokemon/silkvine/back.png",
+    "icon": "res://assets/sprites/pokemon/silkvine/icon.png"
+  }
+}

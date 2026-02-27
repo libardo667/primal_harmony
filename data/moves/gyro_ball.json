@@ -1,0 +1,15 @@
+{
+  "id": "gyro_ball",
+  "name": "Gyro Ball",
+  "type": "Steel",
+  "category": "physical",
+  "power": null,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The slower the user, the stronger the attack.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "chatter",
+  "name": "Chatter",
+  "type": "Flying",
+  "category": "special",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Confuses opponent.",
+  "is_custom": false
+}

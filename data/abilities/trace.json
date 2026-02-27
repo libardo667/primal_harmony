@@ -1,0 +1,6 @@
+{
+  "id": "trace",
+  "name": "Trace",
+  "description": "The Pok\u00e9mon copies a foe's Ability.",
+  "hooks": []
+}

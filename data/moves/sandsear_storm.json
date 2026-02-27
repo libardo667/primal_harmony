@@ -1,0 +1,15 @@
+{
+  "id": "sandsear_storm",
+  "name": "Sandsear Storm",
+  "type": "Ground",
+  "category": "special",
+  "power": 100,
+  "accuracy": 80,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May burn target.",
+  "is_custom": false
+}

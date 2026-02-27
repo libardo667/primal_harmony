@@ -1,0 +1,140 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "primal_harmony/move",
+    "title": "Move Data",
+    "description": "Schema for all move files in data/moves/. One file per move, named by move_id (e.g. tackle.json).",
+    "type": "object",
+    "required": [
+        "id",
+        "name",
+        "type",
+        "category",
+        "power",
+        "accuracy",
+        "pp",
+        "priority",
+        "target",
+        "description"
+    ],
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "Unique move identifier, lowercase_snake_case. e.g. 'tackle', 'ice_beam'",
+            "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "name": {
+            "type": "string",
+            "description": "Display name. e.g. 'Tackle', 'Ice Beam'"
+        },
+        "type": {
+            "type": "string",
+            "enum": [
+                "Normal",
+                "Fire",
+                "Water",
+                "Grass",
+                "Electric",
+                "Ice",
+                "Fighting",
+                "Poison",
+                "Ground",
+                "Flying",
+                "Psychic",
+                "Bug",
+                "Rock",
+                "Ghost",
+                "Dragon",
+                "Dark",
+                "Steel",
+                "Fairy"
+            ]
+        },
+        "category": {
+            "type": "string",
+            "enum": [
+                "physical",
+                "special",
+                "status"
+            ],
+            "description": "Damage category."
+        },
+        "power": {
+            "type": [
+                "integer",
+                "null"
+            ],
+            "minimum": 0,
+            "description": "Base power. Null for status moves."
+        },
+        "accuracy": {
+            "type": [
+                "integer",
+                "null"
+            ],
+            "minimum": 0,
+            "maximum": 100,
+            "description": "Base accuracy percentage. Null for never-miss moves."
+        },
+        "pp": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "Base PP count."
+        },
+        "priority": {
+            "type": "integer",
+            "minimum": -7,
+            "maximum": 7,
+            "description": "Move priority bracket. 0 = normal."
+        },
+        "target": {
+            "type": "string",
+            "enum": [
+                "single_opponent",
+                "all_opponents",
+                "self",
+                "ally",
+                "all_adjacent",
+                "all_field",
+                "single_adjacent"
+            ],
+            "description": "Targeting mode."
+        },
+        "effect": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "description": "Effect ID for secondary effects (e.g. 'burn_10', 'flinch_30', 'stat_boost_atk_1'). Null if none."
+        },
+        "flags": {
+            "type": "array",
+            "items": {
+                "type": "string",
+                "enum": [
+                    "contact",
+                    "sound",
+                    "punch",
+                    "bite",
+                    "pulse",
+                    "bomb",
+                    "recharge",
+                    "charge",
+                    "reflectable",
+                    "snatchable",
+                    "gravity",
+                    "defrost"
+                ]
+            },
+            "description": "Move behavior flags."
+        },
+        "description": {
+            "type": "string",
+            "description": "In-game move description text."
+        },
+        "is_custom": {
+            "type": "boolean",
+            "description": "True if this move is unique to Primal Harmony (not from mainline games)."
+        }
+    },
+    "additionalProperties": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "flame_charge",
+  "name": "Flame Charge",
+  "type": "Fire",
+  "category": "physical",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Raises user's Speed.",
+  "is_custom": false
+}

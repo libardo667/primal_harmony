@@ -1,0 +1,6 @@
+{
+  "id": "stall",
+  "name": "Stall",
+  "description": "The Pok\u00e9mon moves after all other Pok\u00e9mon do.",
+  "hooks": []
+}

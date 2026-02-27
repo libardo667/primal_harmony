@@ -1,0 +1,15 @@
+{
+  "id": "thunder_shock",
+  "name": "Thunder Shock",
+  "type": "Electric",
+  "category": "special",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 30,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May paralyze opponent.",
+  "is_custom": false
+}

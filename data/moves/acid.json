@@ -1,0 +1,15 @@
+{
+  "id": "acid",
+  "name": "Acid",
+  "type": "Poison",
+  "category": "special",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 30,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May lower opponent's Special Defense.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "hone_claws",
+  "name": "Hone Claws",
+  "type": "Dark",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Raises user's Attack and Accuracy.",
+  "is_custom": false
+}

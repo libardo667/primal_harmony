@@ -1,0 +1,18 @@
+{
+  "id": "spark",
+  "name": "Spark",
+  "type": "Electric",
+  "category": "physical",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "paralyze_30",
+  "flags": [
+    "contact"
+  ],
+  "description": "The user throws an electrically charged tackle at the target. This may also leave the target with paralysis.",
+  "is_custom": false,
+  "base_power": 65
+}

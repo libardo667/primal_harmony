@@ -1,0 +1,96 @@
+[gd_scene load_steps=5 format=3 uid="uid://fallarbor_pc"]
+
+[ext_resource type="TileSet" uid="uid://tileset_fallarbor" path="res://assets/tilesets/fallarbor_town_placeholder.png" id="1_tileset"]
+
+; ─────────────────────────────────────────────────────────────────────────────
+; TILESET RESOURCE
+; ─────────────────────────────────────────────────────────────────────────────
+[sub_resource type="TileSet" id="TileSet_1"]
+tile_size = Vector2i(16, 16)
+sources/0/texture = ExtResource("1_tileset")
+sources/0/texture_region_size = Vector2i(16, 16)
+
+; ─────────────────────────────────────────────────────────────────────────────
+; COLLISION SHAPES for WarpPoint Area2D nodes
+; ─────────────────────────────────────────────────────────────────────────────
+[sub_resource type="RectangleShape2D" id="Shape_warp_exterior"]
+size = Vector2(32, 16)
+
+; ─────────────────────────────────────────────────────────────────────────────
+; ROOT — FallarborPokemonCenter (Node2D)
+; Map dimensions: 20 tiles × 15 tiles = 320×240 px at 16×16
+; ─────────────────────────────────────────────────────────────────────────────
+[node name="FallarborPokemonCenter" type="Node2D"]
+metadata/zone_id = "ashen_glacier"
+metadata/tile_size = Vector2i(16, 16)
+metadata/map_dimensions_tiles = Vector2i(20, 15)
+metadata/map_dimensions_px = Vector2i(320, 240)
+
+; ─────────────────────────────────────────────────────────────────────────────
+; TILEMAP LAYERS
+; ─────────────────────────────────────────────────────────────────────────────
+[node name="TileMapTerrain" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_1")
+format = 2
+layer_0/name = "terrain"
+layer_0/z_index = 0
+tile_data = []
+
+[node name="TileMapDecoration" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_1")
+format = 2
+layer_0/name = "decoration"
+layer_0/z_index = 1
+tile_data = []
+
+[node name="TileMapCollision" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_1")
+format = 2
+layer_0/name = "collision"
+layer_0/z_index = 2
+modulate = Color(1, 0, 0, 0)
+tile_data = []
+
+; ─────────────────────────────────────────────────────────────────────────────
+; NPC SPAWN POINTS
+; ─────────────────────────────────────────────────────────────────────────────
+[node name="NPCSpawnPoints" type="Node2D" parent="."]
+
+[node name="NPCSpawn_NurseJoy" type="Node2D" parent="NPCSpawnPoints"]
+position = Vector2(160, 64)
+metadata/npc_id = "nurse_joy_fallarbor"
+metadata/facing = "south"
+metadata/notes = "Heals party. Weaver to attach dialogue hook."
+
+[node name="NPCSpawn_RelocationTerminal" type="Node2D" parent="NPCSpawnPoints"]
+position = Vector2(240, 64)
+metadata/npc_id = "relocation_terminal_bot_fallarbor"
+metadata/facing = "south"
+metadata/notes = "Phase 3 Hook — Mechanical terminal for releasing Pokémon to quell Ashen Glacier."
+
+[node name="NPCSpawn_Townsfolk" type="Node2D" parent="NPCSpawnPoints"]
+position = Vector2(64, 160)
+metadata/npc_id = "hiker_fallarbor_pc"
+metadata/facing = "east"
+metadata/notes = "Warming up from the ice"
+
+; ─────────────────────────────────────────────────────────────────────────────
+; WARP POINTS
+; ─────────────────────────────────────────────────────────────────────────────
+[node name="WarpPoints" type="Node2D" parent="."]
+
+[node name="warp_to_exterior_south" type="Area2D" parent="WarpPoints"]
+collision_layer = 2
+position = Vector2(160, 232)
+metadata/destination_scene = "res://maps/hoenn/cities/fallarbor_town.tscn"
+metadata/destination_warp_id = "warp_to_pokemon_center"
+metadata/transition_type = "door_exit"
+metadata/notes = "Southern exit — connects back to Fallarbor exterior"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WarpPoints/warp_to_exterior_south"]
+shape = SubResource("Shape_warp_exterior")
+
+; ─────────────────────────────────────────────────────────────────────────────
+; ENCOUNTER ZONES (None in PC, but keeping node for consistency)
+; ─────────────────────────────────────────────────────────────────────────────
+[node name="EncounterZones" type="Node2D" parent="."]

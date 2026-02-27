@@ -1,0 +1,15 @@
+{
+  "id": "fury_swipes",
+  "name": "Fury Swipes",
+  "type": "Normal",
+  "category": "physical",
+  "power": 18,
+  "accuracy": 80,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Hits 2-5 times in one turn.",
+  "is_custom": false
+}

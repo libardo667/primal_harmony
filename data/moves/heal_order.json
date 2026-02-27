@@ -1,0 +1,15 @@
+{
+  "id": "heal_order",
+  "name": "Heal Order",
+  "type": "Bug",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User recovers half its max HP.",
+  "is_custom": false
+}

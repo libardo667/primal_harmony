@@ -1,0 +1,6 @@
+{
+  "id": "queenly_majesty",
+  "name": "Queenly Majesty",
+  "description": "Prevents use of priority moves.",
+  "hooks": []
+}

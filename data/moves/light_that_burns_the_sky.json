@@ -1,0 +1,15 @@
+{
+  "id": "light_that_burns_the_sky",
+  "name": "Light That Burns the Sky",
+  "type": "Psychic",
+  "category": "special",
+  "power": 200,
+  "accuracy": null,
+  "pp": 1,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "",
+  "is_custom": false
+}

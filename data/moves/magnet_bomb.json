@@ -1,0 +1,15 @@
+{
+  "id": "magnet_bomb",
+  "name": "Magnet Bomb",
+  "type": "Steel",
+  "category": "physical",
+  "power": 60,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Ignores Accuracy and Evasiveness.",
+  "is_custom": false
+}

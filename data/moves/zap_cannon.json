@@ -1,0 +1,15 @@
+{
+  "id": "zap_cannon",
+  "name": "Zap Cannon",
+  "type": "Electric",
+  "category": "special",
+  "power": 120,
+  "accuracy": 50,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Paralyzes opponent.",
+  "is_custom": false
+}

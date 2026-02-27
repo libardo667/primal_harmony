@@ -1,0 +1,15 @@
+{
+  "id": "celebrate",
+  "name": "Celebrate",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 40,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The Pok\u00e9mon congratulates you on your special day. No battle effect.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "mountain_gale",
+  "name": "Mountain Gale",
+  "type": "Ice",
+  "category": "physical",
+  "power": 100,
+  "accuracy": 85,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Lowers user's Speed.",
+  "is_custom": false
+}

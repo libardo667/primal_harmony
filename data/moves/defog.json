@@ -1,0 +1,15 @@
+{
+  "id": "defog",
+  "name": "Defog",
+  "type": "Flying",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Lowers opponent's Evasiveness and clears fog.",
+  "is_custom": false
+}

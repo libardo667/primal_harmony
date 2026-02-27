@@ -1,0 +1,15 @@
+{
+  "id": "vital_throw",
+  "name": "Vital Throw",
+  "type": "Fighting",
+  "category": "physical",
+  "power": 70,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User attacks last, but ignores Accuracy and Evasiveness.",
+  "is_custom": false
+}

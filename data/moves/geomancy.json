@@ -1,0 +1,15 @@
+{
+  "id": "geomancy",
+  "name": "Geomancy",
+  "type": "Fairy",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Charges on first turn, sharply raises user's Sp. Attack, Sp. Defense and Speed on the second.",
+  "is_custom": false
+}

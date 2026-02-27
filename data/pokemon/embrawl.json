@@ -1,0 +1,49 @@
+{
+  "id": "embrawl",
+  "name": "Embrawl",
+  "national_dex": null,
+  "types": [
+    "Fire",
+    "Fighting"
+  ],
+  "base_stats": {
+    "hp": 45,
+    "atk": 60,
+    "def": 40,
+    "spa": 60,
+    "spd": 40,
+    "spe": 55
+  },
+  "abilities": [
+    "Blaze",
+    "Tough Claws"
+  ],
+  "hidden_ability": "Iron Fist",
+  "learnset": [],
+  "evolution": {
+    "method": "level",
+    "level": 36,
+    "item": null,
+    "condition": null,
+    "into": "scorcombat"
+  },
+  "dex_entry": "The metallic plates are visibly cracking — ember-orange light bleeds through the fractures. Torchic is starting to remember heat. Dex: \"The fire is remembering its name. The steel is not ready to let go.\"",
+  "catch_rate": 45,
+  "base_exp": 62,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Field"
+  ],
+  "gender_ratio": 12.5,
+  "is_native_hoenn": true,
+  "native_zone": null,
+  "is_corrupted": true,
+  "corruption_zone": "emberscar",
+  "corruption_path": "B",
+  "base_species": "torchic",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/embrawl/front.png",
+    "back": "res://assets/sprites/pokemon/embrawl/back.png",
+    "icon": "res://assets/sprites/pokemon/embrawl/icon.png"
+  }
+}

@@ -1,0 +1,13 @@
+{
+    "id": "cleats",
+    "name": "Cleats",
+    "category": "key",
+    "effect": "prevent_ice_slip",
+    "effect_value": null,
+    "description": "A pair of hooked cleats that grip icy ground. Prevents the player from sliding on ice tiles in the Ashen Glacier.",
+    "buy_price": null,
+    "sell_price": null,
+    "is_key_item": true,
+    "is_custom": true,
+    "zone_association": "ashen_glacier"
+}

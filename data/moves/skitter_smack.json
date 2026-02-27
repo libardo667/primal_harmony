@@ -1,0 +1,15 @@
+{
+  "id": "skitter_smack",
+  "name": "Skitter Smack",
+  "type": "Bug",
+  "category": "physical",
+  "power": 70,
+  "accuracy": 90,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Lowers opponent's Sp. Attack.",
+  "is_custom": false
+}

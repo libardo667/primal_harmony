@@ -1,0 +1,13 @@
+{
+    "id": "clarity_lens",
+    "name": "Clarity Lens",
+    "category": "key",
+    "effect": "reduce_veil_loop_chance",
+    "effect_value": null,
+    "description": "A pair of psychic-wavelength lenses. Reduces the chance of looping paths and random encounter triggers in the Veil.",
+    "buy_price": null,
+    "sell_price": null,
+    "is_key_item": true,
+    "is_custom": true,
+    "zone_association": "the_veil"
+}

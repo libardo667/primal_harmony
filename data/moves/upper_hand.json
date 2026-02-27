@@ -1,0 +1,15 @@
+{
+  "id": "upper_hand",
+  "name": "Upper Hand",
+  "type": "Fighting",
+  "category": "physical",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Strikes before a target's priority move.",
+  "is_custom": false
+}

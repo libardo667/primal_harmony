@@ -1,0 +1,15 @@
+{
+  "id": "max_knuckle",
+  "name": "Max Knuckle",
+  "type": "Fighting",
+  "category": "physical",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Fighting type Dynamax move. Increases the team's Attack.",
+  "is_custom": false
+}

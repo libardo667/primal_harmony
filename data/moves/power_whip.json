@@ -1,0 +1,15 @@
+{
+  "id": "power_whip",
+  "name": "Power Whip",
+  "type": "Grass",
+  "category": "physical",
+  "power": 120,
+  "accuracy": 85,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "",
+  "is_custom": false
+}

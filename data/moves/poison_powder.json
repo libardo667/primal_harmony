@@ -1,0 +1,15 @@
+{
+  "id": "poison_powder",
+  "name": "Poison Powder",
+  "type": "Poison",
+  "category": "status",
+  "power": null,
+  "accuracy": 75,
+  "pp": 35,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Poisons opponent.",
+  "is_custom": false
+}

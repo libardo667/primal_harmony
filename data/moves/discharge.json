@@ -1,0 +1,16 @@
+{
+  "id": "discharge",
+  "name": "Discharge",
+  "type": "Electric",
+  "category": "special",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "all_adjacent",
+  "effect": "paralyze_30",
+  "flags": [],
+  "description": "The user strikes everything around it by letting loose a flare of electricity. This may also cause paralysis.",
+  "is_custom": false,
+  "base_power": 80
+}

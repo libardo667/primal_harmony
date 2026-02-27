@@ -1,0 +1,15 @@
+{
+  "id": "population_bomb",
+  "name": "Population Bomb",
+  "type": "Normal",
+  "category": "physical",
+  "power": 20,
+  "accuracy": 90,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Hits 1-10 times in a row.",
+  "is_custom": false
+}

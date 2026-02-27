@@ -1,0 +1,249 @@
+{
+    "zone_id": "ashen_glacier",
+    "zone_name": "The Ashen Glacier",
+    "zone_number": 1,
+    "dominant_type": "Ice",
+    "location": "Route 113 / Fallarbor Town",
+    "ehi_local": 0.0,
+    "ehi_thresholds": {
+        "infested": [
+            0,
+            33
+        ],
+        "partial": [
+            34,
+            66
+        ],
+        "restored": [
+            67,
+            100
+        ]
+    },
+    "encounter_table": {
+        "infested": [
+            {
+                "species_id": "frostinda",
+                "level_range": [
+                    14,
+                    18
+                ],
+                "weight": 30,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "glaciory",
+                "level_range": [
+                    16,
+                    20
+                ],
+                "weight": 10,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "ashviper",
+                "level_range": [
+                    15,
+                    19
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "snorunt",
+                "level_range": [
+                    13,
+                    17
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "swinub",
+                "level_range": [
+                    12,
+                    16
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "sneasel",
+                "level_range": [
+                    16,
+                    20
+                ],
+                "weight": 5,
+                "time_of_day": "night"
+            }
+        ],
+        "partial": [
+            {
+                "species_id": "spinda",
+                "level_range": [
+                    14,
+                    18
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "frostinda",
+                "level_range": [
+                    14,
+                    18
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "zangoose",
+                "level_range": [
+                    15,
+                    19
+                ],
+                "weight": 15,
+                "time_of_day": "day"
+            },
+            {
+                "species_id": "seviper",
+                "level_range": [
+                    15,
+                    19
+                ],
+                "weight": 15,
+                "time_of_day": "night"
+            },
+            {
+                "species_id": "ashviper",
+                "level_range": [
+                    15,
+                    19
+                ],
+                "weight": 10,
+                "time_of_day": "night"
+            },
+            {
+                "species_id": "snorunt",
+                "level_range": [
+                    13,
+                    17
+                ],
+                "weight": 10,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "swablu",
+                "level_range": [
+                    14,
+                    18
+                ],
+                "weight": 10,
+                "time_of_day": "day"
+            },
+            {
+                "species_id": "skarmory",
+                "level_range": [
+                    16,
+                    20
+                ],
+                "weight": 5,
+                "time_of_day": "any"
+            }
+        ],
+        "restored": [
+            {
+                "species_id": "spinda",
+                "level_range": [
+                    14,
+                    18
+                ],
+                "weight": 30,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "zangoose",
+                "level_range": [
+                    15,
+                    19
+                ],
+                "weight": 20,
+                "time_of_day": "day"
+            },
+            {
+                "species_id": "seviper",
+                "level_range": [
+                    15,
+                    19
+                ],
+                "weight": 20,
+                "time_of_day": "night"
+            },
+            {
+                "species_id": "swablu",
+                "level_range": [
+                    14,
+                    18
+                ],
+                "weight": 15,
+                "time_of_day": "day"
+            },
+            {
+                "species_id": "skarmory",
+                "level_range": [
+                    16,
+                    20
+                ],
+                "weight": 10,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "spinda",
+                "level_range": [
+                    18,
+                    22
+                ],
+                "weight": 5,
+                "time_of_day": "night"
+            }
+        ]
+    },
+    "native_species": [
+        "spinda",
+        "skarmory",
+        "swablu",
+        "zangoose",
+        "seviper"
+    ],
+    "corrupted_variants": [
+        "frostinda",
+        "glaciory",
+        "ashviper"
+    ],
+    "quell_types": [
+        "Fire",
+        "Fighting",
+        "Rock",
+        "Steel"
+    ],
+    "traversal_hazards": [
+        {
+            "hazard_id": "ice_slip",
+            "description": "Frozen ash surfaces cause uncontrolled sliding on most paths.",
+            "mitigation": "Cleats key item or Ice-type partner in lead slot"
+        },
+        {
+            "hazard_id": "ash_whiteout",
+            "description": "Updrafts of frozen ash create periodic whiteout conditions reducing visibility to near zero.",
+            "mitigation": "Wait for whiteout to pass or use a Fire-type move to melt the ash cloud"
+        }
+    ],
+    "key_items": [
+        "cleats"
+    ],
+    "relocation_terminals": [
+        "Fallarbor Town Pokemon Center"
+    ],
+    "ehi_restoration_effect": "Thaws the ash back to its natural state and reopens the Fallarbor flower shop, which serves as a key crafting node for restoration items.",
+    "narrative_role": "Tutorial zone — the first TOZ the player encounters. Restoring it reopens Fallarbor's flower shop and teaches the basic quell/relocation loop.",
+    "story_gate": null
+}

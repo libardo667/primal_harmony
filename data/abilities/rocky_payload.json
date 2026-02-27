@@ -1,0 +1,6 @@
+{
+  "id": "rocky_payload",
+  "name": "Rocky Payload",
+  "description": "Powers up Rock-type moves.",
+  "hooks": []
+}

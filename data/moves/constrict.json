@@ -1,0 +1,15 @@
+{
+  "id": "constrict",
+  "name": "Constrict",
+  "type": "Normal",
+  "category": "physical",
+  "power": 10,
+  "accuracy": 100,
+  "pp": 35,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May lower opponent's Speed by one stage.",
+  "is_custom": false
+}

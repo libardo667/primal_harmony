@@ -1,0 +1,6 @@
+{
+  "id": "liquid_ooze",
+  "name": "Liquid Ooze",
+  "description": "Damages attackers using any draining move.",
+  "hooks": []
+}

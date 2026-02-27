@@ -1,0 +1,6 @@
+{
+  "id": "moody",
+  "name": "Moody",
+  "description": "Raises one stat and lowers another.",
+  "hooks": []
+}

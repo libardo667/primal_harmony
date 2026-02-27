@@ -1,0 +1,97 @@
+Godot Integration Doctor — Auditing: C:\Users\levib\pokemon_projects\primal_harmony\primal-harmony
+======================================================================
+
+Player detectors found:
+  WarpDetector: collision_mask = 2 → listens to bit 1 (value 2)
+  EncounterDetector: collision_mask = 4 → listens to bit 2 (value 4)
+
+Scanning 14 scene files...
+
+======================================================================
+RESULTS: 14 errors, 0 warnings, 0 info
+======================================================================
+
+❌ [ERROR] res://maps/hoenn/cities/fallarbor_town.tscn
+   Node: WarpPoints/warp_to_route113_west
+   Check: warp_missing_collision_layer
+   Warp Area2D has no explicit collision_layer (defaults to 1, but WarpDetector expects mask 2)
+   Fix: Add collision_layer = 2 to this node
+
+❌ [ERROR] res://maps/hoenn/cities/fallarbor_town.tscn
+   Node: WarpPoints/warp_to_route114_south
+   Check: warp_missing_collision_layer
+   Warp Area2D has no explicit collision_layer (defaults to 1, but WarpDetector expects mask 2)
+   Fix: Add collision_layer = 2 to this node
+
+❌ [ERROR] res://maps/hoenn/cities/fallarbor_town.tscn
+   Node: WarpPoints/warp_to_route114_south
+   Check: warp_destination_scene_missing
+   destination_scene points to nonexistent file: res://maps/hoenn/routes/route_114.tscn
+   Fix: Create the scene or fix the path
+
+❌ [ERROR] res://maps/hoenn/cities/fallarbor_town.tscn
+   Node: WarpPoints/warp_to_pokemon_center
+   Check: warp_missing_collision_layer
+   Warp Area2D has no explicit collision_layer (defaults to 1, but WarpDetector expects mask 2)
+   Fix: Add collision_layer = 2 to this node
+
+❌ [ERROR] res://maps/hoenn/routes/petalburg_woods.tscn
+   Node: WarpPoints/warp_to_route104_south
+   Check: warp_missing_collision_layer
+   Warp Area2D has no explicit collision_layer (defaults to 1, but WarpDetector expects mask 2)
+   Fix: Add collision_layer = 2 to this node
+
+❌ [ERROR] res://maps/hoenn/routes/petalburg_woods.tscn
+   Node: WarpPoints/warp_to_route104_south
+   Check: warp_destination_scene_missing
+   destination_scene points to nonexistent file: res://maps/hoenn/routes/route_104.tscn
+   Fix: Create the scene or fix the path
+
+❌ [ERROR] res://maps/hoenn/routes/petalburg_woods.tscn
+   Node: WarpPoints/warp_to_route104_north
+   Check: warp_missing_collision_layer
+   Warp Area2D has no explicit collision_layer (defaults to 1, but WarpDetector expects mask 2)
+   Fix: Add collision_layer = 2 to this node
+
+❌ [ERROR] res://maps/hoenn/routes/petalburg_woods.tscn
+   Node: WarpPoints/warp_to_route104_north
+   Check: warp_destination_scene_missing
+   destination_scene points to nonexistent file: res://maps/hoenn/routes/route_104.tscn
+   Fix: Create the scene or fix the path
+
+❌ [ERROR] res://maps/hoenn/routes/petalburg_woods.tscn
+   Node: EncounterZones/EncounterZone_MurkyGrass
+   Check: encounter_missing_collision_layer
+   Encounter Area2D has no explicit collision_layer (defaults to 1, but EncounterDetector expects mask 4)
+   Fix: Add collision_layer = 4 to this node
+
+❌ [ERROR] res://maps/hoenn/routes/petalburg_woods.tscn
+   Node: EncounterZones/EncounterZone_DeepMurk
+   Check: encounter_missing_collision_layer
+   Encounter Area2D has no explicit collision_layer (defaults to 1, but EncounterDetector expects mask 4)
+   Fix: Add collision_layer = 4 to this node
+
+❌ [ERROR] res://maps/hoenn/routes/route_113.tscn
+   Node: WarpPoints/warp_to_route112_west
+   Check: warp_destination_scene_missing
+   destination_scene points to nonexistent file: res://maps/hoenn/routes/route_112.tscn
+   Fix: Create the scene or fix the path
+
+❌ [ERROR] res://maps/hoenn/routes/route_113.tscn
+   Node: EncounterZones/EncounterZone_EastField
+   Check: encounter_collision_layer_mismatch
+   Encounter collision_layer=8 does not overlap EncounterDetector collision_mask=4
+   Fix: Set collision_layer = 4
+
+❌ [ERROR] res://maps/hoenn/routes/route_113.tscn
+   Node: EncounterZones/EncounterZone_WestApproach
+   Check: encounter_collision_layer_mismatch
+   Encounter collision_layer=8 does not overlap EncounterDetector collision_mask=4
+   Fix: Set collision_layer = 4
+
+❌ [ERROR] res://maps/interiors/fallarbor_pokemon_center.tscn
+   Node: WarpPoints/warp_to_exterior_south
+   Check: warp_missing_collision_layer
+   Warp Area2D has no explicit collision_layer (defaults to 1, but WarpDetector expects mask 2)
+   Fix: Add collision_layer = 2 to this node
+

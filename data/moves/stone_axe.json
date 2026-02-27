@@ -1,0 +1,15 @@
+{
+  "id": "stone_axe",
+  "name": "Stone Axe",
+  "type": "Rock",
+  "category": "physical",
+  "power": 65,
+  "accuracy": 90,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Sets up Stealth Rock.",
+  "is_custom": false
+}

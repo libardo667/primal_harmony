@@ -1,0 +1,15 @@
+{
+  "id": "supercell_slam",
+  "name": "Supercell Slam",
+  "type": "Electric",
+  "category": "physical",
+  "power": 100,
+  "accuracy": 95,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "",
+  "is_custom": false
+}

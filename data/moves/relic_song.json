@@ -1,0 +1,15 @@
+{
+  "id": "relic_song",
+  "name": "Relic Song",
+  "type": "Normal",
+  "category": "special",
+  "power": 75,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May put the target to sleep.",
+  "is_custom": false
+}

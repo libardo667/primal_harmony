@@ -1,0 +1,15 @@
+{
+  "id": "fiery_wrath",
+  "name": "Fiery Wrath",
+  "type": "Dark",
+  "category": "special",
+  "power": 90,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May cause flinching.",
+  "is_custom": false
+}

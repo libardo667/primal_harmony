@@ -1,0 +1,6 @@
+{
+  "id": "pressure",
+  "name": "Pressure",
+  "description": "The Pok\u00e9mon raises the foe's PP usage.",
+  "hooks": []
+}

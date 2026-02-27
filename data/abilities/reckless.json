@@ -1,0 +1,6 @@
+{
+  "id": "reckless",
+  "name": "Reckless",
+  "description": "Powers up moves that have recoil damage.",
+  "hooks": []
+}

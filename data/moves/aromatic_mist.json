@@ -1,0 +1,15 @@
+{
+  "id": "aromatic_mist",
+  "name": "Aromatic Mist",
+  "type": "Fairy",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Raises Special Defense of an ally.",
+  "is_custom": false
+}

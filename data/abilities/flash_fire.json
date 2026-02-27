@@ -1,0 +1,6 @@
+{
+  "id": "flash_fire",
+  "name": "Flash Fire",
+  "description": "It powers up Fire-type moves if it's hit by one.",
+  "hooks": []
+}

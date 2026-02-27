@@ -1,0 +1,15 @@
+{
+  "id": "heal_bell",
+  "name": "Heal Bell",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Heals the user's party's status conditions.",
+  "is_custom": false
+}

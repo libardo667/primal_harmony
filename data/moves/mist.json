@@ -1,0 +1,15 @@
+{
+  "id": "mist",
+  "name": "Mist",
+  "type": "Ice",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 30,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User's stats cannot be changed for a period of time.",
+  "is_custom": false
+}

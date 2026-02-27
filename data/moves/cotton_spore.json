@@ -1,0 +1,15 @@
+{
+  "id": "cotton_spore",
+  "name": "Cotton Spore",
+  "type": "Grass",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 40,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Sharply lowers opponent's Speed.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "head_smash",
+  "name": "Head Smash",
+  "type": "Rock",
+  "category": "physical",
+  "power": 150,
+  "accuracy": 80,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User receives recoil damage.",
+  "is_custom": false
+}

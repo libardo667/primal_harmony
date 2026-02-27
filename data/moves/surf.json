@@ -1,0 +1,15 @@
+{
+  "id": "surf",
+  "name": "Surf",
+  "type": "Water",
+  "category": "special",
+  "power": 90,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Hits all adjacent Pok\u00e9mon.",
+  "is_custom": false
+}

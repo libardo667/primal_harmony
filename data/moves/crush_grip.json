@@ -1,0 +1,15 @@
+{
+  "id": "crush_grip",
+  "name": "Crush Grip",
+  "type": "Normal",
+  "category": "physical",
+  "power": null,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "More powerful when opponent has higher HP.",
+  "is_custom": false
+}

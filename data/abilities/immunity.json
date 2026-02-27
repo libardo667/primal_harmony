@@ -1,0 +1,6 @@
+{
+  "id": "immunity",
+  "name": "Immunity",
+  "description": "Prevents the Pok\u00e9mon from getting poisoned.",
+  "hooks": []
+}

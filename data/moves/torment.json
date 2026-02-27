@@ -1,0 +1,15 @@
+{
+  "id": "torment",
+  "name": "Torment",
+  "type": "Dark",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Opponent cannot use the same move in a row.",
+  "is_custom": false
+}

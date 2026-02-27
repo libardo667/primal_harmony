@@ -1,0 +1,15 @@
+{
+  "id": "toxic_thread",
+  "name": "Toxic Thread",
+  "type": "Poison",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Poisons opponent and lowers its Speed.",
+  "is_custom": false
+}

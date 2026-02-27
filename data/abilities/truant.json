@@ -1,0 +1,6 @@
+{
+  "id": "truant",
+  "name": "Truant",
+  "description": "Pok\u00e9mon can't attack on consecutive turns.",
+  "hooks": []
+}

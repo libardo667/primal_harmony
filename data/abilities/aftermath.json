@@ -1,0 +1,6 @@
+{
+  "id": "aftermath",
+  "name": "Aftermath",
+  "description": "Damages the attacker landing the finishing hit.",
+  "hooks": []
+}

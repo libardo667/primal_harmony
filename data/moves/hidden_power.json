@@ -1,0 +1,15 @@
+{
+  "id": "hidden_power",
+  "name": "Hidden Power",
+  "type": "Normal",
+  "category": "special",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Type and power depends on user's IVs.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "rain_dance",
+  "name": "Rain Dance",
+  "type": "Water",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Makes it rain for 5 turns.",
+  "is_custom": false
+}

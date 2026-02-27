@@ -1,0 +1,15 @@
+{
+  "id": "oblivion_wing",
+  "name": "Oblivion Wing",
+  "type": "Flying",
+  "category": "special",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User recovers most of the HP inflicted on opponent.",
+  "is_custom": false
+}

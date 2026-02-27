@@ -1,0 +1,44 @@
+{
+  "id": "corsola",
+  "name": "Corsola",
+  "national_dex": 222,
+  "types": [
+    "Water",
+    "Rock"
+  ],
+  "base_stats": {
+    "hp": 65,
+    "atk": 55,
+    "def": 95,
+    "spa": 65,
+    "spd": 95,
+    "spe": 35
+  },
+  "abilities": [
+    "Hustle",
+    "Natural Cure"
+  ],
+  "hidden_ability": "Regenerator",
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "Corsola's branches glitter and sparkle in sunlight. These lovely Pok\u00e9mon live in warm, clean seas.",
+  "catch_rate": 60,
+  "base_exp": 144,
+  "growth_rate": "fast",
+  "egg_groups": [
+    "Water 1",
+    "Water 3"
+  ],
+  "gender_ratio": 25,
+  "is_native_hoenn": true,
+  "native_zone": "abyss_bloom",
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/corsola/front.png",
+    "back": "res://assets/sprites/pokemon/corsola/back.png",
+    "icon": "res://assets/sprites/pokemon/corsola/icon.png"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "multi_attack",
+  "name": "Multi-Attack",
+  "type": "Normal",
+  "category": "physical",
+  "power": 120,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Type matches Memory item held.",
+  "is_custom": false
+}

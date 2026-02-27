@@ -1,0 +1,15 @@
+{
+  "id": "nuzzle",
+  "name": "Nuzzle",
+  "type": "Electric",
+  "category": "physical",
+  "power": 20,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Paralyzes opponent.",
+  "is_custom": false
+}

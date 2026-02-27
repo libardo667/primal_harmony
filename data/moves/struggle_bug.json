@@ -1,0 +1,15 @@
+{
+  "id": "struggle_bug",
+  "name": "Struggle Bug",
+  "type": "Bug",
+  "category": "special",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Lowers opponent's Special Attack.",
+  "is_custom": false
+}

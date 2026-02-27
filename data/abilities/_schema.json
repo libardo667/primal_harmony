@@ -1,0 +1,64 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "primal_harmony/abilities",
+    "title": "Pokémon Ability Data",
+    "description": "Schema for all Pokémon ability files in data/abilities/. One file per ability, named by ability ID (e.g. intimidate.json).",
+    "type": "object",
+    "required": [
+        "id",
+        "name",
+        "description",
+        "hooks"
+    ],
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "Unique ability identifier, lowercase_snake_case. e.g. 'intimidate', 'overgrow'",
+            "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "name": {
+            "type": "string",
+            "description": "Display name. e.g. 'Intimidate', 'Overgrow'"
+        },
+        "description": {
+            "type": "string",
+            "description": "In-game description of the ability's effect."
+        },
+        "hooks": {
+            "type": "array",
+            "description": "Mechanical hooks defined for the BattleManager.",
+            "items": {
+                "type": "object",
+                "required": [
+                    "trigger",
+                    "effect_type",
+                    "params"
+                ],
+                "properties": {
+                    "trigger": {
+                        "type": "string",
+                        "enum": [
+                            "on_entry",
+                            "on_attack",
+                            "on_damage_taken",
+                            "on_turn_end",
+                            "on_status_inflicted",
+                            "on_weather_change",
+                            "passive"
+                        ],
+                        "description": "The event that triggers this ability."
+                    },
+                    "effect_type": {
+                        "type": "string",
+                        "description": "The type of mechanical effect (e.g., 'stat_modifier', 'weather_change', 'type_immunity', 'status_immunity')."
+                    },
+                    "params": {
+                        "type": "object",
+                        "description": "Key-value parameters for the specific effect_type."
+                    }
+                }
+            }
+        }
+    },
+    "additionalProperties": false
+}

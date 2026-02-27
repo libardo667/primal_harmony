@@ -1,0 +1,6 @@
+{
+  "id": "technician",
+  "name": "Technician",
+  "description": "Powers up the Pok\u00e9mon's weaker moves.",
+  "hooks": []
+}

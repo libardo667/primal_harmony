@@ -1,0 +1,37 @@
+{
+  "id": "tapu_koko",
+  "name": "Tapu Koko",
+  "national_dex": 785,
+  "types": [
+    "Electric",
+    "Fairy"
+  ],
+  "base_stats": {
+    "hp": 70,
+    "atk": 115,
+    "def": 85,
+    "spa": 95,
+    "spd": 75,
+    "spe": 130
+  },
+  "abilities": [
+    "TBD"
+  ],
+  "hidden_ability": null,
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "TBD",
+  "catch_rate": 45,
+  "base_exp": 60,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "TBD"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": false,
+  "native_zone": null,
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null
+}

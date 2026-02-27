@@ -1,0 +1,6 @@
+{
+  "id": "arena_trap",
+  "name": "Arena Trap",
+  "description": "Prevents the foe from fleeing.",
+  "hooks": []
+}

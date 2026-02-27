@@ -1,0 +1,15 @@
+{
+  "id": "supersonic",
+  "name": "Supersonic",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": 55,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Confuses opponent.",
+  "is_custom": false
+}

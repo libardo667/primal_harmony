@@ -1,0 +1,15 @@
+{
+  "id": "hard_press",
+  "name": "Hard Press",
+  "type": "Steel",
+  "category": "physical",
+  "power": null,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "",
+  "is_custom": false
+}

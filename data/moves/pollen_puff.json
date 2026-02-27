@@ -1,0 +1,15 @@
+{
+  "id": "pollen_puff",
+  "name": "Pollen Puff",
+  "type": "Bug",
+  "category": "special",
+  "power": 90,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Deals damage to opponent or restores HP of teammate.",
+  "is_custom": false
+}

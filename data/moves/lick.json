@@ -1,0 +1,18 @@
+{
+  "id": "lick",
+  "name": "Lick",
+  "type": "Ghost",
+  "category": "physical",
+  "power": 30,
+  "accuracy": 100,
+  "pp": 30,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "paralyze_30",
+  "flags": [
+    "contact"
+  ],
+  "description": "The target is licked with a long tongue, causing damage. This may also leave the target with paralysis.",
+  "is_custom": false,
+  "base_power": 30
+}

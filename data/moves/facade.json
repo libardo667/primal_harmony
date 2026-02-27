@@ -1,0 +1,15 @@
+{
+  "id": "facade",
+  "name": "Facade",
+  "type": "Normal",
+  "category": "physical",
+  "power": 70,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Power doubles if user is burned, poisoned, or paralyzed.",
+  "is_custom": false
+}

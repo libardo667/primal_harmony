@@ -1,0 +1,15 @@
+{
+  "id": "fell_stinger",
+  "name": "Fell Stinger",
+  "type": "Bug",
+  "category": "physical",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 25,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Drastically raises user's Attack if target is KO'd.",
+  "is_custom": false
+}

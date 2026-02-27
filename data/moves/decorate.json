@@ -1,0 +1,15 @@
+{
+  "id": "decorate",
+  "name": "Decorate",
+  "type": "Fairy",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Sharply raises target's Attack and Special Attack.",
+  "is_custom": false
+}

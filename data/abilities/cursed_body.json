@@ -1,0 +1,6 @@
+{
+  "id": "cursed_body",
+  "name": "Cursed Body",
+  "description": "May disable a move used on the Pok\u00e9mon.",
+  "hooks": []
+}

@@ -1,0 +1,70 @@
+{
+  "id": "magnemite",
+  "name": "Magnemite",
+  "national_dex": 81,
+  "types": [
+    "Electric",
+    "Steel"
+  ],
+  "base_stats": {
+    "hp": 25,
+    "atk": 35,
+    "def": 70,
+    "spa": 95,
+    "spd": 55,
+    "spe": 45
+  },
+  "abilities": [
+    "Magnet Pull",
+    "Sturdy"
+  ],
+  "hidden_ability": "Analytic",
+  "learnset": [
+    {
+      "move_id": "tackle",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "thundershock",
+      "method": "level",
+      "level": 5
+    },
+    {
+      "move_id": "thunder_wave",
+      "method": "level",
+      "level": 9
+    },
+    {
+      "move_id": "spark",
+      "method": "level",
+      "level": 13
+    }
+  ],
+  "evolution": {
+    "method": "level",
+    "level": 30,
+    "item": null,
+    "condition": null,
+    "into": "magneton"
+  },
+  "dex_entry": "The units at the sides of its body generate antigravity energy to keep it aloft.",
+  "catch_rate": 190,
+  "base_exp": 65,
+  "growth_rate": "medium_fast",
+  "egg_groups": [
+    "Mineral"
+  ],
+  "gender_ratio": -1,
+  "is_native_hoenn": true,
+  "native_zone": "static_sprawl",
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/magnemite/front.png",
+    "back": "res://assets/sprites/pokemon/magnemite/back.png",
+    "icon": "res://assets/sprites/pokemon/magnemite/icon.png"
+  }
+}

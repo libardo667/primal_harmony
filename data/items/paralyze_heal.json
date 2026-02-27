@@ -1,0 +1,13 @@
+{
+    "id": "paralyze_heal",
+    "name": "Paralyze Heal",
+    "category": "medicine",
+    "effect": "cure_paralysis",
+    "effect_value": null,
+    "description": "A spray-type medicine to heal a single Pokémon of the paralysis status condition.",
+    "buy_price": 200,
+    "sell_price": 100,
+    "is_key_item": false,
+    "is_custom": false,
+    "zone_association": null
+}

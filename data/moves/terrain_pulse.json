@@ -1,0 +1,15 @@
+{
+  "id": "terrain_pulse",
+  "name": "Terrain Pulse",
+  "type": "Normal",
+  "category": "special",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Type and power change depending on the Terrain in effect.",
+  "is_custom": false
+}

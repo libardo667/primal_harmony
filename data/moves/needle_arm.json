@@ -1,0 +1,15 @@
+{
+  "id": "needle_arm",
+  "name": "Needle Arm",
+  "type": "Grass",
+  "category": "physical",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May cause flinching.",
+  "is_custom": false
+}

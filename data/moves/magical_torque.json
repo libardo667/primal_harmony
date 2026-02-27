@@ -1,0 +1,15 @@
+{
+  "id": "magical_torque",
+  "name": "Magical Torque",
+  "type": "Fairy",
+  "category": "physical",
+  "power": 100,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May confuse the opponent.",
+  "is_custom": false
+}

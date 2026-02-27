@@ -1,0 +1,39 @@
+{
+  "_comment": "Maps pokeemerald MAP_IDs to TOZ zone_ids. Only PRIMARY zone maps go here.",
+  "_comment2": "Adjacent maps inherit bleed effects automatically via WorldConnections at runtime.",
+  "_comment3": "Naming: raw layout name (PetalburgWoods) -> MAP_ + UPPER_SNAKE_CASE (MAP_PETALBURG_WOODS).",
+  "_comment4": "Interior sub-maps (e.g. MAP_MT_PYRE_1F) should be added manually as discovered.",
+
+  "MAP_PETALBURG_WOODS":      "the_murk",
+
+  "MAP_ROUTE113":             "ashen_glacier",
+  "MAP_FALLARBOR_TOWN":       "ashen_glacier",
+
+  "MAP_MT_PYRE":              "dread_shore",
+  "MAP_ROUTE122":             "dread_shore",
+
+  "MAP_MT_CHIMNEY":           "emberscar",
+  "MAP_LAVARIDGE_TOWN":       "emberscar",
+  "MAP_ROUTE112":             "emberscar",
+
+  "MAP_SKY_PILLAR":           "static_sky",
+  "MAP_ROUTE131":             "static_sky",
+  "MAP_EVER_GRANDE_CITY":     "static_sky",
+
+  "MAP_MAUVILLE_CITY":        "static_sprawl",
+  "MAP_NEW_MAUVILLE":         "static_sprawl",
+
+  "MAP_ROUTE111":             "the_crucible",
+  "MAP_MIRAGE_TOWER":         "the_crucible",
+
+  "MAP_ROUTE119":             "the_overgrowth",
+  "MAP_FORTREE_CITY":         "the_overgrowth",
+  "MAP_WEATHER_INSTITUTE":    "the_overgrowth",
+
+  "MAP_SOOTOPOLIS_CITY":      "abyss_bloom",
+  "MAP_CAVE_OF_ORIGIN":       "abyss_bloom",
+  "MAP_ROUTE126":             "abyss_bloom",
+
+  "MAP_MOSSDEEP_CITY":        "the_veil",
+  "MAP_ROUTE124":             "the_veil"
+}

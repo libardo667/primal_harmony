@@ -1,0 +1,6 @@
+{
+  "id": "shields_down",
+  "name": "Shields Down",
+  "description": "Changes stats when HP drops below half.",
+  "hooks": []
+}

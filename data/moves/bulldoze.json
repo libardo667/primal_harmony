@@ -1,0 +1,15 @@
+{
+  "id": "bulldoze",
+  "name": "Bulldoze",
+  "type": "Ground",
+  "category": "physical",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Lowers opponent's Speed.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "topsy_turvy",
+  "name": "Topsy-Turvy",
+  "type": "Dark",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Reverses stat changes of opponent.",
+  "is_custom": false
+}

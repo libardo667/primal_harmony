@@ -1,0 +1,6 @@
+{
+  "id": "flower_veil",
+  "name": "Flower Veil",
+  "description": "Prevents lowering of ally Grass-type Pok\u00e9mon's stats.",
+  "hooks": []
+}

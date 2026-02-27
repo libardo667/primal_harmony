@@ -1,0 +1,15 @@
+{
+  "id": "silk_trap",
+  "name": "Silk Trap",
+  "type": "Bug",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Protects the user and lowers opponent's Speed on contact.",
+  "is_custom": false
+}

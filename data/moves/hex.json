@@ -1,0 +1,15 @@
+{
+  "id": "hex",
+  "name": "Hex",
+  "type": "Ghost",
+  "category": "special",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Inflicts more damage if the target has a status condition.",
+  "is_custom": false
+}

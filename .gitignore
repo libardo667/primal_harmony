@@ -1,0 +1,36 @@
+# Godot generated/editor cache
+.godot/
+.import/
+
+# Export/build outputs
+/android/
+/build/
+/dist/
+/exports/
+*.apk
+*.aab
+*.ipa
+
+# Python cache/venv
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# IDE/editor local settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temp/log files
+*.log
+*.tmp
+*.bak

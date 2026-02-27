@@ -1,0 +1,15 @@
+{
+  "id": "water_shuriken",
+  "name": "Water Shuriken",
+  "type": "Water",
+  "category": "special",
+  "power": 15,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Hits 2-5 times in one turn.",
+  "is_custom": false
+}

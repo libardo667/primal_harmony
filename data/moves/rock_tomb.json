@@ -1,0 +1,16 @@
+{
+  "id": "rock_tomb",
+  "name": "Rock Tomb",
+  "type": "Rock",
+  "category": "physical",
+  "power": 60,
+  "accuracy": 95,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "stat_drop_spe_1",
+  "flags": [],
+  "description": "Boulders are hurled at the target. This also lowers the target's Speed stat by preventing its movement.",
+  "is_custom": false,
+  "base_power": 60
+}

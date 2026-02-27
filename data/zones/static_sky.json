@@ -1,0 +1,219 @@
+{
+    "zone_id": "static_sky",
+    "zone_name": "The Static Sky",
+    "zone_number": 10,
+    "dominant_type": "Dragon",
+    "location": "Sky Pillar / Route 131 / Ever Grande City",
+    "ehi_local": 0.0,
+    "ehi_thresholds": {
+        "infested": [
+            0,
+            33
+        ],
+        "partial": [
+            34,
+            66
+        ],
+        "restored": [
+            67,
+            100
+        ]
+    },
+    "encounter_table": {
+        "infested": [
+            {
+                "species_id": "voidblu",
+                "level_range": [
+                    40,
+                    46
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "stormtaria",
+                "level_range": [
+                    44,
+                    50
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "abyssgon",
+                "level_range": [
+                    46,
+                    52
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "dragonite",
+                "level_range": [
+                    48,
+                    54
+                ],
+                "weight": 10,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "dragonair",
+                "level_range": [
+                    42,
+                    48
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "druddigon",
+                "level_range": [
+                    44,
+                    50
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "goodra",
+                "level_range": [
+                    46,
+                    52
+                ],
+                "weight": 10,
+                "time_of_day": "night"
+            }
+        ],
+        "partial": [
+            {
+                "species_id": "swablu",
+                "level_range": [
+                    40,
+                    46
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "altaria",
+                "level_range": [
+                    44,
+                    50
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "flygon",
+                "level_range": [
+                    46,
+                    52
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "voidblu",
+                "level_range": [
+                    40,
+                    46
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "stormtaria",
+                "level_range": [
+                    44,
+                    50
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "dragonair",
+                "level_range": [
+                    42,
+                    48
+                ],
+                "weight": 10,
+                "time_of_day": "any"
+            }
+        ],
+        "restored": [
+            {
+                "species_id": "swablu",
+                "level_range": [
+                    40,
+                    46
+                ],
+                "weight": 35,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "altaria",
+                "level_range": [
+                    44,
+                    50
+                ],
+                "weight": 35,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "flygon",
+                "level_range": [
+                    46,
+                    52
+                ],
+                "weight": 30,
+                "time_of_day": "any"
+            }
+        ]
+    },
+    "native_species": [
+        "swablu",
+        "altaria",
+        "flygon"
+    ],
+    "corrupted_variants": [
+        "voidblu",
+        "stormtaria",
+        "abyssgon"
+    ],
+    "quell_types": [
+        "Ice",
+        "Fairy"
+    ],
+    "traversal_hazards": [
+        {
+            "hazard_id": "wind_pushback",
+            "description": "Persistent high wind blows the player backward on exposed cliff sections of Route 131.",
+            "mitigation": "Mach Bike or Flying-type lead in party"
+        },
+        {
+            "hazard_id": "energy_discharge_tiles",
+            "description": "Random tiles in Sky Pillar deal Dragon-type damage. Pattern changes each visit.",
+            "mitigation": "Stabilizer Rod key item reduces discharge frequency"
+        },
+        {
+            "hazard_id": "summit_seal",
+            "description": "Sky Pillar summit sealed by draconic resonance — only opens to a recognized Rayquaza Bond presence.",
+            "mitigation": "Sufficient Rayquaza Bond level required"
+        }
+    ],
+    "key_items": [
+        "stabilizer_rod"
+    ],
+    "relocation_terminals": [
+        "Pacifidlog Town Pokemon Center",
+        "Ever Grande City Pokemon Center"
+    ],
+    "ehi_restoration_effect": "Removes the Rayquaza Bond cap, triggers the final cooperative encounter sequence, and allows access to Sky Pillar's summit — the location of the game's climactic story resolution.",
+    "narrative_role": "The final TOZ. Requires maximum Rayquaza Bond AND completion of both Emberscar and Abyss Bloom arcs. Clearing it triggers the endgame sequence.",
+    "story_gate": {
+        "required_ehi_global": 80,
+        "required_story_beat": "post_emberscar_and_abyss_bloom_complete",
+        "required_badges": 8
+    }
+}

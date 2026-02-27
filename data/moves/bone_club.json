@@ -1,0 +1,15 @@
+{
+  "id": "bone_club",
+  "name": "Bone Club",
+  "type": "Ground",
+  "category": "physical",
+  "power": 65,
+  "accuracy": 85,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May cause flinching.",
+  "is_custom": false
+}

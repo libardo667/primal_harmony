@@ -1,0 +1,6 @@
+{
+  "id": "keen_eye",
+  "name": "Keen Eye",
+  "description": "Prevents other Pok\u00e9mon from lowering accuracy.",
+  "hooks": []
+}

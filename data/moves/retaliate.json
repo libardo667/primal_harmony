@@ -1,0 +1,15 @@
+{
+  "id": "retaliate",
+  "name": "Retaliate",
+  "type": "Normal",
+  "category": "physical",
+  "power": 70,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Inflicts double damage if a teammate fainted on the last turn.",
+  "is_custom": false
+}

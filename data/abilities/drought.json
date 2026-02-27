@@ -1,0 +1,6 @@
+{
+  "id": "drought",
+  "name": "Drought",
+  "description": "Turns the sunlight harsh when the Pok\u00e9mon enters a battle.",
+  "hooks": []
+}

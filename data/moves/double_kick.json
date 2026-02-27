@@ -1,0 +1,15 @@
+{
+  "id": "double_kick",
+  "name": "Double Kick",
+  "type": "Fighting",
+  "category": "physical",
+  "power": 30,
+  "accuracy": 100,
+  "pp": 30,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Hits twice in one turn.",
+  "is_custom": false
+}

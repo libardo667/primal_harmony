@@ -1,0 +1,15 @@
+{
+  "id": "poison_fang",
+  "name": "Poison Fang",
+  "type": "Poison",
+  "category": "physical",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May badly poison opponent.",
+  "is_custom": false
+}

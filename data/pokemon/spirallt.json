@@ -1,0 +1,64 @@
+{
+  "id": "spirallt",
+  "name": "Spirallt",
+  "national_dex": null,
+  "types": [
+    "Psychic",
+    "Fairy"
+  ],
+  "base_stats": {
+    "hp": 95,
+    "atk": 18,
+    "def": 52,
+    "spa": 80,
+    "spd": 60,
+    "spe": 55
+  },
+  "abilities": [
+    "Trace",
+    "Synchronize"
+  ],
+  "hidden_ability": "Wonder Skin",
+  "learnset": [
+    {
+      "move_id": "charm",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "fairy_wind",
+      "method": "level",
+      "level": 5
+    },
+    {
+      "move_id": "confusion",
+      "method": "level",
+      "level": 13
+    },
+    {
+      "move_id": "psybeam",
+      "method": "level",
+      "level": 21
+    }
+  ],
+  "evolution": null,
+  "dex_entry": "Wynaut, usually patient and observant, have become trapped in looping psychic feedback — endlessly mirroring signals that no longer have a source. Their expressions cycle rapidly and unpredictably.",
+  "catch_rate": 100,
+  "base_exp": 70,
+  "growth_rate": "medium_fast",
+  "egg_groups": [
+    "Amorphous"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "the_veil",
+  "is_corrupted": true,
+  "corruption_zone": "the_veil",
+  "corruption_path": null,
+  "base_species": "wynaut",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/spirallt/front.png",
+    "back": "res://assets/sprites/pokemon/spirallt/back.png",
+    "icon": "res://assets/sprites/pokemon/spirallt/icon.png"
+  }
+}

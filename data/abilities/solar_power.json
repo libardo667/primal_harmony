@@ -1,0 +1,6 @@
+{
+  "id": "solar_power",
+  "name": "Solar Power",
+  "description": "In sunshine, Sp. Atk is boosted but HP decreases.",
+  "hooks": []
+}

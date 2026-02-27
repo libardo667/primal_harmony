@@ -1,0 +1,6 @@
+{
+  "id": "fur_coat",
+  "name": "Fur Coat",
+  "description": "Reduces damage from physical moves.",
+  "hooks": []
+}

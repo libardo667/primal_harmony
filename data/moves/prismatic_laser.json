@@ -1,0 +1,15 @@
+{
+  "id": "prismatic_laser",
+  "name": "Prismatic Laser",
+  "type": "Psychic",
+  "category": "special",
+  "power": 160,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The user shoots powerful lasers using the power of a prism. The user can't move on the next turn.",
+  "is_custom": false
+}

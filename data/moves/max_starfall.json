@@ -1,0 +1,15 @@
+{
+  "id": "max_starfall",
+  "name": "Max Starfall",
+  "type": "Fairy",
+  "category": "physical",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Fairy type Dynamax move. Summons Misty Terrain.",
+  "is_custom": false
+}

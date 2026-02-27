@@ -1,0 +1,16 @@
+{
+  "id": "intimidate",
+  "name": "Intimidate",
+  "description": "Lowers the foe's Attack stat.",
+  "hooks": [
+    {
+      "trigger": "on_entry",
+      "effect_type": "stat_modifier",
+      "params": {
+        "target": "opponent",
+        "stat": "atk",
+        "stages": -1
+      }
+    }
+  ]
+}

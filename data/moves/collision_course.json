@@ -1,0 +1,15 @@
+{
+  "id": "collision_course",
+  "name": "Collision Course",
+  "type": "Fighting",
+  "category": "physical",
+  "power": 100,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Boosted even more if it's super-effective.",
+  "is_custom": false
+}

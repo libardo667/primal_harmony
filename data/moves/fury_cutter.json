@@ -1,0 +1,15 @@
+{
+  "id": "fury_cutter",
+  "name": "Fury Cutter",
+  "type": "Bug",
+  "category": "physical",
+  "power": 40,
+  "accuracy": 95,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Power increases each turn.",
+  "is_custom": false
+}

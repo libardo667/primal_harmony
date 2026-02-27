@@ -1,0 +1,6 @@
+{
+  "id": "sniper",
+  "name": "Sniper",
+  "description": "Powers up moves if they become critical hits.",
+  "hooks": []
+}

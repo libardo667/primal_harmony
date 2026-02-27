@@ -1,0 +1,6 @@
+{
+  "id": "contrary",
+  "name": "Contrary",
+  "description": "Makes stat changes have an opposite effect.",
+  "hooks": []
+}

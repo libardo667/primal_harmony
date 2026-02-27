@@ -1,0 +1,6 @@
+{
+  "id": "suction_cups",
+  "name": "Suction Cups",
+  "description": "Negates all moves that force switching out.",
+  "hooks": []
+}

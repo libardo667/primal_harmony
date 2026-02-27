@@ -1,0 +1,6 @@
+{
+  "id": "filter",
+  "name": "Filter",
+  "description": "Reduces damage from super-effective attacks.",
+  "hooks": []
+}

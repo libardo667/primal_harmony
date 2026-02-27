@@ -1,0 +1,43 @@
+{
+  "id": "forgechic",
+  "name": "Forgechic",
+  "national_dex": null,
+  "types": [
+    "Fighting",
+    "Steel"
+  ],
+  "base_stats": {
+    "hp": 90,
+    "atk": 130,
+    "def": 120,
+    "spa": 40,
+    "spd": 60,
+    "spe": 45
+  },
+  "abilities": [
+    "Guts",
+    "Iron Fist"
+  ],
+  "hidden_ability": "Mold Breaker",
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "A heavy, powerful iron-plated raptor bearing almost no resemblance to its soft origin. Relentless and efficient in combat, with layered armor and talons that can shear stone. Slowest of its three final forms. Dex: \"It became what the pressure demanded. The question of whether it wanted to no longer applies.\"",
+  "catch_rate": 45,
+  "base_exp": 239,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Field"
+  ],
+  "gender_ratio": 12.5,
+  "is_native_hoenn": true,
+  "native_zone": null,
+  "is_corrupted": true,
+  "corruption_zone": "emberscar",
+  "corruption_path": "A",
+  "base_species": "torchic",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/forgechic/front.png",
+    "back": "res://assets/sprites/pokemon/forgechic/back.png",
+    "icon": "res://assets/sprites/pokemon/forgechic/icon.png"
+  }
+}

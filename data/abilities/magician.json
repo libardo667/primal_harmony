@@ -1,0 +1,6 @@
+{
+  "id": "magician",
+  "name": "Magician",
+  "description": "The Pok\u00e9mon steals the held item of a Pok\u00e9mon it hits with a move.",
+  "hooks": []
+}

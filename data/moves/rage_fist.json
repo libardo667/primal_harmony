@@ -1,0 +1,15 @@
+{
+  "id": "rage_fist",
+  "name": "Rage Fist",
+  "type": "Ghost",
+  "category": "physical",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The more times the user has been hit by attacks, the greater the move's power.",
+  "is_custom": false
+}

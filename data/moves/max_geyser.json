@@ -1,0 +1,15 @@
+{
+  "id": "max_geyser",
+  "name": "Max Geyser",
+  "type": "Water",
+  "category": "physical",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Water type Dynamax move. Summons heavy rain.",
+  "is_custom": false
+}

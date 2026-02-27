@@ -1,0 +1,15 @@
+{
+  "id": "assist",
+  "name": "Assist",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User performs a move known by its allies at random.",
+  "is_custom": false
+}

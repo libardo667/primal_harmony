@@ -1,0 +1,15 @@
+{
+  "id": "chip_away",
+  "name": "Chip Away",
+  "type": "Normal",
+  "category": "physical",
+  "power": 70,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Ignores opponent's stat changes.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "trump_card",
+  "name": "Trump Card",
+  "type": "Normal",
+  "category": "special",
+  "power": null,
+  "accuracy": null,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The lower the PP, the higher the power.",
+  "is_custom": false
+}

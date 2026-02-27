@@ -1,0 +1,15 @@
+{
+  "id": "sheer_cold",
+  "name": "Sheer Cold",
+  "type": "Ice",
+  "category": "special",
+  "power": null,
+  "accuracy": 30,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "One-Hit-KO, if it hits.",
+  "is_custom": false
+}

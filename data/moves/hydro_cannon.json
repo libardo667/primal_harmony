@@ -1,0 +1,15 @@
+{
+  "id": "hydro_cannon",
+  "name": "Hydro Cannon",
+  "type": "Water",
+  "category": "special",
+  "power": 150,
+  "accuracy": 90,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User must recharge next turn.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "substitute",
+  "name": "Substitute",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Uses HP to creates a decoy that takes hits.",
+  "is_custom": false
+}

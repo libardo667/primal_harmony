@@ -1,0 +1,15 @@
+{
+  "id": "destiny_bond",
+  "name": "Destiny Bond",
+  "type": "Ghost",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "If the user faints, the opponent also faints.",
+  "is_custom": false
+}

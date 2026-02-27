@@ -1,0 +1,15 @@
+{
+  "id": "high_horsepower",
+  "name": "High Horsepower",
+  "type": "Ground",
+  "category": "physical",
+  "power": 95,
+  "accuracy": 95,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The user fiercely attacks the target using its entire body.",
+  "is_custom": false
+}

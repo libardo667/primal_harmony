@@ -1,0 +1,15 @@
+{
+  "id": "autotomize",
+  "name": "Autotomize",
+  "type": "Steel",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Reduces weight and sharply raises Speed.",
+  "is_custom": false
+}

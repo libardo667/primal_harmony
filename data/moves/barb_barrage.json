@@ -1,0 +1,15 @@
+{
+  "id": "barb_barrage",
+  "name": "Barb Barrage",
+  "type": "Poison",
+  "category": "physical",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May poison opponent; inflicts double damage if the target is already poisoned.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "endure",
+  "name": "Endure",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Always left with at least 1 HP, but may fail if used consecutively.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "max_flutterby",
+  "name": "Max Flutterby",
+  "type": "Bug",
+  "category": "physical",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Bug type Dynamax move. Lowers the target's Special Attack.",
+  "is_custom": false
+}

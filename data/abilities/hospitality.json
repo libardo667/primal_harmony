@@ -1,0 +1,6 @@
+{
+  "id": "hospitality",
+  "name": "Hospitality",
+  "description": "Partially restores an ally's HP when it enters a battle.",
+  "hooks": []
+}

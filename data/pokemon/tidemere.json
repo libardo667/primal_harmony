@@ -1,0 +1,44 @@
+{
+  "id": "tidemere",
+  "name": "Tidemere",
+  "national_dex": null,
+  "types": [
+    "Water",
+    "Ghost"
+  ],
+  "base_stats": {
+    "hp": 105,
+    "atk": 65,
+    "def": 80,
+    "spa": 115,
+    "spd": 80,
+    "spe": 90
+  },
+  "abilities": [
+    "Torrent",
+    "Cursed Body"
+  ],
+  "hidden_ability": "Damp",
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "A powerful, semi-corporeal water-creature with ghostly trailing fins that blur the boundary between its body and the water around it. Dex: \"Almost here. Always almost. It has decided almost is enough to work with.\"",
+  "catch_rate": 45,
+  "base_exp": 239,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Monster",
+    "Water 1"
+  ],
+  "gender_ratio": 12.5,
+  "is_native_hoenn": true,
+  "native_zone": null,
+  "is_corrupted": true,
+  "corruption_zone": "dread_shore",
+  "corruption_path": "B",
+  "base_species": "mudkip",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/tidemere/front.png",
+    "back": "res://assets/sprites/pokemon/tidemere/back.png",
+    "icon": "res://assets/sprites/pokemon/tidemere/icon.png"
+  }
+}

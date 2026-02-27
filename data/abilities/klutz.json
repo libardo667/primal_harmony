@@ -1,0 +1,6 @@
+{
+  "id": "klutz",
+  "name": "Klutz",
+  "description": "The Pok\u00e9mon can't use any held items.",
+  "hooks": []
+}

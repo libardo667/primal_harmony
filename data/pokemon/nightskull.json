@@ -1,0 +1,64 @@
+{
+  "id": "nightskull",
+  "name": "Nightskull",
+  "national_dex": null,
+  "types": [
+    "Dark",
+    "Ghost"
+  ],
+  "base_stats": {
+    "hp": 25,
+    "atk": 55,
+    "def": 90,
+    "spa": 50,
+    "spd": 90,
+    "spe": 20
+  },
+  "abilities": [
+    "Levitate",
+    "Unnerve"
+  ],
+  "hidden_ability": "Justified",
+  "learnset": [
+    {
+      "move_id": "leer",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "astonish",
+      "method": "level",
+      "level": 6
+    },
+    {
+      "move_id": "pursuit",
+      "method": "level",
+      "level": 13
+    },
+    {
+      "move_id": "night_shade",
+      "method": "level",
+      "level": 20
+    }
+  ],
+  "evolution": null,
+  "dex_entry": "Duskull's single eye has gone fully dark — it no longer glows. It navigates entirely by sensing fear. Its robe has become heavy and wet-looking, like something dredged from deep water.",
+  "catch_rate": 160,
+  "base_exp": 75,
+  "growth_rate": "fast",
+  "egg_groups": [
+    "Amorphous"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "dread_shore",
+  "is_corrupted": true,
+  "corruption_zone": "dread_shore",
+  "corruption_path": null,
+  "base_species": "duskull",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/nightskull/front.png",
+    "back": "res://assets/sprites/pokemon/nightskull/back.png",
+    "icon": "res://assets/sprites/pokemon/nightskull/icon.png"
+  }
+}

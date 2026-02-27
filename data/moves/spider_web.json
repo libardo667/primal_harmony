@@ -1,0 +1,15 @@
+{
+  "id": "spider_web",
+  "name": "Spider Web",
+  "type": "Bug",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Opponent cannot escape/switch.",
+  "is_custom": false
+}

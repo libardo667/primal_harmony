@@ -1,0 +1,13 @@
+{
+    "id": "rubber_soles",
+    "name": "Rubber Soles",
+    "category": "key",
+    "effect": "prevent_grate_shock",
+    "effect_value": null,
+    "description": "Insulated rubber-soled boots. Prevents electric discharge damage when walking over metal grating in the Static Sprawl.",
+    "buy_price": null,
+    "sell_price": null,
+    "is_key_item": true,
+    "is_custom": true,
+    "zone_association": "static_sprawl"
+}

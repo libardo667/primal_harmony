@@ -1,0 +1,16 @@
+{
+  "id": "thundershock",
+  "name": "Thunder Shock",
+  "type": "Electric",
+  "category": "special",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 30,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "paralyze_10",
+  "flags": [],
+  "description": "A jolt of electricity crashes down on the target to inflict damage. This may also leave the target with paralysis.",
+  "is_custom": false,
+  "base_power": 40
+}

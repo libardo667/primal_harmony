@@ -1,0 +1,15 @@
+{
+  "id": "assurance",
+  "name": "Assurance",
+  "type": "Dark",
+  "category": "physical",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Power doubles if opponent already took damage in the same turn.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "splash",
+  "name": "Splash",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 40,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Doesn't do ANYTHING.",
+  "is_custom": false
+}

@@ -1,0 +1,6 @@
+{
+  "id": "opportunist",
+  "name": "Opportunist",
+  "description": "Copies stat boosts by the opponent.",
+  "hooks": []
+}

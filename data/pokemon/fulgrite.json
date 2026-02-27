@@ -1,0 +1,69 @@
+{
+  "id": "fulgrite",
+  "name": "Fulgrite",
+  "national_dex": null,
+  "types": [
+    "Electric",
+    "Rock"
+  ],
+  "base_stats": {
+    "hp": 35,
+    "atk": 50,
+    "def": 110,
+    "spa": 80,
+    "spd": 75,
+    "spe": 15
+  },
+  "abilities": [
+    "Sturdy",
+    "Rock Head"
+  ],
+  "hidden_ability": "Galvanize",
+  "learnset": [
+    {
+      "move_id": "tackle",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "thundershock",
+      "method": "level",
+      "level": 5
+    },
+    {
+      "move_id": "spark",
+      "method": "level",
+      "level": 13
+    },
+    {
+      "move_id": "poison_sting",
+      "method": "level",
+      "level": 17
+    },
+    {
+      "move_id": "venoshock",
+      "method": "level",
+      "level": 23
+    }
+  ],
+  "evolution": null,
+  "dex_entry": "Magnemite fused with the mineral deposits of New Mauville under electrical pressure, becoming partially crystallized. Can no longer float — skitters on the ground on rocky appendages.",
+  "catch_rate": 160,
+  "base_exp": 80,
+  "growth_rate": "medium_fast",
+  "egg_groups": [
+    "Mineral"
+  ],
+  "gender_ratio": -1,
+  "is_native_hoenn": true,
+  "native_zone": "static_sprawl",
+  "is_corrupted": true,
+  "corruption_zone": "static_sprawl",
+  "corruption_path": null,
+  "base_species": "magnemite",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/fulgrite/front.png",
+    "back": "res://assets/sprites/pokemon/fulgrite/back.png",
+    "icon": "res://assets/sprites/pokemon/fulgrite/icon.png"
+  }
+}

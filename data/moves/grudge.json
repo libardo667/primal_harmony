@@ -1,0 +1,15 @@
+{
+  "id": "grudge",
+  "name": "Grudge",
+  "type": "Ghost",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "If the users faints after using this move, the PP for the opponent's last move is depleted.",
+  "is_custom": false
+}

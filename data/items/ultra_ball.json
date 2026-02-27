@@ -1,0 +1,13 @@
+{
+    "id": "ultra_ball",
+    "name": "Ultra Ball",
+    "category": "ball",
+    "effect": "catch_2x",
+    "effect_value": 4,
+    "description": "An ultra-high-performance Ball that provides a higher Pokémon catch rate than a Great Ball.",
+    "buy_price": 1200,
+    "sell_price": 600,
+    "is_key_item": false,
+    "is_custom": false,
+    "zone_association": null
+}

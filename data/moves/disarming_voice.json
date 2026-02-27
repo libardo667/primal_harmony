@@ -1,0 +1,15 @@
+{
+  "id": "disarming_voice",
+  "name": "Disarming Voice",
+  "type": "Fairy",
+  "category": "special",
+  "power": 40,
+  "accuracy": null,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Ignores Accuracy and Evasiveness.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "triple_dive",
+  "name": "Triple Dive",
+  "type": "Water",
+  "category": "physical",
+  "power": 30,
+  "accuracy": 95,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Hits 3 times in a row.",
+  "is_custom": false
+}

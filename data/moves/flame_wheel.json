@@ -1,0 +1,19 @@
+{
+  "id": "flame_wheel",
+  "name": "Flame Wheel",
+  "type": "Fire",
+  "category": "physical",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 25,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "burn_10",
+  "flags": [
+    "contact",
+    "defrost"
+  ],
+  "description": "The user cloaks itself in fire and charges at the target. This may also leave the target with a burn.",
+  "is_custom": false,
+  "base_power": 60
+}

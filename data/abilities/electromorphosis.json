@@ -1,0 +1,6 @@
+{
+  "id": "electromorphosis",
+  "name": "Electromorphosis",
+  "description": "Doubles power of the next Electric-type move when hit by an attack.",
+  "hooks": []
+}

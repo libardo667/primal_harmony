@@ -1,0 +1,15 @@
+{
+  "id": "max_mindstorm",
+  "name": "Max Mindstorm",
+  "type": "Psychic",
+  "category": "physical",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Psychic type Dynamax move. Summons Psychic Terrain.",
+  "is_custom": false
+}

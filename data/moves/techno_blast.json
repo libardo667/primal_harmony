@@ -1,0 +1,15 @@
+{
+  "id": "techno_blast",
+  "name": "Techno Blast",
+  "type": "Normal",
+  "category": "special",
+  "power": 120,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Type depends on the Drive being held.",
+  "is_custom": false
+}

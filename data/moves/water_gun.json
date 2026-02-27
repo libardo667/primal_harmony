@@ -1,0 +1,16 @@
+{
+  "id": "water_gun",
+  "name": "Water Gun",
+  "type": "Water",
+  "category": "special",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 25,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The target is blasted with a forceful shot of water.",
+  "is_custom": false,
+  "base_power": 40
+}

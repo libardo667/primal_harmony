@@ -1,0 +1,15 @@
+{
+  "id": "steel_roller",
+  "name": "Steel Roller",
+  "type": "Steel",
+  "category": "physical",
+  "power": 130,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Fails if no Terrain in effect.",
+  "is_custom": false
+}

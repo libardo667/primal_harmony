@@ -1,0 +1,32 @@
+{
+  "tileset": "secondary_rustboro",
+  "fps": 3.75,
+  "bottom_atlas": "res://assets/tilesets/anim/secondary_rustboro_anim_bottom.png",
+  "top_atlas": "res://assets/tilesets/anim/secondary_rustboro_anim_top.png",
+  "animated_metatiles": {
+    "119": {
+      "row": 0,
+      "frame_count": 8
+    },
+    "192": {
+      "row": 1,
+      "frame_count": 8
+    },
+    "315": {
+      "row": 2,
+      "frame_count": 8
+    },
+    "316": {
+      "row": 3,
+      "frame_count": 8
+    },
+    "336": {
+      "row": 4,
+      "frame_count": 8
+    },
+    "337": {
+      "row": 5,
+      "frame_count": 8
+    }
+  }
+}

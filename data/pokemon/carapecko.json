@@ -1,0 +1,44 @@
+{
+  "id": "carapecko",
+  "name": "Carapecko",
+  "national_dex": null,
+  "types": [
+    "Bug",
+    "Rock"
+  ],
+  "base_stats": {
+    "hp": 60,
+    "atk": 105,
+    "def": 120,
+    "spa": 40,
+    "spd": 65,
+    "spe": 95
+  },
+  "abilities": [
+    "Sturdy",
+    "Shell Armor"
+  ],
+  "hidden_ability": "Hustle",
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "A fully armored gecko with a layered exoskeleton carapace, mandibles, and rocky dorsal spines. The tail-tip has become a scorpion-like mineral spike. Dex: \"The forest it came from would not recognize it. That does not trouble Carapecko. Carapecko does not think of forests.\"",
+  "catch_rate": 45,
+  "base_exp": 239,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Monster",
+    "Dragon"
+  ],
+  "gender_ratio": 12.5,
+  "is_native_hoenn": true,
+  "native_zone": null,
+  "is_corrupted": true,
+  "corruption_zone": "the_crucible",
+  "corruption_path": "A",
+  "base_species": "treecko",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/carapecko/front.png",
+    "back": "res://assets/sprites/pokemon/carapecko/back.png",
+    "icon": "res://assets/sprites/pokemon/carapecko/icon.png"
+  }
+}

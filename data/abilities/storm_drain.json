@@ -1,0 +1,6 @@
+{
+  "id": "storm_drain",
+  "name": "Storm Drain",
+  "description": "Draws in all Water-type moves to up Sp. Attack.",
+  "hooks": []
+}

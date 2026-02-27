@@ -1,0 +1,15 @@
+{
+  "id": "fillet_away",
+  "name": "Fillet Away",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Lowers HP but sharply boosts Attack, Special Attack, and Speed.",
+  "is_custom": false
+}

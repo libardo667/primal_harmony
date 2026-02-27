@@ -1,0 +1,16 @@
+{
+  "id": "magnitude",
+  "name": "Magnitude",
+  "type": "Ground",
+  "category": "physical",
+  "power": null,
+  "accuracy": 100,
+  "pp": 30,
+  "priority": 0,
+  "target": "all_adjacent",
+  "effect": "random_power",
+  "flags": [],
+  "description": "The user attacks everything around it with a ground-shaking quake. Its power varies.",
+  "is_custom": false,
+  "base_power": 0
+}

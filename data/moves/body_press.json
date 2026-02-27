@@ -1,0 +1,15 @@
+{
+  "id": "body_press",
+  "name": "Body Press",
+  "type": "Fighting",
+  "category": "physical",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The higher the user's Defense, the stronger the attack.",
+  "is_custom": false
+}

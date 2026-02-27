@@ -1,0 +1,43 @@
+{
+  "id": "ruintoy",
+  "name": "Ruintoy",
+  "national_dex": null,
+  "types": [
+    "Ground",
+    "Psychic"
+  ],
+  "base_stats": {
+    "hp": 50,
+    "atk": 50,
+    "def": 65,
+    "spa": 85,
+    "spd": 90,
+    "spe": 55
+  },
+  "abilities": [
+    "Levitate",
+    "Analytic"
+  ],
+  "hidden_ability": "Telepathy",
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "Baltoy has been resonating with the disturbed fossils and ancient strata. Its spinning has become erratic. It seems to be receiving signals from deep underground.",
+  "catch_rate": 100,
+  "base_exp": 75,
+  "growth_rate": "medium_fast",
+  "egg_groups": [
+    "Mineral"
+  ],
+  "gender_ratio": -1,
+  "is_native_hoenn": true,
+  "native_zone": "the_crucible",
+  "is_corrupted": true,
+  "corruption_zone": "the_crucible",
+  "corruption_path": null,
+  "base_species": "baltoy",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/ruintoy/front.png",
+    "back": "res://assets/sprites/pokemon/ruintoy/back.png",
+    "icon": "res://assets/sprites/pokemon/ruintoy/icon.png"
+  }
+}

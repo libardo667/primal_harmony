@@ -1,0 +1,48 @@
+{
+  "id": "trapinch",
+  "name": "Trapinch",
+  "national_dex": 328,
+  "types": [
+    "Ground"
+  ],
+  "base_stats": {
+    "hp": 45,
+    "atk": 100,
+    "def": 45,
+    "spa": 45,
+    "spd": 45,
+    "spe": 10
+  },
+  "abilities": [
+    "Hyper Cutter",
+    "Arena Trap"
+  ],
+  "hidden_ability": "Sheer Force",
+  "learnset": [],
+  "evolution": {
+    "method": "level",
+    "level": 35,
+    "item": null,
+    "condition": null,
+    "into": "vibrava"
+  },
+  "dex_entry": "Trapinch makes its pit in arid desert areas. Its big jaws crush the thick hide of prey.",
+  "catch_rate": 255,
+  "base_exp": 58,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Bug"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "the_crucible",
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/trapinch/front.png",
+    "back": "res://assets/sprites/pokemon/trapinch/back.png",
+    "icon": "res://assets/sprites/pokemon/trapinch/icon.png"
+  }
+}

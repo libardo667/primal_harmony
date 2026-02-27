@@ -1,0 +1,230 @@
+{
+    "zone_id": "static_sprawl",
+    "zone_name": "The Static Sprawl",
+    "zone_number": 2,
+    "dominant_type": "Electric",
+    "location": "Mauville City / New Mauville",
+    "ehi_local": 0.0,
+    "ehi_thresholds": {
+        "infested": [
+            0,
+            33
+        ],
+        "partial": [
+            34,
+            66
+        ],
+        "restored": [
+            67,
+            100
+        ]
+    },
+    "encounter_table": {
+        "infested": [
+            {
+                "species_id": "staticorb",
+                "level_range": [
+                    18,
+                    22
+                ],
+                "weight": 25,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "galvantrike",
+                "level_range": [
+                    18,
+                    22
+                ],
+                "weight": 25,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "fulgrite",
+                "level_range": [
+                    17,
+                    21
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "jolteon",
+                "level_range": [
+                    20,
+                    24
+                ],
+                "weight": 10,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "pachirisu",
+                "level_range": [
+                    16,
+                    20
+                ],
+                "weight": 15,
+                "time_of_day": "day"
+            },
+            {
+                "species_id": "mareep",
+                "level_range": [
+                    15,
+                    19
+                ],
+                "weight": 5,
+                "time_of_day": "night"
+            }
+        ],
+        "partial": [
+            {
+                "species_id": "voltorb",
+                "level_range": [
+                    18,
+                    22
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "electrike",
+                "level_range": [
+                    18,
+                    22
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "staticorb",
+                "level_range": [
+                    18,
+                    22
+                ],
+                "weight": 10,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "galvantrike",
+                "level_range": [
+                    18,
+                    22
+                ],
+                "weight": 10,
+                "time_of_day": "night"
+            },
+            {
+                "species_id": "magnemite",
+                "level_range": [
+                    17,
+                    21
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "plusle",
+                "level_range": [
+                    16,
+                    20
+                ],
+                "weight": 10,
+                "time_of_day": "day"
+            },
+            {
+                "species_id": "minun",
+                "level_range": [
+                    16,
+                    20
+                ],
+                "weight": 10,
+                "time_of_day": "day"
+            }
+        ],
+        "restored": [
+            {
+                "species_id": "voltorb",
+                "level_range": [
+                    18,
+                    22
+                ],
+                "weight": 25,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "electrike",
+                "level_range": [
+                    18,
+                    22
+                ],
+                "weight": 25,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "magnemite",
+                "level_range": [
+                    17,
+                    21
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "plusle",
+                "level_range": [
+                    16,
+                    20
+                ],
+                "weight": 15,
+                "time_of_day": "day"
+            },
+            {
+                "species_id": "minun",
+                "level_range": [
+                    16,
+                    20
+                ],
+                "weight": 15,
+                "time_of_day": "day"
+            }
+        ]
+    },
+    "native_species": [
+        "voltorb",
+        "electrike",
+        "magnemite",
+        "plusle",
+        "minun"
+    ],
+    "corrupted_variants": [
+        "staticorb",
+        "galvantrike",
+        "fulgrite"
+    ],
+    "quell_types": [
+        "Ground"
+    ],
+    "traversal_hazards": [
+        {
+            "hazard_id": "metal_grate_shock",
+            "description": "Metal-grate paths deliver periodic electric shocks.",
+            "mitigation": "Ground-type lead in the party"
+        },
+        {
+            "hazard_id": "underground_live_wires",
+            "description": "New Mauville's interior is a maze of live wires and overloaded generators.",
+            "mitigation": "Rubber Soles key item"
+        }
+    ],
+    "key_items": [
+        "rubber_soles",
+        "discharge_rod"
+    ],
+    "relocation_terminals": [
+        "Mauville City Pokemon Center",
+        "Verdanturf Town Pokemon Center"
+    ],
+    "ehi_restoration_effect": "Reactivates the Mauville power grid, unlocking fast-travel between Pokemon Centers across Hoenn.",
+    "narrative_role": "Restoring unlocks fast-travel between Pokemon Centers — a major quality-of-life unlock tied to ecological progress.",
+    "story_gate": null
+}

@@ -1,0 +1,6 @@
+{
+  "id": "no_guard",
+  "name": "No Guard",
+  "description": "Ensures attacks by or against the Pok\u00e9mon land.",
+  "hooks": []
+}

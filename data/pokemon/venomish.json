@@ -1,0 +1,70 @@
+{
+  "id": "venomish",
+  "name": "Venomish",
+  "national_dex": null,
+  "types": [
+    "Poison",
+    "Grass"
+  ],
+  "base_stats": {
+    "hp": 65,
+    "atk": 35,
+    "def": 65,
+    "spa": 70,
+    "spd": 65,
+    "spe": 25
+  },
+  "abilities": [
+    "Poison Touch",
+    "Effect Spore"
+  ],
+  "hidden_ability": "Poison Heal",
+  "learnset": [
+    {
+      "move_id": "absorb",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "tackle",
+      "method": "level",
+      "level": 4
+    },
+    {
+      "move_id": "smog",
+      "method": "level",
+      "level": 8
+    },
+    {
+      "move_id": "sludge",
+      "method": "level",
+      "level": 15
+    },
+    {
+      "move_id": "venoshock",
+      "method": "level",
+      "level": 22
+    }
+  ],
+  "evolution": null,
+  "dex_entry": "Shroomish's spores have become highly toxic rather than sleep-inducing. Its cap has darkened and swollen. It no longer hops — it oozes. The forest made it a warning. It didn't ask to be.",
+  "catch_rate": 210,
+  "base_exp": 70,
+  "growth_rate": "fluctuating",
+  "egg_groups": [
+    "Fairy",
+    "Grass"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "the_murk",
+  "is_corrupted": true,
+  "corruption_zone": "the_murk",
+  "corruption_path": null,
+  "base_species": "shroomish",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/venomish/front.png",
+    "back": "res://assets/sprites/pokemon/venomish/back.png",
+    "icon": "res://assets/sprites/pokemon/venomish/icon.png"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "id": "volt_absorb",
+  "name": "Volt Absorb",
+  "description": "Restores HP if hit by an Electric-type move.",
+  "hooks": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "snore",
+  "name": "Snore",
+  "type": "Normal",
+  "category": "special",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Can only be used if asleep. May cause flinching.",
+  "is_custom": false
+}

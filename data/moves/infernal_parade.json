@@ -1,0 +1,15 @@
+{
+  "id": "infernal_parade",
+  "name": "Infernal Parade",
+  "type": "Ghost",
+  "category": "special",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Inflicts double damage if the target has a status condition.",
+  "is_custom": false
+}

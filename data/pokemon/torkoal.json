@@ -1,0 +1,63 @@
+{
+  "id": "torkoal",
+  "name": "Torkoal",
+  "national_dex": 324,
+  "types": [
+    "Fire"
+  ],
+  "base_stats": {
+    "hp": 70,
+    "atk": 85,
+    "def": 140,
+    "spa": 85,
+    "spd": 70,
+    "spe": 20
+  },
+  "abilities": [
+    "White Smoke",
+    "Drought"
+  ],
+  "hidden_ability": "Shell Armor",
+  "learnset": [
+    {
+      "move_id": "smog",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "ember",
+      "method": "level",
+      "level": 4
+    },
+    {
+      "move_id": "fire_spin",
+      "method": "level",
+      "level": 15
+    },
+    {
+      "move_id": "flame_wheel",
+      "method": "level",
+      "level": 25
+    }
+  ],
+  "evolution": null,
+  "dex_entry": "Torkoal digs through mountains in search of coal. It fills its hollow body with coal and burns it to produce energy.",
+  "catch_rate": 90,
+  "base_exp": 165,
+  "growth_rate": "medium_fast",
+  "egg_groups": [
+    "Field"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "emberscar",
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/torkoal/front.png",
+    "back": "res://assets/sprites/pokemon/torkoal/back.png",
+    "icon": "res://assets/sprites/pokemon/torkoal/icon.png"
+  }
+}

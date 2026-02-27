@@ -1,0 +1,15 @@
+{
+  "id": "overheat",
+  "name": "Overheat",
+  "type": "Fire",
+  "category": "special",
+  "power": 130,
+  "accuracy": 90,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Sharply lowers user's Special Attack.",
+  "is_custom": false
+}

@@ -1,0 +1,13 @@
+{
+    "id": "stabilizer_rod",
+    "name": "Stabilizer Rod",
+    "category": "key",
+    "effect": "reduce_static_sky_discharge_frequency",
+    "effect_value": null,
+    "description": "A grounding rod that absorbs draconic energy discharges. Reduces tile-damage frequency in the Static Sky.",
+    "buy_price": null,
+    "sell_price": null,
+    "is_key_item": true,
+    "is_custom": true,
+    "zone_association": "static_sky"
+}

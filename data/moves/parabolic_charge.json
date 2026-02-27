@@ -1,0 +1,15 @@
+{
+  "id": "parabolic_charge",
+  "name": "Parabolic Charge",
+  "type": "Electric",
+  "category": "special",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User recovers half the HP inflicted on opponent.",
+  "is_custom": false
+}

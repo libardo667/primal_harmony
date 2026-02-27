@@ -1,0 +1,15 @@
+{
+  "id": "sacred_sword",
+  "name": "Sacred Sword",
+  "type": "Fighting",
+  "category": "physical",
+  "power": 90,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Ignores opponent's stat changes.",
+  "is_custom": false
+}

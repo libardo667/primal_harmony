@@ -1,0 +1,15 @@
+{
+  "id": "axe_kick",
+  "name": "Axe Kick",
+  "type": "Fighting",
+  "category": "physical",
+  "power": 120,
+  "accuracy": 90,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May confuse opponent. If it misses, the user loses HP.",
+  "is_custom": false
+}

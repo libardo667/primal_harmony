@@ -1,0 +1,6 @@
+{
+  "id": "innards_out",
+  "name": "Innards Out",
+  "description": "Deals damage upon fainting.",
+  "hooks": []
+}

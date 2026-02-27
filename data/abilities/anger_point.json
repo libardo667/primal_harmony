@@ -1,0 +1,6 @@
+{
+  "id": "anger_point",
+  "name": "Anger Point",
+  "description": "Maxes Attack after taking a critical hit.",
+  "hooks": []
+}

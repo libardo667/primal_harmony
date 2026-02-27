@@ -1,0 +1,15 @@
+{
+  "id": "brick_break",
+  "name": "Brick Break",
+  "type": "Fighting",
+  "category": "physical",
+  "power": 75,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Breaks through Reflect and Light Screen barriers.",
+  "is_custom": false
+}

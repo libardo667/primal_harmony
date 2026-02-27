@@ -1,0 +1,16 @@
+{
+  "id": "poison_sting",
+  "name": "Poison Sting",
+  "type": "Poison",
+  "category": "physical",
+  "power": 15,
+  "accuracy": 100,
+  "pp": 35,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "poison_30",
+  "flags": [],
+  "description": "The user stabs the target with a poisonous stinger. This may also poison the target.",
+  "is_custom": false,
+  "base_power": 15
+}

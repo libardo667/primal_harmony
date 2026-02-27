@@ -1,0 +1,15 @@
+{
+  "id": "triple_axel",
+  "name": "Triple Axel",
+  "type": "Ice",
+  "category": "physical",
+  "power": 20,
+  "accuracy": 90,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Attacks thrice with more power each time.",
+  "is_custom": false
+}

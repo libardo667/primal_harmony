@@ -1,0 +1,6 @@
+{
+  "id": "teraform_zero",
+  "name": "Teraform Zero",
+  "description": "Eliminates all effects of weather and terrain.",
+  "hooks": []
+}

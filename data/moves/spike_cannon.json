@@ -1,0 +1,15 @@
+{
+  "id": "spike_cannon",
+  "name": "Spike Cannon",
+  "type": "Normal",
+  "category": "physical",
+  "power": 20,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Hits 2-5 times in one turn.",
+  "is_custom": false
+}

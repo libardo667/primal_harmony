@@ -1,0 +1,6 @@
+{
+  "id": "mirror_armor",
+  "name": "Mirror Armor",
+  "description": "Reflects any stat-lowering effects.",
+  "hooks": []
+}

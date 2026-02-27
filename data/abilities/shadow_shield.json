@@ -1,0 +1,6 @@
+{
+  "id": "shadow_shield",
+  "name": "Shadow Shield",
+  "description": "Reduces damage when HP is full.",
+  "hooks": []
+}

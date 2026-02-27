@@ -1,0 +1,13 @@
+{
+    "id": "heat_resist",
+    "name": "Heat-Resist Coat",
+    "category": "key",
+    "effect": "prevent_ambient_burn_drain",
+    "effect_value": null,
+    "description": "A layered heat-resistant coat. Prevents passive HP drain from Emberscar's ambient fire saturation.",
+    "buy_price": null,
+    "sell_price": null,
+    "is_key_item": true,
+    "is_custom": true,
+    "zone_association": "emberscar"
+}

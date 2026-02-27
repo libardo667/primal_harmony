@@ -1,0 +1,6 @@
+{
+  "id": "quick_feet",
+  "name": "Quick Feet",
+  "description": "Boosts Speed if there is a status problem.",
+  "hooks": []
+}

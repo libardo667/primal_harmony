@@ -1,0 +1,6 @@
+{
+  "id": "earth_eater",
+  "name": "Earth Eater",
+  "description": "Restores HP when hit by a Ground-type move.",
+  "hooks": []
+}

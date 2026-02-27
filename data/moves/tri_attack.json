@@ -1,0 +1,15 @@
+{
+  "id": "tri_attack",
+  "name": "Tri Attack",
+  "type": "Normal",
+  "category": "special",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May paralyze, burn or freeze opponent.",
+  "is_custom": false
+}

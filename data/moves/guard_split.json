@@ -1,0 +1,15 @@
+{
+  "id": "guard_split",
+  "name": "Guard Split",
+  "type": "Psychic",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Averages Defense and Special Defense with the target.",
+  "is_custom": false
+}

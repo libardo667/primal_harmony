@@ -1,0 +1,6 @@
+{
+  "id": "ball_fetch",
+  "name": "Ball Fetch",
+  "description": "Retrieves a Pok\u00e9 Ball from a failed throw.",
+  "hooks": []
+}

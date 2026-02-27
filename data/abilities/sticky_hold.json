@@ -1,0 +1,6 @@
+{
+  "id": "sticky_hold",
+  "name": "Sticky Hold",
+  "description": "Protects the Pok\u00e9mon from item theft.",
+  "hooks": []
+}

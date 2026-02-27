@@ -1,0 +1,15 @@
+{
+  "id": "bolt_strike",
+  "name": "Bolt Strike",
+  "type": "Electric",
+  "category": "physical",
+  "power": 130,
+  "accuracy": 85,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May paralyze opponent.",
+  "is_custom": false
+}

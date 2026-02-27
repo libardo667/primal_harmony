@@ -1,0 +1,50 @@
+{
+  "id": "scleecko",
+  "name": "Scleecko",
+  "national_dex": null,
+  "types": [
+    "Bug",
+    "Rock"
+  ],
+  "base_stats": {
+    "hp": 40,
+    "atk": 50,
+    "def": 65,
+    "spa": 30,
+    "spd": 40,
+    "spe": 60
+  },
+  "abilities": [
+    "Sturdy",
+    "Shell Armor"
+  ],
+  "hidden_ability": "Hustle",
+  "learnset": [],
+  "evolution": {
+    "method": "level",
+    "level": 36,
+    "item": null,
+    "condition": null,
+    "into": "carapecko"
+  },
+  "dex_entry": "Treecko's skin has hardened into chitinous plates, its green entirely faded to grey-brown. The adhesive pads on its feet have become rock-boring hooks. Dex: \"It forgot it could photosynthesize. The stone remembers for it now.\"",
+  "catch_rate": 45,
+  "base_exp": 65,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Monster",
+    "Dragon"
+  ],
+  "gender_ratio": 12.5,
+  "is_native_hoenn": true,
+  "native_zone": null,
+  "is_corrupted": true,
+  "corruption_zone": "the_crucible",
+  "corruption_path": "A",
+  "base_species": "treecko",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/scleecko/front.png",
+    "back": "res://assets/sprites/pokemon/scleecko/back.png",
+    "icon": "res://assets/sprites/pokemon/scleecko/icon.png"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "karate_chop",
+  "name": "Karate Chop",
+  "type": "Fighting",
+  "category": "physical",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 25,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "high_crit",
+  "flags": [
+    "contact"
+  ],
+  "description": "The target is attacked with a sharp chop. Critical hits land more easily.",
+  "is_custom": false,
+  "base_power": 50
+}

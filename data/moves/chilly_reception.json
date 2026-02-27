@@ -1,0 +1,15 @@
+{
+  "id": "chilly_reception",
+  "name": "Chilly Reception",
+  "type": "Ice",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Switches out and summons a snowstorm lasting 5 turns.",
+  "is_custom": false
+}

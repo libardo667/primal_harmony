@@ -1,0 +1,15 @@
+{
+  "id": "mud_sport",
+  "name": "Mud Sport",
+  "type": "Ground",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Weakens the power of Electric-type moves.",
+  "is_custom": false
+}

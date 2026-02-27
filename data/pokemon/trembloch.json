@@ -1,0 +1,43 @@
+{
+  "id": "trembloch",
+  "name": "Trembloch",
+  "national_dex": null,
+  "types": [
+    "Ground",
+    "Rock"
+  ],
+  "base_stats": {
+    "hp": 55,
+    "atk": 125,
+    "def": 65,
+    "spa": 40,
+    "spd": 45,
+    "spe": 5
+  },
+  "abilities": [
+    "Arena Trap",
+    "Sheer Force"
+  ],
+  "hidden_ability": "Sand Force",
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "Trapinch's pit-building instinct has been amplified — it now creates sinkholes large enough to swallow a trainer. Its jaws can crush stone. It built a trap for the world. The world fell in.",
+  "catch_rate": 200,
+  "base_exp": 75,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Bug"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "the_crucible",
+  "is_corrupted": true,
+  "corruption_zone": "the_crucible",
+  "corruption_path": null,
+  "base_species": "trapinch",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/trembloch/front.png",
+    "back": "res://assets/sprites/pokemon/trembloch/back.png",
+    "icon": "res://assets/sprites/pokemon/trembloch/icon.png"
+  }
+}

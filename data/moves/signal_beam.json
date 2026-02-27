@@ -1,0 +1,15 @@
+{
+  "id": "signal_beam",
+  "name": "Signal Beam",
+  "type": "Bug",
+  "category": "special",
+  "power": 75,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May confuse opponent.",
+  "is_custom": false
+}

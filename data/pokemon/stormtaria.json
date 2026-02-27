@@ -1,0 +1,44 @@
+{
+  "id": "stormtaria",
+  "name": "Stormtaria",
+  "national_dex": null,
+  "types": [
+    "Dragon",
+    "Flying"
+  ],
+  "base_stats": {
+    "hp": 80,
+    "atk": 85,
+    "def": 95,
+    "spa": 95,
+    "spd": 110,
+    "spe": 90
+  },
+  "abilities": [
+    "Natural Cure",
+    "Cloud Nine"
+  ],
+  "hidden_ability": "Delta Stream",
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "Altaria that absorbed the Static Sky's resonance have grown more angular — their cloud wings have developed visible internal lightning. They are no longer gentle. They circle the Pillar ceaselessly.",
+  "catch_rate": 35,
+  "base_exp": 195,
+  "growth_rate": "erratic",
+  "egg_groups": [
+    "Flying",
+    "Dragon"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "static_sky",
+  "is_corrupted": true,
+  "corruption_zone": "static_sky",
+  "corruption_path": null,
+  "base_species": "altaria",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/stormtaria/front.png",
+    "back": "res://assets/sprites/pokemon/stormtaria/back.png",
+    "icon": "res://assets/sprites/pokemon/stormtaria/icon.png"
+  }
+}

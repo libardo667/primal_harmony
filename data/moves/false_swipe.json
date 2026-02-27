@@ -1,0 +1,18 @@
+{
+  "id": "false_swipe",
+  "name": "False Swipe",
+  "type": "Normal",
+  "category": "physical",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 40,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "leave_1hp",
+  "flags": [
+    "contact"
+  ],
+  "description": "A restrained attack that prevents the target from fainting. The target is left with at least 1 HP.",
+  "is_custom": false,
+  "base_power": 40
+}

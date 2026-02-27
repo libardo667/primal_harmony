@@ -1,0 +1,17 @@
+{
+  "id": "static",
+  "name": "Static",
+  "description": "The Pokemon may paralyze an attacker that makes direct contact.",
+  "hooks": [
+    {
+      "trigger": "on_damage_taken",
+      "effect_type": "status_inflict",
+      "params": {
+        "target": "attacker",
+        "status": "paralysis",
+        "chance": 0.3,
+        "contact_required": true
+      }
+    }
+  ]
+}

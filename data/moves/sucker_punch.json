@@ -1,0 +1,15 @@
+{
+  "id": "sucker_punch",
+  "name": "Sucker Punch",
+  "type": "Dark",
+  "category": "physical",
+  "power": 70,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User attacks first, but only works if opponent is readying an attack.",
+  "is_custom": false
+}

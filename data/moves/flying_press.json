@@ -1,0 +1,15 @@
+{
+  "id": "flying_press",
+  "name": "Flying Press",
+  "type": "Fighting",
+  "category": "physical",
+  "power": 100,
+  "accuracy": 95,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Deals Fighting and Flying type damage.",
+  "is_custom": false
+}

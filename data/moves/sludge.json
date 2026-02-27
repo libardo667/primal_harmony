@@ -1,0 +1,16 @@
+{
+  "id": "sludge",
+  "name": "Sludge",
+  "type": "Poison",
+  "category": "special",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "poison_30",
+  "flags": [],
+  "description": "Unsanitary sludge is hurled at the target. This may also poison the target.",
+  "is_custom": false,
+  "base_power": 65
+}

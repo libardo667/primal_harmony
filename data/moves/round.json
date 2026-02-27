@@ -1,0 +1,15 @@
+{
+  "id": "round",
+  "name": "Round",
+  "type": "Normal",
+  "category": "special",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Power increases if teammates use it in the same turn.",
+  "is_custom": false
+}

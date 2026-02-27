@@ -1,0 +1,16 @@
+{
+  "id": "venoshock",
+  "name": "Venoshock",
+  "type": "Poison",
+  "category": "special",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "double_if_poisoned",
+  "flags": [],
+  "description": "The user drenches the target in a special poisonous liquid. This move's power is doubled if the target is poisoned.",
+  "is_custom": false,
+  "base_power": 65
+}

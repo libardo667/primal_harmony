@@ -1,0 +1,6 @@
+{
+  "id": "aura_break",
+  "name": "Aura Break",
+  "description": "Reduces power of Dark- and Fairy-type moves.",
+  "hooks": []
+}

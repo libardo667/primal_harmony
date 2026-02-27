@@ -1,0 +1,15 @@
+{
+  "id": "encore",
+  "name": "Encore",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Forces opponent to keep using its last move for 3 turns.",
+  "is_custom": false
+}

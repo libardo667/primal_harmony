@@ -1,0 +1,15 @@
+{
+  "id": "max_quake",
+  "name": "Max Quake",
+  "type": "Ground",
+  "category": "physical",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Ground type Dynamax move. Increases the team's Special Defense.",
+  "is_custom": false
+}

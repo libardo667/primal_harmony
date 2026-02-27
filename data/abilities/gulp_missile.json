@@ -1,0 +1,6 @@
+{
+  "id": "gulp_missile",
+  "name": "Gulp Missile",
+  "description": "Returns with a catch in its mouth after using Surf or Dive.",
+  "hooks": []
+}

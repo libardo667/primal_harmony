@@ -1,0 +1,15 @@
+{
+  "id": "parting_shot",
+  "name": "Parting Shot",
+  "type": "Dark",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Lowers opponent's Attack and Special Attack then switches out.",
+  "is_custom": false
+}

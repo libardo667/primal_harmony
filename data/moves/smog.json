@@ -1,0 +1,16 @@
+{
+  "id": "smog",
+  "name": "Smog",
+  "type": "Poison",
+  "category": "special",
+  "power": 30,
+  "accuracy": 70,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "poison_40",
+  "flags": [],
+  "description": "The target is attacked with a discharge of filthy gases. This may also poison the target.",
+  "is_custom": false,
+  "base_power": 30
+}

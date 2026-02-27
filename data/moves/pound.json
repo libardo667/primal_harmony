@@ -1,0 +1,18 @@
+{
+  "id": "pound",
+  "name": "Pound",
+  "type": "Normal",
+  "category": "physical",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 35,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [
+    "contact"
+  ],
+  "description": "The target is physically pounded with a long tail, a foreleg, or the like.",
+  "is_custom": false,
+  "base_power": 40
+}

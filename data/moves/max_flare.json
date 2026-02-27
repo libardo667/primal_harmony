@@ -1,0 +1,15 @@
+{
+  "id": "max_flare",
+  "name": "Max Flare",
+  "type": "Fire",
+  "category": "physical",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Fire type Dynamax move. Summons harsh sunlight.",
+  "is_custom": false
+}

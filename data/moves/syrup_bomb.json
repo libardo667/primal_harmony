@@ -1,0 +1,15 @@
+{
+  "id": "syrup_bomb",
+  "name": "Syrup Bomb",
+  "type": "Grass",
+  "category": "special",
+  "power": 60,
+  "accuracy": 85,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Lowers opponent's Speed each turn for 3 turns.",
+  "is_custom": false
+}

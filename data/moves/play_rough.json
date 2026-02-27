@@ -1,0 +1,15 @@
+{
+  "id": "play_rough",
+  "name": "Play Rough",
+  "type": "Fairy",
+  "category": "physical",
+  "power": 90,
+  "accuracy": 90,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May lower opponent's Attack.",
+  "is_custom": false
+}

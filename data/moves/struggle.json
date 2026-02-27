@@ -1,0 +1,15 @@
+{
+  "id": "struggle",
+  "name": "Struggle",
+  "type": "Normal",
+  "category": "physical",
+  "power": 50,
+  "accuracy": null,
+  "pp": 1,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Only usable when all PP are gone. Hurts the user.",
+  "is_custom": false
+}

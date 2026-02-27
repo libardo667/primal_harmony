@@ -1,0 +1,6 @@
+{
+  "id": "aerilate",
+  "name": "Aerilate",
+  "description": "Turns Normal-type moves into Flying-type moves.",
+  "hooks": []
+}

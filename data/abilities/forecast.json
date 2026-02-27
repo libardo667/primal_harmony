@@ -1,0 +1,6 @@
+{
+  "id": "forecast",
+  "name": "Forecast",
+  "description": "Castform transforms with the weather.",
+  "hooks": []
+}

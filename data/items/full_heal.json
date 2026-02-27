@@ -1,0 +1,13 @@
+{
+    "id": "full_heal",
+    "name": "Full Heal",
+    "category": "medicine",
+    "effect": "cure_all_status",
+    "effect_value": null,
+    "description": "A spray-type medicine that is used on a single Pokémon. It heals all the status conditions of a Pokémon.",
+    "buy_price": 600,
+    "sell_price": 300,
+    "is_key_item": false,
+    "is_custom": false,
+    "zone_association": null
+}

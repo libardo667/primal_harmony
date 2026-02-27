@@ -1,0 +1,16 @@
+{
+  "id": "confusion",
+  "name": "Confusion",
+  "type": "Psychic",
+  "category": "special",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 25,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "confusion_10",
+  "flags": [],
+  "description": "The target is hit by a weak telekinetic force. This may also confuse the target.",
+  "is_custom": false,
+  "base_power": 50
+}

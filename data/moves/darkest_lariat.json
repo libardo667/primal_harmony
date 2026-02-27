@@ -1,0 +1,15 @@
+{
+  "id": "darkest_lariat",
+  "name": "Darkest Lariat",
+  "type": "Dark",
+  "category": "physical",
+  "power": 85,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Ignores opponent's stat changes.",
+  "is_custom": false
+}

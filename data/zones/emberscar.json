@@ -1,0 +1,220 @@
+{
+    "zone_id": "emberscar",
+    "zone_name": "The Emberscar",
+    "zone_number": 3,
+    "dominant_type": "Fire",
+    "location": "Mt. Chimney / Lavaridge Town / Route 112",
+    "ehi_local": 0.0,
+    "ehi_thresholds": {
+        "infested": [
+            0,
+            33
+        ],
+        "partial": [
+            34,
+            66
+        ],
+        "restored": [
+            67,
+            100
+        ]
+    },
+    "encounter_table": {
+        "infested": [
+            {
+                "species_id": "pyrcoal",
+                "level_range": [
+                    24,
+                    28
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "scorchump",
+                "level_range": [
+                    22,
+                    26
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "cinderchop",
+                "level_range": [
+                    22,
+                    26
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "magby",
+                "level_range": [
+                    20,
+                    24
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "houndour",
+                "level_range": [
+                    22,
+                    26
+                ],
+                "weight": 15,
+                "time_of_day": "night"
+            },
+            {
+                "species_id": "growlithe",
+                "level_range": [
+                    20,
+                    24
+                ],
+                "weight": 10,
+                "time_of_day": "day"
+            }
+        ],
+        "partial": [
+            {
+                "species_id": "slugma",
+                "level_range": [
+                    22,
+                    26
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "numel",
+                "level_range": [
+                    22,
+                    26
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "torkoal",
+                "level_range": [
+                    24,
+                    28
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "machop",
+                "level_range": [
+                    22,
+                    26
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "pyrcoal",
+                "level_range": [
+                    24,
+                    28
+                ],
+                "weight": 10,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "cinderchop",
+                "level_range": [
+                    22,
+                    26
+                ],
+                "weight": 10,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "magby",
+                "level_range": [
+                    20,
+                    24
+                ],
+                "weight": 10,
+                "time_of_day": "night"
+            }
+        ],
+        "restored": [
+            {
+                "species_id": "slugma",
+                "level_range": [
+                    22,
+                    26
+                ],
+                "weight": 25,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "numel",
+                "level_range": [
+                    22,
+                    26
+                ],
+                "weight": 25,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "torkoal",
+                "level_range": [
+                    24,
+                    28
+                ],
+                "weight": 25,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "machop",
+                "level_range": [
+                    22,
+                    26
+                ],
+                "weight": 25,
+                "time_of_day": "any"
+            }
+        ]
+    },
+    "native_species": [
+        "slugma",
+        "numel",
+        "torkoal",
+        "machop"
+    ],
+    "corrupted_variants": [
+        "pyrcoal",
+        "scorchump",
+        "cinderchop"
+    ],
+    "quell_types": [
+        "Water",
+        "Ground",
+        "Rock"
+    ],
+    "traversal_hazards": [
+        {
+            "hazard_id": "hp_drain_heat",
+            "description": "Ambient temperature drains HP outside battle for non-Fire/Rock/Ground types.",
+            "mitigation": "Heat Resist key item equipped"
+        },
+        {
+            "hazard_id": "lava_flow_obstacles",
+            "description": "Lava flows block previously open routes.",
+            "mitigation": "Water-type move or equivalent HM to cool and cross"
+        }
+    ],
+    "key_items": [
+        "heat_resist"
+    ],
+    "relocation_terminals": [
+        "Lavaridge Town Pokemon Center"
+    ],
+    "ehi_restoration_effect": "Reopens the cable car route, makes Lavaridge's hot springs accessible (full heal + temporary stat boost), and triggers a Groudon Bond story beat.",
+    "narrative_role": "Tied to the Groudon arc. Restoring reopens the cable car and provides access to Lavaridge's restorative hot springs.",
+    "story_gate": null
+}

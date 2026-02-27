@@ -1,0 +1,6 @@
+{
+  "id": "tangled_feet",
+  "name": "Tangled Feet",
+  "description": "Raises evasion if the Pok\u00e9mon is confused.",
+  "hooks": []
+}

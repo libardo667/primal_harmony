@@ -1,0 +1,15 @@
+{
+  "id": "leaf_tornado",
+  "name": "Leaf Tornado",
+  "type": "Grass",
+  "category": "special",
+  "power": 65,
+  "accuracy": 90,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May lower opponent's Accuracy.",
+  "is_custom": false
+}

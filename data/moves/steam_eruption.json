@@ -1,0 +1,15 @@
+{
+  "id": "steam_eruption",
+  "name": "Steam Eruption",
+  "type": "Water",
+  "category": "special",
+  "power": 110,
+  "accuracy": 95,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May burn opponent.",
+  "is_custom": false
+}

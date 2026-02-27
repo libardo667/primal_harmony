@@ -1,0 +1,15 @@
+{
+  "id": "conversion_2",
+  "name": "Conversion 2",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 30,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User changes type to become resistant to opponent's last move.",
+  "is_custom": false
+}

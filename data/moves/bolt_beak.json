@@ -1,0 +1,15 @@
+{
+  "id": "bolt_beak",
+  "name": "Bolt Beak",
+  "type": "Electric",
+  "category": "physical",
+  "power": 85,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "If the user attacks before the target, the power of this move is doubled.",
+  "is_custom": false
+}

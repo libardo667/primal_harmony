@@ -1,0 +1,222 @@
+{
+    "zone_id": "the_overgrowth",
+    "zone_name": "The Overgrowth",
+    "zone_number": 8,
+    "dominant_type": "Grass",
+    "location": "Route 119 / Fortree City / Weather Institute",
+    "ehi_local": 0.0,
+    "ehi_thresholds": {
+        "infested": [
+            0,
+            33
+        ],
+        "partial": [
+            34,
+            66
+        ],
+        "restored": [
+            67,
+            100
+        ]
+    },
+    "encounter_table": {
+        "infested": [
+            {
+                "species_id": "stormpius",
+                "level_range": [
+                    32,
+                    36
+                ],
+                "weight": 10,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "rootbone",
+                "level_range": [
+                    32,
+                    36
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "thorncleon",
+                "level_range": [
+                    30,
+                    34
+                ],
+                "weight": 10,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "roselia",
+                "level_range": [
+                    30,
+                    34
+                ],
+                "weight": 20,
+                "time_of_day": "day"
+            },
+            {
+                "species_id": "jumpluff",
+                "level_range": [
+                    32,
+                    36
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "breloom",
+                "level_range": [
+                    32,
+                    36
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            }
+        ],
+        "partial": [
+            {
+                "species_id": "tropius",
+                "level_range": [
+                    32,
+                    36
+                ],
+                "weight": 15,
+                "time_of_day": "day"
+            },
+            {
+                "species_id": "linoone",
+                "level_range": [
+                    32,
+                    36
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "oddish",
+                "level_range": [
+                    30,
+                    34
+                ],
+                "weight": 20,
+                "time_of_day": "night"
+            },
+            {
+                "species_id": "kecleon",
+                "level_range": [
+                    30,
+                    34
+                ],
+                "weight": 10,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "rootbone",
+                "level_range": [
+                    32,
+                    36
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "stormpius",
+                "level_range": [
+                    32,
+                    36
+                ],
+                "weight": 10,
+                "time_of_day": "day"
+            },
+            {
+                "species_id": "roselia",
+                "level_range": [
+                    30,
+                    34
+                ],
+                "weight": 10,
+                "time_of_day": "day"
+            }
+        ],
+        "restored": [
+            {
+                "species_id": "tropius",
+                "level_range": [
+                    32,
+                    36
+                ],
+                "weight": 25,
+                "time_of_day": "day"
+            },
+            {
+                "species_id": "linoone",
+                "level_range": [
+                    32,
+                    36
+                ],
+                "weight": 25,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "oddish",
+                "level_range": [
+                    30,
+                    34
+                ],
+                "weight": 25,
+                "time_of_day": "night"
+            },
+            {
+                "species_id": "kecleon",
+                "level_range": [
+                    30,
+                    34
+                ],
+                "weight": 25,
+                "time_of_day": "any"
+            }
+        ]
+    },
+    "native_species": [
+        "tropius",
+        "linoone",
+        "oddish",
+        "kecleon"
+    ],
+    "corrupted_variants": [
+        "stormpius",
+        "rootbone",
+        "thorncleon"
+    ],
+    "quell_types": [
+        "Fire",
+        "Bug",
+        "Ice",
+        "Flying"
+    ],
+    "traversal_hazards": [
+        {
+            "hazard_id": "dense_undergrowth",
+            "description": "Movement speed halved by dense undergrowth.",
+            "mitigation": "Machete key item"
+        },
+        {
+            "hazard_id": "vine_walls",
+            "description": "Vine walls block previously open routes.",
+            "mitigation": "Cut move or Machete"
+        }
+    ],
+    "key_items": [
+        "machete"
+    ],
+    "relocation_terminals": [
+        "Fortree City Pokemon Center",
+        "Mauville City Pokemon Center"
+    ],
+    "ehi_restoration_effect": "Restores the Weather Institute's function, stabilizing the overworld weather system globally. Fortree City's aerial layout also restored.",
+    "narrative_role": "Restoring stabilizes the Weather Institute, fixing the global weather system — a major world-state unlock.",
+    "story_gate": null
+}

@@ -1,0 +1,15 @@
+{
+  "id": "simple_beam",
+  "name": "Simple Beam",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Changes target's ability to Simple.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "moonblast",
+  "name": "Moonblast",
+  "type": "Fairy",
+  "category": "special",
+  "power": 95,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May lower opponent's Special Attack.",
+  "is_custom": false
+}

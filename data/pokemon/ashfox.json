@@ -1,0 +1,69 @@
+{
+  "id": "ashfox",
+  "name": "Ashfox",
+  "national_dex": null,
+  "types": [
+    "Dark",
+    "Fire"
+  ],
+  "base_stats": {
+    "hp": 42,
+    "atk": 50,
+    "def": 45,
+    "spa": 70,
+    "spd": 75,
+    "spe": 75
+  },
+  "abilities": [
+    "Flash Fire",
+    "Intimidate"
+  ],
+  "hidden_ability": "Moxie",
+  "learnset": [
+    {
+      "move_id": "ember",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "pursuit",
+      "method": "level",
+      "level": 4
+    },
+    {
+      "move_id": "fire_spin",
+      "method": "level",
+      "level": 11
+    },
+    {
+      "move_id": "faint_attack",
+      "method": "level",
+      "level": 15
+    },
+    {
+      "move_id": "flame_wheel",
+      "method": "level",
+      "level": 20
+    }
+  ],
+  "evolution": null,
+  "dex_entry": "The memorial flames of Mt. Pyre were Vulpix's warmth source. The corruption of those flames has changed Vulpix's fire to a cold, dark-edged burn that chills rather than warms. The fire it tends now offers no comfort — not even to itself.",
+  "catch_rate": 160,
+  "base_exp": 75,
+  "growth_rate": "medium_fast",
+  "egg_groups": [
+    "Field"
+  ],
+  "gender_ratio": 25,
+  "is_native_hoenn": true,
+  "native_zone": "dread_shore",
+  "is_corrupted": true,
+  "corruption_zone": "dread_shore",
+  "corruption_path": null,
+  "base_species": "vulpix",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/ashfox/front.png",
+    "back": "res://assets/sprites/pokemon/ashfox/back.png",
+    "icon": "res://assets/sprites/pokemon/ashfox/icon.png"
+  }
+}

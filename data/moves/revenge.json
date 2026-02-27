@@ -1,0 +1,15 @@
+{
+  "id": "revenge",
+  "name": "Revenge",
+  "type": "Fighting",
+  "category": "physical",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Power increases if user was hit first.",
+  "is_custom": false
+}

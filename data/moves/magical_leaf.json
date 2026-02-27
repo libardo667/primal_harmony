@@ -1,0 +1,15 @@
+{
+  "id": "magical_leaf",
+  "name": "Magical Leaf",
+  "type": "Grass",
+  "category": "special",
+  "power": 60,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Ignores Accuracy and Evasiveness.",
+  "is_custom": false
+}

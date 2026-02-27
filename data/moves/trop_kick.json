@@ -1,0 +1,15 @@
+{
+  "id": "trop_kick",
+  "name": "Trop Kick",
+  "type": "Grass",
+  "category": "physical",
+  "power": 70,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Lowers opponent's Attack.",
+  "is_custom": false
+}

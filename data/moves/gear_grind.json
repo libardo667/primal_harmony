@@ -1,0 +1,15 @@
+{
+  "id": "gear_grind",
+  "name": "Gear Grind",
+  "type": "Steel",
+  "category": "physical",
+  "power": 50,
+  "accuracy": 85,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Hits twice in one turn.",
+  "is_custom": false
+}

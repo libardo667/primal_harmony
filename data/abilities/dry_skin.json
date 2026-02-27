@@ -1,0 +1,6 @@
+{
+  "id": "dry_skin",
+  "name": "Dry Skin",
+  "description": "Reduces HP if it is hot. Water restores HP.",
+  "hooks": []
+}

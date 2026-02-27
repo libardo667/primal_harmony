@@ -1,0 +1,50 @@
+{
+  "id": "phantokip",
+  "name": "Phantokip",
+  "national_dex": null,
+  "types": [
+    "Ghost",
+    "Fairy"
+  ],
+  "base_stats": {
+    "hp": 50,
+    "atk": 30,
+    "def": 40,
+    "spa": 65,
+    "spd": 65,
+    "spe": 30
+  },
+  "abilities": [
+    "Levitate",
+    "Cursed Body"
+  ],
+  "hidden_ability": "Misty Surge",
+  "learnset": [],
+  "evolution": {
+    "method": "level",
+    "level": 36,
+    "item": null,
+    "condition": null,
+    "into": "wraithdew"
+  },
+  "dex_entry": "Mudkip's solid form has become translucent, its fin-crest radiating soft spectral light. It phases through shallow water rather than swimming in it. Dex: \"It is more echo than animal now. It answers to its name. It is not certain from where.\"",
+  "catch_rate": 45,
+  "base_exp": 62,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Monster",
+    "Water 1"
+  ],
+  "gender_ratio": 12.5,
+  "is_native_hoenn": true,
+  "native_zone": null,
+  "is_corrupted": true,
+  "corruption_zone": "dread_shore",
+  "corruption_path": "A",
+  "base_species": "mudkip",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/phantokip/front.png",
+    "back": "res://assets/sprites/pokemon/phantokip/back.png",
+    "icon": "res://assets/sprites/pokemon/phantokip/icon.png"
+  }
+}

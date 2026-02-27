@@ -1,0 +1,15 @@
+{
+  "id": "hail",
+  "name": "Hail",
+  "type": "Ice",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Non-Ice types are damaged for 5 turns.",
+  "is_custom": false
+}

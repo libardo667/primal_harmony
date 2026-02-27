@@ -1,0 +1,15 @@
+{
+  "id": "ominous_wind",
+  "name": "Ominous Wind",
+  "type": "Ghost",
+  "category": "special",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May raise all user's stats at once.",
+  "is_custom": false
+}

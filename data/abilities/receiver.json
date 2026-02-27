@@ -1,0 +1,6 @@
+{
+  "id": "receiver",
+  "name": "Receiver",
+  "description": "Inherits an ally's ability when it faints.",
+  "hooks": []
+}

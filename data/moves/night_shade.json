@@ -1,0 +1,16 @@
+{
+  "id": "night_shade",
+  "name": "Night Shade",
+  "type": "Ghost",
+  "category": "special",
+  "power": null,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "damage_equals_level",
+  "flags": [],
+  "description": "The user makes the target see a frightening mirage. It inflicts damage equal to the user's level.",
+  "is_custom": false,
+  "base_power": 0
+}

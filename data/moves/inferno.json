@@ -1,0 +1,15 @@
+{
+  "id": "inferno",
+  "name": "Inferno",
+  "type": "Fire",
+  "category": "special",
+  "power": 100,
+  "accuracy": 50,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Burns opponent.",
+  "is_custom": false
+}

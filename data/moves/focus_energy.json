@@ -1,0 +1,15 @@
+{
+  "id": "focus_energy",
+  "name": "Focus Energy",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 30,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Increases critical hit ratio.",
+  "is_custom": false
+}

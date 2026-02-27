@@ -1,0 +1,15 @@
+{
+  "id": "sinister_arrow_raid",
+  "name": "Sinister Arrow Raid",
+  "type": "Ghost",
+  "category": "physical",
+  "power": 180,
+  "accuracy": null,
+  "pp": 1,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "",
+  "is_custom": false
+}

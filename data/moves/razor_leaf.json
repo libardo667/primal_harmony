@@ -1,0 +1,15 @@
+{
+  "id": "razor_leaf",
+  "name": "Razor Leaf",
+  "type": "Grass",
+  "category": "physical",
+  "power": 55,
+  "accuracy": 95,
+  "pp": 25,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "High critical hit ratio.",
+  "is_custom": false
+}

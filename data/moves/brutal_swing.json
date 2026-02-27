@@ -1,0 +1,15 @@
+{
+  "id": "brutal_swing",
+  "name": "Brutal Swing",
+  "type": "Dark",
+  "category": "physical",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The user swings its body around violently to inflict damage on everything in its vicinity.",
+  "is_custom": false
+}

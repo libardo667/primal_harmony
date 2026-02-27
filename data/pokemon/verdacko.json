@@ -1,0 +1,43 @@
+{
+  "id": "verdacko",
+  "name": "Verdacko",
+  "national_dex": null,
+  "types": [
+    "Grass"
+  ],
+  "base_stats": {
+    "hp": 80,
+    "atk": 65,
+    "def": 65,
+    "spa": 120,
+    "spd": 80,
+    "spe": 120
+  },
+  "abilities": [
+    "Overgrow",
+    "Chlorophyll"
+  ],
+  "hidden_ability": "Unburden",
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "Fully restored — a powerful acrobatic gecko wearing a dense, living leaf mantle that shifts with its mood. The fastest of its three final forms. Dex: \"To be healed twice is to be trusted twice. Verdacko does not forget a debt of patience.\"",
+  "catch_rate": 45,
+  "base_exp": 239,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Monster",
+    "Dragon"
+  ],
+  "gender_ratio": 12.5,
+  "is_native_hoenn": true,
+  "native_zone": null,
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": "C",
+  "base_species": "treecko",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/verdacko/front.png",
+    "back": "res://assets/sprites/pokemon/verdacko/back.png",
+    "icon": "res://assets/sprites/pokemon/verdacko/icon.png"
+  }
+}

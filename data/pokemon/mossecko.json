@@ -1,0 +1,50 @@
+{
+  "id": "mossecko",
+  "name": "Mossecko",
+  "national_dex": null,
+  "types": [
+    "Grass",
+    "Bug"
+  ],
+  "base_stats": {
+    "hp": 40,
+    "atk": 40,
+    "def": 45,
+    "spa": 60,
+    "spd": 45,
+    "spe": 65
+  },
+  "abilities": [
+    "Chlorophyll",
+    "Compound Eyes"
+  ],
+  "hidden_ability": "Regenerator",
+  "learnset": [],
+  "evolution": {
+    "method": "level",
+    "level": 36,
+    "item": null,
+    "condition": null,
+    "into": "silkvine"
+  },
+  "dex_entry": "The green is returning but the chitinous elements remain — leafy wing-cases have grown over the rocky plates, and the tail now produces silk. It photosynthesizes through translucent carapace panels. Dex: \"Half-remembered. The leaf and the shell are negotiating.\"",
+  "catch_rate": 45,
+  "base_exp": 65,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Monster",
+    "Dragon"
+  ],
+  "gender_ratio": 12.5,
+  "is_native_hoenn": true,
+  "native_zone": null,
+  "is_corrupted": true,
+  "corruption_zone": "the_crucible",
+  "corruption_path": "B",
+  "base_species": "treecko",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/mossecko/front.png",
+    "back": "res://assets/sprites/pokemon/mossecko/back.png",
+    "icon": "res://assets/sprites/pokemon/mossecko/icon.png"
+  }
+}

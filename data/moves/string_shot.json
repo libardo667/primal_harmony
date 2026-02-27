@@ -1,0 +1,16 @@
+{
+  "id": "string_shot",
+  "name": "String Shot",
+  "type": "Bug",
+  "category": "status",
+  "power": null,
+  "accuracy": 95,
+  "pp": 40,
+  "priority": 0,
+  "target": "all_opponents",
+  "effect": "stat_drop_spe_2",
+  "flags": [],
+  "description": "The opposing Pok\u00e9mon are bound with silk blown from the user's mouth that harshly lowers the Speed stat.",
+  "is_custom": false,
+  "base_power": 0
+}

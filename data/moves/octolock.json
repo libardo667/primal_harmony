@@ -1,0 +1,15 @@
+{
+  "id": "octolock",
+  "name": "Octolock",
+  "type": "Fighting",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Lowers opponent's Defense and Special Defense every turn, and they cannot flee or switch out.",
+  "is_custom": false
+}

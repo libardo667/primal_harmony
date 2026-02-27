@@ -1,0 +1,15 @@
+{
+  "id": "harden",
+  "name": "Harden",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 30,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Raises user's Defense.",
+  "is_custom": false
+}

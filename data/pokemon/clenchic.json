@@ -1,0 +1,49 @@
+{
+  "id": "clenchic",
+  "name": "Clenchic",
+  "national_dex": null,
+  "types": [
+    "Fighting",
+    "Steel"
+  ],
+  "base_stats": {
+    "hp": 45,
+    "atk": 65,
+    "def": 55,
+    "spa": 30,
+    "spd": 35,
+    "spe": 45
+  },
+  "abilities": [
+    "Guts",
+    "Iron Fist"
+  ],
+  "hidden_ability": "Mold Breaker",
+  "learnset": [],
+  "evolution": {
+    "method": "level",
+    "level": 36,
+    "item": null,
+    "condition": null,
+    "into": "forgechic"
+  },
+  "dex_entry": "Torchic's fluffy down has been replaced by interlocking metallic feather-plates. Its feet are now weighted iron talons. Cannot learn Fire-type moves. Dex: \"The warmth was refined out of it. What the process left behind does not miss the warmth.\"",
+  "catch_rate": 45,
+  "base_exp": 62,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Field"
+  ],
+  "gender_ratio": 12.5,
+  "is_native_hoenn": true,
+  "native_zone": null,
+  "is_corrupted": true,
+  "corruption_zone": "emberscar",
+  "corruption_path": "A",
+  "base_species": "torchic",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/clenchic/front.png",
+    "back": "res://assets/sprites/pokemon/clenchic/back.png",
+    "icon": "res://assets/sprites/pokemon/clenchic/icon.png"
+  }
+}

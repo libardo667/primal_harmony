@@ -1,0 +1,6 @@
+{
+  "id": "disguise",
+  "name": "Disguise",
+  "description": "Avoids damage for one turn.",
+  "hooks": []
+}

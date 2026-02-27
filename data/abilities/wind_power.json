@@ -1,0 +1,6 @@
+{
+  "id": "wind_power",
+  "name": "Wind Power",
+  "description": "Doubles power of the next Electric-type move used, when hit by a wind move.",
+  "hooks": []
+}

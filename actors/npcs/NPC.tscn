@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://actors/npcs/NPC.gd" id="1_npc_script"]
+
+[sub_resource type="RectangleShape2D" id="Shape_npc_body"]
+size = Vector2(14, 8)
+
+[node name="NPC" type="CharacterBody2D"]
+z_index = 1
+collision_layer = 1
+collision_mask = 0
+script = ExtResource("1_npc_script")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+shape = SubResource("Shape_npc_body")

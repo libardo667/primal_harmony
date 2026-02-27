@@ -1,0 +1,15 @@
+{
+  "id": "tailwind",
+  "name": "Tailwind",
+  "type": "Flying",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Doubles Speed for 4 turns.",
+  "is_custom": false
+}

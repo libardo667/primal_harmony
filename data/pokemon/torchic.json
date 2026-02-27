@@ -1,0 +1,62 @@
+{
+  "id": "torchic",
+  "name": "Torchic",
+  "national_dex": 255,
+  "types": [
+    "Fire"
+  ],
+  "base_stats": {
+    "hp": 45,
+    "atk": 60,
+    "def": 40,
+    "spa": 70,
+    "spd": 50,
+    "spe": 45
+  },
+  "abilities": [
+    "Blaze"
+  ],
+  "hidden_ability": "Speed Boost",
+  "learnset": [],
+  "evolution": {
+    "method": "cleanse",
+    "level": 16,
+    "item": null,
+    "condition": "path_C_both_cleanses",
+    "into": "kindlic"
+  },
+  "dex_entry": "Torchic snuggles with others by sharing warmth. Embers spout from its mouth if it is jostled. It fluffily huddles with others.",
+  "catch_rate": 45,
+  "base_exp": 62,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Field"
+  ],
+  "gender_ratio": 12.5,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/torchic/front.png",
+    "back": "res://assets/sprites/pokemon/torchic/back.png",
+    "icon": "res://assets/sprites/pokemon/torchic/icon.png"
+  },
+  "is_native_hoenn": true,
+  "native_zone": null,
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "is_starter": true,
+  "starter_corruption_forms": {
+    "A": {
+      "level_16": "clenchic",
+      "level_36": "forgechic"
+    },
+    "B": {
+      "level_16": "embrawl",
+      "level_36": "scorcombat"
+    },
+    "C": {
+      "level_16": "kindlic",
+      "level_36": "blazeborn"
+    }
+  }
+}

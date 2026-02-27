@@ -1,0 +1,15 @@
+{
+  "id": "max_strike",
+  "name": "Max Strike",
+  "type": "Normal",
+  "category": "physical",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Normal type Dynamax move. Lowers the target's Speed.",
+  "is_custom": false
+}

@@ -1,0 +1,16 @@
+{
+  "id": "sand_attack",
+  "name": "Sand Attack",
+  "type": "Ground",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "stat_drop_acc_1",
+  "flags": [],
+  "description": "Sand is hurled in the target's face, reducing the target's accuracy.",
+  "is_custom": false,
+  "base_power": 0
+}

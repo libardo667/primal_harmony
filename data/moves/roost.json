@@ -1,0 +1,15 @@
+{
+  "id": "roost",
+  "name": "Roost",
+  "type": "Flying",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User recovers half of its max HP and loses the Flying type temporarily.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "false_surrender",
+  "name": "False Surrender",
+  "type": "Dark",
+  "category": "physical",
+  "power": 80,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Ignores Accuracy and Evasiveness.",
+  "is_custom": false
+}

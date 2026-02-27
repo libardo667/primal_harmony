@@ -1,0 +1,15 @@
+{
+  "id": "payback",
+  "name": "Payback",
+  "type": "Dark",
+  "category": "physical",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Power doubles if the user was attacked first.",
+  "is_custom": false
+}

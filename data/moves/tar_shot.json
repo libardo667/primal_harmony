@@ -1,0 +1,15 @@
+{
+  "id": "tar_shot",
+  "name": "Tar Shot",
+  "type": "Rock",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Lowers the opponent's Speed and makes them weaker to Fire-type moves.",
+  "is_custom": false
+}

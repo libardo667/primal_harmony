@@ -1,0 +1,69 @@
+{
+  "id": "wurmple",
+  "name": "Wurmple",
+  "national_dex": 265,
+  "types": [
+    "Bug"
+  ],
+  "base_stats": {
+    "hp": 45,
+    "atk": 45,
+    "def": 35,
+    "spa": 20,
+    "spd": 30,
+    "spe": 20
+  },
+  "abilities": [
+    "Shield Dust",
+    "Run Away"
+  ],
+  "hidden_ability": null,
+  "learnset": [
+    {
+      "move_id": "tackle",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "string_shot",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "poison_sting",
+      "method": "level",
+      "level": 5
+    },
+    {
+      "move_id": "bug_bite",
+      "method": "level",
+      "level": 15
+    }
+  ],
+  "evolution": {
+    "method": "level",
+    "level": 7,
+    "item": null,
+    "condition": null,
+    "into": "silcoon"
+  },
+  "dex_entry": "Wurmple uses the spikes on its tail to grab onto tree bark to keep itself from being blown away in strong winds.",
+  "catch_rate": 255,
+  "base_exp": 56,
+  "growth_rate": "medium_fast",
+  "egg_groups": [
+    "Bug"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "the_murk",
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/wurmple/front.png",
+    "back": "res://assets/sprites/pokemon/wurmple/back.png",
+    "icon": "res://assets/sprites/pokemon/wurmple/icon.png"
+  }
+}

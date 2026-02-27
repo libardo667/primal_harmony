@@ -1,0 +1,15 @@
+{
+  "id": "refresh",
+  "name": "Refresh",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Cures paralysis, poison, and burns.",
+  "is_custom": false
+}

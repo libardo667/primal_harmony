@@ -1,0 +1,15 @@
+{
+  "id": "glacial_lance",
+  "name": "Glacial Lance",
+  "type": "Ice",
+  "category": "physical",
+  "power": 120,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The user attacks by hurling a blizzard-cloaked icicle lance at opposing Pok\u00e9mon.",
+  "is_custom": false
+}

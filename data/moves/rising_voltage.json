@@ -1,0 +1,15 @@
+{
+  "id": "rising_voltage",
+  "name": "Rising Voltage",
+  "type": "Electric",
+  "category": "special",
+  "power": 70,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Power doubles on Electric Terrain.",
+  "is_custom": false
+}

@@ -1,0 +1,6 @@
+{
+  "id": "triage",
+  "name": "Triage",
+  "description": "Gives priority to restorative moves.",
+  "hooks": []
+}

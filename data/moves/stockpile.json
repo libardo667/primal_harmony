@@ -1,0 +1,15 @@
+{
+  "id": "stockpile",
+  "name": "Stockpile",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Stores energy for use with Spit Up and Swallow.",
+  "is_custom": false
+}

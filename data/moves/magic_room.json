@@ -1,0 +1,15 @@
+{
+  "id": "magic_room",
+  "name": "Magic Room",
+  "type": "Psychic",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Suppresses the effects of held items for five turns.",
+  "is_custom": false
+}

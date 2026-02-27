@@ -1,0 +1,277 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "primal_harmony/zone",
+    "title": "Type Overload Zone Data",
+    "description": "Schema for all TOZ zone files in data/zones/. One file per zone, named by zone_id (e.g. ashen_glacier.json).",
+    "type": "object",
+    "required": [
+        "zone_id",
+        "zone_name",
+        "zone_number",
+        "dominant_type",
+        "location",
+        "ehi_local",
+        "encounter_table",
+        "native_species",
+        "corrupted_variants",
+        "quell_types",
+        "traversal_hazards",
+        "key_items",
+        "ehi_restoration_effect",
+        "narrative_role"
+    ],
+    "properties": {
+        "zone_id": {
+            "type": "string",
+            "description": "Unique zone identifier, lowercase_snake_case. e.g. 'ashen_glacier'",
+            "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "zone_name": {
+            "type": "string",
+            "description": "Display name. e.g. 'The Ashen Glacier'"
+        },
+        "zone_number": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 10,
+            "description": "Narrative ordering number (1–10)."
+        },
+        "dominant_type": {
+            "type": "string",
+            "enum": [
+                "Normal",
+                "Fire",
+                "Water",
+                "Grass",
+                "Electric",
+                "Ice",
+                "Fighting",
+                "Poison",
+                "Ground",
+                "Flying",
+                "Psychic",
+                "Bug",
+                "Rock",
+                "Ghost",
+                "Dragon",
+                "Dark",
+                "Steel",
+                "Fairy"
+            ],
+            "description": "The invasive type that defines this zone."
+        },
+        "location": {
+            "type": "string",
+            "description": "Hoenn map location(s). e.g. 'Route 113 / Fallarbor Town'"
+        },
+        "ehi_local": {
+            "type": "number",
+            "minimum": 0.0,
+            "maximum": 100.0,
+            "description": "Starting local EHI value (0 = fully infested, 100 = fully restored)."
+        },
+        "ehi_thresholds": {
+            "type": "object",
+            "description": "EHI ranges defining visual and encounter states.",
+            "properties": {
+                "infested": {
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    },
+                    "minItems": 2,
+                    "maxItems": 2,
+                    "description": "[min, max] EHI range"
+                },
+                "partial": {
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    },
+                    "minItems": 2,
+                    "maxItems": 2
+                },
+                "restored": {
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    },
+                    "minItems": 2,
+                    "maxItems": 2
+                }
+            },
+            "required": [
+                "infested",
+                "partial",
+                "restored"
+            ]
+        },
+        "encounter_table": {
+            "type": "object",
+            "description": "Encounter tables keyed by EHI state. Each is an array of encounter entries.",
+            "required": [
+                "infested",
+                "partial",
+                "restored"
+            ],
+            "properties": {
+                "infested": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/encounter_entry"
+                    }
+                },
+                "partial": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/encounter_entry"
+                    }
+                },
+                "restored": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/$defs/encounter_entry"
+                    }
+                }
+            }
+        },
+        "native_species": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Species IDs of Hoenn-native Pokémon affected by this zone."
+        },
+        "corrupted_variants": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Species IDs of seeded Corrupted Regional Variants in this zone."
+        },
+        "quell_types": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Types effective for counter-release quelling."
+        },
+        "traversal_hazards": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "hazard_id": {
+                        "type": "string"
+                    },
+                    "description": {
+                        "type": "string"
+                    },
+                    "mitigation": {
+                        "type": "string",
+                        "description": "Item, ability, or Pokémon type that mitigates this hazard."
+                    }
+                },
+                "required": [
+                    "hazard_id",
+                    "description",
+                    "mitigation"
+                ]
+            },
+            "description": "Environmental traversal hazards specific to this zone."
+        },
+        "key_items": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Item IDs of key items required or useful in this zone."
+        },
+        "relocation_terminals": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            },
+            "description": "Names of Pokémon Center relocation terminals that serve this zone."
+        },
+        "ehi_restoration_effect": {
+            "type": "string",
+            "description": "Description of what restoring this zone unlocks."
+        },
+        "narrative_role": {
+            "type": "string",
+            "description": "Brief description of this zone's role in the overall narrative."
+        },
+        "story_gate": {
+            "type": [
+                "object",
+                "null"
+            ],
+            "description": "Story gating requirements to access this zone, if any.",
+            "properties": {
+                "required_ehi_global": {
+                    "type": [
+                        "number",
+                        "null"
+                    ]
+                },
+                "required_story_beat": {
+                    "type": [
+                        "string",
+                        "null"
+                    ]
+                },
+                "required_badges": {
+                    "type": [
+                        "integer",
+                        "null"
+                    ]
+                }
+            }
+        }
+    },
+    "$defs": {
+        "encounter_entry": {
+            "type": "object",
+            "required": [
+                "species_id",
+                "level_range",
+                "weight"
+            ],
+            "properties": {
+                "species_id": {
+                    "type": "string",
+                    "description": "Reference to species ID in data/pokemon/"
+                },
+                "level_range": {
+                    "type": "array",
+                    "items": {
+                        "type": "integer"
+                    },
+                    "minItems": 2,
+                    "maxItems": 2,
+                    "description": "[min_level, max_level]"
+                },
+                "weight": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "description": "Relative encounter weight (higher = more common)."
+                },
+                "time_of_day": {
+                    "type": [
+                        "string",
+                        "null"
+                    ],
+                    "enum": [
+                        "day",
+                        "night",
+                        "any",
+                        null
+                    ],
+                    "description": "Time restriction. Null or 'any' for no restriction."
+                }
+            }
+        }
+    },
+    "additionalProperties": false
+}

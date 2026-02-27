@@ -1,0 +1,15 @@
+{
+  "id": "eternabeam",
+  "name": "Eternabeam",
+  "type": "Dragon",
+  "category": "special",
+  "power": 160,
+  "accuracy": 90,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User can't move on the next turn.",
+  "is_custom": false
+}

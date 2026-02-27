@@ -1,0 +1,6 @@
+{
+  "id": "speed_boost",
+  "name": "Speed Boost",
+  "description": "Its Speed stat is gradually boosted.",
+  "hooks": []
+}

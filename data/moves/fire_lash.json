@@ -1,0 +1,15 @@
+{
+  "id": "fire_lash",
+  "name": "Fire Lash",
+  "type": "Fire",
+  "category": "physical",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The user strikes the target with a burning lash. This also lowers the target's Defense stat.",
+  "is_custom": false
+}

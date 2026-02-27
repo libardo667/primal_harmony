@@ -1,0 +1,15 @@
+{
+  "id": "spicy_extract",
+  "name": "Spicy Extract",
+  "type": "Grass",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Harshly lowers the opponent's Defense and sharply raises their Attack.",
+  "is_custom": false
+}

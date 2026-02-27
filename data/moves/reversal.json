@@ -1,0 +1,15 @@
+{
+  "id": "reversal",
+  "name": "Reversal",
+  "type": "Fighting",
+  "category": "physical",
+  "power": null,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The lower the user's HP, the higher the power.",
+  "is_custom": false
+}

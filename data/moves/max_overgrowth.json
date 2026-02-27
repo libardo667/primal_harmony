@@ -1,0 +1,15 @@
+{
+  "id": "max_overgrowth",
+  "name": "Max Overgrowth",
+  "type": "Grass",
+  "category": "physical",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Grass type Dynamax move. Summons Grassy Terrain.",
+  "is_custom": false
+}

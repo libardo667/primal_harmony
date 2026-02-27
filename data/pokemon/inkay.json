@@ -1,0 +1,37 @@
+{
+  "id": "inkay",
+  "name": "Inkay",
+  "national_dex": 686,
+  "types": [
+    "Dark",
+    "Psychic"
+  ],
+  "base_stats": {
+    "hp": 53,
+    "atk": 54,
+    "def": 53,
+    "spa": 37,
+    "spd": 46,
+    "spe": 45
+  },
+  "abilities": [
+    "TBD"
+  ],
+  "hidden_ability": null,
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "TBD",
+  "catch_rate": 45,
+  "base_exp": 60,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "TBD"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": false,
+  "native_zone": null,
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null
+}

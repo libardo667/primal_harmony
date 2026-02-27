@@ -1,0 +1,15 @@
+{
+  "id": "detect",
+  "name": "Detect",
+  "type": "Fighting",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Protects the user, but may fail if used consecutively.",
+  "is_custom": false
+}

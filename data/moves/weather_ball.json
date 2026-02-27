@@ -1,0 +1,15 @@
+{
+  "id": "weather_ball",
+  "name": "Weather Ball",
+  "type": "Normal",
+  "category": "special",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Move's power and type changes with the weather.",
+  "is_custom": false
+}

@@ -1,0 +1,16 @@
+{
+  "id": "powder_snow",
+  "name": "Powder Snow",
+  "type": "Ice",
+  "category": "special",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 25,
+  "priority": 0,
+  "target": "all_opponents",
+  "effect": "freeze_10",
+  "flags": [],
+  "description": "The user attacks with a chilling gust of powdery snow. This may also freeze the opposing Pok\u00e9mon.",
+  "is_custom": false,
+  "base_power": 40
+}

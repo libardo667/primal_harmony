@@ -1,0 +1,74 @@
+{
+  "id": "voltorb",
+  "name": "Voltorb",
+  "national_dex": 100,
+  "types": [
+    "Electric"
+  ],
+  "base_stats": {
+    "hp": 40,
+    "atk": 30,
+    "def": 50,
+    "spa": 55,
+    "spd": 55,
+    "spe": 100
+  },
+  "abilities": [
+    "Soundproof",
+    "Static"
+  ],
+  "hidden_ability": "Aftermath",
+  "learnset": [
+    {
+      "move_id": "tackle",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "charge",
+      "method": "level",
+      "level": 4
+    },
+    {
+      "move_id": "thundershock",
+      "method": "level",
+      "level": 9
+    },
+    {
+      "move_id": "spark",
+      "method": "level",
+      "level": 13
+    },
+    {
+      "move_id": "screech",
+      "method": "level",
+      "level": 22
+    }
+  ],
+  "evolution": {
+    "method": "level",
+    "level": 30,
+    "item": null,
+    "condition": null,
+    "into": "electrode"
+  },
+  "dex_entry": "It bears an uncanny, almost suspicious resemblance to a Pok\u00e9 Ball. The trick often succeeds in fooling Trainers.",
+  "catch_rate": 190,
+  "base_exp": 66,
+  "growth_rate": "medium_fast",
+  "egg_groups": [
+    "Mineral"
+  ],
+  "gender_ratio": -1,
+  "is_native_hoenn": true,
+  "native_zone": "static_sprawl",
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/voltorb/front.png",
+    "back": "res://assets/sprites/pokemon/voltorb/back.png",
+    "icon": "res://assets/sprites/pokemon/voltorb/icon.png"
+  }
+}

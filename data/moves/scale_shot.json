@@ -1,0 +1,15 @@
+{
+  "id": "scale_shot",
+  "name": "Scale Shot",
+  "type": "Dragon",
+  "category": "physical",
+  "power": 25,
+  "accuracy": 90,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Hits 2-5 times in one turn. Boosts user's Speed but lowers its Defense.",
+  "is_custom": false
+}

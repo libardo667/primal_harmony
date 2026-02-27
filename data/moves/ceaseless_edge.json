@@ -1,0 +1,15 @@
+{
+  "id": "ceaseless_edge",
+  "name": "Ceaseless Edge",
+  "type": "Dark",
+  "category": "physical",
+  "power": 65,
+  "accuracy": 90,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Sets up Spikes.",
+  "is_custom": false
+}

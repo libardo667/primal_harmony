@@ -1,0 +1,15 @@
+{
+  "id": "counter",
+  "name": "Counter",
+  "type": "Fighting",
+  "category": "physical",
+  "power": null,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "When hit by a Physical Attack, user strikes back with 2x power.",
+  "is_custom": false
+}

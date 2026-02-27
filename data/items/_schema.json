@@ -1,0 +1,88 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "primal_harmony/item",
+    "title": "Item Data",
+    "description": "Schema for all item files in data/items/. One file per item, named by item_id (e.g. potion.json).",
+    "type": "object",
+    "required": [
+        "id",
+        "name",
+        "category",
+        "effect",
+        "description",
+        "is_key_item",
+        "is_custom"
+    ],
+    "properties": {
+        "id": {
+            "type": "string",
+            "description": "Unique item identifier, lowercase_snake_case. e.g. 'potion', 'cleats', 'mega_bracelet'",
+            "pattern": "^[a-z][a-z0-9_]*$"
+        },
+        "name": {
+            "type": "string",
+            "description": "Display name. e.g. 'Potion', 'Cleats'"
+        },
+        "category": {
+            "type": "string",
+            "enum": [
+                "consumable",
+                "held",
+                "key",
+                "tm",
+                "hm",
+                "berry",
+                "medicine",
+                "ball",
+                "battle",
+                "restoration"
+            ],
+            "description": "Item category for bag sorting and behavior."
+        },
+        "effect": {
+            "type": "string",
+            "description": "Effect description or effect ID. e.g. 'heal_20hp', 'prevent_ice_slip', 'cleanse_corruption_stage'"
+        },
+        "effect_value": {
+            "type": [
+                "integer",
+                "null"
+            ],
+            "description": "Numeric value for the effect (e.g. HP healed, stat stages). Null if not applicable."
+        },
+        "description": {
+            "type": "string",
+            "description": "In-game item description text."
+        },
+        "buy_price": {
+            "type": [
+                "integer",
+                "null"
+            ],
+            "description": "Buy price in Pokédollars. Null if not purchasable."
+        },
+        "sell_price": {
+            "type": [
+                "integer",
+                "null"
+            ],
+            "description": "Sell price. Null if not sellable."
+        },
+        "is_key_item": {
+            "type": "boolean",
+            "description": "True if this is a key item (not consumable, not tradeable)."
+        },
+        "is_custom": {
+            "type": "boolean",
+            "description": "True if this item is unique to Primal Harmony."
+        },
+        "zone_association": {
+            "type": [
+                "string",
+                "null"
+            ],
+            "description": "Zone ID this item is associated with, if it's a zone-specific traversal item. Null otherwise."
+        }
+    },
+    "additionalProperties": false
+}

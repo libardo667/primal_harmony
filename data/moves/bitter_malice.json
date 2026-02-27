@@ -1,0 +1,15 @@
+{
+  "id": "bitter_malice",
+  "name": "Bitter Malice",
+  "type": "Ghost",
+  "category": "special",
+  "power": 75,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Lowers opponent's Attack.",
+  "is_custom": false
+}

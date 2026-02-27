@@ -1,0 +1,15 @@
+{
+  "id": "wake_up_slap",
+  "name": "Wake-Up Slap",
+  "type": "Fighting",
+  "category": "physical",
+  "power": 70,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Power doubles if opponent is asleep, but wakes it up.",
+  "is_custom": false
+}

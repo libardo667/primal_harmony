@@ -1,0 +1,15 @@
+{
+  "id": "electroweb",
+  "name": "Electroweb",
+  "type": "Electric",
+  "category": "special",
+  "power": 55,
+  "accuracy": 95,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Lowers opponent's Speed.",
+  "is_custom": false
+}

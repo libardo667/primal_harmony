@@ -1,0 +1,15 @@
+{
+  "id": "poltergeist",
+  "name": "Poltergeist",
+  "type": "Ghost",
+  "category": "physical",
+  "power": 110,
+  "accuracy": 90,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Fails if the target doesn\u2019t have an item.",
+  "is_custom": false
+}

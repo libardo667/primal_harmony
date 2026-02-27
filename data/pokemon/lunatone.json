@@ -1,0 +1,63 @@
+{
+  "id": "lunatone",
+  "name": "Lunatone",
+  "national_dex": 337,
+  "types": [
+    "Rock",
+    "Psychic"
+  ],
+  "base_stats": {
+    "hp": 90,
+    "atk": 55,
+    "def": 65,
+    "spa": 95,
+    "spd": 85,
+    "spe": 70
+  },
+  "abilities": [
+    "Levitate"
+  ],
+  "hidden_ability": null,
+  "learnset": [
+    {
+      "move_id": "tackle",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "confusion",
+      "method": "level",
+      "level": 5
+    },
+    {
+      "move_id": "rock_throw",
+      "method": "level",
+      "level": 9
+    },
+    {
+      "move_id": "psybeam",
+      "method": "level",
+      "level": 17
+    }
+  ],
+  "evolution": null,
+  "dex_entry": "Its relation to the moon is undeniable \u2014 new information about it may be revealed with further research into lunar cycles.",
+  "catch_rate": 45,
+  "base_exp": 161,
+  "growth_rate": "fast",
+  "egg_groups": [
+    "Mineral"
+  ],
+  "gender_ratio": -1,
+  "is_native_hoenn": true,
+  "native_zone": "the_veil",
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/lunatone/front.png",
+    "back": "res://assets/sprites/pokemon/lunatone/back.png",
+    "icon": "res://assets/sprites/pokemon/lunatone/icon.png"
+  }
+}

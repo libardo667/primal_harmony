@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://c58ujr86nmw3u"
+
+[deps]
+
+files=["res://all_moves.Name.translation", "res://all_moves.Type.translation", "res://all_moves.Category.translation", "res://all_moves.PP.translation", "res://all_moves.Power.translation", "res://all_moves.Accuracy.translation", "res://all_moves.Gen.translation"]
+
+source_file="res://all_moves.csv"
+dest_files=["res://all_moves.Name.translation", "res://all_moves.Type.translation", "res://all_moves.Category.translation", "res://all_moves.PP.translation", "res://all_moves.Power.translation", "res://all_moves.Accuracy.translation", "res://all_moves.Gen.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

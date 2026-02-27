@@ -1,0 +1,15 @@
+{
+  "id": "solar_beam",
+  "name": "Solar Beam",
+  "type": "Grass",
+  "category": "special",
+  "power": 120,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Charges on first turn, attacks on second.",
+  "is_custom": false
+}

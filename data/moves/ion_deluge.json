@@ -1,0 +1,15 @@
+{
+  "id": "ion_deluge",
+  "name": "Ion Deluge",
+  "type": "Electric",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 25,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Changes Normal-type moves to Electric-type.",
+  "is_custom": false
+}

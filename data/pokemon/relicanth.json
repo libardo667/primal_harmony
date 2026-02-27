@@ -1,0 +1,44 @@
+{
+  "id": "relicanth",
+  "name": "Relicanth",
+  "national_dex": 369,
+  "types": [
+    "Water",
+    "Rock"
+  ],
+  "base_stats": {
+    "hp": 100,
+    "atk": 90,
+    "def": 130,
+    "spa": 45,
+    "spd": 65,
+    "spe": 55
+  },
+  "abilities": [
+    "Swift Swim",
+    "Rock Head"
+  ],
+  "hidden_ability": "Sturdy",
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "Relicanth is a Pok\u00e9mon species that has survived unchanged for a hundred million years. This seeming miracle is owed to its body composition, which apparently offers resistance to the changes wrought by evolution.",
+  "catch_rate": 25,
+  "base_exp": 170,
+  "growth_rate": "slow",
+  "egg_groups": [
+    "Water 1",
+    "Water 2"
+  ],
+  "gender_ratio": 12.5,
+  "is_native_hoenn": true,
+  "native_zone": "abyss_bloom",
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/relicanth/front.png",
+    "back": "res://assets/sprites/pokemon/relicanth/back.png",
+    "icon": "res://assets/sprites/pokemon/relicanth/icon.png"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "misty_explosion",
+  "name": "Misty Explosion",
+  "type": "Fairy",
+  "category": "special",
+  "power": 100,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Power increases on Misty Terrain.",
+  "is_custom": false
+}

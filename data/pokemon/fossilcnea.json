@@ -1,0 +1,44 @@
+{
+  "id": "fossilcnea",
+  "name": "Fossilcnea",
+  "national_dex": null,
+  "types": [
+    "Ground",
+    "Grass"
+  ],
+  "base_stats": {
+    "hp": 60,
+    "atk": 80,
+    "def": 110,
+    "spa": 75,
+    "spd": 50,
+    "spe": 20
+  },
+  "abilities": [
+    "Sand Veil",
+    "Solid Rock"
+  ],
+  "hidden_ability": "Water Absorb",
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "Cacnea that absorbed ancient mineral deposits from the cracked subsurface have grown a rocky exoskeleton over their spines. Slow but near-impervious to physical attacks.",
+  "catch_rate": 155,
+  "base_exp": 85,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Grass",
+    "Human-Like"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "the_crucible",
+  "is_corrupted": true,
+  "corruption_zone": "the_crucible",
+  "corruption_path": null,
+  "base_species": "cacnea",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/fossilcnea/front.png",
+    "back": "res://assets/sprites/pokemon/fossilcnea/back.png",
+    "icon": "res://assets/sprites/pokemon/fossilcnea/icon.png"
+  }
+}

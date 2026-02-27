@@ -1,0 +1,15 @@
+{
+  "id": "ice_spinner",
+  "name": "Ice Spinner",
+  "type": "Ice",
+  "category": "physical",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Removes effects of Terrain.",
+  "is_custom": false
+}

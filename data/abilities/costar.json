@@ -1,0 +1,6 @@
+{
+  "id": "costar",
+  "name": "Costar",
+  "description": "Copies ally's stat changes on entering battle.",
+  "hooks": []
+}

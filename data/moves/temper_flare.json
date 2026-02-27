@@ -1,0 +1,15 @@
+{
+  "id": "temper_flare",
+  "name": "Temper Flare",
+  "type": "Fire",
+  "category": "physical",
+  "power": 75,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "",
+  "is_custom": false
+}

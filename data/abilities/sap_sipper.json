@@ -1,0 +1,6 @@
+{
+  "id": "sap_sipper",
+  "name": "Sap Sipper",
+  "description": "Boosts Attack when hit by a Grass-type move.",
+  "hooks": []
+}

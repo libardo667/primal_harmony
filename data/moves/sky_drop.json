@@ -1,0 +1,15 @@
+{
+  "id": "sky_drop",
+  "name": "Sky Drop",
+  "type": "Flying",
+  "category": "physical",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Takes opponent into the air on first turn, drops them on second turn.",
+  "is_custom": false
+}

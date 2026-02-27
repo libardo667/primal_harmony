@@ -1,0 +1,69 @@
+{
+  "id": "cinderchop",
+  "name": "Cinderchop",
+  "national_dex": null,
+  "types": [
+    "Fire",
+    "Fighting"
+  ],
+  "base_stats": {
+    "hp": 80,
+    "atk": 100,
+    "def": 65,
+    "spa": 45,
+    "spd": 50,
+    "spe": 50
+  },
+  "abilities": [
+    "Guts",
+    "Iron Fist"
+  ],
+  "hidden_ability": "Thick Fat",
+  "learnset": [
+    {
+      "move_id": "low_kick",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "leer",
+      "method": "level",
+      "level": 4
+    },
+    {
+      "move_id": "ember",
+      "method": "level",
+      "level": 8
+    },
+    {
+      "move_id": "karate_chop",
+      "method": "level",
+      "level": 12
+    },
+    {
+      "move_id": "flame_wheel",
+      "method": "level",
+      "level": 21
+    }
+  ],
+  "evolution": null,
+  "dex_entry": "Machop that refused to flee the heat have been tempered by it, their skin developing heat-resistant mineral deposits. Punches leave scorch marks. Deeply territorial around the crater.",
+  "catch_rate": 150,
+  "base_exp": 80,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Human-Like"
+  ],
+  "gender_ratio": 75,
+  "is_native_hoenn": true,
+  "native_zone": "emberscar",
+  "is_corrupted": true,
+  "corruption_zone": "emberscar",
+  "corruption_path": null,
+  "base_species": "machop",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/cinderchop/front.png",
+    "back": "res://assets/sprites/pokemon/cinderchop/back.png",
+    "icon": "res://assets/sprites/pokemon/cinderchop/icon.png"
+  }
+}

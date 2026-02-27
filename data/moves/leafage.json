@@ -1,0 +1,15 @@
+{
+  "id": "leafage",
+  "name": "Leafage",
+  "type": "Grass",
+  "category": "physical",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 40,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Strikes opponent with leaves.",
+  "is_custom": false
+}

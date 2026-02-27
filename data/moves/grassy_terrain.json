@@ -1,0 +1,15 @@
+{
+  "id": "grassy_terrain",
+  "name": "Grassy Terrain",
+  "type": "Grass",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Restores a little HP of all Pok\u00e9mon for 5 turns.",
+  "is_custom": false
+}

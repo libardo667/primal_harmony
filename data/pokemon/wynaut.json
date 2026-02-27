@@ -1,0 +1,59 @@
+{
+  "id": "wynaut",
+  "name": "Wynaut",
+  "national_dex": 360,
+  "types": [
+    "Psychic"
+  ],
+  "base_stats": {
+    "hp": 95,
+    "atk": 23,
+    "def": 48,
+    "spa": 23,
+    "spd": 48,
+    "spe": 23
+  },
+  "abilities": [
+    "Shadow Tag",
+    "Telepathy"
+  ],
+  "hidden_ability": null,
+  "learnset": [
+    {
+      "move_id": "charm",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "confusion",
+      "method": "level",
+      "level": 5
+    }
+  ],
+  "evolution": {
+    "method": "level",
+    "level": 15,
+    "item": null,
+    "condition": null,
+    "into": "wobbuffet"
+  },
+  "dex_entry": "Wynaut gather in large groups in forests. It is safe as long as any Trainer who finds them watches out for the situation.",
+  "catch_rate": 125,
+  "base_exp": 52,
+  "growth_rate": "medium_fast",
+  "egg_groups": [
+    "Amorphous"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "the_veil",
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/wynaut/front.png",
+    "back": "res://assets/sprites/pokemon/wynaut/back.png",
+    "icon": "res://assets/sprites/pokemon/wynaut/icon.png"
+  }
+}

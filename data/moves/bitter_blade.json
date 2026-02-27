@@ -1,0 +1,15 @@
+{
+  "id": "bitter_blade",
+  "name": "Bitter Blade",
+  "type": "Fire",
+  "category": "physical",
+  "power": 90,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User recovers half the HP inflicted on opponent.",
+  "is_custom": false
+}

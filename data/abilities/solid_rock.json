@@ -1,0 +1,6 @@
+{
+  "id": "solid_rock",
+  "name": "Solid Rock",
+  "description": "Reduces damage from super-effective attacks.",
+  "hooks": []
+}

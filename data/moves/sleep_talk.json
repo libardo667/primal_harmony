@@ -1,0 +1,15 @@
+{
+  "id": "sleep_talk",
+  "name": "Sleep Talk",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User performs one of its own moves while sleeping.",
+  "is_custom": false
+}

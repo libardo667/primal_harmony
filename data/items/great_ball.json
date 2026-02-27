@@ -1,0 +1,13 @@
+{
+    "id": "great_ball",
+    "name": "Great Ball",
+    "category": "ball",
+    "effect": "catch_1_5x",
+    "effect_value": 2,
+    "description": "A good, high-performance Ball that provides a higher Pokémon catch rate than a standard Poké Ball.",
+    "buy_price": 600,
+    "sell_price": 300,
+    "is_key_item": false,
+    "is_custom": false,
+    "zone_association": null
+}

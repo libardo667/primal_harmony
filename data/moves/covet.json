@@ -1,0 +1,15 @@
+{
+  "id": "covet",
+  "name": "Covet",
+  "type": "Normal",
+  "category": "physical",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 25,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Opponent's item is stolen by the user.",
+  "is_custom": false
+}

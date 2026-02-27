@@ -1,0 +1,6 @@
+{
+  "id": "lightning_rod",
+  "name": "Lightning Rod",
+  "description": "Draws in all Electric-type moves to up Sp. Attack.",
+  "hooks": []
+}

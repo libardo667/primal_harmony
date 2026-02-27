@@ -1,0 +1,15 @@
+{
+  "id": "comeuppance",
+  "name": "Comeuppance",
+  "type": "Dark",
+  "category": "physical",
+  "power": null,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Deals more damage to the opponent that last inflicted damage on it.",
+  "is_custom": false
+}

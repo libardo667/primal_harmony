@@ -1,0 +1,15 @@
+{
+  "id": "coil",
+  "name": "Coil",
+  "type": "Poison",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Raises user's Attack, Defense and Accuracy.",
+  "is_custom": false
+}

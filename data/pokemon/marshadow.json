@@ -1,0 +1,37 @@
+{
+  "id": "marshadow",
+  "name": "Marshadow",
+  "national_dex": 802,
+  "types": [
+    "Fighting",
+    "Ghost"
+  ],
+  "base_stats": {
+    "hp": 90,
+    "atk": 125,
+    "def": 80,
+    "spa": 90,
+    "spd": 90,
+    "spe": 125
+  },
+  "abilities": [
+    "TBD"
+  ],
+  "hidden_ability": null,
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "TBD",
+  "catch_rate": 45,
+  "base_exp": 60,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "TBD"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": false,
+  "native_zone": null,
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null
+}

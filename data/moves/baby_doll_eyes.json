@@ -1,0 +1,15 @@
+{
+  "id": "baby_doll_eyes",
+  "name": "Baby-Doll Eyes",
+  "type": "Fairy",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 30,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Always goes first. Lowers the target's attack.",
+  "is_custom": false
+}

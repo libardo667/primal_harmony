@@ -1,0 +1,15 @@
+{
+  "id": "dark_void",
+  "name": "Dark Void",
+  "type": "Dark",
+  "category": "status",
+  "power": null,
+  "accuracy": 50,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Puts all adjacent opponents to sleep.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "incinerate",
+  "name": "Incinerate",
+  "type": "Fire",
+  "category": "special",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Destroys the target's held berry.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "triple_arrows",
+  "name": "Triple Arrows",
+  "type": "Fighting",
+  "category": "physical",
+  "power": 90,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "High critical hit ratio. May lower opponent's Defense or cause them to flinch.",
+  "is_custom": false
+}

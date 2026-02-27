@@ -1,0 +1,15 @@
+{
+  "id": "nihil_light",
+  "name": "Nihil Light",
+  "type": "Dragon",
+  "category": "special",
+  "power": 200,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "",
+  "is_custom": false
+}

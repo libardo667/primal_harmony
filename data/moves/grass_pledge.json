@@ -1,0 +1,15 @@
+{
+  "id": "grass_pledge",
+  "name": "Grass Pledge",
+  "type": "Grass",
+  "category": "special",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Added effects appear if preceded by Water Pledge or succeeded by Fire Pledge.",
+  "is_custom": false
+}

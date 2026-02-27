@@ -1,0 +1,15 @@
+{
+  "id": "zing_zap",
+  "name": "Zing Zap",
+  "type": "Electric",
+  "category": "physical",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May cause flinching.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "synthesis",
+  "name": "Synthesis",
+  "type": "Grass",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User recovers HP. Amount varies with the weather.",
+  "is_custom": false
+}

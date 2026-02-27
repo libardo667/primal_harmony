@@ -1,0 +1,15 @@
+{
+  "id": "heat_wave",
+  "name": "Heat Wave",
+  "type": "Fire",
+  "category": "special",
+  "power": 95,
+  "accuracy": 90,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May burn opponent.",
+  "is_custom": false
+}

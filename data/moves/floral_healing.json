@@ -1,0 +1,15 @@
+{
+  "id": "floral_healing",
+  "name": "Floral Healing",
+  "type": "Fairy",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The user restores the target's HP by up to half of its max HP. It restores more HP when the terrain is grass.",
+  "is_custom": false
+}

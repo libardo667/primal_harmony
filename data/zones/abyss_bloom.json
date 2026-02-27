@@ -1,0 +1,224 @@
+{
+    "zone_id": "abyss_bloom",
+    "zone_name": "The Abyss Bloom",
+    "zone_number": 9,
+    "dominant_type": "Water",
+    "location": "Sootopolis City / Cave of Origin / Route 126",
+    "ehi_local": 0.0,
+    "ehi_thresholds": {
+        "infested": [
+            0,
+            33
+        ],
+        "partial": [
+            34,
+            66
+        ],
+        "restored": [
+            67,
+            100
+        ]
+    },
+    "encounter_table": {
+        "infested": [
+            {
+                "species_id": "deepcorsola",
+                "level_range": [
+                    38,
+                    44
+                ],
+                "weight": 25,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "abysslicanth",
+                "level_range": [
+                    40,
+                    46
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "tidedisc",
+                "level_range": [
+                    36,
+                    42
+                ],
+                "weight": 25,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "lanturn",
+                "level_range": [
+                    36,
+                    42
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "chinchou",
+                "level_range": [
+                    34,
+                    40
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "seel",
+                "level_range": [
+                    36,
+                    42
+                ],
+                "weight": 5,
+                "time_of_day": "any"
+            }
+        ],
+        "partial": [
+            {
+                "species_id": "corsola",
+                "level_range": [
+                    38,
+                    44
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "relicanth",
+                "level_range": [
+                    40,
+                    46
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "luvdisc",
+                "level_range": [
+                    36,
+                    42
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "seel",
+                "level_range": [
+                    36,
+                    42
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "deepcorsola",
+                "level_range": [
+                    38,
+                    44
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "tidedisc",
+                "level_range": [
+                    36,
+                    42
+                ],
+                "weight": 10,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "lanturn",
+                "level_range": [
+                    36,
+                    42
+                ],
+                "weight": 5,
+                "time_of_day": "any"
+            }
+        ],
+        "restored": [
+            {
+                "species_id": "corsola",
+                "level_range": [
+                    38,
+                    44
+                ],
+                "weight": 30,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "relicanth",
+                "level_range": [
+                    40,
+                    46
+                ],
+                "weight": 25,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "luvdisc",
+                "level_range": [
+                    36,
+                    42
+                ],
+                "weight": 25,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "seel",
+                "level_range": [
+                    36,
+                    42
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            }
+        ]
+    },
+    "native_species": [
+        "seel",
+        "luvdisc",
+        "relicanth",
+        "corsola"
+    ],
+    "corrupted_variants": [
+        "deepcorsola",
+        "abysslicanth",
+        "tidedisc"
+    ],
+    "quell_types": [
+        "Electric",
+        "Grass"
+    ],
+    "traversal_hazards": [
+        {
+            "hazard_id": "flooded_lower_paths",
+            "description": "Lower city areas are ankle-deep in water. Certain routes require Surf to cross.",
+            "mitigation": "Surf HM"
+        },
+        {
+            "hazard_id": "cave_of_origin_depth",
+            "description": "Cave of Origin deeper levels require Dive. Kyogre's influence creates permanent heavy rain inside the crater.",
+            "mitigation": "Dive HM + Dive Tank key item"
+        }
+    ],
+    "key_items": [
+        "dive_tank"
+    ],
+    "relocation_terminals": [
+        "Sootopolis City Pokemon Center",
+        "Mossdeep City Pokemon Center"
+    ],
+    "ehi_restoration_effect": "One of the two penultimate EHI milestones alongside the Emberscar/Groudon arc. Completing both triggers the final alliance sequence with Kyogre, Groudon, and Rayquaza.",
+    "narrative_role": "Final co-op with Team Aqua and Kyogre required for full quell. Penultimate zone tied to the Kyogre arc.",
+    "story_gate": {
+        "required_ehi_global": null,
+        "required_story_beat": "post_eighth_badge",
+        "required_badges": 8
+    }
+}

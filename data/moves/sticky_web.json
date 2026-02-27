@@ -1,0 +1,15 @@
+{
+  "id": "sticky_web",
+  "name": "Sticky Web",
+  "type": "Bug",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Lowers opponent's Speed when switching into battle.",
+  "is_custom": false
+}

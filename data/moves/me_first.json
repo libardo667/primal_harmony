@@ -1,0 +1,15 @@
+{
+  "id": "me_first",
+  "name": "Me First",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User copies the opponent's attack with 1.5\u00d7 power.",
+  "is_custom": false
+}

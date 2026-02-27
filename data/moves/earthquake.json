@@ -1,0 +1,15 @@
+{
+  "id": "earthquake",
+  "name": "Earthquake",
+  "type": "Ground",
+  "category": "physical",
+  "power": 100,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Power is doubled if opponent is underground from using Dig.",
+  "is_custom": false
+}

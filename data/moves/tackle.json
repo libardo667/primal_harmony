@@ -1,0 +1,18 @@
+{
+  "id": "tackle",
+  "name": "Tackle",
+  "type": "Normal",
+  "category": "physical",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 35,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [
+    "contact"
+  ],
+  "description": "A physical attack in which the user charges at the target with its whole body.",
+  "is_custom": false,
+  "base_power": 40
+}

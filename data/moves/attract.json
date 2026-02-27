@@ -1,0 +1,15 @@
+{
+  "id": "attract",
+  "name": "Attract",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "If opponent is the opposite gender, it's less likely to attack.",
+  "is_custom": false
+}

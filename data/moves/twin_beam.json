@@ -1,0 +1,15 @@
+{
+  "id": "twin_beam",
+  "name": "Twin Beam",
+  "type": "Psychic",
+  "category": "special",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Hits twice in one turn.",
+  "is_custom": false
+}

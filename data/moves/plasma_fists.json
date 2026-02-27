@@ -1,0 +1,15 @@
+{
+  "id": "plasma_fists",
+  "name": "Plasma Fists",
+  "type": "Electric",
+  "category": "physical",
+  "power": 100,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Changes Normal-type moves to Electric-type moves.",
+  "is_custom": false
+}

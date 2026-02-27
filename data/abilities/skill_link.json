@@ -1,0 +1,6 @@
+{
+  "id": "skill_link",
+  "name": "Skill Link",
+  "description": "Increases the frequency of multi-strike moves.",
+  "hooks": []
+}

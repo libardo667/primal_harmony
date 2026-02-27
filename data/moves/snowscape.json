@@ -1,0 +1,15 @@
+{
+  "id": "snowscape",
+  "name": "Snowscape",
+  "type": "Ice",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Raises Defense of Ice types for 5 turns.",
+  "is_custom": false
+}

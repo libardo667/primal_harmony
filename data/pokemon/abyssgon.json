@@ -1,0 +1,43 @@
+{
+  "id": "abyssgon",
+  "name": "Abyssgon",
+  "national_dex": null,
+  "types": [
+    "Dragon",
+    "Ground"
+  ],
+  "base_stats": {
+    "hp": 85,
+    "atk": 110,
+    "def": 85,
+    "spa": 85,
+    "spd": 85,
+    "spe": 90
+  },
+  "abilities": [
+    "Levitate",
+    "Sand Veil"
+  ],
+  "hidden_ability": "Mold Breaker",
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "Flygon that made their way to the Pillar have been changed by altitude and draconic saturation. Their eye-covers have grown opaque and dark-tinted, their frequency hum now registers as a low draconic resonance that interferes with other signals.",
+  "catch_rate": 35,
+  "base_exp": 250,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Bug"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "static_sky",
+  "is_corrupted": true,
+  "corruption_zone": "static_sky",
+  "corruption_path": null,
+  "base_species": "flygon",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/abyssgon/front.png",
+    "back": "res://assets/sprites/pokemon/abyssgon/back.png",
+    "icon": "res://assets/sprites/pokemon/abyssgon/icon.png"
+  }
+}

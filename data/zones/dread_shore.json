@@ -1,0 +1,219 @@
+{
+    "zone_id": "dread_shore",
+    "zone_name": "The Dread Shore",
+    "zone_number": 5,
+    "dominant_type": "Dark",
+    "location": "Mt. Pyre / Route 122",
+    "ehi_local": 0.0,
+    "ehi_thresholds": {
+        "infested": [
+            0,
+            33
+        ],
+        "partial": [
+            34,
+            66
+        ],
+        "restored": [
+            67,
+            100
+        ]
+    },
+    "encounter_table": {
+        "infested": [
+            {
+                "species_id": "graveshuppet",
+                "level_range": [
+                    28,
+                    32
+                ],
+                "weight": 25,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "nightskull",
+                "level_range": [
+                    28,
+                    32
+                ],
+                "weight": 20,
+                "time_of_day": "night"
+            },
+            {
+                "species_id": "ashfox",
+                "level_range": [
+                    26,
+                    30
+                ],
+                "weight": 20,
+                "time_of_day": "night"
+            },
+            {
+                "species_id": "houndour",
+                "level_range": [
+                    28,
+                    32
+                ],
+                "weight": 15,
+                "time_of_day": "night"
+            },
+            {
+                "species_id": "murkrow",
+                "level_range": [
+                    26,
+                    30
+                ],
+                "weight": 15,
+                "time_of_day": "night"
+            },
+            {
+                "species_id": "sneasel",
+                "level_range": [
+                    28,
+                    32
+                ],
+                "weight": 5,
+                "time_of_day": "night"
+            }
+        ],
+        "partial": [
+            {
+                "species_id": "shuppet",
+                "level_range": [
+                    28,
+                    32
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "duskull",
+                "level_range": [
+                    28,
+                    32
+                ],
+                "weight": 20,
+                "time_of_day": "night"
+            },
+            {
+                "species_id": "vulpix",
+                "level_range": [
+                    26,
+                    30
+                ],
+                "weight": 20,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "graveshuppet",
+                "level_range": [
+                    28,
+                    32
+                ],
+                "weight": 15,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "ashfox",
+                "level_range": [
+                    26,
+                    30
+                ],
+                "weight": 10,
+                "time_of_day": "night"
+            },
+            {
+                "species_id": "chimecho",
+                "level_range": [
+                    30,
+                    34
+                ],
+                "weight": 10,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "houndour",
+                "level_range": [
+                    28,
+                    32
+                ],
+                "weight": 5,
+                "time_of_day": "night"
+            }
+        ],
+        "restored": [
+            {
+                "species_id": "shuppet",
+                "level_range": [
+                    28,
+                    32
+                ],
+                "weight": 30,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "duskull",
+                "level_range": [
+                    28,
+                    32
+                ],
+                "weight": 25,
+                "time_of_day": "night"
+            },
+            {
+                "species_id": "chimecho",
+                "level_range": [
+                    30,
+                    34
+                ],
+                "weight": 25,
+                "time_of_day": "any"
+            },
+            {
+                "species_id": "vulpix",
+                "level_range": [
+                    26,
+                    30
+                ],
+                "weight": 20,
+                "time_of_day": "day"
+            }
+        ]
+    },
+    "native_species": [
+        "shuppet",
+        "duskull",
+        "chimecho",
+        "vulpix"
+    ],
+    "corrupted_variants": [
+        "graveshuppet",
+        "nightskull",
+        "ashfox"
+    ],
+    "quell_types": [
+        "Fighting",
+        "Fairy"
+    ],
+    "traversal_hazards": [
+        {
+            "hazard_id": "heavy_fog",
+            "description": "Permanent heavy fog reduces visibility to two tiles. Items on the ground invisible until stepped on.",
+            "mitigation": "Spirit Candle key item"
+        },
+        {
+            "hazard_id": "silent_encounters",
+            "description": "Wild encounters produce no sound cue — impossible to hear them coming.",
+            "mitigation": "Awareness passive effect from Spirit Candle"
+        }
+    ],
+    "key_items": [
+        "spirit_candle"
+    ],
+    "relocation_terminals": [
+        "Lilycove City Pokemon Center"
+    ],
+    "ehi_restoration_effect": "Reactivates Mt. Pyre as a story location, unlocks lore about pre-crisis Hoenn ecology told through the memorials, and stabilizes the Ghost-type population.",
+    "narrative_role": "Restoring Mt. Pyre reactivates it as a key story location and requires re-lighting the memorial flames — a beat involving a Lilycove elder NPC.",
+    "story_gate": null
+}

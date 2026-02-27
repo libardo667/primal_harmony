@@ -1,0 +1,15 @@
+{
+  "id": "max_lightning",
+  "name": "Max Lightning",
+  "type": "Electric",
+  "category": "physical",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Electric type Dynamax move. Summons Electric Terrain.",
+  "is_custom": false
+}

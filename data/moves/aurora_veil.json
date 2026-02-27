@@ -1,0 +1,15 @@
+{
+  "id": "aurora_veil",
+  "name": "Aurora Veil",
+  "type": "Ice",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Halves damage from Physical and Special attacks for five turns.",
+  "is_custom": false
+}

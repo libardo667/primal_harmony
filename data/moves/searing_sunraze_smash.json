@@ -1,0 +1,15 @@
+{
+  "id": "searing_sunraze_smash",
+  "name": "Searing Sunraze Smash",
+  "type": "Steel",
+  "category": "physical",
+  "power": 200,
+  "accuracy": null,
+  "pp": 1,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "",
+  "is_custom": false
+}

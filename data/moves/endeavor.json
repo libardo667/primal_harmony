@@ -1,0 +1,15 @@
+{
+  "id": "endeavor",
+  "name": "Endeavor",
+  "type": "Normal",
+  "category": "physical",
+  "power": null,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Reduces opponent's HP to same as user's.",
+  "is_custom": false
+}

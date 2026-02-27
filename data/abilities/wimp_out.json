@@ -1,0 +1,6 @@
+{
+  "id": "wimp_out",
+  "name": "Wimp Out",
+  "description": "Switches out when HP drops below half.",
+  "hooks": []
+}

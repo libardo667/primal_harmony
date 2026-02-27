@@ -1,0 +1,16 @@
+{
+  "id": "psybeam",
+  "name": "Psybeam",
+  "type": "Psychic",
+  "category": "special",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "confusion_10",
+  "flags": [],
+  "description": "The target is attacked with a peculiar ray. This may also leave the target confused.",
+  "is_custom": false,
+  "base_power": 65
+}

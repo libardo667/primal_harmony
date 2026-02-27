@@ -1,0 +1,17 @@
+{
+    "id": "faint_attack",
+    "name": "Faint Attack",
+    "type": "Dark",
+    "category": "physical",
+    "power": 60,
+    "accuracy": null,
+    "pp": 20,
+    "priority": 0,
+    "target": "single_opponent",
+    "effect": null,
+    "flags": [
+        "contact"
+    ],
+    "description": "The user approaches the target disarmingly, then throws a sucker punch. This attack never misses.",
+    "is_custom": false
+}

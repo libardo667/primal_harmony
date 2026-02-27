@@ -1,0 +1,15 @@
+{
+  "id": "pika_papow",
+  "name": "Pika Papow",
+  "type": "Electric",
+  "category": "special",
+  "power": null,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Power increases when player's bond is stronger.",
+  "is_custom": false
+}

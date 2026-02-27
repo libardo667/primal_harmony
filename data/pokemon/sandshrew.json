@@ -1,0 +1,48 @@
+{
+  "id": "sandshrew",
+  "name": "Sandshrew",
+  "national_dex": 27,
+  "types": [
+    "Ground"
+  ],
+  "base_stats": {
+    "hp": 50,
+    "atk": 75,
+    "def": 85,
+    "spa": 20,
+    "spd": 30,
+    "spe": 40
+  },
+  "abilities": [
+    "Sand Veil",
+    "Sand Rush"
+  ],
+  "hidden_ability": null,
+  "learnset": [],
+  "evolution": {
+    "method": "item",
+    "level": null,
+    "item": "earth_stone",
+    "condition": null,
+    "into": "sandslash"
+  },
+  "dex_entry": "Sandshrew lives in holes dug into the ground in arid regions. In order to escape from enemies, it rolls its body into a ball.",
+  "catch_rate": 255,
+  "base_exp": 60,
+  "growth_rate": "medium_fast",
+  "egg_groups": [
+    "Field"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "the_crucible",
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/sandshrew/front.png",
+    "back": "res://assets/sprites/pokemon/sandshrew/back.png",
+    "icon": "res://assets/sprites/pokemon/sandshrew/icon.png"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "soak",
+  "name": "Soak",
+  "type": "Water",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Changes the target's type to water.",
+  "is_custom": false
+}

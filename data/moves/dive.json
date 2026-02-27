@@ -1,0 +1,15 @@
+{
+  "id": "dive",
+  "name": "Dive",
+  "type": "Water",
+  "category": "physical",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Dives underwater on first turn, attacks on second turn.",
+  "is_custom": false
+}

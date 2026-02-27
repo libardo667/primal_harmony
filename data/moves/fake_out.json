@@ -1,0 +1,15 @@
+{
+  "id": "fake_out",
+  "name": "Fake Out",
+  "type": "Normal",
+  "category": "physical",
+  "power": 40,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User attacks first, foe flinches. Only usable on first turn.",
+  "is_custom": false
+}

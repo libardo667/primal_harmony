@@ -1,0 +1,15 @@
+{
+  "id": "avalanche",
+  "name": "Avalanche",
+  "type": "Ice",
+  "category": "physical",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Power doubles if user took damage first.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "magnetic_flux",
+  "name": "Magnetic Flux",
+  "type": "Electric",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Raises Defense and Sp. Defense of Plus/Minus Pok\u00e9mon.",
+  "is_custom": false
+}

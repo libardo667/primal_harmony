@@ -1,0 +1,42 @@
+{
+  "id": "blazeborn",
+  "name": "Blazeborn",
+  "national_dex": null,
+  "types": [
+    "Fire"
+  ],
+  "base_stats": {
+    "hp": 75,
+    "atk": 90,
+    "def": 65,
+    "spa": 130,
+    "spd": 75,
+    "spe": 115
+  },
+  "abilities": [
+    "Blaze",
+    "Speed Boost"
+  ],
+  "hidden_ability": "Solar Power",
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "Fully restored to its evolutionary apex. The fastest of the three final forms. Its restored form is more vivid than standard, as if the healing over-corrected slightly toward brightness. Dex: \"It burned through what it was not, to find what it was. Nothing about it is diminished by the journey.\"",
+  "catch_rate": 45,
+  "base_exp": 239,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Field"
+  ],
+  "gender_ratio": 12.5,
+  "is_native_hoenn": true,
+  "native_zone": null,
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": "C",
+  "base_species": "torchic",
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/blazeborn/front.png",
+    "back": "res://assets/sprites/pokemon/blazeborn/back.png",
+    "icon": "res://assets/sprites/pokemon/blazeborn/icon.png"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "id": "fairy_aura",
+  "name": "Fairy Aura",
+  "description": "Raises power of Fairy type moves for all Pok\u00e9mon in battle.",
+  "hooks": []
+}

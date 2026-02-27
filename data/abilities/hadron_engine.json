@@ -1,0 +1,6 @@
+{
+  "id": "hadron_engine",
+  "name": "Hadron Engine",
+  "description": "Creates an Electric Terrain when entering battle, and boosts Special Attack while active.",
+  "hooks": []
+}

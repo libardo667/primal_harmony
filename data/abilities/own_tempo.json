@@ -1,0 +1,6 @@
+{
+  "id": "own_tempo",
+  "name": "Own Tempo",
+  "description": "Prevents the Pok\u00e9mon from becoming confused.",
+  "hooks": []
+}

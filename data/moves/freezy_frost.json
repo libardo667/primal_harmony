@@ -1,0 +1,15 @@
+{
+  "id": "freezy_frost",
+  "name": "Freezy Frost",
+  "type": "Ice",
+  "category": "special",
+  "power": 100,
+  "accuracy": 90,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Resets all stat changes.",
+  "is_custom": false
+}

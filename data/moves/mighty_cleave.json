@@ -1,0 +1,15 @@
+{
+  "id": "mighty_cleave",
+  "name": "Mighty Cleave",
+  "type": "Rock",
+  "category": "physical",
+  "power": 95,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "",
+  "is_custom": false
+}

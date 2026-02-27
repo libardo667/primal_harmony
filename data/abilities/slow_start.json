@@ -1,0 +1,6 @@
+{
+  "id": "slow_start",
+  "name": "Slow Start",
+  "description": "Temporarily halves Attack and Speed.",
+  "hooks": []
+}

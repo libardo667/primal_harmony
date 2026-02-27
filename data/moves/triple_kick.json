@@ -1,0 +1,15 @@
+{
+  "id": "triple_kick",
+  "name": "Triple Kick",
+  "type": "Fighting",
+  "category": "physical",
+  "power": 10,
+  "accuracy": 90,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Hits thrice in one turn at increasing power.",
+  "is_custom": false
+}

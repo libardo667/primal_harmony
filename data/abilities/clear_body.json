@@ -1,0 +1,6 @@
+{
+  "id": "clear_body",
+  "name": "Clear Body",
+  "description": "Prevents other Pok\u00e9mon from lowering its stats.",
+  "hooks": []
+}

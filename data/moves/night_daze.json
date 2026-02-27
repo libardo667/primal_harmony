@@ -1,0 +1,15 @@
+{
+  "id": "night_daze",
+  "name": "Night Daze",
+  "type": "Dark",
+  "category": "special",
+  "power": 85,
+  "accuracy": 95,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May lower opponent's Accuracy.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "super_fang",
+  "name": "Super Fang",
+  "type": "Normal",
+  "category": "physical",
+  "power": null,
+  "accuracy": 90,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Always takes off half of the opponent's HP.",
+  "is_custom": false
+}

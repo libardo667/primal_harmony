@@ -1,0 +1,15 @@
+{
+  "id": "double_iron_bash",
+  "name": "Double Iron Bash",
+  "type": "Steel",
+  "category": "physical",
+  "power": 60,
+  "accuracy": 100,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Hits twice in one turn; may cause flinching.",
+  "is_custom": false
+}

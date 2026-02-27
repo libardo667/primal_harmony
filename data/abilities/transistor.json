@@ -1,0 +1,6 @@
+{
+  "id": "transistor",
+  "name": "Transistor",
+  "description": "Powers up Electric-type moves.",
+  "hooks": []
+}

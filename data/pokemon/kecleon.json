@@ -1,0 +1,41 @@
+{
+  "id": "kecleon",
+  "name": "Kecleon",
+  "national_dex": 352,
+  "types": [
+    "Normal"
+  ],
+  "base_stats": {
+    "hp": 60,
+    "atk": 90,
+    "def": 70,
+    "spa": 60,
+    "spd": 120,
+    "spe": 40
+  },
+  "abilities": [
+    "Color Change"
+  ],
+  "hidden_ability": "Protean",
+  "learnset": [],
+  "evolution": null,
+  "dex_entry": "Kecleon is capable of changing its body color at will for camouflage. However, the chevronic pattern on its belly cannot be changed.",
+  "catch_rate": 200,
+  "base_exp": 154,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Field"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "the_overgrowth",
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/kecleon/front.png",
+    "back": "res://assets/sprites/pokemon/kecleon/back.png",
+    "icon": "res://assets/sprites/pokemon/kecleon/icon.png"
+  }
+}

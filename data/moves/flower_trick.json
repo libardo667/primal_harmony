@@ -1,0 +1,15 @@
+{
+  "id": "flower_trick",
+  "name": "Flower Trick",
+  "type": "Grass",
+  "category": "physical",
+  "power": 70,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Never misses; always results in a critical hit.",
+  "is_custom": false
+}

@@ -1,0 +1,15 @@
+{
+  "id": "nature_s_madness",
+  "name": "Nature's Madness",
+  "type": "Fairy",
+  "category": "special",
+  "power": null,
+  "accuracy": 90,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Halves the foe's HP.",
+  "is_custom": false
+}

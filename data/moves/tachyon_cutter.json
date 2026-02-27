@@ -1,0 +1,15 @@
+{
+  "id": "tachyon_cutter",
+  "name": "Tachyon Cutter",
+  "type": "Steel",
+  "category": "special",
+  "power": 50,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Guaranteed to hit twice in a row.",
+  "is_custom": false
+}

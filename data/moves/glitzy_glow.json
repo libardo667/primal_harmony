@@ -1,0 +1,15 @@
+{
+  "id": "glitzy_glow",
+  "name": "Glitzy Glow",
+  "type": "Psychic",
+  "category": "special",
+  "power": 80,
+  "accuracy": 95,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Reduces damage from Special attacks.",
+  "is_custom": false
+}

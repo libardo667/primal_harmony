@@ -1,0 +1,15 @@
+{
+  "id": "poison_tail",
+  "name": "Poison Tail",
+  "type": "Poison",
+  "category": "physical",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 25,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "High critical hit ratio. May poison opponent.",
+  "is_custom": false
+}

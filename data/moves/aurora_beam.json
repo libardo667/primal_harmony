@@ -1,0 +1,15 @@
+{
+  "id": "aurora_beam",
+  "name": "Aurora Beam",
+  "type": "Ice",
+  "category": "special",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May lower opponent's Attack.",
+  "is_custom": false
+}

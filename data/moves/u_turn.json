@@ -1,0 +1,15 @@
+{
+  "id": "u_turn",
+  "name": "U-turn",
+  "type": "Bug",
+  "category": "physical",
+  "power": 70,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "User switches out immediately after attacking.",
+  "is_custom": false
+}

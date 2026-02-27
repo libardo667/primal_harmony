@@ -1,0 +1,15 @@
+{
+  "id": "tail_slap",
+  "name": "Tail Slap",
+  "type": "Normal",
+  "category": "physical",
+  "power": 25,
+  "accuracy": 85,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Hits 2-5 times in one turn.",
+  "is_custom": false
+}

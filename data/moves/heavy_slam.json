@@ -1,0 +1,15 @@
+{
+  "id": "heavy_slam",
+  "name": "Heavy Slam",
+  "type": "Steel",
+  "category": "physical",
+  "power": null,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The heavier the user, the stronger the attack.",
+  "is_custom": false
+}

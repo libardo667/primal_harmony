@@ -1,0 +1,15 @@
+{
+  "id": "hurricane",
+  "name": "Hurricane",
+  "type": "Flying",
+  "category": "special",
+  "power": 110,
+  "accuracy": 70,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May confuse opponent.",
+  "is_custom": false
+}

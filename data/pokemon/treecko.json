@@ -1,0 +1,68 @@
+{
+  "id": "treecko",
+  "name": "Treecko",
+  "national_dex": 252,
+  "types": [
+    "Grass"
+  ],
+  "base_stats": {
+    "hp": 40,
+    "atk": 45,
+    "def": 35,
+    "spa": 65,
+    "spd": 55,
+    "spe": 70
+  },
+  "abilities": [
+    "Overgrow"
+  ],
+  "hidden_ability": "Unburden",
+  "learnset": [
+    {"move_id": "pound", "method": "level", "level": 1},
+    {"move_id": "leer", "method": "level", "level": 1},
+    {"move_id": "absorb", "method": "level", "level": 7},
+    {"move_id": "quick_attack", "method": "level", "level": 13}
+  ],
+  "evolution": {
+    "method": "cleanse",
+    "level": 16,
+    "item": null,
+    "condition": "path_C_both_cleanses",
+    "into": "leafecko"
+  },
+  "dex_entry": "Treecko has small hooks on the bottom of its feet that enable it to scale vertical walls. It attacks by slamming foes with its tail.",
+  "catch_rate": 45,
+  "base_exp": 65,
+  "growth_rate": "medium_slow",
+  "egg_groups": [
+    "Monster",
+    "Dragon"
+  ],
+  "gender_ratio": 12.5,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/treecko/front.png",
+    "back": "res://assets/sprites/pokemon/treecko/back.png",
+    "icon": "res://assets/sprites/pokemon/treecko/icon.png"
+  },
+  "is_native_hoenn": true,
+  "native_zone": null,
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "is_starter": true,
+  "starter_corruption_forms": {
+    "A": {
+      "level_16": "scleecko",
+      "level_36": "carapecko"
+    },
+    "B": {
+      "level_16": "mossecko",
+      "level_36": "silkvine"
+    },
+    "C": {
+      "level_16": "leafecko",
+      "level_36": "verdacko"
+    }
+  }
+}

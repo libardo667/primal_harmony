@@ -1,0 +1,15 @@
+{
+  "id": "camouflage",
+  "name": "Camouflage",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Changes user's type according to the location.",
+  "is_custom": false
+}

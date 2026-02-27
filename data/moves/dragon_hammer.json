@@ -1,0 +1,15 @@
+{
+  "id": "dragon_hammer",
+  "name": "Dragon Hammer",
+  "type": "Dragon",
+  "category": "physical",
+  "power": 90,
+  "accuracy": 100,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The user uses its body like a hammer to attack the target and inflict damage.",
+  "is_custom": false
+}

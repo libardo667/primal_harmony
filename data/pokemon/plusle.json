@@ -1,0 +1,67 @@
+{
+  "id": "plusle",
+  "name": "Plusle",
+  "national_dex": 311,
+  "types": [
+    "Electric"
+  ],
+  "base_stats": {
+    "hp": 60,
+    "atk": 50,
+    "def": 40,
+    "spa": 85,
+    "spd": 75,
+    "spe": 95
+  },
+  "abilities": [
+    "Plus"
+  ],
+  "hidden_ability": "Lightning Rod",
+  "learnset": [
+    {
+      "move_id": "pound",
+      "method": "level",
+      "level": 1
+    },
+    {
+      "move_id": "growl",
+      "method": "level",
+      "level": 4
+    },
+    {
+      "move_id": "thunder_wave",
+      "method": "level",
+      "level": 9
+    },
+    {
+      "move_id": "spark",
+      "method": "level",
+      "level": 13
+    },
+    {
+      "move_id": "volt_switch",
+      "method": "level",
+      "level": 21
+    }
+  ],
+  "evolution": null,
+  "dex_entry": "Plusle always acts as a cheerleader for its partner. It creates sparking pom-poms by shorting out the electricity it releases.",
+  "catch_rate": 200,
+  "base_exp": 142,
+  "growth_rate": "medium_fast",
+  "egg_groups": [
+    "Fairy"
+  ],
+  "gender_ratio": 50,
+  "is_native_hoenn": true,
+  "native_zone": "static_sprawl",
+  "is_corrupted": false,
+  "corruption_zone": null,
+  "corruption_path": null,
+  "base_species": null,
+  "sprites": {
+    "front": "res://assets/sprites/pokemon/plusle/front.png",
+    "back": "res://assets/sprites/pokemon/plusle/back.png",
+    "icon": "res://assets/sprites/pokemon/plusle/icon.png"
+  }
+}

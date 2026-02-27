@@ -1,0 +1,6 @@
+{
+  "id": "wonder_guard",
+  "name": "Wonder Guard",
+  "description": "Only supereffective moves will hit.",
+  "hooks": []
+}

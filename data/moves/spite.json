@@ -1,0 +1,15 @@
+{
+  "id": "spite",
+  "name": "Spite",
+  "type": "Ghost",
+  "category": "status",
+  "power": null,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "The opponent's last move loses 2-5 PP.",
+  "is_custom": false
+}

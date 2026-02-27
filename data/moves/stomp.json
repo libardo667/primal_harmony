@@ -1,0 +1,15 @@
+{
+  "id": "stomp",
+  "name": "Stomp",
+  "type": "Normal",
+  "category": "physical",
+  "power": 65,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May cause flinching.",
+  "is_custom": false
+}

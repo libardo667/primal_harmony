@@ -1,0 +1,18 @@
+{
+  "id": "low_kick",
+  "name": "Low Kick",
+  "type": "Fighting",
+  "category": "physical",
+  "power": null,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": "weight_based_power",
+  "flags": [
+    "contact"
+  ],
+  "description": "A powerful low kick that makes the target fall over. The heavier the target, the greater the move's power.",
+  "is_custom": false,
+  "base_power": 0
+}

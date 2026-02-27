@@ -1,0 +1,15 @@
+{
+  "id": "sand_tomb",
+  "name": "Sand Tomb",
+  "type": "Ground",
+  "category": "physical",
+  "power": 35,
+  "accuracy": 85,
+  "pp": 15,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Traps opponent, damaging them for 4-5 turns.",
+  "is_custom": false
+}

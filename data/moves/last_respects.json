@@ -1,0 +1,15 @@
+{
+  "id": "last_respects",
+  "name": "Last Respects",
+  "type": "Ghost",
+  "category": "physical",
+  "power": 50,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Damages increases the more party Pok\u00e9mon have been defeated.",
+  "is_custom": false
+}

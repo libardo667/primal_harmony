@@ -1,0 +1,6 @@
+{
+  "id": "vessel_of_ruin",
+  "name": "Vessel of Ruin",
+  "description": "Lowers Special Attack of all Pok\u00e9mon except itself.",
+  "hooks": []
+}

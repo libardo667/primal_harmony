@@ -1,0 +1,6 @@
+{
+  "id": "bad_dreams",
+  "name": "Bad Dreams",
+  "description": "Reduces a sleeping foe's HP.",
+  "hooks": []
+}

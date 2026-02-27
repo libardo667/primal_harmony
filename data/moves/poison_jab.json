@@ -1,0 +1,15 @@
+{
+  "id": "poison_jab",
+  "name": "Poison Jab",
+  "type": "Poison",
+  "category": "physical",
+  "power": 80,
+  "accuracy": 100,
+  "pp": 20,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "May poison the opponent.",
+  "is_custom": false
+}

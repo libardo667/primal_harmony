@@ -1,0 +1,15 @@
+{
+  "id": "thousand_waves",
+  "name": "Thousand Waves",
+  "type": "Ground",
+  "category": "physical",
+  "power": 90,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Opponent cannot flee or switch.",
+  "is_custom": false
+}

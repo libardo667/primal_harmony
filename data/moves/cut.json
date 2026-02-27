@@ -1,0 +1,15 @@
+{
+  "id": "cut",
+  "name": "Cut",
+  "type": "Normal",
+  "category": "physical",
+  "power": 50,
+  "accuracy": 95,
+  "pp": 30,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "",
+  "is_custom": false
+}

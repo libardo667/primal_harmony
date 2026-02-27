@@ -1,0 +1,15 @@
+{
+  "id": "trick_room",
+  "name": "Trick Room",
+  "type": "Psychic",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Slower Pok\u00e9mon move first in the turn for 5 turns.",
+  "is_custom": false
+}

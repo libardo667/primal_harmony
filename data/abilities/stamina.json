@@ -1,0 +1,6 @@
+{
+  "id": "stamina",
+  "name": "Stamina",
+  "description": "Raises Defense when attacked.",
+  "hooks": []
+}

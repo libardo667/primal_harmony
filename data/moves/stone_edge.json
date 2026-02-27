@@ -1,0 +1,15 @@
+{
+  "id": "stone_edge",
+  "name": "Stone Edge",
+  "type": "Rock",
+  "category": "physical",
+  "power": 100,
+  "accuracy": 80,
+  "pp": 5,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "High critical hit ratio.",
+  "is_custom": false
+}

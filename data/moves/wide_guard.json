@@ -1,0 +1,15 @@
+{
+  "id": "wide_guard",
+  "name": "Wide Guard",
+  "type": "Rock",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Protects the user's team from multi-target attacks.",
+  "is_custom": false
+}

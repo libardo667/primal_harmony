@@ -1,0 +1,15 @@
+{
+  "id": "teatime",
+  "name": "Teatime",
+  "type": "Normal",
+  "category": "status",
+  "power": null,
+  "accuracy": null,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Forces all Pok\u00e9mon on the field to eat their berries.",
+  "is_custom": false
+}

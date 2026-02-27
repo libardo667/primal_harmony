@@ -1,0 +1,15 @@
+{
+  "id": "smelling_salts",
+  "name": "Smelling Salts",
+  "type": "Normal",
+  "category": "physical",
+  "power": 70,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Power doubles if opponent is paralyzed, but cures it.",
+  "is_custom": false
+}

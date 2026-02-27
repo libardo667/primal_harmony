@@ -1,0 +1,15 @@
+{
+  "id": "first_impression",
+  "name": "First Impression",
+  "type": "Bug",
+  "category": "physical",
+  "power": 90,
+  "accuracy": 100,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Although this move has great power, it only works the first turn the user is in battle.",
+  "is_custom": false
+}

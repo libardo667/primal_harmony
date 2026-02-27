@@ -1,0 +1,15 @@
+{
+  "id": "sweet_kiss",
+  "name": "Sweet Kiss",
+  "type": "Fairy",
+  "category": "status",
+  "power": null,
+  "accuracy": 75,
+  "pp": 10,
+  "priority": 0,
+  "target": "single_opponent",
+  "effect": null,
+  "flags": [],
+  "description": "Confuses opponent.",
+  "is_custom": false
+}

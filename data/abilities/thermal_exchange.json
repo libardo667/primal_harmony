@@ -1,0 +1,6 @@
+{
+  "id": "thermal_exchange",
+  "name": "Thermal Exchange",
+  "description": "Raises Attack when hit by a Fire-type move. Cannot be burned.",
+  "hooks": []
+}
