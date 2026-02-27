@@ -21,106 +21,109 @@ const FOG_SHADER := preload("res://shaders/fog_overlay.gdshader")
 ## Keys match zone_id strings from data/zones/*.json.
 ## Any omitted parameter falls back to the shader's built-in default.
 const ZONE_SHADER_PARAMS: Dictionary = {
-	"the_murk": {
-		# Poison — deep purple miasma haze, slow bioluminescent shimmer + poison flash
-		"zone_tint":            Vector3(0.52, 0.18, 0.78),
-		"tint_strength":        0.55,
-		"infested_saturation":  1.4,
-		"shimmer_amplitude":    0.001,
-		"shimmer_speed":        0.4,
-		"shimmer_frequency":    2.5,
-		"shadow_strength":      0.20,
-		"flash_strength":       0.22,
-	},
-	"emberscar": {
-		# Fire — scorched orange-red, heat shimmer
-		"zone_tint":            Vector3(1.0, 0.35, 0.05),
-		"tint_strength":        0.60,
-		"infested_saturation":  1.2,
-		"shimmer_amplitude":    0.005,
-		"shimmer_speed":        1.2,
-		"shimmer_frequency":    6.0,
-		"shadow_strength":      0.20,
-	},
 	"ashen_glacier": {
 		# Ice — pale blue-white, slow crystalline shimmer
-		"zone_tint":            Vector3(0.55, 0.85, 1.0),
-		"tint_strength":        0.50,
-		"infested_saturation":  0.7,   # Desaturated — ice washes out colour
-		"shimmer_amplitude":    0.002,
-		"shimmer_speed":        0.3,
-		"shimmer_frequency":    3.0,
-		"shadow_strength":      0.10,
+		"zone_tint": Vector3(0.55, 0.85, 1.0),
+		"tint_strength": 0.50,
+		"infested_saturation": 0.7, # Desaturated — ice washes out colour
+		"shimmer_amplitude": 0.002,
+		"shimmer_speed": 0.3,
+		"shimmer_frequency": 3.0,
+		"shadow_strength": 0.10,
+		"flash_strength": 0.15, # whiteout pulse
 	},
 	"static_sprawl": {
 		# Electric — acid yellow, fast crackling shimmer
-		"zone_tint":            Vector3(0.9, 0.95, 0.1),
-		"tint_strength":        0.50,
-		"infested_saturation":  1.6,
-		"shimmer_amplitude":    0.006,
-		"shimmer_speed":        2.5,
-		"shimmer_frequency":    10.0,
-		"shadow_strength":      0.05,
+		"zone_tint": Vector3(0.9, 0.95, 0.1),
+		"tint_strength": 0.50,
+		"infested_saturation": 1.6, # High saturation for electrical energy
+		"shimmer_amplitude": 0.006,
+		"shimmer_speed": 2.5,
+		"shimmer_frequency": 10.0,
+		"shadow_strength": 0.05,
+		"flash_strength": 0.25, # static discharge spark
+	},
+	"emberscar": {
+		# Fire — scorched orange-red, heat shimmer
+		"zone_tint": Vector3(1.0, 0.35, 0.05),
+		"tint_strength": 0.60,
+		"infested_saturation": 1.2,
+		"shimmer_amplitude": 0.005,
+		"shimmer_speed": 1.2,
+		"shimmer_frequency": 6.0,
+		"shadow_strength": 0.20,
 	},
 	"the_veil": {
-		# Ghost — deep purple-black, slow undulating distortion
-		"zone_tint":            Vector3(0.45, 0.2, 0.6),
-		"tint_strength":        0.65,
-		"infested_saturation":  0.8,
-		"shimmer_amplitude":    0.007,
-		"shimmer_speed":        0.4,
-		"shimmer_frequency":    2.5,
-		"shadow_strength":      0.30,
+		# Psychic — deep purple-black, slow undulating distortion
+		"zone_tint": Vector3(0.45, 0.2, 0.6),
+		"tint_strength": 0.65,
+		"infested_saturation": 0.8,
+		"shimmer_amplitude": 0.007,
+		"shimmer_speed": 0.4,
+		"shimmer_frequency": 2.5,
+		"shadow_strength": 0.30,
+	},
+	"dread_shore": {
+		# Dark — murky brackish teal
+		"zone_tint": Vector3(0.1, 0.5, 0.45),
+		"tint_strength": 0.55,
+		"infested_saturation": 1.1,
+		"shimmer_amplitude": 0.005,
+		"shimmer_speed": 0.6,
+		"shimmer_frequency": 4.5,
+		"shadow_strength": 0.25,
+	},
+	"the_murk": {
+		# Poison — deep purple miasma haze, slow bioluminescent shimmer + poison flash
+		"zone_tint": Vector3(0.52, 0.18, 0.78),
+		"tint_strength": 0.55,
+		"infested_saturation": 1.4,
+		"shimmer_amplitude": 0.004,
+		"shimmer_speed": 0.7,
+		"shimmer_frequency": 4.0,
+		"shadow_strength": 0.20,
+		"flash_strength": 0.22,
+	},
+	"the_crucible": {
+		# Ground — dusty red-brown
+		"zone_tint": Vector3(0.75, 0.35, 0.15),
+		"tint_strength": 0.50,
+		"infested_saturation": 1.1,
+		"shimmer_amplitude": 0.004,
+		"shimmer_speed": 0.9,
+		"shimmer_frequency": 5.0,
+		"shadow_strength": 0.18,
 	},
 	"the_overgrowth": {
 		# Grass — hyper-saturated green, pulsing overgrowth
-		"zone_tint":            Vector3(0.1, 0.9, 0.15),
-		"tint_strength":        0.50,
-		"infested_saturation":  1.8,
-		"shimmer_amplitude":    0.003,
-		"shimmer_speed":        0.5,
-		"shimmer_frequency":    3.5,
-		"shadow_strength":      0.12,
-	},
-	"dread_shore": {
-		# Water/Dark — murky brackish teal
-		"zone_tint":            Vector3(0.1, 0.5, 0.45),
-		"tint_strength":        0.55,
-		"infested_saturation":  1.1,
-		"shimmer_amplitude":    0.005,
-		"shimmer_speed":        0.6,
-		"shimmer_frequency":    4.5,
-		"shadow_strength":      0.25,
-	},
-	"the_crucible": {
-		# Fighting/Ground — dusty red-brown
-		"zone_tint":            Vector3(0.75, 0.35, 0.15),
-		"tint_strength":        0.50,
-		"infested_saturation":  1.1,
-		"shimmer_amplitude":    0.004,
-		"shimmer_speed":        0.9,
-		"shimmer_frequency":    5.0,
-		"shadow_strength":      0.18,
+		"zone_tint": Vector3(0.1, 0.9, 0.15),
+		"tint_strength": 0.50,
+		"infested_saturation": 1.8,
+		"shimmer_amplitude": 0.003,
+		"shimmer_speed": 0.5,
+		"shimmer_frequency": 3.5,
+		"shadow_strength": 0.12,
 	},
 	"abyss_bloom": {
 		# Water/Psychic — deep indigo with bioluminescent bloom
-		"zone_tint":            Vector3(0.2, 0.1, 0.8),
-		"tint_strength":        0.60,
-		"infested_saturation":  1.3,
-		"shimmer_amplitude":    0.005,
-		"shimmer_speed":        0.5,
-		"shimmer_frequency":    3.0,
-		"shadow_strength":      0.28,
+		"zone_tint": Vector3(0.2, 0.1, 0.8),
+		"tint_strength": 0.60,
+		"infested_saturation": 1.3,
+		"shimmer_amplitude": 0.005,
+		"shimmer_speed": 0.5,
+		"shimmer_frequency": 3.0,
+		"shadow_strength": 0.28,
 	},
 	"static_sky": {
-		# Flying/Electric — bleached white with lightning crackle
-		"zone_tint":            Vector3(0.95, 0.98, 1.0),
-		"tint_strength":        0.45,
-		"infested_saturation":  0.6,
-		"shimmer_amplitude":    0.005,
-		"shimmer_speed":        3.0,
-		"shimmer_frequency":    8.0,
-		"shadow_strength":      0.05,
+		# Dragon — bleached white with aurora crackle
+		"zone_tint": Vector3(0.95, 0.98, 1.0),
+		"tint_strength": 0.45,
+		"infested_saturation": 0.6,
+		"shimmer_amplitude": 0.005,
+		"shimmer_speed": 3.0,
+		"shimmer_frequency": 8.0,
+		"shadow_strength": 0.05,
+		"flash_strength": 0.20, # dragon energy discharge
 	},
 }
 
@@ -160,13 +163,77 @@ const FLASH_STEP_INTERVAL: int = 4
 ## Per-zone fog overlay config.  Zones without an entry get no fog.
 ## opacity_infested / opacity_partial drive the fog density per EHI band.
 const ZONE_FOG_PARAMS: Dictionary = {
+	"ashen_glacier": {
+		"texture": "res://assets/fog/clouds.png",
+		"scroll_speed": Vector2(0.005, 0.002),
+		"fog_tint": Vector3(0.9, 0.95, 1.0), # frozen ash white
+		"tile_scale": 2.0,
+		"opacity_infested": 0.40,
+		"opacity_partial": 0.20,
+	},
+	"emberscar": {
+		"texture": "res://assets/fog/fog_horizontal.png",
+		"scroll_speed": Vector2(0.02, 0.005),
+		"fog_tint": Vector3(0.4, 0.3, 0.2), # grey ash fall
+		"tile_scale": 4.0,
+		"opacity_infested": 0.30,
+		"opacity_partial": 0.15,
+	},
+	"the_veil": {
+		"texture": "res://assets/fog/fog_diagonal.png",
+		"scroll_speed": Vector2(0.01, 0.01),
+		"fog_tint": Vector3(0.5, 0.2, 0.7), # psychic purple haze
+		"tile_scale": 3.0,
+		"opacity_infested": 0.25,
+		"opacity_partial": 0.12,
+	},
+	"dread_shore": {
+		"texture": "res://assets/fog/fog_diagonal.png",
+		"scroll_speed": Vector2(-0.02, 0.01), # disorienting left-drift
+		"fog_tint": Vector3(0.05, 0.1, 0.15), # deep murky black-teal
+		"tile_scale": 6.0,
+		"opacity_infested": 0.60,
+		"opacity_partial": 0.30,
+	},
 	"the_murk": {
-		"texture":          "res://assets/fog/fog_horizontal.png",
-		"scroll_speed":     Vector2(0.012, 0.003),  # slow rightward drift
-		"fog_tint":         Vector3(0.28, 0.75, 0.10),  # toxic sickly green
-		"tile_scale":       5.0,
+		"texture": "res://assets/fog/fog_horizontal.png",
+		"scroll_speed": Vector2(0.012, 0.003),
+		"fog_tint": Vector3(0.28, 0.75, 0.10), # toxic sickly green
+		"tile_scale": 5.0,
 		"opacity_infested": 0.38,
-		"opacity_partial":  0.18,
+		"opacity_partial": 0.18,
+	},
+	"the_crucible": {
+		"texture": "res://assets/fog/fog_horizontal.png",
+		"scroll_speed": Vector2(0.08, 0.01), # fast sandstorm
+		"fog_tint": Vector3(0.6, 0.45, 0.3), # dusty sand brown
+		"tile_scale": 4.0,
+		"opacity_infested": 0.50,
+		"opacity_partial": 0.25,
+	},
+	"the_overgrowth": {
+		"texture": "res://assets/fog/clouds.png",
+		"scroll_speed": Vector2(0.01, 0.004),
+		"fog_tint": Vector3(0.2, 0.6, 0.15), # primordial green mist
+		"tile_scale": 3.0,
+		"opacity_infested": 0.20,
+		"opacity_partial": 0.10,
+	},
+	"abyss_bloom": {
+		"texture": "res://assets/fog/fog_diagonal.png",
+		"scroll_speed": Vector2(0.005, 0.015),
+		"fog_tint": Vector3(0.1, 0.2, 0.8), # deep underwater blue
+		"tile_scale": 5.0,
+		"opacity_infested": 0.40,
+		"opacity_partial": 0.20,
+	},
+	"static_sky": {
+		"texture": "res://assets/fog/clouds.png",
+		"scroll_speed": Vector2(0.03, 0.01),
+		"fog_tint": Vector3(0.8, 0.4, 0.9), # aurora pink-purple
+		"tile_scale": 2.5,
+		"opacity_infested": 0.35,
+		"opacity_partial": 0.15,
 	},
 }
 
@@ -253,7 +320,7 @@ func setup_for_map(map_node: Node2D, zone_id: String) -> void:
 func setup_for_map_bleed(map_node: Node2D, source_zone_id: String) -> void:
 	_clear_materials()
 	_bleed_zone_id = source_zone_id
-	_step_counter  = 0
+	_step_counter = 0
 
 	if not ZONE_SHADER_PARAMS.has(source_zone_id):
 		return
@@ -267,7 +334,7 @@ func setup_for_map_bleed(map_node: Node2D, source_zone_id: String) -> void:
 
 	# Reduced-strength copy of the source zone's shader params; no flash.
 	var params: Dictionary = ZONE_SHADER_PARAMS[source_zone_id].duplicate()
-	params["tint_strength"]  = params.get("tint_strength",  0.5) * 0.4
+	params["tint_strength"] = params.get("tint_strength", 0.5) * 0.4
 	params["flash_strength"] = 0.0
 
 	var tilemaps: Array[Node] = []
@@ -408,7 +475,7 @@ func _on_ehi_changed(zone_id: String, value: float) -> void:
 	_update_fog_opacity(value)
 	# Zone fully restored — strip the shader so the normal tileset shows through.
 	if value > EHI_RESTORED_MIN:
-		_clear_materials()  # also calls _clear_fog()
+		_clear_materials() # also calls _clear_fog()
 		_disconnect_ehi()
 
 
@@ -502,8 +569,8 @@ func _clear_fog() -> void:
 func _bleed_ehi_normalized(source_zone_id: String) -> float:
 	var actual_ehi: float = EHI.get_zone_ehi(source_zone_id)
 	if actual_ehi <= EHI_INFESTED_MAX:
-		return 50.0 / EHI.EHI_MAX   # render as partial
-	return 70.0 / EHI.EHI_MAX       # render as near-restored
+		return 50.0 / EHI.EHI_MAX # render as partial
+	return 70.0 / EHI.EHI_MAX # render as near-restored
 
 
 ## Sets up a dim fog overlay for bleed maps (half of partial opacity, no EHI tracking).

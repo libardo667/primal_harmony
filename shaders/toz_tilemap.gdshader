@@ -93,17 +93,19 @@ void fragment() {
 	// Effect strength: 0 at restored, 1 at infested.
 	float effect = 1.0 - ehi_normalized;
 
-	// ── UV shimmer (miasma displacement) ──────────────────────────────────────
-	// Subtle sinusoidal UV warp — makes the air feel alive and wrong.
-	// FRAGCOORD.xy gives screen-pixel position; dividing by 16.0 normalises
-	// to tile-units so shimmer_frequency has the same visual meaning as before,
-	// but the wave pattern is now continuous across all tiles (no per-tile repeat).
+	// ── UV shimmer (miasma / queasy displacement) ──────────────────────────────
+	// Continuous screen-space wave pattern that creates a "queasy" or "distorted" feel.
+	// We use two waves at different frequencies and speeds for organic complexity.
 	vec2 uv = UV;
 	vec2 world_coord = FRAGCOORD.xy / 16.0;
 	if (effect > 0.01) {
-		float wave_x = sin(world_coord.y * shimmer_frequency + TIME * shimmer_speed) * shimmer_amplitude * effect;
-		float wave_y = cos(world_coord.x * shimmer_frequency * 0.7 + TIME * shimmer_speed * 1.3) * shimmer_amplitude * 0.6 * effect;
-		uv += vec2(wave_x, wave_y);
+		// Large, slow "queasy" screen wave
+		float queasy = sin(world_coord.y * 0.5 + TIME * 0.5) * 0.002 * effect;
+		// Faster shimmer/jitter (type-specific)
+		float shimmer_x = sin(world_coord.y * shimmer_frequency + TIME * shimmer_speed) * shimmer_amplitude * effect;
+		float shimmer_y = cos(world_coord.x * shimmer_frequency * 0.8 + TIME * shimmer_speed * 1.1) * shimmer_amplitude * 0.5 * effect;
+		
+		uv += vec2(shimmer_x + queasy, shimmer_y + queasy);
 	}
 
 	// ── Sample tile texture at (potentially displaced) UV ─────────────────────
@@ -124,29 +126,34 @@ void fragment() {
 
 		// ── Zone tint (hue shift toward type colour) ──────────────────────────
 		// Lerp between the tile's current colour and the zone type tint.
-		// Preserves luminance roughly, avoiding a flat paint-over effect.
+		// Preserving luminance keeps the texture detail visible.
 		float effective_tint = tint_strength * effect;
-		vec3 tinted = mix(col, zone_tint * (hsv.z * 1.2), effective_tint);
+		vec3 tinted = mix(col, zone_tint * hsv.z, effective_tint);
+		// Increase contrast at full infestation for a more intense look.
+		tinted = mix(tinted, tinted * tinted * (3.0 - 2.0 * tinted), effect * 0.2);
 		tinted = clamp(tinted, 0.0, 1.0);
 
 		// ── Bioluminescence pulse ─────────────────────────────────────────────
-		// Pixels near the zone_tint get a subtle brightness pulse (spore glow).
-		float tint_similarity = 1.0 - length(col - zone_tint);
-		float bio_pulse = max(0.0, tint_similarity) * effect * 0.2
-			* (0.5 + 0.5 * sin(TIME * shimmer_speed * 2.0 + world_coord.x * 8.0 + world_coord.y * 6.0));
+		// Pixels that align with the zone_tint get a "glow" that pulses.
+		// Use a broader similarity check for "yummy" glow coverage.
+		float tint_similarity = 1.0 - clamp(length(col - zone_tint) * 1.5, 0.0, 1.0);
+		float bio_pulse = tint_similarity * effect * 0.25
+			* (0.6 + 0.4 * sin(TIME * shimmer_speed * 1.5 + world_coord.x * 2.0 + world_coord.y * 1.5));
+		
+		// Add the pulse back as an additive glow in the tint color.
 		tinted = clamp(tinted + bio_pulse * zone_tint, 0.0, 1.0);
 
 		// ── Shadow — non-tinted areas darken slightly ─────────────────────────
-		float shadow = (1.0 - tint_similarity * 0.6) * shadow_strength * effect;
+		// Creates depth where the "un-infested" native colors are struggling.
+		float shadow = (1.0 - tint_similarity) * shadow_strength * effect;
 		tinted = clamp(tinted - shadow, 0.0, 1.0);
 
 		// ── Poison overworld flash ─────────────────────────────────────────────
-		// flash_impulse is set to 1.0 by ZoneVisuals.notify_zone_step() every
-		// FLASH_STEP_INTERVAL steps (infested only), then tweened to 0.0 over ~0.45 s.
+		// flash_impulse peaks at 1.0 on a step and tweens down.
 		if (flash_impulse > 0.001 && flash_strength > 0.001) {
 			float flash = flash_impulse * flash_strength * effect;
-			// Tint toward pale zone-colour-white (40% hue, 60% white).
-			tinted = clamp(tinted + flash * mix(vec3(1.0), zone_tint, 0.4), 0.0, 1.0);
+			// A sharp additive white/tint blend for that classic GBA poison flash.
+			tinted = clamp(tinted + flash * mix(vec3(1.0), zone_tint, 0.3), 0.0, 1.0);
 		}
 
 		COLOR = vec4(tinted, tex.a);
