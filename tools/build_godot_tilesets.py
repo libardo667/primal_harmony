@@ -127,11 +127,14 @@ def process_tileset(tilesets_dir: Path, pokeemerald_dir: Path, ts_name: str, is_
                     use_img = src_img
                     use_pal = palettes
                 elif not is_primary and prim_img is not None:
-                    # Primary tile reference from a secondary metatile
+                    # Primary tile reference from a secondary metatile.
+                    # GBA palette bank ownership: primary owns banks 0-5, secondary owns 6+.
+                    # A secondary metatile can cross-reference a primary tile but still use
+                    # a secondary palette bank (pal_idx >= 6), so select accordingly.
                     sub_x = t_idx % prim_tpr
                     sub_y = t_idx // prim_tpr
                     use_img = prim_img
-                    use_pal = prim_palettes
+                    use_pal = palettes if pal_idx >= 6 else prim_palettes
                 else:
                     # Primary tileset (or secondary without a paired primary)
                     sub_x = t_idx % tiles_per_row

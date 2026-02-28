@@ -44,13 +44,10 @@ uniform float infested_saturation : hint_range(0.0, 3.0) = 1.4;
 
 // UV distortion amplitude for the bioluminescent miasma shimmer.
 // 0 = no shimmer, 0.005 = subtle, 0.02 = dramatic
-uniform float shimmer_amplitude : hint_range(0.0, 0.03) = 0.004;
-
-// Speed of the shimmer wave in time units
-uniform float shimmer_speed : hint_range(0.0, 5.0) = 0.7;
-
-// Frequency of the shimmer wave (higher = more ripples across the screen)
-uniform float shimmer_frequency : hint_range(0.5, 20.0) = 4.0;
+uniform float shimmer_amplitude : hint_range(0.0, 10.0) = 4.0;
+uniform float shimmer_speed     : hint_range(0.0, 10.0) = 1.0;
+uniform float shimmer_frequency : hint_range(0.0, 50.0) = 40.0;
+uniform float queasy_amplitude  : hint_range(0.0, 1.0)  = 0.2; // Screen-wide wave strength
 
 // ── Darkness Tinting ──────────────────────────────────────────────────────────
 
@@ -98,12 +95,13 @@ void fragment() {
 	// We use two waves at different frequencies and speeds for organic complexity.
 	vec2 uv = UV;
 	vec2 world_coord = FRAGCOORD.xy / 16.0;
-	if (effect > 0.01) {
-		// Large, slow "queasy" screen wave
-		float queasy = sin(world_coord.y * 0.5 + TIME * 0.5) * 0.002 * effect;
-		// Faster shimmer/jitter (type-specific)
-		float shimmer_x = sin(world_coord.y * shimmer_frequency + TIME * shimmer_speed) * shimmer_amplitude * effect;
-		float shimmer_y = cos(world_coord.x * shimmer_frequency * 0.8 + TIME * shimmer_speed * 1.1) * shimmer_amplitude * 0.5 * effect;
+	if (effect > 0.0) {
+		// Screen-wide "Queasy" wave
+		float queasy = sin(world_coord.y * 0.5 + TIME * 0.5) * 0.002 * queasy_amplitude * 10.0 * effect;
+		
+		// Map-space shimmer (per-tile jitter)
+		float shimmer_x = sin(world_coord.y * shimmer_frequency + TIME * shimmer_speed) * shimmer_amplitude * 0.001 * effect;
+		float shimmer_y = cos(world_coord.x * shimmer_frequency * 0.8 + TIME * shimmer_speed * 1.1) * shimmer_amplitude * 0.0005 * effect;
 		
 		uv += vec2(shimmer_x + queasy, shimmer_y + queasy);
 	}

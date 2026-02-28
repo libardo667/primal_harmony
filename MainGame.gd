@@ -14,11 +14,12 @@ extends Node2D
 ##   - ZoneVisuals shader injection (TOZ visual states)
 ##   - BattleManager.battle_ended → PlayerParty state sync
 
-const PLAYER_SCENE  := preload("res://actors/player/Player.tscn")
-const BATTLE_SCENE  := preload("res://battle/ui/BattleScene.tscn")
+const PLAYER_SCENE := preload("res://actors/player/Player.tscn")
+const BATTLE_SCENE := preload("res://battle/ui/BattleScene.tscn")
+const DEBUG_HUB_SCENE := preload("res://maps/debug_hub.tscn")
 
 ## Starting map (batch-painted scene).
-const START_MAP  := "res://maps/hoenn/cities/littleroot_town.tscn"
+const START_MAP := "res://maps/hoenn/cities/littleroot_town.tscn"
 ## Starting tile position inside that map (tile coordinates, 0-based).
 const START_TILE := Vector2i(7, 12)
 
@@ -26,17 +27,24 @@ const START_TILE := Vector2i(7, 12)
 ## Same file the batch painter uses; loaded once at startup.
 const MAP_ZONE_IDS_PATH := "res://data/map_zone_ids.json"
 
-var _current_map: Node2D = null
+var _active_maps: Dictionary = {} # map_id -> Node2D
 var _player: CharacterBody2D = null
 
-## The pokeemerald map ID for the currently loaded scene, e.g. "MAP_LITTLEROOT_TOWN".
+## The pokeemerald map ID for the map the player is currently "on", e.g. "MAP_LITTLEROOT_TOWN".
 var _current_map_id: String = ""
 
-## Tile dimensions of the current map (in tiles), from WorldConnections.
+## Tile dimensions of the current center map (in tiles), from WorldConnections.
 var _map_size: Vector2i = Vector2i.ZERO
+
+## Root node for all loaded maps to keep the scene tree organized.
+var _map_container: Node2D = null
 
 ## Guard flag to prevent re-entrant transitions while a transition is in progress.
 var _transitioning: bool = false
+
+## Debug Hub state.
+var _is_debug_hub: bool = false
+var _last_location: Dictionary = {} # { "scene": String, "tile": Vector2i, "id": String }
 
 ## Tracks which zone_ids have had their initial EHI seeded this session.
 ## Prevents re-seeding on every re-entry.
@@ -49,10 +57,17 @@ var _map_zone_ids: Dictionary = {}
 
 func _ready() -> void:
 	_load_map_zone_ids()
+	
+	_map_container = Node2D.new()
+	_map_container.name = "MapNeighborhood"
+	add_child(_map_container)
+	
 	BattleManager.battle_ended.connect(_on_battle_ended)
 	RehabLog.milestone_reached.connect(_on_milestone_reached)
 	RehabLog.zone_quelled.connect(_on_zone_quelled)
-	_load_map(START_MAP, START_TILE)
+	
+	_load_neighborhood_from_scene(START_MAP, START_TILE)
+	
 	PlayerParty.add_to_party("treecko", 5)
 	PlayerParty.add_to_party("taillow", 5)
 	add_child(BATTLE_SCENE.instantiate())
@@ -69,6 +84,87 @@ func _load_map_zone_ids() -> void:
 		_map_zone_ids = parsed
 		print("[MainGame] Loaded %d zone assignments." % _map_zone_ids.size())
 
+
+func _unhandled_input(event: InputEvent) -> void:
+	if not (event is InputEventKey and event.pressed and not event.echo):
+		return
+	
+	if event.keycode == KEY_F1:
+		_toggle_debug_hub()
+		get_viewport().set_input_as_handled()
+		return
+
+	match event.keycode:
+		KEY_F2:
+			print("Debug: Warping to Littleroot Town")
+			_load_neighborhood_from_scene("res://maps/hoenn/cities/littleroot_town.tscn", START_TILE)
+			get_viewport().set_input_as_handled()
+		KEY_F3:
+			print("Debug: Warping to Route 117")
+			_load_neighborhood_from_scene("res://maps/hoenn/routes/route117.tscn", Vector2i(30, 5))
+			get_viewport().set_input_as_handled()
+		KEY_F5:
+			print("Debug: Warping to Petalburg Woods (The Murk)")
+			_load_neighborhood_from_scene("res://maps/hoenn/cities/petalburg_woods.tscn", Vector2i(24, 22))
+			get_viewport().set_input_as_handled()
+		KEY_F6:
+			# Debug: cycle the current map's zone through infested → partial → restored → infested.
+			# Useful for testing TOZ shader transitions and triage catch without walking around.
+			var _zone: String = ZoneVisuals._primary_zone_id
+			if _zone.is_empty():
+				print("Debug: no active TOZ zone to cycle")
+			else:
+				var _cur: float = EHI.get_zone_ehi(_zone)
+				var _target: float
+				var _label: String
+				if _cur < 34.0:
+					_target = 50.0
+					_label = "partial"
+				elif _cur < 67.0:
+					_target = 90.0
+					_label = "restored"
+				else:
+					_target = 0.0
+					_label = "infested"
+				EHI.modify_zone_ehi(_zone, _target - _cur)
+				print("Debug: %s EHI → %s (%.1f)" % [_zone, _label, _target])
+			get_viewport().set_input_as_handled()
+
+
+func _toggle_debug_hub() -> void:
+	if _transitioning: return
+
+	if not _is_debug_hub:
+		# Save current location before switching.
+		_last_location = {
+			"scene": WorldConnections.get_scene_path(_current_map_id),
+			"tile": Vector2i(_player.global_position / 16) if _player else START_TILE,
+			"id": _current_map_id
+		}
+		_is_debug_hub = true
+
+		# Clear existing neighborhood and player.
+		for map_id in _active_maps:
+			ZoneVisuals.clear_map(_active_maps[map_id])
+			_active_maps[map_id].queue_free()
+		_active_maps.clear()
+		if _player:
+			_player.queue_free()
+			_player = null
+
+		# Load the hub scene directly — it is not a pokeemerald map and has no
+		# entry in world_connections.json, so we bypass _load_neighborhood entirely.
+		var hub: Node2D = DEBUG_HUB_SCENE.instantiate()
+		_map_container.add_child(hub)
+		_active_maps["MAP_DEBUG_HUB"] = hub
+		_current_map_id = "MAP_DEBUG_HUB"
+		print("[MainGame] Entered Debug Hub.")
+	else:
+		# Return to last location.
+		_is_debug_hub = false
+		_load_neighborhood(_last_location.id, _last_location.tile)
+		print("[MainGame] Returned from Debug Hub.")
+
 # ─── Map Loading ──────────────────────────────────────────────────────────────
 
 ## Loads a map scene and spawns the player at the given tile position.
@@ -76,66 +172,130 @@ func _load_map_zone_ids() -> void:
 ## map_id may be supplied when the caller already knows it (e.g. from a warp
 ## or edge-connection lookup), avoiding ambiguity when multiple maps share
 ## the same painted scene (e.g. the two Cycling Road entrances).
-func _load_map(scene_path: String, spawn_tile: Vector2i, map_id: String = "") -> void:
-	_transitioning = true
+func _load_neighborhood_from_scene(scene_path: String, spawn_tile: Vector2i) -> void:
+	var map_id = WorldConnections.get_map_id_for_scene(scene_path)
+	if map_id.is_empty():
+		push_error("MainGame: Unknown map scene: " + scene_path)
+		return
+	_load_neighborhood(map_id, spawn_tile)
 
-	# Remove previous map and player.
-	if _current_map:
-		_current_map.queue_free()
-		_current_map = null
+
+func _load_neighborhood(center_map_id: String, spawn_tile: Vector2i) -> void:
+	_transitioning = true
+	
+	# 1. Clear existing neighborhood
+	for map_id in _active_maps:
+		ZoneVisuals.clear_map(_active_maps[map_id])
+		_active_maps[map_id].queue_free()
+	_active_maps.clear()
+	
 	if _player:
 		_player.queue_free()
 		_player = null
-
-	# Load and instantiate the new map.
-	var map_scene: PackedScene = load(scene_path)
-	if map_scene == null:
-		push_error("MainGame: Failed to load map scene: " + scene_path)
+	
+	# 2. Load center map at (0,0)
+	_current_map_id = center_map_id
+	_map_size = WorldConnections.get_map_size(center_map_id)
+	
+	var center_node = _instantiate_map(center_map_id, Vector2.ZERO)
+	if not center_node:
 		_transitioning = false
 		return
-	_current_map = map_scene.instantiate()
-	add_child(_current_map)
-	# Decoration always above characters: z=100 >> any Y-sorted character z (tile_row+1 ≈ 0–80).
-	var _deco := _current_map.find_child("TileMapDecoration", true, false) as CanvasItem
-	if _deco != null:
-		_deco.z_index = 100
-	AnimTileLoader.setup_map_animations(_current_map)
-
-	# Resolve map ID and dimensions from world data.
-	# Prefer the caller-supplied id; fall back to reverse scene lookup.
-	_current_map_id = map_id if not map_id.is_empty() \
-		else WorldConnections.get_map_id_for_scene(scene_path)
-	_map_size       = WorldConnections.get_map_size(_current_map_id) \
-		if not _current_map_id.is_empty() else Vector2i.ZERO
-
-	# Spawn the player.
+	
+	# 3. Load neighbors
+	_load_neighbors(center_map_id, Vector2.ZERO)
+	
+	# 4. Spawn player
 	_player = PLAYER_SCENE.instantiate()
 	add_child(_player)
+	_player.z_index = 100 # Initial value; overridden every frame by Player.gd _physics_process
 	_player.stepped_on_tile.connect(_on_stepped_on_tile)
 	_player.interact_pressed.connect(func(tile: Vector2i) -> void:
 		NPCSpawner.try_interact(tile, _player.global_position))
+	
+	# Tile-lock player to the spawn position and initialise discrete tile tracking.
+	_player.set_tile(spawn_tile)
 
-	# Position player at the centre of the spawn tile.
-	_player.global_position = Vector2(spawn_tile) * 16.0 + Vector2(8.0, 8.0)
+	# Give player a direct terrain reference so ledge behavior lookups never
+	# accidentally resolve to a neighbor map's offset TileMapTerrain.
+	_player.set_active_terrain(center_node.find_child("TileMapTerrain", true, false) as TileMap)
 
-	# Spawn NPCs for this map.
-	NPCSpawner.spawn_npcs_for_map(_current_map_id, _current_map)
-
-	# ── Zone systems: EHI seeding + TOZ visual shader ─────────────────────────
-	var zone_id: String = _current_map.get_meta("zone_id", "")
-	_setup_zone_systems(zone_id)
-
-	# Apply TOZ shader to the player sprite so they blend into the zone.
-	var player_sprite := _player.get_node("AnimatedSprite2D") as CanvasItem
-	ZoneVisuals.apply_to_canvas_item(player_sprite)
-
-	# Register the player camera so ZoneVisuals can shake it on flash peaks.
+	# Register player camera for effects
 	var cam := _player.get_node_or_null("Camera2D") as Camera2D
 	ZoneVisuals.set_shake_camera(cam)
-
+	
+	# 5. Global visual sync
+	var zone_id: String = center_node.get_meta("zone_id", "")
+	_setup_zone_systems(zone_id) # Main zone
+	
+	# Apply shader to player
+	var player_sprite := _player.get_node("AnimatedSprite2D") as CanvasItem
+	ZoneVisuals.apply_to_canvas_item(player_sprite)
+	
 	_transitioning = false
-	print("[MainGame] Loaded '%s'  map_id=%s  size=%s  spawn=%s  zone=%s" \
-		% [scene_path.get_file(), _current_map_id, _map_size, spawn_tile, zone_id])
+	print("[MainGame] Neighborhood loaded for '%s'. %d maps active." % [center_map_id, _active_maps.size()])
+
+
+func _load_neighbors(center_id: String, center_pos: Vector2) -> void:
+	var center_size = WorldConnections.get_map_size(center_id)
+	
+	for dir in ["left", "right", "up", "down"]:
+		var conn = WorldConnections.get_connection(center_id, dir)
+		if conn.is_empty(): continue
+		
+		var dest_id = conn.get("map", "")
+		var offset = int(conn.get("offset", 0))
+		var dest_size = WorldConnections.get_map_size(dest_id)
+		
+		var dest_pos: Vector2
+		match dir:
+			"left": dest_pos = center_pos + Vector2(-dest_size.x * 16, offset * 16)
+			"right": dest_pos = center_pos + Vector2(center_size.x * 16, offset * 16)
+			"up": dest_pos = center_pos + Vector2(offset * 16, -dest_size.y * 16)
+			"down": dest_pos = center_pos + Vector2(offset * 16, center_size.y * 16)
+		
+		if not _active_maps.has(dest_id):
+			_instantiate_map(dest_id, dest_pos)
+
+
+func _instantiate_map(map_id: String, pos: Vector2) -> Node2D:
+	var scene_path = WorldConnections.get_scene_path(map_id)
+	if scene_path.is_empty(): return null
+	
+	var map_scene = load(scene_path)
+	if not map_scene: return null
+	
+	var map = map_scene.instantiate()
+	_map_container.add_child(map)
+	map.global_position = pos
+	_active_maps[map_id] = map
+	
+	# Decoration always above characters (terrain=0, characters=1–200, decoration=500)
+	var _deco := map.find_child("TileMapDecoration", true, false) as CanvasItem
+	if _deco != null:
+		_deco.z_index = 500
+	AnimTileLoader.setup_map_animations(map)
+	
+	# Spawn NPCs for this map
+	NPCSpawner.spawn_npcs_for_map(map_id, map)
+	
+	# Apply individual map visuals (corruption/bleed)
+	var zone_id = map.get_meta("zone_id", "")
+	if not zone_id.is_empty():
+		_ensure_ehi_seeded(zone_id)
+		ZoneVisuals.setup_for_map(map, zone_id)
+	else:
+		# If this map is a neighbor of the CURRENT center map, and center has a zone, bleed!
+		var center_zone = ""
+		if not _current_map_id.is_empty() and _active_maps.has(_current_map_id):
+			center_zone = _active_maps[_current_map_id].get_meta("zone_id", "")
+		
+		# If not from center, maybe it's a neighbor of SOME zone map?
+		# For now, simple center-bleed is enough for "seamless edges".
+		if not center_zone.is_empty():
+			ZoneVisuals.setup_for_map_bleed(map, center_zone)
+		
+	return map
 
 # ─── Tile-Step Handler ────────────────────────────────────────────────────────
 
@@ -146,100 +306,94 @@ func _on_stepped_on_tile(tile_pos: Vector2i) -> void:
 	# Notify zone visuals for step-based effects (poison flash, camera shake, etc.)
 	ZoneVisuals.notify_zone_step()
 
-	# ── 1. Warp check (door / cave entrance) ──────────────────────────────
+	# ── 1. Map Focus Check (Seamless Transition) ───────────────────────────
+	# If we are no longer on the "center" map, but we ARE on a loaded neighbor,
+	# rotate the neighborhood focus.
+	if not _is_tile_in_map(tile_pos, _current_map_id):
+		for map_id in _active_maps:
+			if map_id == _current_map_id: continue
+			if _is_tile_in_map(tile_pos, map_id):
+				_shift_focus_to(map_id)
+				return
+
+	# ── 2. Warp check (teleport like doors/caves) ─────────────────────────
 	var warp := WorldConnections.get_warp_at(_current_map_id, tile_pos.x, tile_pos.y)
 	if not warp.is_empty():
 		var dest_map_id: String = warp.get("dest_map", "")
-		var dest_warp_id: int   = int(warp.get("dest_warp_id", -1))
-		var dest_scene: String  = WorldConnections.get_scene_path(dest_map_id)
-
-		if dest_scene.is_empty():
-			push_warning("[MainGame] Warp to '%s' has no painted scene yet." % dest_map_id)
-			return
-
+		var dest_warp_id: int = int(warp.get("dest_warp_id", -1))
 		var arrival_tile: Vector2i = WorldConnections.get_warp_arrival_tile(dest_map_id, dest_warp_id)
+		
 		if arrival_tile == Vector2i(-1, -1):
-			push_warning("[MainGame] No arrival tile for warp_id %d in '%s'." \
-				% [dest_warp_id, dest_map_id])
 			return
 
 		print("[MainGame] Warp: %s → %s tile %s" % [_current_map_id, dest_map_id, arrival_tile])
-		_load_map(dest_scene, arrival_tile, dest_map_id)
+		_load_neighborhood(dest_map_id, arrival_tile)
 		return
 
-	# ── 2. Map-edge connection check ───────────────────────────────────────
-	if _map_size == Vector2i.ZERO:
-		return  # No dimension data; can't detect edges.
+func _is_tile_in_map(tile_pos: Vector2i, map_id: String) -> bool:
+	var map = _active_maps.get(map_id)
+	if not map: return false
+	var origin = Vector2i(map.global_position / 16)
+	var size = WorldConnections.get_map_size(map_id)
+	return tile_pos.x >= origin.x and tile_pos.x < origin.x + size.x \
+		and tile_pos.y >= origin.y and tile_pos.y < origin.y + size.y
 
-	var direction := ""
-	var perp_coord := 0
+func _shift_focus_to(new_map_id: String) -> void:
+	print("[MainGame] Seamless Shift: %s → %s" % [_current_map_id, new_map_id])
+	_current_map_id = new_map_id
+	_map_size = WorldConnections.get_map_size(new_map_id)
+	
+	# Load new neighbors for the NEW center
+	var center_node = _active_maps[new_map_id]
+	_load_neighbors(new_map_id, center_node.global_position)
 
-	if tile_pos.x < 0:
-		direction  = "left"
-		perp_coord = tile_pos.y
-	elif tile_pos.x >= _map_size.x:
-		direction  = "right"
-		perp_coord = tile_pos.y
-	elif tile_pos.y < 0:
-		direction  = "up"
-		perp_coord = tile_pos.x
-	elif tile_pos.y >= _map_size.y:
-		direction  = "down"
-		perp_coord = tile_pos.x
-
-	if direction.is_empty():
-		return
-
-	var conn := WorldConnections.get_connection(_current_map_id, direction)
-	if conn.is_empty():
-		return  # No connection in that direction.
-
-	var dest_map_id: String = conn.get("map", "")
-	var offset: int         = int(conn.get("offset", 0))
-	var dest_scene: String  = WorldConnections.get_scene_path(dest_map_id)
-
-	if dest_scene.is_empty():
-		push_warning("[MainGame] Connection to '%s' has no painted scene yet." % dest_map_id)
-		return
-
-	var dest_size: Vector2i = WorldConnections.get_map_size(dest_map_id)
-	var arrival_tile: Vector2i
-
-	match direction:
-		"left":
-			arrival_tile = Vector2i(dest_size.x - 1, perp_coord - offset)
-		"right":
-			arrival_tile = Vector2i(0, perp_coord - offset)
-		"up":
-			arrival_tile = Vector2i(perp_coord - offset, dest_size.y - 1)
-		"down":
-			arrival_tile = Vector2i(perp_coord - offset, 0)
-		"dive", "emerge":
-			arrival_tile = tile_pos  # same XY, different map depth
-
-	print("[MainGame] Edge (%s): %s → %s tile %s" \
-		% [direction, _current_map_id, dest_map_id, arrival_tile])
-	_load_map(dest_scene, arrival_tile, dest_map_id)
+	# Keep the player's terrain reference pointed at the new center.
+	if _player:
+		_player.set_active_terrain(center_node.find_child("TileMapTerrain", true, false) as TileMap)
+	
+	# Drop maps that are no longer neighbors or active center
+	var neighborhood = WorldConnections.get_all_adjacent_map_ids(new_map_id)
+	neighborhood.append(new_map_id)
+	
+	var to_remove = []
+	for map_id in _active_maps:
+		if not map_id in neighborhood:
+			to_remove.append(map_id)
+	
+	for map_id in to_remove:
+		ZoneVisuals.clear_map(_active_maps[map_id])
+		_active_maps[map_id].queue_free()
+		_active_maps.erase(map_id)
+	
+	# Update global visuals (Fog/Weather) to match new center
+	var center_zone: String = center_node.get_meta("zone_id", "")
+	_setup_zone_systems(center_zone)
+	
+	# Update ALL loaded maps to ensure correct bleed/full shader based on new center
+	for m_id in _active_maps:
+		var m_node = _active_maps[m_id]
+		var m_zone = m_node.get_meta("zone_id", "")
+		if not m_zone.is_empty():
+			ZoneVisuals.setup_for_map(m_node, m_zone)
+		elif not center_zone.is_empty():
+			ZoneVisuals.setup_for_map_bleed(m_node, center_zone)
+		else:
+			# Healthy map in a healthy neighborhood
+			ZoneVisuals.setup_for_map(m_node, "")
 
 # ─── Zone Systems ─────────────────────────────────────────────────────────────
 
-## Seeds EHI for a zone on first visit (using initial value from zone JSON),
-## then applies the TOZ shader via ZoneVisuals.
-## For non-TOZ maps adjacent to a TOZ, applies a bleed shader at one stage lower.
+## Configures global visual systems (primary zone, player shader, weather).
 func _setup_zone_systems(zone_id: String) -> void:
-	if zone_id.is_empty():
-		# Not a primary TOZ — check for bleed from an adjacent TOZ map.
-		var bleed_zone: String = _find_adjacent_bleed_zone()
-		if not bleed_zone.is_empty():
-			_ensure_ehi_seeded(bleed_zone)
-			ZoneVisuals.setup_for_map_bleed(_current_map, bleed_zone)
-		else:
-			ZoneVisuals.setup_for_map(_current_map, "")
-		return
-
-	# Primary TOZ: seed EHI + apply full shader.
-	_ensure_ehi_seeded(zone_id)
-	ZoneVisuals.setup_for_map(_current_map, zone_id)
+	ZoneVisuals.set_primary_zone(zone_id)
+	
+	if _player:
+		var sprite := _player.get_node("AnimatedSprite2D") as CanvasItem
+		ZoneVisuals.apply_to_canvas_item(sprite)
+	
+	# Weather intensity follows the primary zone's EHI.
+	if not zone_id.is_empty():
+		ZoneVisuals.refresh_ehi()
 
 
 ## Seeds EHI from zone data on first visit this session (no-op on re-entry).
@@ -252,19 +406,6 @@ func _ensure_ehi_seeded(zone_id: String) -> void:
 	print("[MainGame] Seeded EHI for zone '%s' = %.1f." % [zone_id, initial_ehi])
 
 
-## Returns the zone_id of any TOZ map directly adjacent (via warp or edge)
-## to the current map, or "" if none exists.
-func _find_adjacent_bleed_zone() -> String:
-	if _current_map_id.is_empty():
-		return ""
-	var adjacent: Array[String] = WorldConnections.get_all_adjacent_map_ids(_current_map_id)
-	for adj_id: String in adjacent:
-		var zone: String = _map_zone_ids.get(adj_id, "")
-		if not zone.is_empty():
-			return zone
-	return ""
-
-
 # ─── Battle Result Sync ───────────────────────────────────────────────────────
 
 ## After a battle ends, sync the player's active Pokémon state from BattleManager
@@ -272,7 +413,7 @@ func _find_adjacent_bleed_zone() -> String:
 func _on_battle_ended(result: Dictionary) -> void:
 	var outcome: String = result.get("outcome", "")
 	if outcome == "flee":
-		return  # No state change on flee.
+		return # No state change on flee.
 	# BattleManager._player_active holds the post-battle state.
 	var post_state: Dictionary = BattleManager.get_player_active()
 	if not post_state.is_empty():
@@ -281,45 +422,6 @@ func _on_battle_ended(result: Dictionary) -> void:
 
 
 # ─── Debug Hotkeys ────────────────────────────────────────────────────────────
-
-func _unhandled_input(event: InputEvent) -> void:
-	if not (event is InputEventKey and event.pressed and not event.echo):
-		return
-	match event.keycode:
-		KEY_F1:
-			print("Debug: Warping to Route 113")
-			_load_map("res://maps/hoenn/routes/route113.tscn", Vector2i(5, 10))
-			get_viewport().set_input_as_handled()
-		KEY_F2:
-			print("Debug: Warping to Littleroot Town")
-			_load_map("res://maps/hoenn/cities/littleroot_town.tscn", START_TILE)
-			get_viewport().set_input_as_handled()
-		KEY_F3:
-			print("Debug: Warping to Route 117")
-			_load_map("res://maps/hoenn/routes/route117.tscn", Vector2i(30, 5))
-			get_viewport().set_input_as_handled()
-		KEY_F5:
-			print("Debug: Warping to Petalburg Woods (The Murk)")
-			_load_map("res://maps/hoenn/cities/petalburg_woods.tscn", Vector2i(24, 22))
-			get_viewport().set_input_as_handled()
-		KEY_F6:
-			# Debug: cycle The Murk through infested → partial → restored → infested.
-			# Useful for testing triage catch (needs infested) and TOZ shader transitions.
-			var _cur: float = EHI.get_zone_ehi("the_murk")
-			var _target: float
-			var _label: String
-			if _cur < 34.0:
-				_target = 50.0
-				_label  = "partial"
-			elif _cur < 67.0:
-				_target = 90.0
-				_label  = "restored"
-			else:
-				_target = 0.0
-				_label  = "infested"
-			EHI.modify_zone_ehi("the_murk", _target - _cur)
-			print("Debug: Murk EHI → %s (%.1f)" % [_label, _target])
-			get_viewport().set_input_as_handled()
 
 
 # ─── RehabLog Reward Handlers ─────────────────────────────────────────────────
@@ -335,13 +437,13 @@ func _on_milestone_reached(milestone: int, _total: int) -> void:
 
 	var msg: String
 	match milestone:
-		1:   msg = "Your first release was noticed. Both factions acknowledge your work."
-		5:   msg = "Five releases. The Ranger Network flags you as a field contributor."
-		10:  msg = "Ten releases. Hoenn's balance shifts — however slightly."
-		25:  msg = "Twenty-five releases. Archie and Maxie know your name."
-		50:  msg = "Fifty releases. Rayquaza stirs in the upper atmosphere."
+		1: msg = "Your first release was noticed. Both factions acknowledge your work."
+		5: msg = "Five releases. The Ranger Network flags you as a field contributor."
+		10: msg = "Ten releases. Hoenn's balance shifts — however slightly."
+		25: msg = "Twenty-five releases. Archie and Maxie know your name."
+		50: msg = "Fifty releases. Rayquaza stirs in the upper atmosphere."
 		100: msg = "One hundred releases. You've changed something fundamental."
-		_:   msg = "Release milestone reached: %d total." % milestone
+		_: msg = "Release milestone reached: %d total." % milestone
 
 	DialogueManager.play_dialogue([msg], "Rehab Log")
 	print("[MainGame] Milestone %d reward: +%.1f rep to both factions." % [milestone, rep_gain])

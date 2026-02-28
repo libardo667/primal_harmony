@@ -15,16 +15,30 @@
 
 extends SceneTree
 
-const POKEEMERALD    := "C:/Users/levib/pokemon_projects/pokeemerald"
-const LAYOUTS_JSON   := POKEEMERALD + "/data/layouts/layouts.json"
-const TILESETS_DIR   := "res://assets/tilesets/"
-const MAPS_BASE      := "res://maps/hoenn/"
+const POKEEMERALD := "C:/Users/levib/pokemon_projects/pokeemerald"
+const LAYOUTS_JSON := POKEEMERALD + "/data/layouts/layouts.json"
+const TILESETS_DIR := "res://assets/tilesets/"
+const MAPS_BASE := "res://maps/hoenn/"
 
 # Path to the zone assignment file (read at build time to set root metadata).
 const MAP_ZONE_IDS_PATH := "res://data/map_zone_ids.json"
 
+## Per-type tints for TOZ map variants, based on Emerald type icon palettes.
+const TOZ_TINTS := {
+	"ashen_glacier": Color(0.7, 0.85, 1.0, 1.0), # Ice: pale blue
+	"static_sprawl": Color(1.0, 1.0, 0.4, 1.0), # Electric: acid yellow
+	"emberscar": Color(1.0, 0.5, 0.3, 1.0), # Fire: ember orange
+	"the_veil": Color(0.8, 0.4, 1.0, 1.0), # Psychic: bright magenta-purple
+	"dread_shore": Color(0.2, 0.3, 0.5, 1.0), # Dark: murky deep blue
+	"the_murk": Color(0.8, 0.3, 0.9, 1.0), # Poison: vibrant purple
+	"the_crucible": Color(0.8, 0.6, 0.4, 1.0), # Ground: dusty ochre
+	"the_overgrowth": Color(0.4, 0.9, 0.3, 1.0), # Grass: hyper-green
+	"abyss_bloom": Color(0.3, 0.4, 1.0, 1.0), # Water: deep aquatic blue
+	"static_sky": Color(0.5, 0.3, 1.0, 1.0), # Dragon: indigo energy
+}
+
 # Cache: ts_key ("primary_X|secondary_Y") → TileSet
-var _ts_cache:   Dictionary = {}
+var _ts_cache: Dictionary = {}
 # Cache: abs_path → PackedByteArray (2 bytes per metatile, bits 12-15 = layer type)
 var _attr_cache: Dictionary = {}
 # Loaded once from MAP_ZONE_IDS_PATH: MAP_ID → zone_id.
@@ -34,26 +48,33 @@ var _map_zone_ids: Dictionary = {}
 # NORMAL (0):  bottom sub-tiles → terrain (behind player), top → decoration (above player)
 # COVERED (1): BOTH layers behind player — path ground, dirt mats, flowers, water surface
 # SPLIT (2):   bottom → terrain, top → decoration (bridges — treated same as NORMAL here)
-const LAYER_NORMAL  := 0
+const LAYER_NORMAL := 0
 const LAYER_COVERED := 1
-const LAYER_SPLIT   := 2
+const LAYER_SPLIT := 2
 
 # ── Metatile behavior byte constants ────────────────────────────────────────
 # Bits 0-7 of the u16 in metatile_attributes.bin.
 # Source: pokeemerald/include/constants/metatile_behaviors.h (sequential enum, 0-based).
 # Only the subset relevant for encounter-zone baking is listed here.
-const MB_TALL_GRASS            := 0x02  # Land — standard tall grass
-const MB_LONG_GRASS            := 0x03  # Land — long grass (Safari Zone etc.)
-const MB_SHORT_GRASS           := 0x07  # Land — no rustle animation
-const MB_CAVE                  := 0x08  # Cave encounter
-const MB_LONG_GRASS_SOUTH_EDGE := 0x09  # Visual edge tile, same encounter type as long grass
-const MB_INDOOR_ENCOUNTER      := 0x0B  # Indoor land encounter
-const MB_POND_WATER            := 0x10  # Surfable — pond / lake
-const MB_INTERIOR_DEEP_WATER   := 0x11  # Interior deep water
-const MB_DEEP_WATER            := 0x12  # Surfable deep water
-const MB_OCEAN_WATER           := 0x15  # Surfable ocean
-const MB_SHALLOW_WATER         := 0x17  # Surfable shallow water
-const MB_ASHGRASS              := 0x24  # Land — ash-covered grass (Route 113)
+const MB_TALL_GRASS := 0x02 # Land — standard tall grass
+const MB_LONG_GRASS := 0x03 # Land — long grass (Safari Zone etc.)
+const MB_SHORT_GRASS := 0x07 # Land — no rustle animation
+const MB_CAVE := 0x08 # Cave encounter
+const MB_LONG_GRASS_SOUTH_EDGE := 0x09 # Visual edge tile, same encounter type as long grass
+const MB_INDOOR_ENCOUNTER := 0x0B # Indoor land encounter
+const MB_POND_WATER := 0x10 # Surfable — pond / lake
+const MB_INTERIOR_DEEP_WATER := 0x11 # Interior deep water
+const MB_DEEP_WATER := 0x12 # Surfable deep water
+const MB_OCEAN_WATER := 0x15 # Surfable ocean
+const MB_SHALLOW_WATER := 0x17 # Surfable shallow water
+const MB_ASHGRASS := 0x24 # Land — ash-covered grass (Route 113)
+# Ledge behaviors — tiles the player jumps over. coll_bits=1 in pokeemerald but the
+# GBA engine handles them before collision; in Godot we skip collision placement so
+# the player can step onto the tile and trigger the jump via Player._get_behavior_at_tile().
+const MB_JUMP_EAST  := 56 # 0x38
+const MB_JUMP_WEST  := 57 # 0x39
+const MB_JUMP_NORTH := 58 # 0x3A
+const MB_JUMP_SOUTH := 59 # 0x3B
 
 # ─────────────────────────────────────────────────────────────────────────────
 func _init() -> void:
@@ -93,17 +114,25 @@ func _run() -> void:
 		var abs_path := ProjectSettings.globalize_path(MAPS_BASE + cat)
 		DirAccess.make_dir_recursive_absolute(abs_path)
 
-	var ok_count    := 0
-	var skip_count  := 0
-	var total       := layouts.size()
+	var ok_count := 0
+	var skip_count := 0
+	var total := layouts.size()
 
 	for idx in range(total):
 		var layout: Dictionary = layouts[idx]
-		var success := _process_layout(layout)
-		if success:
-			ok_count += 1
+		var raw_name: String = layout["name"].replace("_Layout", "")
+		var map_id_key: String = "MAP_" + _name_to_snake(raw_name).to_upper()
+		var zone_id: String = _map_zone_ids.get(map_id_key, "")
+
+		# 1. Standard variant
+		_process_layout(layout, false)
+		
+		# 2. TOZ variant (if applicable)
+		if not zone_id.is_empty() and TOZ_TINTS.has(zone_id):
+			_process_layout(layout, true)
+			ok_count += 2
 		else:
-			skip_count += 1
+			ok_count += 1
 
 		if (idx + 1) % 50 == 0 or idx == total - 1:
 			print("  Progress: %d / %d  (ok=%d  skipped=%d)" \
@@ -113,13 +142,13 @@ func _run() -> void:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-func _process_layout(layout: Dictionary) -> bool:
-	var raw_name  : String = layout["name"].replace("_Layout", "")
+func _process_layout(layout: Dictionary, is_toz_variant: bool = false) -> bool:
+	var raw_name: String = layout["name"].replace("_Layout", "")
 	var prim_gname: String = str(layout["primary_tileset"])
-	var sec_gname : String = str(layout["secondary_tileset"])
-	var width     : int    = int(layout["width"])
-	var height    : int    = int(layout["height"])
-	var bin_path  : String = POKEEMERALD + "/" + str(layout["blockdata_filepath"])
+	var sec_gname: String = str(layout["secondary_tileset"])
+	var width: int = int(layout["width"])
+	var height: int = int(layout["height"])
+	var bin_path: String = POKEEMERALD + "/" + str(layout["blockdata_filepath"])
 
 	# Collect warp tile positions from this map's JSON so we can skip baking solid
 	# collision on them. In pokeemerald, warp tiles have coll_bits=1 in map.bin
@@ -140,7 +169,7 @@ func _process_layout(layout: Dictionary) -> bool:
 
 	# Resolve tileset names ("gTileset_X" → "primary_x" / "secondary_x")
 	var prim_name := _gname_to_tileset(prim_gname, true)
-	var sec_name  := _gname_to_tileset(sec_gname, false)
+	var sec_name := _gname_to_tileset(sec_gname, false)
 
 	if prim_name.is_empty() or sec_name.is_empty():
 		print("  SKIP (bad tileset name): ", raw_name,
@@ -151,14 +180,14 @@ func _process_layout(layout: Dictionary) -> bool:
 	# are routed to TileMapTerrain layer 1 instead of TileMapDecoration.
 	var prim_attrs := _load_attrs(POKEEMERALD + "/data/tilesets/primary/"
 		+ prim_name.replace("primary_", "") + "/metatile_attributes.bin")
-	var sec_attrs  := _load_attrs(POKEEMERALD + "/data/tilesets/secondary/"
+	var sec_attrs := _load_attrs(POKEEMERALD + "/data/tilesets/secondary/"
 		+ sec_name.replace("secondary_", "") + "/metatile_attributes.bin")
 
 	# Verify asset PNGs exist
 	var prim_bot := TILESETS_DIR + prim_name + "_bottom.png"
 	var prim_top := TILESETS_DIR + prim_name + "_top.png"
-	var sec_bot  := TILESETS_DIR + sec_name  + "_bottom.png"
-	var sec_top  := TILESETS_DIR + sec_name  + "_top.png"
+	var sec_bot := TILESETS_DIR + sec_name + "_bottom.png"
+	var sec_top := TILESETS_DIR + sec_name + "_top.png"
 
 	if not ResourceLoader.exists(prim_bot):
 		print("  SKIP (missing PNG): ", prim_bot)
@@ -168,13 +197,15 @@ func _process_layout(layout: Dictionary) -> bool:
 		return false
 
 	# Determine output path
-	var category  := _get_category(raw_name)
+	var category := _get_category(raw_name)
 	var file_name := _name_to_snake(raw_name)
-	var out_path  := MAPS_BASE + category + "/" + file_name + ".tscn"
+	if is_toz_variant:
+		file_name += "_TOZ"
+	var out_path := MAPS_BASE + category + "/" + file_name + ".tscn"
 
-	# Skip if already painted (allows incremental runs)
-	if ResourceLoader.exists(out_path):
-		return true  # already done — count as ok
+	# Override: Force repaint everything to fix source-ID corruption
+	# if ResourceLoader.exists(out_path):
+	# 	return true
 
 	# Get (or build) a shared TileSet for this pair
 	var ts_key := prim_name + "|" + sec_name
@@ -182,12 +213,14 @@ func _process_layout(layout: Dictionary) -> bool:
 	if _ts_cache.has(ts_key):
 		ts = _ts_cache[ts_key]
 	else:
-		ts = _build_tileset(prim_bot, prim_top, sec_bot, sec_top)
+		ts = _build_tileset(prim_bot, prim_top, sec_bot, sec_top, prim_name, sec_name)
 		_ts_cache[ts_key] = ts
 
 	# ── Build scene tree ────────────────────────────────────────────────────
-	var root := Node2D.new()
-	root.name = raw_name
+	var scene_root := Node2D.new()
+	scene_root.name = raw_name
+	if is_toz_variant:
+		scene_root.name += "_TOZ"
 
 	var terrain := TileMap.new()
 	terrain.name = "TileMapTerrain"
@@ -195,15 +228,15 @@ func _process_layout(layout: Dictionary) -> bool:
 	# Layer 1: top sub-tiles of COVERED metatiles (both layers behind player).
 	# Layer 0 is the default; add_layer(-1) appends a second layer.
 	terrain.add_layer(-1)
-	root.add_child(terrain)
-	terrain.owner = root
+	scene_root.add_child(terrain)
+	terrain.owner = scene_root
 
 	var deco := TileMap.new()
 	deco.name = "TileMapDecoration"
 	deco.tile_set = ts
 	deco.z_index = 1
-	root.add_child(deco)
-	deco.owner = root
+	scene_root.add_child(deco)
+	deco.owner = scene_root
 
 	var coll := TileMap.new()
 	coll.name = "TileMapCollision"
@@ -211,47 +244,47 @@ func _process_layout(layout: Dictionary) -> bool:
 	coll.visible = false
 	# Collision layer is controlled by TileSet.set_physics_layer_collision_layer(0, 1).
 	# TileMap in Godot 4 does not expose collision_layer/mask as direct properties.
-	root.add_child(coll)
-	coll.owner = root
+	scene_root.add_child(coll)
+	coll.owner = scene_root
 
 	# ── Paint from map.bin ──────────────────────────────────────────────────
 	var bin_file := FileAccess.open(bin_path, FileAccess.READ)
 	if not bin_file:
 		print("  SKIP (no map.bin): ", raw_name, "  path=", bin_path)
-		root.free()
+		scene_root.free()
 		return false
 
 	# Accumulate tile positions per encounter type for EncounterZones baking.
 	var encounter_tiles: Dictionary = {
-		"grass":  [],
-		"water":  [],
-		"cave":   [],
+		"grass": [],
+		"water": [],
+		"cave": [],
 		"indoor": [],
 	}
 
 	for y in range(height):
 		for x in range(width):
-			var val         : int = bin_file.get_16()
-			var metatile_id : int = val & 0x03FF
-			var coll_bits   : int = (val & 0x0C00) >> 10
+			var val: int = bin_file.get_16()
+			var metatile_id: int = val & 0x03FF
+			var coll_bits: int = (val & 0x0C00) >> 10
 
-			var src_bot : int
-			var src_top : int
+			var src_bot: int
+			var src_top: int
 			var local_id: int
 
 			if metatile_id >= 512:
-				src_bot  = 2  # secondary bottom
-				src_top  = 3  # secondary top
+				src_bot = 2 # secondary bottom
+				src_top = 3 # secondary top
 				local_id = metatile_id - 512
 			else:
-				src_bot  = 0  # primary bottom
-				src_top  = 1  # primary top
+				src_bot = 0 # primary bottom
+				src_top = 1 # primary top
 				local_id = metatile_id
 
-			var tx        : int      = local_id % 8
-			var ty        : int      = local_id / 8
-			var atlas_pos : Vector2i = Vector2i(tx, ty)
-			var cell_pos  : Vector2i = Vector2i(x, y)
+			var tx: int = local_id % 8
+			var ty: int = local_id / 8
+			var atlas_pos: Vector2i = Vector2i(tx, ty)
+			var cell_pos: Vector2i = Vector2i(x, y)
 
 			terrain.set_cell(0, cell_pos, src_bot, atlas_pos)
 
@@ -264,15 +297,20 @@ func _process_layout(layout: Dictionary) -> bool:
 			else:
 				deco.set_cell(0, cell_pos, src_top, atlas_pos)
 
-			if coll_bits != 0 and not warp_positions.has(cell_pos):
+			# Behavior must be read before the collision check so ledge tiles can be excluded.
+			var behavior: int = _get_behavior_byte(attrs, local_id)
+			var is_ledge: bool = behavior == MB_JUMP_EAST or behavior == MB_JUMP_WEST \
+				or behavior == MB_JUMP_NORTH or behavior == MB_JUMP_SOUTH
+
+			if coll_bits != 0 and not warp_positions.has(cell_pos) and not is_ledge:
 				# Source 4 = solid collision tile with full 16×16 physics polygon.
-				# Warp positions are skipped: pokeemerald stores them as coll_bits=1
-				# but the GBA engine processes warps before collision checks.
+				# Warp and ledge tiles are skipped: pokeemerald marks them coll_bits=1
+				# but the GBA engine processes warps/ledges before collision checks.
+				# Player.gd reads ledge behavior via _get_behavior_at_tile() instead.
 				coll.set_cell(0, cell_pos, 4, Vector2i(0, 0))
 
 			# Bucket by encounter type for EncounterZones baking.
-			var behavior  : int    = _get_behavior_byte(attrs, local_id)
-			var enc_type  : String = _behavior_to_encounter_type(behavior)
+			var enc_type: String = _behavior_to_encounter_type(behavior)
 			if not enc_type.is_empty():
 				encounter_tiles[enc_type].append(cell_pos)
 
@@ -280,21 +318,30 @@ func _process_layout(layout: Dictionary) -> bool:
 
 	# ── Root metadata ───────────────────────────────────────────────────────
 	# Derive pokeemerald MAP_ID from raw_name for zone lookup.
-	var map_id_key : String = "MAP_" + _name_to_snake(raw_name).to_upper()
-	var zone_id    : String = _map_zone_ids.get(map_id_key, "")
-	root.set_meta("zone_id",          zone_id)
-	root.set_meta("tile_size",        16)
-	root.set_meta("map_dimensions_px", Vector2i(width * 16, height * 16))
+	var map_id_key: String = "MAP_" + _name_to_snake(raw_name).to_upper()
+	var zone_id: String = _map_zone_ids.get(map_id_key, "")
+	scene_root.set_meta("zone_id", zone_id)
+	scene_root.set_meta("map_id", map_id_key)
+	scene_root.set_meta("is_toz_variant", is_toz_variant)
+	scene_root.set_meta("tile_size", 16)
+	scene_root.set_meta("map_dimensions_px", Vector2i(width * 16, height * 16))
+
+	# Apply TOZ tint if requested via feature flag or matching zone_id.
+	if is_toz_variant and TOZ_TINTS.has(zone_id):
+		var tint: Color = TOZ_TINTS[zone_id]
+		terrain.modulate = tint
+		deco.modulate = tint
+		print("  [TOZ] Tinted map '%s' for zone '%s'." % [raw_name, zone_id])
 
 	# ── Encounter zones ──────────────────────────────────────────────────────
 	# One Area2D per encounter type, with a CollisionShape2D per tile.
 	# collision_layer=4 matches Player's EncounterDetector collision_mask=4.
-	_build_encounter_zones(root, encounter_tiles, zone_id)
+	_build_encounter_zones(scene_root, encounter_tiles, zone_id)
 
 	# ── Save .tscn ─────────────────────────────────────────────────────────
 	var packed := PackedScene.new()
-	packed.pack(root)
-	root.free()
+	packed.pack(scene_root)
+	scene_root.free()
 
 	var err := ResourceSaver.save(packed, out_path)
 	if err == OK:
@@ -306,9 +353,19 @@ func _process_layout(layout: Dictionary) -> bool:
 
 # ─────────────────────────────────────────────────────────────────────────────
 func _build_tileset(prim_bot: String, prim_top: String,
-					sec_bot: String, sec_top: String) -> TileSet:
+					sec_bot: String, sec_top: String,
+					prim_name: String, sec_name: String) -> TileSet:
 	var ts := TileSet.new()
 	ts.tile_size = Vector2i(16, 16)
+
+	# ── Layers must be added BEFORE setting tile data ─────────────────────
+	ts.add_physics_layer()
+	ts.set_physics_layer_collision_layer(0, 1)
+	ts.set_physics_layer_collision_mask(0, 0)
+
+	ts.add_custom_data_layer()
+	ts.set_custom_data_layer_name(0, "behavior")
+	ts.set_custom_data_layer_type(0, TYPE_INT)
 
 	# ── Sources 0-3: visual layers (no physics polygons) ──────────────────
 	var paths := [prim_bot, prim_top, sec_bot, sec_top]
@@ -320,19 +377,32 @@ func _build_tileset(prim_bot: String, prim_top: String,
 		var src := TileSetAtlasSource.new()
 		src.texture = tex
 		src.texture_region_size = Vector2i(16, 16)
-		var tiles_x := tex.get_width()  / 16
+		
+		var tiles_x := tex.get_width() / 16
 		var tiles_y := tex.get_height() / 16
+		
+		# 1. Create all tiles in the source first
 		for tx in range(tiles_x):
 			for ty in range(tiles_y):
 				src.create_tile(Vector2i(tx, ty))
-		ts.add_source(src, source_id)
 
-	# ── Physics layer 0: world collision (layer 1 per collision contracts) ──
-	# Only source 4 tiles carry polygons; sources 0-3 remain physics-free,
-	# so TileMapTerrain/Decoration never generate collision bodies.
-	ts.add_physics_layer()
-	ts.set_physics_layer_collision_layer(0, 1)
-	ts.set_physics_layer_collision_mask(0, 0)
+		# 2. Add source to TileSet (this links the above tiles to the TileSet)
+		ts.add_source(src, source_id)
+		
+		# Load attributes for this source
+		var attrs: PackedByteArray
+		if source_id < 2:
+			attrs = _load_attrs(POKEEMERALD + "/data/tilesets/primary/" + prim_name.replace("primary_", "") + "/metatile_attributes.bin")
+		else:
+			attrs = _load_attrs(POKEEMERALD + "/data/tilesets/secondary/" + sec_name.replace("secondary_", "") + "/metatile_attributes.bin")
+
+		# 3. Now set custom data (the tiles now possess the TileSet's custom data layers)
+		for tx in range(tiles_x):
+			for ty in range(tiles_y):
+				var atlas_pos := Vector2i(tx, ty)
+				var local_id := ty * 8 + tx
+				var behavior := _get_behavior_byte(attrs, local_id)
+				src.get_tile_data(atlas_pos, 0).set_custom_data("behavior", behavior)
 
 	# ── Source 4: invisible solid collision tile ───────────────────────────
 	# Painted on TileMapCollision wherever coll_bits != 0 in the layout.
@@ -351,13 +421,13 @@ func _build_tileset(prim_bot: String, prim_top: String,
 	col_src.texture = col_tex
 	col_src.texture_region_size = Vector2i(16, 16)
 	col_src.create_tile(Vector2i(0, 0))
-	ts.add_source(col_src, 4)                             # ← register FIRST
+	ts.add_source(col_src, 4) # ← register FIRST
 	var tile_data: TileData = col_src.get_tile_data(Vector2i(0, 0), 0)
 	tile_data.add_collision_polygon(0)
 	# Full 16×16 solid rectangle in tile-local coords (centre = 0,0).
 	tile_data.set_collision_polygon_points(0, 0, PackedVector2Array([
 		Vector2(-8.0, -8.0), Vector2(8.0, -8.0),
-		Vector2(8.0,   8.0), Vector2(-8.0,  8.0),
+		Vector2(8.0, 8.0), Vector2(-8.0, 8.0),
 	]))
 
 	return ts
@@ -371,7 +441,7 @@ func _gname_to_tileset(gname: String, is_primary: bool) -> String:
 	if not gname.begins_with("gTileset_"):
 		return ""
 	var short := gname.replace("gTileset_", "")
-	var snake  := _camel_to_snake(short)
+	var snake := _camel_to_snake(short)
 	return ("primary_" if is_primary else "secondary_") + snake
 
 
@@ -389,7 +459,7 @@ func _camel_to_snake(s: String) -> String:
 ## "LittlerootTown_BrendansHouse_1F" → "littleroot_town_brendans_house_1_f"
 ## (applies camel_to_snake to each underscore-separated segment)
 func _name_to_snake(name: String) -> String:
-	var parts  := name.split("_")
+	var parts := name.split("_")
 	var result := PackedStringArray()
 	for part in parts:
 		result.append(_camel_to_snake(part))
@@ -490,18 +560,18 @@ func _build_encounter_zones(root: Node2D, encounter_tiles: Dictionary,
 		var area := Area2D.new()
 		area.name = enc_type.capitalize() + "EncounterZone"
 		area.collision_layer = 4
-		area.collision_mask  = 0
-		area.set_meta("zone_id",       zone_id)
+		area.collision_mask = 0
+		area.set_meta("zone_id", zone_id)
 		area.set_meta("encounter_type", enc_type)
 		zones_node.add_child(area)
 		area.owner = root
 
 		for tile_pos: Vector2i in positions:
 			var shape_node := CollisionShape2D.new()
-			var rect       := RectangleShape2D.new()
-			rect.size              = Vector2(16.0, 16.0)
-			shape_node.shape       = rect
+			var rect := RectangleShape2D.new()
+			rect.size = Vector2(16.0, 16.0)
+			shape_node.shape = rect
 			# Position each shape at the pixel centre of its tile.
-			shape_node.position    = Vector2(tile_pos.x * 16 + 8, tile_pos.y * 16 + 8)
+			shape_node.position = Vector2(tile_pos.x * 16 + 8, tile_pos.y * 16 + 8)
 			area.add_child(shape_node)
 			shape_node.owner = root

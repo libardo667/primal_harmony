@@ -27,17 +27,26 @@ texture = ExtResource("1_bfdvk")
 0:17/0 = 0
 0:18/0 = 0
 0:19/0 = 0
+0:19/0/custom_data_0 = 16
 0:20/0 = 0
 0:21/0 = 0
 0:22/0 = 0
+0:22/0/custom_data_0 = 16
 0:23/0 = 0
+0:23/0/custom_data_0 = 16
 0:24/0 = 0
+0:24/0/custom_data_0 = 16
 0:25/0 = 0
+0:25/0/custom_data_0 = 22
 0:26/0 = 0
+0:26/0/custom_data_0 = 22
 0:27/0 = 0
+0:27/0/custom_data_0 = 22
 0:28/0 = 0
 0:29/0 = 0
+0:29/0/custom_data_0 = 208
 0:30/0 = 0
+0:30/0/custom_data_0 = 214
 0:31/0 = 0
 0:32/0 = 0
 0:33/0 = 0
@@ -54,14 +63,23 @@ texture = ExtResource("1_bfdvk")
 0:44/0 = 0
 0:45/0 = 0
 0:46/0 = 0
+0:46/0/custom_data_0 = 21
 0:47/0 = 0
+0:47/0/custom_data_0 = 21
 0:48/0 = 0
+0:48/0/custom_data_0 = 21
 0:49/0 = 0
+0:49/0/custom_data_0 = 21
 0:50/0 = 0
+0:50/0/custom_data_0 = 21
 0:51/0 = 0
+0:51/0/custom_data_0 = 21
 0:52/0 = 0
+0:52/0/custom_data_0 = 144
 0:53/0 = 0
+0:53/0/custom_data_0 = 148
 0:54/0 = 0
+0:54/0/custom_data_0 = 154
 0:55/0 = 0
 0:56/0 = 0
 0:57/0 = 0
@@ -71,37 +89,54 @@ texture = ExtResource("1_bfdvk")
 0:61/0 = 0
 0:62/0 = 0
 0:63/0 = 0
+0:63/0/custom_data_0 = 209
 1:0/0 = 0
 1:1/0 = 0
 1:2/0 = 0
 1:3/0 = 0
 1:4/0 = 0
+1:4/0/custom_data_0 = 105
 1:5/0 = 0
 1:6/0 = 0
 1:7/0 = 0
 1:8/0 = 0
+1:8/0/custom_data_0 = 105
 1:9/0 = 0
 1:10/0 = 0
 1:11/0 = 0
 1:12/0 = 0
+1:12/0/custom_data_0 = 105
 1:13/0 = 0
+1:13/0/custom_data_0 = 12
 1:14/0 = 0
+1:14/0/custom_data_0 = 12
 1:15/0 = 0
 1:16/0 = 0
+1:16/0/custom_data_0 = 12
 1:17/0 = 0
 1:18/0 = 0
 1:19/0 = 0
+1:19/0/custom_data_0 = 16
 1:20/0 = 0
+1:20/0/custom_data_0 = 16
 1:21/0 = 0
 1:22/0 = 0
+1:22/0/custom_data_0 = 16
 1:23/0 = 0
+1:23/0/custom_data_0 = 19
 1:24/0 = 0
+1:24/0/custom_data_0 = 21
 1:25/0 = 0
+1:25/0/custom_data_0 = 22
 1:26/0 = 0
+1:26/0/custom_data_0 = 22
 1:27/0 = 0
+1:27/0/custom_data_0 = 22
 1:28/0 = 0
 1:29/0 = 0
+1:29/0/custom_data_0 = 208
 1:30/0 = 0
+1:30/0/custom_data_0 = 214
 1:31/0 = 0
 1:32/0 = 0
 1:33/0 = 0
@@ -118,14 +153,23 @@ texture = ExtResource("1_bfdvk")
 1:44/0 = 0
 1:45/0 = 0
 1:46/0 = 0
+1:46/0/custom_data_0 = 21
 1:47/0 = 0
+1:47/0/custom_data_0 = 21
 1:48/0 = 0
+1:48/0/custom_data_0 = 21
 1:49/0 = 0
+1:49/0/custom_data_0 = 21
 1:50/0 = 0
+1:50/0/custom_data_0 = 12
 1:51/0 = 0
+1:51/0/custom_data_0 = 21
 1:52/0 = 0
+1:52/0/custom_data_0 = 145
 1:53/0 = 0
+1:53/0/custom_data_0 = 149
 1:54/0 = 0
+1:54/0/custom_data_0 = 155
 1:55/0 = 0
 1:56/0 = 0
 1:57/0 = 0
@@ -135,6 +179,7 @@ texture = ExtResource("1_bfdvk")
 1:61/0 = 0
 1:62/0 = 0
 1:63/0 = 0
+1:63/0/custom_data_0 = 209
 2:0/0 = 0
 2:1/0 = 0
 2:2/0 = 0
@@ -155,17 +200,26 @@ texture = ExtResource("1_bfdvk")
 2:17/0 = 0
 2:18/0 = 0
 2:19/0 = 0
+2:19/0/custom_data_0 = 16
 2:20/0 = 0
 2:21/0 = 0
 2:22/0 = 0
+2:22/0/custom_data_0 = 16
 2:23/0 = 0
+2:23/0/custom_data_0 = 16
 2:24/0 = 0
+2:24/0/custom_data_0 = 16
 2:25/0 = 0
+2:25/0/custom_data_0 = 22
 2:26/0 = 0
+2:26/0/custom_data_0 = 22
 2:27/0 = 0
+2:27/0/custom_data_0 = 22
 2:28/0 = 0
 2:29/0 = 0
+2:29/0/custom_data_0 = 208
 2:30/0 = 0
+2:30/0/custom_data_0 = 214
 2:31/0 = 0
 2:32/0 = 0
 2:33/0 = 0
@@ -182,11 +236,15 @@ texture = ExtResource("1_bfdvk")
 2:44/0 = 0
 2:45/0 = 0
 2:46/0 = 0
+2:46/0/custom_data_0 = 21
 2:47/0 = 0
 2:48/0 = 0
 2:49/0 = 0
+2:49/0/custom_data_0 = 21
 2:50/0 = 0
+2:50/0/custom_data_0 = 21
 2:51/0 = 0
+2:51/0/custom_data_0 = 21
 2:52/0 = 0
 2:53/0 = 0
 2:54/0 = 0
@@ -199,9 +257,11 @@ texture = ExtResource("1_bfdvk")
 2:61/0 = 0
 2:62/0 = 0
 2:63/0 = 0
+2:63/0/custom_data_0 = 23
 3:0/0 = 0
 3:1/0 = 0
 3:2/0 = 0
+3:2/0/custom_data_0 = 1
 3:3/0 = 0
 3:4/0 = 0
 3:5/0 = 0
@@ -222,36 +282,56 @@ texture = ExtResource("1_bfdvk")
 3:20/0 = 0
 3:21/0 = 0
 3:22/0 = 0
+3:22/0/custom_data_0 = 19
 3:23/0 = 0
+3:23/0/custom_data_0 = 19
 3:24/0 = 0
+3:24/0/custom_data_0 = 16
 3:25/0 = 0
+3:25/0/custom_data_0 = 16
 3:26/0 = 0
 3:27/0 = 0
+3:27/0/custom_data_0 = 12
 3:28/0 = 0
 3:29/0 = 0
+3:29/0/custom_data_0 = 208
 3:30/0 = 0
+3:30/0/custom_data_0 = 211
 3:31/0 = 0
+3:31/0/custom_data_0 = 214
 3:32/0 = 0
 3:33/0 = 0
 3:34/0 = 0
 3:35/0 = 0
+3:35/0/custom_data_0 = 21
 3:36/0 = 0
+3:36/0/custom_data_0 = 21
 3:37/0 = 0
+3:37/0/custom_data_0 = 21
 3:38/0 = 0
 3:39/0 = 0
+3:39/0/custom_data_0 = 23
 3:40/0 = 0
+3:40/0/custom_data_0 = 23
 3:41/0 = 0
 3:42/0 = 0
 3:43/0 = 0
 3:44/0 = 0
 3:45/0 = 0
 3:46/0 = 0
+3:46/0/custom_data_0 = 12
 3:47/0 = 0
+3:47/0/custom_data_0 = 12
 3:48/0 = 0
+3:48/0/custom_data_0 = 16
 3:49/0 = 0
+3:49/0/custom_data_0 = 16
 3:50/0 = 0
+3:50/0/custom_data_0 = 21
 3:51/0 = 0
+3:51/0/custom_data_0 = 23
 3:52/0 = 0
+3:52/0/custom_data_0 = 21
 3:53/0 = 0
 3:54/0 = 0
 3:55/0 = 0
@@ -259,24 +339,34 @@ texture = ExtResource("1_bfdvk")
 3:57/0 = 0
 3:58/0 = 0
 3:59/0 = 0
+3:59/0/custom_data_0 = 105
 3:60/0 = 0
 3:61/0 = 0
 3:62/0 = 0
 3:63/0 = 0
+3:63/0/custom_data_0 = 23
 4:0/0 = 0
 4:1/0 = 0
 4:2/0 = 0
+4:2/0/custom_data_0 = 1
 4:3/0 = 0
 4:4/0 = 0
+4:4/0/custom_data_0 = 101
 4:5/0 = 0
+4:5/0/custom_data_0 = 21
 4:6/0 = 0
+4:6/0/custom_data_0 = 21
 4:7/0 = 0
+4:7/0/custom_data_0 = 21
 4:8/0 = 0
 4:9/0 = 0
+4:9/0/custom_data_0 = 19
 4:10/0 = 0
+4:10/0/custom_data_0 = 21
 4:11/0 = 0
 4:12/0 = 0
 4:13/0 = 0
+4:13/0/custom_data_0 = 12
 4:14/0 = 0
 4:15/0 = 0
 4:16/0 = 0
@@ -286,36 +376,54 @@ texture = ExtResource("1_bfdvk")
 4:20/0 = 0
 4:21/0 = 0
 4:22/0 = 0
+4:22/0/custom_data_0 = 12
 4:23/0 = 0
+4:23/0/custom_data_0 = 19
 4:24/0 = 0
+4:24/0/custom_data_0 = 16
 4:25/0 = 0
+4:25/0/custom_data_0 = 16
 4:26/0 = 0
 4:27/0 = 0
+4:27/0/custom_data_0 = 12
 4:28/0 = 0
 4:29/0 = 0
+4:29/0/custom_data_0 = 213
 4:30/0 = 0
+4:30/0/custom_data_0 = 213
 4:31/0 = 0
+4:31/0/custom_data_0 = 213
 4:32/0 = 0
 4:33/0 = 0
+4:33/0/custom_data_0 = 160
 4:34/0 = 0
 4:35/0 = 0
+4:35/0/custom_data_0 = 33
 4:36/0 = 0
+4:36/0/custom_data_0 = 33
 4:37/0 = 0
+4:37/0/custom_data_0 = 21
 4:38/0 = 0
 4:39/0 = 0
+4:39/0/custom_data_0 = 23
 4:40/0 = 0
+4:40/0/custom_data_0 = 23
 4:41/0 = 0
+4:41/0/custom_data_0 = 160
 4:42/0 = 0
 4:43/0 = 0
 4:44/0 = 0
 4:45/0 = 0
 4:46/0 = 0
+4:46/0/custom_data_0 = 21
 4:47/0 = 0
 4:48/0 = 0
 4:49/0 = 0
 4:50/0 = 0
 4:51/0 = 0
+4:51/0/custom_data_0 = 23
 4:52/0 = 0
+4:52/0/custom_data_0 = 21
 4:53/0 = 0
 4:54/0 = 0
 4:55/0 = 0
@@ -329,11 +437,16 @@ texture = ExtResource("1_bfdvk")
 4:63/0 = 0
 5:0/0 = 0
 5:1/0 = 0
+5:1/0/custom_data_0 = 2
 5:2/0 = 0
+5:2/0/custom_data_0 = 3
 5:3/0 = 0
 5:4/0 = 0
+5:4/0/custom_data_0 = 2
 5:5/0 = 0
+5:5/0/custom_data_0 = 16
 5:6/0 = 0
+5:6/0/custom_data_0 = 21
 5:7/0 = 0
 5:8/0 = 0
 5:9/0 = 0
@@ -344,30 +457,49 @@ texture = ExtResource("1_bfdvk")
 5:14/0 = 0
 5:15/0 = 0
 5:16/0 = 0
+5:16/0/custom_data_0 = 57
 5:17/0 = 0
+5:17/0/custom_data_0 = 63
 5:18/0 = 0
+5:18/0/custom_data_0 = 57
 5:19/0 = 0
+5:19/0/custom_data_0 = 63
 5:20/0 = 0
+5:20/0/custom_data_0 = 57
 5:21/0 = 0
+5:21/0/custom_data_0 = 63
 5:22/0 = 0
 5:23/0 = 0
+5:23/0/custom_data_0 = 16
 5:24/0 = 0
+5:24/0/custom_data_0 = 16
 5:25/0 = 0
+5:25/0/custom_data_0 = 16
 5:26/0 = 0
+5:26/0/custom_data_0 = 59
 5:27/0 = 0
+5:27/0/custom_data_0 = 59
 5:28/0 = 0
+5:28/0/custom_data_0 = 59
 5:29/0 = 0
+5:29/0/custom_data_0 = 212
 5:30/0 = 0
 5:31/0 = 0
+5:31/0/custom_data_0 = 214
 5:32/0 = 0
 5:33/0 = 0
 5:34/0 = 0
 5:35/0 = 0
+5:35/0/custom_data_0 = 21
 5:36/0 = 0
+5:36/0/custom_data_0 = 21
 5:37/0 = 0
+5:37/0/custom_data_0 = 21
 5:38/0 = 0
 5:39/0 = 0
+5:39/0/custom_data_0 = 33
 5:40/0 = 0
+5:40/0/custom_data_0 = 21
 5:41/0 = 0
 5:42/0 = 0
 5:43/0 = 0
@@ -376,15 +508,24 @@ texture = ExtResource("1_bfdvk")
 5:46/0 = 0
 5:47/0 = 0
 5:48/0 = 0
+5:48/0/custom_data_0 = 23
 5:49/0 = 0
+5:49/0/custom_data_0 = 23
 5:50/0 = 0
+5:50/0/custom_data_0 = 23
 5:51/0 = 0
+5:51/0/custom_data_0 = 23
 5:52/0 = 0
+5:52/0/custom_data_0 = 23
 5:53/0 = 0
+5:53/0/custom_data_0 = 21
 5:54/0 = 0
+5:54/0/custom_data_0 = 21
 5:55/0 = 0
+5:55/0/custom_data_0 = 21
 5:56/0 = 0
 5:57/0 = 0
+5:57/0/custom_data_0 = 105
 5:58/0 = 0
 5:59/0 = 0
 5:60/0 = 0
@@ -396,8 +537,10 @@ texture = ExtResource("1_bfdvk")
 6:2/0 = 0
 6:3/0 = 0
 6:4/0 = 0
+6:4/0/custom_data_0 = 150
 6:5/0 = 0
 6:6/0 = 0
+6:6/0/custom_data_0 = 151
 6:7/0 = 0
 6:8/0 = 0
 6:9/0 = 0
@@ -408,60 +551,97 @@ texture = ExtResource("1_bfdvk")
 6:14/0 = 0
 6:15/0 = 0
 6:16/0 = 0
+6:16/0/custom_data_0 = 56
 6:17/0 = 0
+6:17/0/custom_data_0 = 62
 6:18/0 = 0
+6:18/0/custom_data_0 = 56
 6:19/0 = 0
+6:19/0/custom_data_0 = 62
 6:20/0 = 0
+6:20/0/custom_data_0 = 56
 6:21/0 = 0
+6:21/0/custom_data_0 = 62
 6:22/0 = 0
+6:22/0/custom_data_0 = 12
 6:23/0 = 0
+6:23/0/custom_data_0 = 12
 6:24/0 = 0
 6:25/0 = 0
 6:26/0 = 0
+6:26/0/custom_data_0 = 59
 6:27/0 = 0
+6:27/0/custom_data_0 = 59
 6:28/0 = 0
+6:28/0/custom_data_0 = 59
 6:29/0 = 0
 6:30/0 = 0
 6:31/0 = 0
+6:31/0/custom_data_0 = 57
 6:32/0 = 0
+6:32/0/custom_data_0 = 57
 6:33/0 = 0
+6:33/0/custom_data_0 = 57
 6:34/0 = 0
+6:34/0/custom_data_0 = 57
 6:35/0 = 0
+6:35/0/custom_data_0 = 57
 6:36/0 = 0
+6:36/0/custom_data_0 = 57
 6:37/0 = 0
+6:37/0/custom_data_0 = 160
 6:38/0 = 0
 6:39/0 = 0
+6:39/0/custom_data_0 = 33
 6:40/0 = 0
+6:40/0/custom_data_0 = 21
 6:41/0 = 0
+6:41/0/custom_data_0 = 18
 6:42/0 = 0
+6:42/0/custom_data_0 = 17
 6:43/0 = 0
+6:43/0/custom_data_0 = 23
 6:44/0 = 0
+6:44/0/custom_data_0 = 23
 6:45/0 = 0
+6:45/0/custom_data_0 = 23
 6:46/0 = 0
 6:47/0 = 0
 6:48/0 = 0
+6:48/0/custom_data_0 = 23
 6:49/0 = 0
+6:49/0/custom_data_0 = 23
 6:50/0 = 0
+6:50/0/custom_data_0 = 23
 6:51/0 = 0
+6:51/0/custom_data_0 = 23
 6:52/0 = 0
+6:52/0/custom_data_0 = 23
 6:53/0 = 0
+6:53/0/custom_data_0 = 23
 6:54/0 = 0
 6:55/0 = 0
+6:55/0/custom_data_0 = 21
 6:56/0 = 0
+6:56/0/custom_data_0 = 2
 6:57/0 = 0
 6:58/0 = 0
 6:59/0 = 0
 6:60/0 = 0
 6:61/0 = 0
 6:62/0 = 0
+6:62/0/custom_data_0 = 21
 6:63/0 = 0
+6:63/0/custom_data_0 = 16
 7:0/0 = 0
 7:1/0 = 0
 7:2/0 = 0
 7:3/0 = 0
 7:4/0 = 0
+7:4/0/custom_data_0 = 156
 7:5/0 = 0
 7:6/0 = 0
+7:6/0/custom_data_0 = 157
 7:7/0 = 0
 7:8/0 = 0
 7:9/0 = 0
@@ -472,53 +652,83 @@ texture = ExtResource("1_bfdvk")
 7:14/0 = 0
 7:15/0 = 0
 7:16/0 = 0
+7:16/0/custom_data_0 = 59
 7:17/0 = 0
+7:17/0/custom_data_0 = 59
 7:18/0 = 0
+7:18/0/custom_data_0 = 59
 7:19/0 = 0
 7:20/0 = 0
+7:20/0/custom_data_0 = 96
 7:21/0 = 0
 7:22/0 = 0
 7:23/0 = 0
+7:23/0/custom_data_0 = 12
 7:24/0 = 0
 7:25/0 = 0
 7:26/0 = 0
+7:26/0/custom_data_0 = 12
 7:27/0 = 0
+7:27/0/custom_data_0 = 12
 7:28/0 = 0
 7:29/0 = 0
 7:30/0 = 0
+7:30/0/custom_data_0 = 213
 7:31/0 = 0
+7:31/0/custom_data_0 = 56
 7:32/0 = 0
+7:32/0/custom_data_0 = 56
 7:33/0 = 0
+7:33/0/custom_data_0 = 56
 7:34/0 = 0
+7:34/0/custom_data_0 = 56
 7:35/0 = 0
+7:35/0/custom_data_0 = 56
 7:36/0 = 0
+7:36/0/custom_data_0 = 56
 7:37/0 = 0
+7:37/0/custom_data_0 = 160
 7:38/0 = 0
 7:39/0 = 0
 7:40/0 = 0
+7:40/0/custom_data_0 = 17
 7:41/0 = 0
+7:41/0/custom_data_0 = 18
 7:42/0 = 0
+7:42/0/custom_data_0 = 23
 7:43/0 = 0
+7:43/0/custom_data_0 = 23
 7:44/0 = 0
+7:44/0/custom_data_0 = 23
 7:45/0 = 0
+7:45/0/custom_data_0 = 23
 7:46/0 = 0
 7:47/0 = 0
 7:48/0 = 0
 7:49/0 = 0
 7:50/0 = 0
+7:50/0/custom_data_0 = 23
 7:51/0 = 0
+7:51/0/custom_data_0 = 23
 7:52/0 = 0
+7:52/0/custom_data_0 = 23
 7:53/0 = 0
+7:53/0/custom_data_0 = 21
 7:54/0 = 0
+7:54/0/custom_data_0 = 21
 7:55/0 = 0
+7:55/0/custom_data_0 = 21
 7:56/0 = 0
+7:56/0/custom_data_0 = 2
 7:57/0 = 0
 7:58/0 = 0
 7:59/0 = 0
 7:60/0 = 0
 7:61/0 = 0
 7:62/0 = 0
+7:62/0/custom_data_0 = 21
 7:63/0 = 0
+7:63/0/custom_data_0 = 16
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_73yw7"]
 texture = ExtResource("2_x3f54")
@@ -542,17 +752,26 @@ texture = ExtResource("2_x3f54")
 0:17/0 = 0
 0:18/0 = 0
 0:19/0 = 0
+0:19/0/custom_data_0 = 16
 0:20/0 = 0
 0:21/0 = 0
 0:22/0 = 0
+0:22/0/custom_data_0 = 16
 0:23/0 = 0
+0:23/0/custom_data_0 = 16
 0:24/0 = 0
+0:24/0/custom_data_0 = 16
 0:25/0 = 0
+0:25/0/custom_data_0 = 22
 0:26/0 = 0
+0:26/0/custom_data_0 = 22
 0:27/0 = 0
+0:27/0/custom_data_0 = 22
 0:28/0 = 0
 0:29/0 = 0
+0:29/0/custom_data_0 = 208
 0:30/0 = 0
+0:30/0/custom_data_0 = 214
 0:31/0 = 0
 0:32/0 = 0
 0:33/0 = 0
@@ -569,14 +788,23 @@ texture = ExtResource("2_x3f54")
 0:44/0 = 0
 0:45/0 = 0
 0:46/0 = 0
+0:46/0/custom_data_0 = 21
 0:47/0 = 0
+0:47/0/custom_data_0 = 21
 0:48/0 = 0
+0:48/0/custom_data_0 = 21
 0:49/0 = 0
+0:49/0/custom_data_0 = 21
 0:50/0 = 0
+0:50/0/custom_data_0 = 21
 0:51/0 = 0
+0:51/0/custom_data_0 = 21
 0:52/0 = 0
+0:52/0/custom_data_0 = 144
 0:53/0 = 0
+0:53/0/custom_data_0 = 148
 0:54/0 = 0
+0:54/0/custom_data_0 = 154
 0:55/0 = 0
 0:56/0 = 0
 0:57/0 = 0
@@ -586,37 +814,54 @@ texture = ExtResource("2_x3f54")
 0:61/0 = 0
 0:62/0 = 0
 0:63/0 = 0
+0:63/0/custom_data_0 = 209
 1:0/0 = 0
 1:1/0 = 0
 1:2/0 = 0
 1:3/0 = 0
 1:4/0 = 0
+1:4/0/custom_data_0 = 105
 1:5/0 = 0
 1:6/0 = 0
 1:7/0 = 0
 1:8/0 = 0
+1:8/0/custom_data_0 = 105
 1:9/0 = 0
 1:10/0 = 0
 1:11/0 = 0
 1:12/0 = 0
+1:12/0/custom_data_0 = 105
 1:13/0 = 0
+1:13/0/custom_data_0 = 12
 1:14/0 = 0
+1:14/0/custom_data_0 = 12
 1:15/0 = 0
 1:16/0 = 0
+1:16/0/custom_data_0 = 12
 1:17/0 = 0
 1:18/0 = 0
 1:19/0 = 0
+1:19/0/custom_data_0 = 16
 1:20/0 = 0
+1:20/0/custom_data_0 = 16
 1:21/0 = 0
 1:22/0 = 0
+1:22/0/custom_data_0 = 16
 1:23/0 = 0
+1:23/0/custom_data_0 = 19
 1:24/0 = 0
+1:24/0/custom_data_0 = 21
 1:25/0 = 0
+1:25/0/custom_data_0 = 22
 1:26/0 = 0
+1:26/0/custom_data_0 = 22
 1:27/0 = 0
+1:27/0/custom_data_0 = 22
 1:28/0 = 0
 1:29/0 = 0
+1:29/0/custom_data_0 = 208
 1:30/0 = 0
+1:30/0/custom_data_0 = 214
 1:31/0 = 0
 1:32/0 = 0
 1:33/0 = 0
@@ -633,14 +878,23 @@ texture = ExtResource("2_x3f54")
 1:44/0 = 0
 1:45/0 = 0
 1:46/0 = 0
+1:46/0/custom_data_0 = 21
 1:47/0 = 0
+1:47/0/custom_data_0 = 21
 1:48/0 = 0
+1:48/0/custom_data_0 = 21
 1:49/0 = 0
+1:49/0/custom_data_0 = 21
 1:50/0 = 0
+1:50/0/custom_data_0 = 12
 1:51/0 = 0
+1:51/0/custom_data_0 = 21
 1:52/0 = 0
+1:52/0/custom_data_0 = 145
 1:53/0 = 0
+1:53/0/custom_data_0 = 149
 1:54/0 = 0
+1:54/0/custom_data_0 = 155
 1:55/0 = 0
 1:56/0 = 0
 1:57/0 = 0
@@ -650,6 +904,7 @@ texture = ExtResource("2_x3f54")
 1:61/0 = 0
 1:62/0 = 0
 1:63/0 = 0
+1:63/0/custom_data_0 = 209
 2:0/0 = 0
 2:1/0 = 0
 2:2/0 = 0
@@ -670,17 +925,26 @@ texture = ExtResource("2_x3f54")
 2:17/0 = 0
 2:18/0 = 0
 2:19/0 = 0
+2:19/0/custom_data_0 = 16
 2:20/0 = 0
 2:21/0 = 0
 2:22/0 = 0
+2:22/0/custom_data_0 = 16
 2:23/0 = 0
+2:23/0/custom_data_0 = 16
 2:24/0 = 0
+2:24/0/custom_data_0 = 16
 2:25/0 = 0
+2:25/0/custom_data_0 = 22
 2:26/0 = 0
+2:26/0/custom_data_0 = 22
 2:27/0 = 0
+2:27/0/custom_data_0 = 22
 2:28/0 = 0
 2:29/0 = 0
+2:29/0/custom_data_0 = 208
 2:30/0 = 0
+2:30/0/custom_data_0 = 214
 2:31/0 = 0
 2:32/0 = 0
 2:33/0 = 0
@@ -697,11 +961,15 @@ texture = ExtResource("2_x3f54")
 2:44/0 = 0
 2:45/0 = 0
 2:46/0 = 0
+2:46/0/custom_data_0 = 21
 2:47/0 = 0
 2:48/0 = 0
 2:49/0 = 0
+2:49/0/custom_data_0 = 21
 2:50/0 = 0
+2:50/0/custom_data_0 = 21
 2:51/0 = 0
+2:51/0/custom_data_0 = 21
 2:52/0 = 0
 2:53/0 = 0
 2:54/0 = 0
@@ -714,9 +982,11 @@ texture = ExtResource("2_x3f54")
 2:61/0 = 0
 2:62/0 = 0
 2:63/0 = 0
+2:63/0/custom_data_0 = 23
 3:0/0 = 0
 3:1/0 = 0
 3:2/0 = 0
+3:2/0/custom_data_0 = 1
 3:3/0 = 0
 3:4/0 = 0
 3:5/0 = 0
@@ -737,36 +1007,56 @@ texture = ExtResource("2_x3f54")
 3:20/0 = 0
 3:21/0 = 0
 3:22/0 = 0
+3:22/0/custom_data_0 = 19
 3:23/0 = 0
+3:23/0/custom_data_0 = 19
 3:24/0 = 0
+3:24/0/custom_data_0 = 16
 3:25/0 = 0
+3:25/0/custom_data_0 = 16
 3:26/0 = 0
 3:27/0 = 0
+3:27/0/custom_data_0 = 12
 3:28/0 = 0
 3:29/0 = 0
+3:29/0/custom_data_0 = 208
 3:30/0 = 0
+3:30/0/custom_data_0 = 211
 3:31/0 = 0
+3:31/0/custom_data_0 = 214
 3:32/0 = 0
 3:33/0 = 0
 3:34/0 = 0
 3:35/0 = 0
+3:35/0/custom_data_0 = 21
 3:36/0 = 0
+3:36/0/custom_data_0 = 21
 3:37/0 = 0
+3:37/0/custom_data_0 = 21
 3:38/0 = 0
 3:39/0 = 0
+3:39/0/custom_data_0 = 23
 3:40/0 = 0
+3:40/0/custom_data_0 = 23
 3:41/0 = 0
 3:42/0 = 0
 3:43/0 = 0
 3:44/0 = 0
 3:45/0 = 0
 3:46/0 = 0
+3:46/0/custom_data_0 = 12
 3:47/0 = 0
+3:47/0/custom_data_0 = 12
 3:48/0 = 0
+3:48/0/custom_data_0 = 16
 3:49/0 = 0
+3:49/0/custom_data_0 = 16
 3:50/0 = 0
+3:50/0/custom_data_0 = 21
 3:51/0 = 0
+3:51/0/custom_data_0 = 23
 3:52/0 = 0
+3:52/0/custom_data_0 = 21
 3:53/0 = 0
 3:54/0 = 0
 3:55/0 = 0
@@ -774,24 +1064,34 @@ texture = ExtResource("2_x3f54")
 3:57/0 = 0
 3:58/0 = 0
 3:59/0 = 0
+3:59/0/custom_data_0 = 105
 3:60/0 = 0
 3:61/0 = 0
 3:62/0 = 0
 3:63/0 = 0
+3:63/0/custom_data_0 = 23
 4:0/0 = 0
 4:1/0 = 0
 4:2/0 = 0
+4:2/0/custom_data_0 = 1
 4:3/0 = 0
 4:4/0 = 0
+4:4/0/custom_data_0 = 101
 4:5/0 = 0
+4:5/0/custom_data_0 = 21
 4:6/0 = 0
+4:6/0/custom_data_0 = 21
 4:7/0 = 0
+4:7/0/custom_data_0 = 21
 4:8/0 = 0
 4:9/0 = 0
+4:9/0/custom_data_0 = 19
 4:10/0 = 0
+4:10/0/custom_data_0 = 21
 4:11/0 = 0
 4:12/0 = 0
 4:13/0 = 0
+4:13/0/custom_data_0 = 12
 4:14/0 = 0
 4:15/0 = 0
 4:16/0 = 0
@@ -801,36 +1101,54 @@ texture = ExtResource("2_x3f54")
 4:20/0 = 0
 4:21/0 = 0
 4:22/0 = 0
+4:22/0/custom_data_0 = 12
 4:23/0 = 0
+4:23/0/custom_data_0 = 19
 4:24/0 = 0
+4:24/0/custom_data_0 = 16
 4:25/0 = 0
+4:25/0/custom_data_0 = 16
 4:26/0 = 0
 4:27/0 = 0
+4:27/0/custom_data_0 = 12
 4:28/0 = 0
 4:29/0 = 0
+4:29/0/custom_data_0 = 213
 4:30/0 = 0
+4:30/0/custom_data_0 = 213
 4:31/0 = 0
+4:31/0/custom_data_0 = 213
 4:32/0 = 0
 4:33/0 = 0
+4:33/0/custom_data_0 = 160
 4:34/0 = 0
 4:35/0 = 0
+4:35/0/custom_data_0 = 33
 4:36/0 = 0
+4:36/0/custom_data_0 = 33
 4:37/0 = 0
+4:37/0/custom_data_0 = 21
 4:38/0 = 0
 4:39/0 = 0
+4:39/0/custom_data_0 = 23
 4:40/0 = 0
+4:40/0/custom_data_0 = 23
 4:41/0 = 0
+4:41/0/custom_data_0 = 160
 4:42/0 = 0
 4:43/0 = 0
 4:44/0 = 0
 4:45/0 = 0
 4:46/0 = 0
+4:46/0/custom_data_0 = 21
 4:47/0 = 0
 4:48/0 = 0
 4:49/0 = 0
 4:50/0 = 0
 4:51/0 = 0
+4:51/0/custom_data_0 = 23
 4:52/0 = 0
+4:52/0/custom_data_0 = 21
 4:53/0 = 0
 4:54/0 = 0
 4:55/0 = 0
@@ -844,11 +1162,16 @@ texture = ExtResource("2_x3f54")
 4:63/0 = 0
 5:0/0 = 0
 5:1/0 = 0
+5:1/0/custom_data_0 = 2
 5:2/0 = 0
+5:2/0/custom_data_0 = 3
 5:3/0 = 0
 5:4/0 = 0
+5:4/0/custom_data_0 = 2
 5:5/0 = 0
+5:5/0/custom_data_0 = 16
 5:6/0 = 0
+5:6/0/custom_data_0 = 21
 5:7/0 = 0
 5:8/0 = 0
 5:9/0 = 0
@@ -859,30 +1182,49 @@ texture = ExtResource("2_x3f54")
 5:14/0 = 0
 5:15/0 = 0
 5:16/0 = 0
+5:16/0/custom_data_0 = 57
 5:17/0 = 0
+5:17/0/custom_data_0 = 63
 5:18/0 = 0
+5:18/0/custom_data_0 = 57
 5:19/0 = 0
+5:19/0/custom_data_0 = 63
 5:20/0 = 0
+5:20/0/custom_data_0 = 57
 5:21/0 = 0
+5:21/0/custom_data_0 = 63
 5:22/0 = 0
 5:23/0 = 0
+5:23/0/custom_data_0 = 16
 5:24/0 = 0
+5:24/0/custom_data_0 = 16
 5:25/0 = 0
+5:25/0/custom_data_0 = 16
 5:26/0 = 0
+5:26/0/custom_data_0 = 59
 5:27/0 = 0
+5:27/0/custom_data_0 = 59
 5:28/0 = 0
+5:28/0/custom_data_0 = 59
 5:29/0 = 0
+5:29/0/custom_data_0 = 212
 5:30/0 = 0
 5:31/0 = 0
+5:31/0/custom_data_0 = 214
 5:32/0 = 0
 5:33/0 = 0
 5:34/0 = 0
 5:35/0 = 0
+5:35/0/custom_data_0 = 21
 5:36/0 = 0
+5:36/0/custom_data_0 = 21
 5:37/0 = 0
+5:37/0/custom_data_0 = 21
 5:38/0 = 0
 5:39/0 = 0
+5:39/0/custom_data_0 = 33
 5:40/0 = 0
+5:40/0/custom_data_0 = 21
 5:41/0 = 0
 5:42/0 = 0
 5:43/0 = 0
@@ -891,15 +1233,24 @@ texture = ExtResource("2_x3f54")
 5:46/0 = 0
 5:47/0 = 0
 5:48/0 = 0
+5:48/0/custom_data_0 = 23
 5:49/0 = 0
+5:49/0/custom_data_0 = 23
 5:50/0 = 0
+5:50/0/custom_data_0 = 23
 5:51/0 = 0
+5:51/0/custom_data_0 = 23
 5:52/0 = 0
+5:52/0/custom_data_0 = 23
 5:53/0 = 0
+5:53/0/custom_data_0 = 21
 5:54/0 = 0
+5:54/0/custom_data_0 = 21
 5:55/0 = 0
+5:55/0/custom_data_0 = 21
 5:56/0 = 0
 5:57/0 = 0
+5:57/0/custom_data_0 = 105
 5:58/0 = 0
 5:59/0 = 0
 5:60/0 = 0
@@ -911,8 +1262,10 @@ texture = ExtResource("2_x3f54")
 6:2/0 = 0
 6:3/0 = 0
 6:4/0 = 0
+6:4/0/custom_data_0 = 150
 6:5/0 = 0
 6:6/0 = 0
+6:6/0/custom_data_0 = 151
 6:7/0 = 0
 6:8/0 = 0
 6:9/0 = 0
@@ -923,60 +1276,97 @@ texture = ExtResource("2_x3f54")
 6:14/0 = 0
 6:15/0 = 0
 6:16/0 = 0
+6:16/0/custom_data_0 = 56
 6:17/0 = 0
+6:17/0/custom_data_0 = 62
 6:18/0 = 0
+6:18/0/custom_data_0 = 56
 6:19/0 = 0
+6:19/0/custom_data_0 = 62
 6:20/0 = 0
+6:20/0/custom_data_0 = 56
 6:21/0 = 0
+6:21/0/custom_data_0 = 62
 6:22/0 = 0
+6:22/0/custom_data_0 = 12
 6:23/0 = 0
+6:23/0/custom_data_0 = 12
 6:24/0 = 0
 6:25/0 = 0
 6:26/0 = 0
+6:26/0/custom_data_0 = 59
 6:27/0 = 0
+6:27/0/custom_data_0 = 59
 6:28/0 = 0
+6:28/0/custom_data_0 = 59
 6:29/0 = 0
 6:30/0 = 0
 6:31/0 = 0
+6:31/0/custom_data_0 = 57
 6:32/0 = 0
+6:32/0/custom_data_0 = 57
 6:33/0 = 0
+6:33/0/custom_data_0 = 57
 6:34/0 = 0
+6:34/0/custom_data_0 = 57
 6:35/0 = 0
+6:35/0/custom_data_0 = 57
 6:36/0 = 0
+6:36/0/custom_data_0 = 57
 6:37/0 = 0
+6:37/0/custom_data_0 = 160
 6:38/0 = 0
 6:39/0 = 0
+6:39/0/custom_data_0 = 33
 6:40/0 = 0
+6:40/0/custom_data_0 = 21
 6:41/0 = 0
+6:41/0/custom_data_0 = 18
 6:42/0 = 0
+6:42/0/custom_data_0 = 17
 6:43/0 = 0
+6:43/0/custom_data_0 = 23
 6:44/0 = 0
+6:44/0/custom_data_0 = 23
 6:45/0 = 0
+6:45/0/custom_data_0 = 23
 6:46/0 = 0
 6:47/0 = 0
 6:48/0 = 0
+6:48/0/custom_data_0 = 23
 6:49/0 = 0
+6:49/0/custom_data_0 = 23
 6:50/0 = 0
+6:50/0/custom_data_0 = 23
 6:51/0 = 0
+6:51/0/custom_data_0 = 23
 6:52/0 = 0
+6:52/0/custom_data_0 = 23
 6:53/0 = 0
+6:53/0/custom_data_0 = 23
 6:54/0 = 0
 6:55/0 = 0
+6:55/0/custom_data_0 = 21
 6:56/0 = 0
+6:56/0/custom_data_0 = 2
 6:57/0 = 0
 6:58/0 = 0
 6:59/0 = 0
 6:60/0 = 0
 6:61/0 = 0
 6:62/0 = 0
+6:62/0/custom_data_0 = 21
 6:63/0 = 0
+6:63/0/custom_data_0 = 16
 7:0/0 = 0
 7:1/0 = 0
 7:2/0 = 0
 7:3/0 = 0
 7:4/0 = 0
+7:4/0/custom_data_0 = 156
 7:5/0 = 0
 7:6/0 = 0
+7:6/0/custom_data_0 = 157
 7:7/0 = 0
 7:8/0 = 0
 7:9/0 = 0
@@ -987,53 +1377,83 @@ texture = ExtResource("2_x3f54")
 7:14/0 = 0
 7:15/0 = 0
 7:16/0 = 0
+7:16/0/custom_data_0 = 59
 7:17/0 = 0
+7:17/0/custom_data_0 = 59
 7:18/0 = 0
+7:18/0/custom_data_0 = 59
 7:19/0 = 0
 7:20/0 = 0
+7:20/0/custom_data_0 = 96
 7:21/0 = 0
 7:22/0 = 0
 7:23/0 = 0
+7:23/0/custom_data_0 = 12
 7:24/0 = 0
 7:25/0 = 0
 7:26/0 = 0
+7:26/0/custom_data_0 = 12
 7:27/0 = 0
+7:27/0/custom_data_0 = 12
 7:28/0 = 0
 7:29/0 = 0
 7:30/0 = 0
+7:30/0/custom_data_0 = 213
 7:31/0 = 0
+7:31/0/custom_data_0 = 56
 7:32/0 = 0
+7:32/0/custom_data_0 = 56
 7:33/0 = 0
+7:33/0/custom_data_0 = 56
 7:34/0 = 0
+7:34/0/custom_data_0 = 56
 7:35/0 = 0
+7:35/0/custom_data_0 = 56
 7:36/0 = 0
+7:36/0/custom_data_0 = 56
 7:37/0 = 0
+7:37/0/custom_data_0 = 160
 7:38/0 = 0
 7:39/0 = 0
 7:40/0 = 0
+7:40/0/custom_data_0 = 17
 7:41/0 = 0
+7:41/0/custom_data_0 = 18
 7:42/0 = 0
+7:42/0/custom_data_0 = 23
 7:43/0 = 0
+7:43/0/custom_data_0 = 23
 7:44/0 = 0
+7:44/0/custom_data_0 = 23
 7:45/0 = 0
+7:45/0/custom_data_0 = 23
 7:46/0 = 0
 7:47/0 = 0
 7:48/0 = 0
 7:49/0 = 0
 7:50/0 = 0
+7:50/0/custom_data_0 = 23
 7:51/0 = 0
+7:51/0/custom_data_0 = 23
 7:52/0 = 0
+7:52/0/custom_data_0 = 23
 7:53/0 = 0
+7:53/0/custom_data_0 = 21
 7:54/0 = 0
+7:54/0/custom_data_0 = 21
 7:55/0 = 0
+7:55/0/custom_data_0 = 21
 7:56/0 = 0
+7:56/0/custom_data_0 = 2
 7:57/0 = 0
 7:58/0 = 0
 7:59/0 = 0
 7:60/0 = 0
 7:61/0 = 0
 7:62/0 = 0
+7:62/0/custom_data_0 = 21
 7:63/0 = 0
+7:63/0/custom_data_0 = 16
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fq2k1"]
 texture = ExtResource("3_123si")
@@ -1063,6 +1483,7 @@ texture = ExtResource("3_123si")
 1:1/0 = 0
 1:2/0 = 0
 1:3/0 = 0
+1:3/0/custom_data_0 = 105
 1:4/0 = 0
 1:5/0 = 0
 1:6/0 = 0
@@ -1126,10 +1547,12 @@ texture = ExtResource("3_123si")
 3:20/0 = 0
 3:21/0 = 0
 4:0/0 = 0
+4:0/0/custom_data_0 = 101
 4:1/0 = 0
 4:2/0 = 0
 4:3/0 = 0
 4:4/0 = 0
+4:4/0/custom_data_0 = 131
 4:5/0 = 0
 4:6/0 = 0
 4:7/0 = 0
@@ -1148,6 +1571,7 @@ texture = ExtResource("3_123si")
 4:20/0 = 0
 4:21/0 = 0
 5:0/0 = 0
+5:0/0/custom_data_0 = 101
 5:1/0 = 0
 5:2/0 = 0
 5:3/0 = 0
@@ -1174,7 +1598,9 @@ texture = ExtResource("3_123si")
 6:2/0 = 0
 6:3/0 = 0
 6:4/0 = 0
+6:4/0/custom_data_0 = 16
 6:5/0 = 0
+6:5/0/custom_data_0 = 16
 6:6/0 = 0
 6:7/0 = 0
 6:8/0 = 0
@@ -1242,6 +1668,7 @@ texture = ExtResource("4_wtepo")
 1:1/0 = 0
 1:2/0 = 0
 1:3/0 = 0
+1:3/0/custom_data_0 = 105
 1:4/0 = 0
 1:5/0 = 0
 1:6/0 = 0
@@ -1305,10 +1732,12 @@ texture = ExtResource("4_wtepo")
 3:20/0 = 0
 3:21/0 = 0
 4:0/0 = 0
+4:0/0/custom_data_0 = 101
 4:1/0 = 0
 4:2/0 = 0
 4:3/0 = 0
 4:4/0 = 0
+4:4/0/custom_data_0 = 131
 4:5/0 = 0
 4:6/0 = 0
 4:7/0 = 0
@@ -1327,6 +1756,7 @@ texture = ExtResource("4_wtepo")
 4:20/0 = 0
 4:21/0 = 0
 5:0/0 = 0
+5:0/0/custom_data_0 = 101
 5:1/0 = 0
 5:2/0 = 0
 5:3/0 = 0
@@ -1353,7 +1783,9 @@ texture = ExtResource("4_wtepo")
 6:2/0 = 0
 6:3/0 = 0
 6:4/0 = 0
+6:4/0/custom_data_0 = 16
 6:5/0 = 0
+6:5/0/custom_data_0 = 16
 6:6/0 = 0
 6:7/0 = 0
 6:8/0 = 0
@@ -1401,6 +1833,8 @@ texture = ExtResource("1_bfdvk")
 [sub_resource type="TileSet" id="TileSet_gaelo"]
 physics_layer_0/collision_layer = 1
 physics_layer_0/collision_mask = 0
+custom_data_layer_0/name = "behavior"
+custom_data_layer_0/type = 2
 sources/0 = SubResource("TileSetAtlasSource_dcp0m")
 sources/1 = SubResource("TileSetAtlasSource_73yw7")
 sources/2 = SubResource("TileSetAtlasSource_fq2k1")
@@ -1545,218 +1979,220 @@ size = Vector2(16, 16)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_i7w3k"]
 size = Vector2(16, 16)
 
-[node name="BattleFrontier_BattlePalaceBattleRoom" type="Node2D" unique_id=1081261430]
+[node name="BattleFrontier_BattlePalaceBattleRoom" type="Node2D" unique_id=967684355]
 metadata/zone_id = ""
+metadata/map_id = "MAP_BATTLE_FRONTIER_BATTLE_PALACE_BATTLE_ROOM"
+metadata/is_toz_variant = false
 metadata/tile_size = 16
 metadata/map_dimensions_px = Vector2i(240, 160)
 
-[node name="TileMapTerrain" type="TileMap" parent="." unique_id=1518717380]
+[node name="TileMapTerrain" type="TileMap" parent="." unique_id=178564359]
 tile_set = SubResource("TileSet_gaelo")
 format = 2
 layer_0/tile_data = PackedInt32Array(0, 196610, 9, 1, 262146, 9, 2, 458754, 7, 3, 196610, 9, 4, 262146, 9, 5, 458754, 7, 6, 196610, 9, 7, 262146, 9, 8, 458754, 7, 9, 196610, 9, 10, 262146, 9, 11, 458754, 7, 12, 2, 9, 13, 65538, 9, 14, 131074, 9, 65536, 327682, 9, 65537, 393218, 9, 65538, 458754, 8, 65539, 327682, 9, 65540, 393218, 9, 65541, 458754, 8, 65542, 327682, 9, 65543, 393218, 9, 65544, 458754, 8, 65545, 327682, 9, 65546, 393218, 9, 65547, 458754, 8, 65548, 2, 10, 65549, 65538, 10, 65550, 131074, 10, 131072, 327682, 10, 131073, 393218, 10, 131074, 458754, 9, 131075, 327682, 10, 131076, 393218, 10, 131077, 458754, 9, 131078, 327682, 10, 131079, 393218, 10, 131080, 458754, 9, 131081, 327682, 10, 131082, 393218, 10, 131083, 458754, 9, 131084, 196610, 20, 131085, 262146, 20, 131086, 327682, 20, 196608, 65536, 49, 196609, 65536, 49, 196610, 65536, 49, 196611, 65536, 48, 196612, 2, 11, 196613, 65538, 11, 196614, 131074, 11, 196615, 196610, 11, 196616, 262146, 11, 196617, 327682, 11, 196618, 393218, 11, 196619, 0, 48, 196620, 65536, 48, 196621, 393218, 0, 196622, 393218, 0, 262144, 393218, 0, 262145, 393218, 0, 262146, 393218, 4, 262147, 131072, 50, 262148, 2, 12, 262149, 65538, 12, 262150, 131074, 12, 262151, 196610, 12, 262152, 262146, 12, 262153, 327682, 12, 262154, 393218, 12, 262155, 0, 50, 262156, 131072, 50, 262157, 393218, 0, 262158, 393218, 0, 327680, 393218, 0, 327681, 393218, 0, 327682, 393218, 4, 327683, 131072, 50, 327684, 2, 13, 327685, 65538, 13, 327686, 131074, 13, 327687, 196610, 13, 327688, 262146, 13, 327689, 327682, 13, 327690, 393218, 13, 327691, 0, 50, 327692, 131072, 50, 327693, 393218, 0, 327694, 393218, 0, 393216, 393218, 0, 393217, 393218, 0, 393218, 0, 50, 393219, 131072, 50, 393220, 2, 14, 393221, 65538, 14, 393222, 131074, 14, 393223, 196610, 14, 393224, 262146, 14, 393225, 327682, 14, 393226, 393218, 14, 393227, 0, 50, 393228, 131072, 50, 393229, 393218, 0, 393230, 393218, 0, 458752, 393218, 0, 458753, 393218, 0, 458754, 0, 50, 458755, 131072, 50, 458756, 2, 15, 458757, 65538, 15, 458758, 131074, 15, 458759, 196610, 15, 458760, 262146, 15, 458761, 327682, 15, 458762, 393218, 15, 458763, 0, 50, 458764, 131072, 50, 458765, 393218, 0, 458766, 393218, 0, 524288, 393218, 0, 524289, 393218, 0, 524290, 0, 50, 524291, 131072, 51, 524292, 65536, 49, 524293, 65536, 49, 524294, 65536, 49, 524295, 65536, 49, 524296, 65536, 49, 524297, 65536, 49, 524298, 65536, 49, 524299, 0, 51, 524300, 131072, 50, 524301, 393218, 0, 524302, 393218, 0, 589824, 393218, 0, 589825, 393218, 0, 589826, 0, 50, 589827, 0, 46, 589828, 0, 46, 589829, 0, 46, 589830, 0, 46, 589831, 0, 46, 589832, 0, 46, 589833, 0, 46, 589834, 0, 46, 589835, 0, 46, 589836, 131072, 51, 589837, 65536, 49, 589838, 65536, 49)
 layer_1/name = "Layer1"
 layer_1/tile_data = PackedInt32Array(131074, 458755, 9, 131077, 458755, 9, 131080, 458755, 9, 131083, 458755, 9, 196608, 65537, 49, 196609, 65537, 49, 196610, 65537, 49, 196611, 65537, 48, 196619, 1, 48, 196620, 65537, 48, 262146, 393219, 4, 262147, 131073, 50, 262155, 1, 50, 262156, 131073, 50, 327682, 393219, 4, 327683, 131073, 50, 327691, 1, 50, 327692, 131073, 50, 393218, 1, 50, 393219, 131073, 50, 393227, 1, 50, 393228, 131073, 50, 458754, 1, 50, 458755, 131073, 50, 458763, 1, 50, 458764, 131073, 50, 524290, 1, 50, 524291, 131073, 51, 524292, 65537, 49, 524293, 65537, 49, 524294, 65537, 49, 524295, 65537, 49, 524296, 65537, 49, 524297, 65537, 49, 524298, 65537, 49, 524299, 1, 51, 524300, 131073, 50, 589826, 1, 50, 589827, 1, 46, 589828, 1, 46, 589829, 1, 46, 589830, 1, 46, 589831, 1, 46, 589832, 1, 46, 589833, 1, 46, 589834, 1, 46, 589835, 1, 46, 589836, 131073, 51, 589837, 65537, 49, 589838, 65537, 49)
 
-[node name="TileMapDecoration" type="TileMap" parent="." unique_id=2134025461]
+[node name="TileMapDecoration" type="TileMap" parent="." unique_id=852783907]
 z_index = 1
 tile_set = SubResource("TileSet_gaelo")
 format = 2
 layer_0/tile_data = PackedInt32Array(0, 196611, 9, 1, 262147, 9, 2, 458755, 7, 3, 196611, 9, 4, 262147, 9, 5, 458755, 7, 6, 196611, 9, 7, 262147, 9, 8, 458755, 7, 9, 196611, 9, 10, 262147, 9, 11, 458755, 7, 12, 3, 9, 13, 65539, 9, 14, 131075, 9, 65536, 327683, 9, 65537, 393219, 9, 65538, 458755, 8, 65539, 327683, 9, 65540, 393219, 9, 65541, 458755, 8, 65542, 327683, 9, 65543, 393219, 9, 65544, 458755, 8, 65545, 327683, 9, 65546, 393219, 9, 65547, 458755, 8, 65548, 3, 10, 65549, 65539, 10, 65550, 131075, 10, 131072, 327683, 10, 131073, 393219, 10, 131075, 327683, 10, 131076, 393219, 10, 131078, 327683, 10, 131079, 393219, 10, 131081, 327683, 10, 131082, 393219, 10, 131084, 196611, 20, 131085, 262147, 20, 131086, 327683, 20, 196612, 3, 11, 196613, 65539, 11, 196614, 131075, 11, 196615, 196611, 11, 196616, 262147, 11, 196617, 327683, 11, 196618, 393219, 11, 196621, 393219, 0, 196622, 393219, 0, 262144, 393219, 0, 262145, 393219, 0, 262148, 3, 12, 262149, 65539, 12, 262150, 131075, 12, 262151, 196611, 12, 262152, 262147, 12, 262153, 327683, 12, 262154, 393219, 12, 262157, 393219, 0, 262158, 393219, 0, 327680, 393219, 0, 327681, 393219, 0, 327684, 3, 13, 327685, 65539, 13, 327686, 131075, 13, 327687, 196611, 13, 327688, 262147, 13, 327689, 327683, 13, 327690, 393219, 13, 327693, 393219, 0, 327694, 393219, 0, 393216, 393219, 0, 393217, 393219, 0, 393220, 3, 14, 393221, 65539, 14, 393222, 131075, 14, 393223, 196611, 14, 393224, 262147, 14, 393225, 327683, 14, 393226, 393219, 14, 393229, 393219, 0, 393230, 393219, 0, 458752, 393219, 0, 458753, 393219, 0, 458756, 3, 15, 458757, 65539, 15, 458758, 131075, 15, 458759, 196611, 15, 458760, 262147, 15, 458761, 327683, 15, 458762, 393219, 15, 458765, 393219, 0, 458766, 393219, 0, 524288, 393219, 0, 524289, 393219, 0, 524301, 393219, 0, 524302, 393219, 0, 589824, 393219, 0, 589825, 393219, 0)
 
-[node name="TileMapCollision" type="TileMap" parent="." unique_id=235710193]
+[node name="TileMapCollision" type="TileMap" parent="." unique_id=1332855522]
 visible = false
 tile_set = SubResource("TileSet_gaelo")
 format = 2
 layer_0/tile_data = PackedInt32Array(2, 4, 0, 5, 4, 0, 8, 4, 0, 11, 4, 0, 12, 4, 0, 14, 4, 0, 65538, 4, 0, 65541, 4, 0, 65544, 4, 0, 65547, 4, 0, 65548, 4, 0, 65550, 4, 0, 131074, 4, 0, 131077, 4, 0, 131080, 4, 0, 131083, 4, 0, 196613, 4, 0, 196614, 4, 0, 196615, 4, 0, 196616, 4, 0, 196617, 4, 0, 196618, 4, 0, 262148, 4, 0, 262149, 4, 0, 262150, 4, 0, 262151, 4, 0, 262152, 4, 0, 262153, 4, 0, 262154, 4, 0, 327684, 4, 0, 327685, 4, 0, 327686, 4, 0, 327687, 4, 0, 327688, 4, 0, 327689, 4, 0, 327690, 4, 0, 393220, 4, 0, 393221, 4, 0, 393222, 4, 0, 393223, 4, 0, 393224, 4, 0, 393225, 4, 0, 393226, 4, 0)
 
-[node name="EncounterZones" type="Node2D" parent="." unique_id=236679750]
+[node name="EncounterZones" type="Node2D" parent="." unique_id=903553339]
 
-[node name="WaterEncounterZone" type="Area2D" parent="EncounterZones" unique_id=1845447480]
+[node name="WaterEncounterZone" type="Area2D" parent="EncounterZones" unique_id=189719780]
 collision_layer = 4
 collision_mask = 0
 metadata/zone_id = ""
 metadata/encounter_type = "water"
 
-[node name="@CollisionShape2D@81168" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1650390848]
+[node name="@CollisionShape2D@97265" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1149181685]
 position = Vector2(8, 56)
 shape = SubResource("RectangleShape2D_7qbs2")
 
-[node name="@CollisionShape2D@81169" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=969600779]
+[node name="@CollisionShape2D@97266" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=521903520]
 position = Vector2(24, 56)
 shape = SubResource("RectangleShape2D_t0pkj")
 
-[node name="@CollisionShape2D@81170" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1937916693]
+[node name="@CollisionShape2D@97267" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1491709966]
 position = Vector2(40, 56)
 shape = SubResource("RectangleShape2D_mmw4f")
 
-[node name="@CollisionShape2D@81171" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1646372128]
+[node name="@CollisionShape2D@97268" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1183455947]
 position = Vector2(56, 56)
 shape = SubResource("RectangleShape2D_5b72r")
 
-[node name="@CollisionShape2D@81172" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1802067612]
+[node name="@CollisionShape2D@97269" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=490996998]
 position = Vector2(184, 56)
 shape = SubResource("RectangleShape2D_gyfhm")
 
-[node name="@CollisionShape2D@81173" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1689552753]
+[node name="@CollisionShape2D@97270" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=219402485]
 position = Vector2(200, 56)
 shape = SubResource("RectangleShape2D_5mepf")
 
-[node name="@CollisionShape2D@81174" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=398000822]
+[node name="@CollisionShape2D@97271" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=367534994]
 position = Vector2(40, 72)
 shape = SubResource("RectangleShape2D_2cfbw")
 
-[node name="@CollisionShape2D@81175" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=2061592378]
+[node name="@CollisionShape2D@97272" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1552434740]
 position = Vector2(56, 72)
 shape = SubResource("RectangleShape2D_n6qh0")
 
-[node name="@CollisionShape2D@81176" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=302907656]
+[node name="@CollisionShape2D@97273" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=731674884]
 position = Vector2(184, 72)
 shape = SubResource("RectangleShape2D_2xk3t")
 
-[node name="@CollisionShape2D@81177" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=248219940]
+[node name="@CollisionShape2D@97274" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1397547994]
 position = Vector2(200, 72)
 shape = SubResource("RectangleShape2D_eyg6w")
 
-[node name="@CollisionShape2D@81178" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1593033495]
+[node name="@CollisionShape2D@97275" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1514362657]
 position = Vector2(40, 88)
 shape = SubResource("RectangleShape2D_24tlh")
 
-[node name="@CollisionShape2D@81179" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=934710124]
+[node name="@CollisionShape2D@97276" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=2095864936]
 position = Vector2(56, 88)
 shape = SubResource("RectangleShape2D_bfydf")
 
-[node name="@CollisionShape2D@81180" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=761923867]
+[node name="@CollisionShape2D@97277" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1102168641]
 position = Vector2(184, 88)
 shape = SubResource("RectangleShape2D_6j21x")
 
-[node name="@CollisionShape2D@81181" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1793093916]
+[node name="@CollisionShape2D@97278" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=626147818]
 position = Vector2(200, 88)
 shape = SubResource("RectangleShape2D_bjsi2")
 
-[node name="@CollisionShape2D@81182" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=831499109]
+[node name="@CollisionShape2D@97279" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=199941860]
 position = Vector2(40, 104)
 shape = SubResource("RectangleShape2D_d7sal")
 
-[node name="@CollisionShape2D@81183" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1632269003]
+[node name="@CollisionShape2D@97280" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=638364399]
 position = Vector2(56, 104)
 shape = SubResource("RectangleShape2D_pobck")
 
-[node name="@CollisionShape2D@81184" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1944193128]
+[node name="@CollisionShape2D@97281" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=254646263]
 position = Vector2(184, 104)
 shape = SubResource("RectangleShape2D_g2rtf")
 
-[node name="@CollisionShape2D@81185" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1729989329]
+[node name="@CollisionShape2D@97282" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1679856373]
 position = Vector2(200, 104)
 shape = SubResource("RectangleShape2D_vvq4n")
 
-[node name="@CollisionShape2D@81186" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=966902322]
+[node name="@CollisionShape2D@97283" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1803693644]
 position = Vector2(40, 120)
 shape = SubResource("RectangleShape2D_nao1a")
 
-[node name="@CollisionShape2D@81187" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=625085080]
+[node name="@CollisionShape2D@97284" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=2143077494]
 position = Vector2(56, 120)
 shape = SubResource("RectangleShape2D_5thb6")
 
-[node name="@CollisionShape2D@81188" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=568680686]
+[node name="@CollisionShape2D@97285" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1268974536]
 position = Vector2(184, 120)
 shape = SubResource("RectangleShape2D_mdpxo")
 
-[node name="@CollisionShape2D@81189" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1474436560]
+[node name="@CollisionShape2D@97286" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=291497634]
 position = Vector2(200, 120)
 shape = SubResource("RectangleShape2D_x37rw")
 
-[node name="@CollisionShape2D@81190" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=560033850]
+[node name="@CollisionShape2D@97287" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=924478957]
 position = Vector2(40, 136)
 shape = SubResource("RectangleShape2D_gqih8")
 
-[node name="@CollisionShape2D@81191" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1094844968]
+[node name="@CollisionShape2D@97288" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1086803558]
 position = Vector2(56, 136)
 shape = SubResource("RectangleShape2D_ks1qy")
 
-[node name="@CollisionShape2D@81192" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=445128221]
+[node name="@CollisionShape2D@97289" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=415463435]
 position = Vector2(72, 136)
 shape = SubResource("RectangleShape2D_r4wvb")
 
-[node name="@CollisionShape2D@81193" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=550462468]
+[node name="@CollisionShape2D@97290" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=909006578]
 position = Vector2(88, 136)
 shape = SubResource("RectangleShape2D_t6ohw")
 
-[node name="@CollisionShape2D@81194" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1272435826]
+[node name="@CollisionShape2D@97291" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1963207190]
 position = Vector2(104, 136)
 shape = SubResource("RectangleShape2D_fcyeb")
 
-[node name="@CollisionShape2D@81195" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=579094624]
+[node name="@CollisionShape2D@97292" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1877256627]
 position = Vector2(120, 136)
 shape = SubResource("RectangleShape2D_8hrt8")
 
-[node name="@CollisionShape2D@81196" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=447069763]
+[node name="@CollisionShape2D@97293" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1404939615]
 position = Vector2(136, 136)
 shape = SubResource("RectangleShape2D_15jkl")
 
-[node name="@CollisionShape2D@81197" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=623917969]
+[node name="@CollisionShape2D@97294" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=566787112]
 position = Vector2(152, 136)
 shape = SubResource("RectangleShape2D_hh7cx")
 
-[node name="@CollisionShape2D@81198" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1914724832]
+[node name="@CollisionShape2D@97295" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1838381152]
 position = Vector2(168, 136)
 shape = SubResource("RectangleShape2D_qd07y")
 
-[node name="@CollisionShape2D@81199" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1570149860]
+[node name="@CollisionShape2D@97296" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1440389062]
 position = Vector2(184, 136)
 shape = SubResource("RectangleShape2D_l0dm2")
 
-[node name="@CollisionShape2D@81200" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=2027760366]
+[node name="@CollisionShape2D@97297" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=184552929]
 position = Vector2(200, 136)
 shape = SubResource("RectangleShape2D_n13wl")
 
-[node name="@CollisionShape2D@81201" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=80014235]
+[node name="@CollisionShape2D@97298" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1922072953]
 position = Vector2(40, 152)
 shape = SubResource("RectangleShape2D_uhtqw")
 
-[node name="@CollisionShape2D@81202" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=529191758]
+[node name="@CollisionShape2D@97299" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=713504659]
 position = Vector2(56, 152)
 shape = SubResource("RectangleShape2D_qnmjd")
 
-[node name="@CollisionShape2D@81203" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1731143799]
+[node name="@CollisionShape2D@97300" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1013109715]
 position = Vector2(72, 152)
 shape = SubResource("RectangleShape2D_3ohk7")
 
-[node name="@CollisionShape2D@81204" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=2098238987]
+[node name="@CollisionShape2D@97301" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1134265617]
 position = Vector2(88, 152)
 shape = SubResource("RectangleShape2D_7yst0")
 
-[node name="@CollisionShape2D@81205" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=905505629]
+[node name="@CollisionShape2D@97302" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1827209749]
 position = Vector2(104, 152)
 shape = SubResource("RectangleShape2D_23i0k")
 
-[node name="@CollisionShape2D@81206" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=894162818]
+[node name="@CollisionShape2D@97303" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=796639262]
 position = Vector2(120, 152)
 shape = SubResource("RectangleShape2D_7utk0")
 
-[node name="@CollisionShape2D@81207" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=277794861]
+[node name="@CollisionShape2D@97304" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=2040804158]
 position = Vector2(136, 152)
 shape = SubResource("RectangleShape2D_qyje3")
 
-[node name="@CollisionShape2D@81208" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1272208565]
+[node name="@CollisionShape2D@97305" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=3843554]
 position = Vector2(152, 152)
 shape = SubResource("RectangleShape2D_ohrhg")
 
-[node name="@CollisionShape2D@81209" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=963055130]
+[node name="@CollisionShape2D@97306" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1568553810]
 position = Vector2(168, 152)
 shape = SubResource("RectangleShape2D_g45p0")
 
-[node name="@CollisionShape2D@81210" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1486980561]
+[node name="@CollisionShape2D@97307" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=708618234]
 position = Vector2(184, 152)
 shape = SubResource("RectangleShape2D_hu0qp")
 
-[node name="@CollisionShape2D@81211" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1029905050]
+[node name="@CollisionShape2D@97308" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=1225563495]
 position = Vector2(200, 152)
 shape = SubResource("RectangleShape2D_kra17")
 
-[node name="@CollisionShape2D@81212" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=800045870]
+[node name="@CollisionShape2D@97309" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=488775065]
 position = Vector2(216, 152)
 shape = SubResource("RectangleShape2D_qq8q0")
 
-[node name="@CollisionShape2D@81213" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=129442666]
+[node name="@CollisionShape2D@97310" type="CollisionShape2D" parent="EncounterZones/WaterEncounterZone" unique_id=763544112]
 position = Vector2(232, 152)
 shape = SubResource("RectangleShape2D_i7w3k")

@@ -81,8 +81,8 @@ func face_toward(world_pos: Vector2) -> void:
 # ── Movement ───────────────────────────────────────────────────────────────────
 
 func _physics_process(delta: float) -> void:
-	# Y-sort: tile row + 1 keeps NPC above terrain (z=0), below decoration (z=100).
-	z_index = int(global_position.y / 16) + 1
+	# Y-sort: offset 100 keeps NPC positive even on northern neighbor maps (negative y).
+	z_index = int(global_position.y / 16) + 100
 
 	match movement:
 		"wander":      _do_wander(delta)

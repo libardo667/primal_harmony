@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://cax8m1b2u6v4j"]
+
+[ext_resource type="Script" path="res://maps/debug_hub.gd" id="1_script"]
+
+[node name="DebugHub" type="Node2D"]
+script = ExtResource("1_script")
+
+[node name="Camera" type="Camera2D" parent="."]
+position = Vector2(400, 300)
+
+[node name="TileMapTerrain" type="TileMap" parent="."]
+visible = false
+format = 2
+layer_0/name = "Terrain"
+
+[node name="Labels" type="Node2D" parent="."]
+
+[node name="Displays" type="Node2D" parent="."]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="UI"]
+custom_minimum_size = Vector2(0, 60)
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 60.0
+grow_horizontal = 2
+
+[node name="HBox" type="HBoxContainer" parent="UI/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_right = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Label" type="Label" parent="UI/Panel/HBox"]
+layout_mode = 2
+text = "DEBUG HUB: VISUAL DATABASE"
+
+[node name="SearchEdit" type="LineEdit" parent="UI/Panel/HBox"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_vertical = 4
+placeholder_text = "Search assets..."
+
+[node name="FilterOption" type="OptionButton" parent="UI/Panel/HBox"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_vertical = 4
+item_count = 4
+selected = 0
+popup/item_0/text = "All Categories"
+popup/item_0/id = 0
+popup/item_1/text = "Species"
+popup/item_1/id = 1
+popup/item_2/text = "Tilesets"
+popup/item_2/id = 2
+popup/item_3/text = "TOZ Warps"
+popup/item_3/id = 3
+
+[node name="VSeparator" type="VSeparator" parent="UI/Panel/HBox"]
+layout_mode = 2
+
+[node name="StatusLabel" type="Label" parent="UI/Panel/HBox"]
+layout_mode = 2
+text = "Items: 0"
