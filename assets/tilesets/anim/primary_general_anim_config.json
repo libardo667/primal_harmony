@@ -2,6 +2,7 @@
   "tileset": "primary_general",
   "fps": 3.75,
   "bottom_atlas": "res://assets/tilesets/anim/primary_general_anim_bottom.png",
+  "middle_atlas": "res://assets/tilesets/anim/primary_general_anim_middle.png",
   "top_atlas": "res://assets/tilesets/anim/primary_general_anim_top.png",
   "animated_metatiles": {
     "4": {

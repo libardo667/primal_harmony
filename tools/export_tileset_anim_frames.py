@@ -146,7 +146,7 @@ def snake_to_camel(s: str) -> str:
 
 def parse_tileset_anims_c(c_file: Path, pokeemerald_dir: Path):
     """
-    Parse tileset_anims.c.
+    Parse tileset_anims.c (or its cleaned version).
 
     Returns:
       frame_files  : { 'gTilesetAnims_Foo_FrameN': Path('...png') }
@@ -154,7 +154,13 @@ def parse_tileset_anims_c(c_file: Path, pokeemerald_dir: Path):
       queue_anims  : [ { 'array': str, 'dest_tiles': [int,...], 'tile_count': int } ]
                      dest_tiles are tileset-relative tile indices.
     """
-    text = c_file.read_text(encoding='utf-8', errors='replace')
+    # Prefer the cleaned version if it exists
+    cleaned_file = c_file.parent.parent.parent / "primal-harmony" / "tools" / "tileset_anims_cleaned.c"
+    if cleaned_file.exists():
+        print(f"  Using cleaned source: {cleaned_file}")
+        text = cleaned_file.read_text(encoding='utf-8', errors='replace')
+    else:
+        text = c_file.read_text(encoding='utf-8', errors='replace')
 
     # 1. Frame file definitions
     #    const u16 gTilesetAnims_Foo_FrameN[] = INCBIN_U16("data/.../N.4bpp");
@@ -179,39 +185,93 @@ def parse_tileset_anims_c(c_file: Path, pokeemerald_dir: Path):
         sequences[arr] = refs
 
     # 3. VDest arrays (broadcast to multiple tile slots, e.g. Mauville flowers)
-    #    u16 *const gTilesetAnims_Foo_VDests[] = { TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + N), ... };
     vdests = {}
+    # Handles both TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + N) and expanded (0x06000000 + ((512 + N) * 32))
     for m in re.finditer(
         r'(gTilesetAnims_\w+_VDests)\[\]\s*=\s*\{([^}]+)\}',
         text, re.DOTALL
     ):
-        tiles = [int(tm.group(1)) for tm in re.finditer(
-            r'TILE_OFFSET_4BPP\(NUM_TILES_IN_PRIMARY\s*\+\s*(\d+)\)',
-            m.group(2)
-        )]
-        vdests[m.group(1)] = tiles
+        name = m.group(1)
+        tiles = []
+        for line in m.group(2).split(','):
+            line = line.strip()
+            if not line: continue
+            
+            # Case 1: Original macro
+            ov = re.search(r'TILE_OFFSET_4BPP\(NUM_TILES_IN_PRIMARY\s*\+\s*(\d+)\)', line)
+            if ov:
+                tiles.append(int(ov.group(1)))
+                continue
+                
+            # Case 2: Expanded macro (0x06000000 + ((512 + N) * 32))
+            ev = re.search(r'0x06000000\s*\+\s*\(\((512\s*\+\s*\d+)\)\s*\*\s*32\)', line)
+            if ev:
+                # We want just the N part from (512 + N)
+                n_match = re.search(r'512\s*\+\s*(\d+)', ev.group(1))
+                if n_match:
+                    tiles.append(int(n_match.group(1)))
+                    continue
+            
+            # Case 3: Simple expanded (0x06000000 + (N * 32)) - for primaries
+            sv = re.search(r'0x06000000\s*\+\s*\(\(([^)]+)\)\s*\*\s*32\)', line)
+            if sv:
+                try:
+                    addr_offset = eval(sv.group(1))
+                    tiles.append(addr_offset)
+                except:
+                    pass
+                    
+        vdests[name] = tiles
 
     # 4. AppendTilesetAnimToBuffer calls
     queue_anims = []
 
+    def parse_dest(call_text):
+        # Expanded: (u16 *)(0x06000000 + ((508) * 32))
+        # Support newlines/whitespace with \s*
+        m = re.search(r'0x06000000\s*\+\s*\(\s*\(([^)]+)\)\s*\*\s*32\s*\)', call_text)
+        if m:
+            try: return eval(m.group(1).replace('\n', ' '))
+            except: pass
+            
+        # Original: (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(508))
+        m = re.search(r'TILE_OFFSET_4BPP\s*\(\s*(\d+)\s*\)', call_text)
+        if m: return int(m.group(1))
+        return None
+
+    def parse_count(call_text):
+        # Expanded: 4 * 32
+        m = re.search(r',\s*(\d+)\s*\*\s*32\s*\)', call_text)
+        if m: return int(m.group(1))
+        # Original: 4 * TILE_SIZE_4BPP
+        m = re.search(r',\s*(\d+)\s*\*\s*TILE_SIZE_4BPP\s*\)', call_text)
+        if m: return int(m.group(1))
+        return None
+
     # Pattern A: fixed numeric VRAM dest
-    for m in re.finditer(
-        r'AppendTilesetAnimToBuffer\s*\(\s*(gTilesetAnims_\w+)\s*\[.*?\]\s*,'
-        r'\s*\(u16 \*\)\s*\(BG_VRAM\s*\+\s*TILE_OFFSET_4BPP\s*\(\s*(\d+)\s*\)\)'
-        r'\s*,\s*(\d+)\s*\*\s*TILE_SIZE_4BPP\s*\)',
-        text
-    ):
-        queue_anims.append({
-            'array':      m.group(1),
-            'dest_tiles': [int(m.group(2))],
-            'tile_count': int(m.group(3)),
-        })
+    # AppendTilesetAnimToBuffer(gTilesetAnims_General_Flower[i], (u16 *)(0x06000000 + ((508) * 32)), 4 * 32);
+    for m in re.finditer(r'AppendTilesetAnimToBuffer\s*\(([^;]+);', text):
+        call = m.group(1)
+        if '[' not in call: continue # Likely a VDest version or something else
+        
+        arr_m = re.search(r'(gTilesetAnims_\w+)', call)
+        if not arr_m: continue
+        
+        dest = parse_dest(call)
+        count = parse_count(call + ")") # Add closing parens if missing from group
+        
+        if dest is not None and count is not None:
+            queue_anims.append({
+                'array':      arr_m.group(1),
+                'dest_tiles': [dest],
+                'tile_count': count,
+            })
 
     # Pattern B: VDest array (broadcast)
     for m in re.finditer(
         r'AppendTilesetAnimToBuffer\s*\(\s*(gTilesetAnims_\w+)\s*\[.*?\]\s*,'
         r'\s*(gTilesetAnims_\w+_VDests)\s*\[.*?\]\s*,'
-        r'\s*(\d+)\s*\*\s*TILE_SIZE_4BPP\s*\)',
+        r'\s*(\d+)\s*\*\s*32\s*\)',
         text
     ):
         tiles = vdests.get(m.group(2), [])
@@ -236,24 +296,35 @@ def build_anim_atlas_for_tileset(
     For a single tileset:
       - Determine which queue_anim entries apply.
       - Find affected metatiles.
-      - Render each metatile × each frame step.
+      - Render each metatile × each frame step into 3 Porytile-compatible layers.
       - Assemble and save the atlas PNGs.
       - Return the JSON config dict.
     """
     if is_primary:
         src_dir = pokeemerald_dir / "data" / "tilesets" / "primary" / ts_name.replace("primary_", "")
-        # For primary anims: filter to only this primary's own animation sequences.
-        prim_camel = snake_to_camel(ts_name.replace("primary_", ""))  # "General" or "Building"
-        applicable = [q for q in queue_anims
-                      if q['array'].startswith(f'gTilesetAnims_{prim_camel}_')]
+        prim_camel = snake_to_camel(ts_name.replace("primary_", ""))
+        applicable = [q for q in queue_anims if q['array'].startswith(f'gTilesetAnims_{prim_camel}_')]
     else:
         src_dir = pokeemerald_dir / "data" / "tilesets" / "secondary" / ts_name.replace("secondary_", "")
-        # For secondary: pick animations whose name matches the tileset (CamelCase).
-        # Skip _B variants (those are used by the GBA to stagger blooms; we use the main sequence).
-        ts_short = snake_to_camel(ts_name.replace("secondary_", ""))  # e.g. "Mauville", "MauvilleGym"
-        applicable = [q for q in queue_anims
-                      if ts_short in q['array'] and not q['array'].endswith('_B')]
+        ts_short = snake_to_camel(ts_name.replace("secondary_", ""))
+        applicable = [q for q in queue_anims if ts_short in q['array'] and not q['array'].endswith('_B')]
 
+    # Check for Porytiles-decompile output
+    layers_base = out_dir.parent / "layers" / ts_name
+    bottom_png = layers_base / "bottom.png"
+    middle_png = layers_base / "middle.png"
+    top_png    = layers_base / "top.png"
+
+    if not bottom_png.exists():
+        print(f"  [SKIP] {ts_name}: Porytile layers not found at {bottom_png}")
+        return None
+
+    # Load Porytile layers (8-column metatile sheets)
+    pory_bottom = Image.open(bottom_png).convert("RGBA")
+    pory_middle = Image.open(middle_png).convert("RGBA")
+    pory_top    = Image.open(top_png).convert("RGBA")
+
+    # Original GBA data for tile references
     tiles_png     = src_dir / "tiles.png"
     metatiles_bin = src_dir / "metatiles.bin"
     pal_dir       = src_dir / "palettes"
@@ -266,106 +337,92 @@ def build_anim_atlas_for_tileset(
     base_img = Image.open(tiles_png).convert("P")
     tiles_per_row = base_img.width // 8
 
-    # For secondary tilesets: load paired primary so render_metatile can correctly
-    # resolve primary tile cross-references (t_idx < 512) and secondary own tiles
-    # (t_idx >= 512 → local = t_idx − 512).
-    prim_img      = None
-    prim_palettes = None
-    prim_tpr      = None
+    # Secondary paired primary for tile resolution
+    prim_img = None; prim_palettes = None; prim_tpr = None
     if not is_primary:
-        prim_name = paired_primary
-        prim_dir  = pokeemerald_dir / "data" / "tilesets" / "primary" / prim_name
-        prim_png  = prim_dir / "tiles.png"
+        prim_dir = pokeemerald_dir / "data" / "tilesets" / "primary" / paired_primary
+        prim_png = prim_dir / "tiles.png"
         if prim_png.exists():
-            prim_img      = Image.open(prim_png).convert("P")
-            prim_tpr      = prim_img.width // 8
+            prim_img = Image.open(prim_png).convert("P")
+            prim_tpr = prim_img.width // 8
             prim_palettes = [parse_pal(prim_dir / "palettes" / f"{i:02d}.pal") for i in range(16)]
 
     with open(metatiles_bin, "rb") as f:
         raw = f.read()
-    num_metatiles = len(raw) // 16
 
-    # Resolve each queue_anim to a list of { frame_imgs: [...], dest_tiles: [...], tile_count: int }
-    # group_key → { frame_sequence_paths, dest_tiles, tile_count }
+    # Resolve sequences
     anim_groups = []
     for qa in applicable:
         arr = qa['array']
-        if arr not in sequences:
-            print(f"  [WARN] sequence not found for {arr}")
-            continue
-        seq_names = sequences[arr]
+        if arr not in sequences: continue
         frame_imgs = []
-        for fn in seq_names:
-            if fn not in frame_files:
-                print(f"  [WARN] frame file not found for {fn}")
-                frame_imgs.append(None)
+        for fn in sequences[arr]:
+            if fn not in frame_files: frame_imgs.append(None)
             else:
                 p = frame_files[fn]
-                if not p.exists():
-                    print(f"  [WARN] PNG missing: {p}")
-                    frame_imgs.append(None)
-                else:
-                    frame_imgs.append(Image.open(p).convert("P"))
+                frame_imgs.append(Image.open(p).convert("P") if p.exists() else None)
         anim_groups.append({
-            'array':      arr,
+            'array': arr,
             'frame_imgs': frame_imgs,
             'dest_tiles': qa['dest_tiles'],
             'tile_count': qa['tile_count'],
         })
 
     if not anim_groups:
-        print(f"  [SKIP] {ts_name}: no applicable animations found")
+        print(f"  [SKIP] {ts_name}: no animations")
         return None
 
-    # Find all animated metatile indices across all groups and dest_tiles.
-    # For a VDest broadcast, each dest_tile slot covers its own metatile range.
-    # We build: metatile_idx → list of (anim_group_idx, dest_tile_start)
-    metatile_to_anims = {}  # metatile_idx → [ {group, dest_tile_start}, ... ]
+    # metatile_idx -> [ {group_idx, dest_tile_start}, ... ]
+    metatile_to_anims = {}
     for gi, grp in enumerate(anim_groups):
         for dest in grp['dest_tiles']:
             affected = metatiles_referencing_range(raw, dest, grp['tile_count'])
             for m in affected:
-                metatile_to_anims.setdefault(m, []).append({
-                    'group_idx':       gi,
-                    'dest_tile_start': dest,
-                })
+                metatile_to_anims.setdefault(m, []).append({'group_idx': gi, 'dest_tile_start': dest})
 
     if not metatile_to_anims:
-        print(f"  [SKIP] {ts_name}: no metatiles reference animated tile ranges")
+        print(f"  [SKIP] {ts_name}: no animated metatiles found")
         return None
 
-    # For each metatile × each animation group it participates in:
-    # determine its frame sequence (which img to use for each frame step).
-    # A single metatile may reference tiles from multiple anim groups (e.g. a tile
-    # that has both water and sand_water_edge).  We handle this by patching ALL
-    # active groups for each frame step.
-
-    # First: determine max frames across all groups referenced by any metatile.
     max_frames = max(len(grp['frame_imgs']) for grp in anim_groups)
-
     sorted_metatiles = sorted(metatile_to_anims.keys())
     num_rows = len(sorted_metatiles)
     print(f"  {ts_name}: {num_rows} animated metatiles, {max_frames} max frames")
 
     atlas_w = max_frames * 16
     atlas_h = num_rows * 16
-    atlas_bottom = Image.new("RGBA", (atlas_w, atlas_h), (0, 0, 0, 0))
-    atlas_top    = Image.new("RGBA", (atlas_w, atlas_h), (0, 0, 0, 0))
+    atlas_b = Image.new("RGBA", (atlas_w, atlas_h), (0, 0, 0, 0))
+    atlas_m = Image.new("RGBA", (atlas_w, atlas_h), (0, 0, 0, 0))
+    atlas_t = Image.new("RGBA", (atlas_w, atlas_h), (0, 0, 0, 0))
 
-    # Track per-metatile: row in atlas, num_frames for that metatile's animation.
     metatile_config = {}
 
     for row_idx, m_idx in enumerate(sorted_metatiles):
         anims = metatile_to_anims[m_idx]
-
-        # Determine how many frames this metatile needs:
-        # max over all groups it participates in.
         m_frame_count = max(len(anim_groups[a['group_idx']]['frame_imgs']) for a in anims)
 
+        # 1. Capture "Pixel Layer Template" from frame 0 Porymap output
+        # Metatile 'idx' is at (idx % 8 * 16, idx // 8 * 16) in Porymap PNGs
+        px0, py0 = (m_idx % 8) * 16, (m_idx // 8) * 16
+        template_b = pory_bottom.crop((px0, py0, px0+16, py0+16))
+        template_m = pory_middle.crop((px0, py0, px0+16, py0+16))
+        template_t = pory_top.crop((px0, py0, px0+16, py0+16))
+        
+        # layer_map[x,y] = 0 (bottom), 1 (middle), 2 (top), or None
+        layer_map = {}
+        for y in range(16):
+            for x in range(16):
+                # Priority: Top > Middle > Bottom
+                # Porytiles often uses opaque magenta (255, 0, 255) as background.
+                def is_real_pixel(px):
+                    return px[3] > 0 and not (px[0] == 255 and px[1] == 0 and px[2] == 255)
+
+                if is_real_pixel(template_t.getpixel((x, y))): layer_map[(x,y)] = 2
+                elif is_real_pixel(template_m.getpixel((x, y))): layer_map[(x,y)] = 1
+                elif is_real_pixel(template_b.getpixel((x, y))): layer_map[(x,y)] = 0
+                else: layer_map[(x,y)] = None
+
         for frame_step in range(m_frame_count):
-            # Build patched images for this frame step.
-            # Primary-range destinations (< 512) patch into prim_patched;
-            # secondary-range destinations (≥ 512, local = dest − 512) patch into sec_patched.
             sec_patched  = base_img.copy()
             prim_patched = prim_img.copy() if prim_img is not None else None
 
@@ -376,52 +433,61 @@ def build_anim_atlas_for_tileset(
                 if imgs[fi] is not None:
                     dest = a['dest_tile_start']
                     if prim_img is not None and dest < 512:
-                        # Primary tile position → patch the primary image copy
-                        prim_patched = patch_src_img(
-                            prim_patched, prim_tpr, dest, imgs[fi]
-                        )
+                        prim_patched = patch_src_img(prim_patched, prim_tpr, dest, imgs[fi])
                     elif prim_img is not None:
-                        # Secondary tile position → local = dest − 512
-                        sec_patched = patch_src_img(
-                            sec_patched, tiles_per_row, dest - 512, imgs[fi]
-                        )
+                        sec_patched = patch_src_img(sec_patched, tiles_per_row, dest - 512, imgs[fi])
                     else:
-                        sec_patched = patch_src_img(
-                            sec_patched, tiles_per_row, dest, imgs[fi]
-                        )
+                        sec_patched = patch_src_img(sec_patched, tiles_per_row, dest, imgs[fi])
 
+            # Render ALL 8 GBA layers into a single 16x16 reference image for this frame
+            ref_rgba = Image.new("RGBA", (16, 16), (0, 0, 0, 0))
             b_tile, t_tile = render_metatile(
                 m_idx, raw, sec_patched, palettes, tiles_per_row,
                 primary_img=prim_patched, primary_palettes=prim_palettes, primary_tpr=prim_tpr,
             )
-            px = frame_step * 16
-            py = row_idx * 16
-            atlas_bottom.paste(b_tile, (px, py), b_tile)
-            atlas_top.paste(t_tile, (px, py), t_tile)
+            # Composite them (Top usually covers Bottom)
+            ref_rgba.paste(b_tile, (0, 0), b_tile)
+            ref_rgba.paste(t_tile, (0, 0), t_tile)
 
-        metatile_config[str(m_idx)] = {
-            "row":         row_idx,
-            "frame_count": m_frame_count,
-        }
+            # 2. Distribute ref_rgba pixels into 3 layers based on Pixel Layer Template
+            fb = Image.new("RGBA", (16, 16), (0, 0, 0, 0))
+            fm = Image.new("RGBA", (16, 16), (0, 0, 0, 0))
+            ft = Image.new("RGBA", (16, 16), (0, 0, 0, 0))
+            
+            ref_pix = ref_rgba.load()
+            fb_pix, fm_pix, ft_pix = fb.load(), fm.load(), ft.load()
+            
+            for y in range(16):
+                for x in range(16):
+                    l_idx = layer_map[(x,y)]
+                    if l_idx is None: continue
+                    rgba = ref_pix[x,y]
+                    if l_idx == 0: fb_pix[x,y] = rgba
+                    elif l_idx == 1: fm_pix[x,y] = rgba
+                    elif l_idx == 2: ft_pix[x,y] = rgba
 
-    # Save atlases
+            # Paste into atlas
+            ax, ay = frame_step * 16, row_idx * 16
+            atlas_b.paste(fb, (ax, ay), fb)
+            atlas_m.paste(fm, (ax, ay), fm)
+            atlas_t.paste(ft, (ax, ay), ft)
+
+        metatile_config[str(m_idx)] = {"row": row_idx, "frame_count": m_frame_count}
+
     out_dir.mkdir(parents=True, exist_ok=True)
-    bottom_path = out_dir / f"{ts_name}_anim_bottom.png"
-    top_path    = out_dir / f"{ts_name}_anim_top.png"
-    atlas_bottom.save(bottom_path, "PNG")
-    atlas_top.save(top_path,    "PNG")
-    print(f"  Saved {bottom_path.name}  ({atlas_w}×{atlas_h} px)")
+    atlas_b.save(out_dir / f"{ts_name}_anim_bottom.png", "PNG")
+    atlas_m.save(out_dir / f"{ts_name}_anim_middle.png", "PNG")
+    atlas_t.save(out_dir / f"{ts_name}_anim_top.png",    "PNG")
 
     config = {
-        "tileset":          ts_name,
-        "fps":              fps,
-        "bottom_atlas":     f"res://assets/tilesets/anim/{ts_name}_anim_bottom.png",
-        "top_atlas":        f"res://assets/tilesets/anim/{ts_name}_anim_top.png",
+        "tileset": ts_name,
+        "fps": fps,
+        "bottom_atlas": f"res://assets/tilesets/anim/{ts_name}_anim_bottom.png",
+        "middle_atlas": f"res://assets/tilesets/anim/{ts_name}_anim_middle.png",
+        "top_atlas":    f"res://assets/tilesets/anim/{ts_name}_anim_top.png",
         "animated_metatiles": metatile_config,
     }
-    config_path = out_dir / f"{ts_name}_anim_config.json"
-    config_path.write_text(json.dumps(config, indent=2))
-    print(f"  Saved {config_path.name}  ({len(metatile_config)} metatile entries)")
+    (out_dir / f"{ts_name}_anim_config.json").write_text(json.dumps(config, indent=2))
     return config
 
 

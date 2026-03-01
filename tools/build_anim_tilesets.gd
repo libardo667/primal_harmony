@@ -16,7 +16,7 @@ extends SceneTree
 
 func _init() -> void:
 	var anim_dir := "res://assets/tilesets/anim"
-	var out_dir  := "res://assets/tilesets"
+	var out_dir := "res://assets/tilesets"
 
 	var dir := DirAccess.open(anim_dir)
 	if dir == null:
@@ -48,11 +48,12 @@ func _process_config(config_path: String, out_dir: String) -> void:
 		push_error("Invalid JSON in: " + config_path)
 		return
 
-	var cfg: Dictionary      = parsed
-	var ts_name: String      = cfg.get("tileset", "")
-	var fps: float           = float(cfg.get("fps", 3.75))
-	var bottom_path: String  = cfg.get("bottom_atlas", "")
-	var top_path: String     = cfg.get("top_atlas", "")
+	var cfg: Dictionary = parsed
+	var ts_name: String = cfg.get("tileset", "")
+	var fps: float = float(cfg.get("fps", 3.75))
+	var bottom_path: String = cfg.get("bottom_atlas", "")
+	var middle_path: String = cfg.get("middle_atlas", "")
+	var top_path: String = cfg.get("top_atlas", "")
 	var metatile_map: Dictionary = cfg.get("animated_metatiles", {})
 
 	if ts_name == "" or bottom_path == "" or metatile_map.is_empty():
@@ -61,9 +62,16 @@ func _process_config(config_path: String, out_dir: String) -> void:
 
 	print("  Processing: " + ts_name + "  (" + str(metatile_map.size()) + " animated metatiles)")
 
-	for side in ["bottom", "top"]:
-		var atlas_path: String = bottom_path if side == "bottom" else top_path
-		var out_path: String   = out_dir + "/" + ts_name + "_anim_" + side + ".tres"
+	for side in ["bottom", "middle", "top"]:
+		var atlas_path: String = ""
+		match side:
+			"bottom": atlas_path = bottom_path
+			"middle": atlas_path = middle_path
+			"top": atlas_path = top_path
+		
+		if atlas_path == "": continue
+		
+		var out_path: String = out_dir + "/" + ts_name + "_anim_" + side + ".tres"
 		_build_source(atlas_path, fps, metatile_map, out_path)
 
 
@@ -73,25 +81,32 @@ func _build_source(
 		metatile_map: Dictionary,
 		out_path: String
 ) -> void:
-	var tex := load(atlas_path) as Texture2D
+	var tex: Texture2D = load(atlas_path) as Texture2D
+	
+	if tex == null and atlas_path.ends_with(".png"):
+		var global_path = ProjectSettings.globalize_path(atlas_path)
+		var img = Image.load_from_file(global_path)
+		if img:
+			tex = ImageTexture.create_from_image(img)
+	
 	if tex == null:
 		push_error("Cannot load atlas texture: " + atlas_path)
 		return
 
 	var tsas := TileSetAtlasSource.new()
-	tsas.texture             = tex
+	tsas.texture = tex
 	tsas.texture_region_size = Vector2i(16, 16)
 
 	for m_str in metatile_map.keys():
 		var entry: Dictionary = metatile_map[m_str]
-		var row: int          = int(entry.get("row", 0))
-		var frame_count: int  = int(entry.get("frame_count", 1))
-		var coords            := Vector2i(0, row)
+		var row: int = int(entry.get("row", 0))
+		var frame_count: int = int(entry.get("frame_count", 1))
+		var coords := Vector2i(0, row)
 
 		tsas.create_tile(coords)
 
 		if frame_count <= 1:
-			continue  # Static tile — no animation properties needed
+			continue # Static tile — no animation properties needed
 
 		# All frames are laid out horizontally: col 0..frame_count-1, same row.
 		tsas.set_tile_animation_columns(coords, frame_count)

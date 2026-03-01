@@ -71,8 +71,8 @@ const MB_ASHGRASS := 0x24 # Land — ash-covered grass (Route 113)
 # Ledge behaviors — tiles the player jumps over. coll_bits=1 in pokeemerald but the
 # GBA engine handles them before collision; in Godot we skip collision placement so
 # the player can step onto the tile and trigger the jump via Player._get_behavior_at_tile().
-const MB_JUMP_EAST  := 56 # 0x38
-const MB_JUMP_WEST  := 57 # 0x39
+const MB_JUMP_EAST := 56 # 0x38
+const MB_JUMP_WEST := 57 # 0x39
 const MB_JUMP_NORTH := 58 # 0x3A
 const MB_JUMP_SOUTH := 59 # 0x3B
 
@@ -85,10 +85,10 @@ func _run() -> void:
 	# Load zone assignment data (used when writing root metadata per map).
 	var zf := FileAccess.open(MAP_ZONE_IDS_PATH, FileAccess.READ)
 	if zf:
-		var parsed = JSON.parse_string(zf.get_as_text())
+		var zone_data = JSON.parse_string(zf.get_as_text())
 		zf.close()
-		if parsed is Dictionary:
-			_map_zone_ids = parsed
+		if zone_data is Dictionary:
+			_map_zone_ids = zone_data
 			print("batch_paint_maps: Loaded %d zone assignments." % _map_zone_ids.size())
 	else:
 		print("batch_paint_maps: WARNING — could not load ", MAP_ZONE_IDS_PATH)
@@ -101,12 +101,12 @@ func _run() -> void:
 	var json_text := f.get_as_text()
 	f.close()
 
-	var parsed = JSON.parse_string(json_text)
-	if not parsed or not parsed.has("layouts"):
+	var json_data = JSON.parse_string(json_text)
+	if not json_data or not json_data.has("layouts"):
 		print("ERROR: Failed to parse layouts.json")
 		return
 
-	var layouts: Array = parsed["layouts"]
+	var layouts: Array = json_data["layouts"]
 	print("batch_paint_maps: Processing ", layouts.size(), " layouts...")
 
 	# Ensure output directories exist
@@ -185,8 +185,10 @@ func _process_layout(layout: Dictionary, is_toz_variant: bool = false) -> bool:
 
 	# Verify asset PNGs exist
 	var prim_bot := TILESETS_DIR + prim_name + "_bottom.png"
+	var prim_mid := TILESETS_DIR + prim_name + "_middle.png"
 	var prim_top := TILESETS_DIR + prim_name + "_top.png"
 	var sec_bot := TILESETS_DIR + sec_name + "_bottom.png"
+	var sec_mid := TILESETS_DIR + sec_name + "_middle.png"
 	var sec_top := TILESETS_DIR + sec_name + "_top.png"
 
 	if not ResourceLoader.exists(prim_bot):
@@ -203,17 +205,13 @@ func _process_layout(layout: Dictionary, is_toz_variant: bool = false) -> bool:
 		file_name += "_TOZ"
 	var out_path := MAPS_BASE + category + "/" + file_name + ".tscn"
 
-	# Override: Force repaint everything to fix source-ID corruption
-	# if ResourceLoader.exists(out_path):
-	# 	return true
-
 	# Get (or build) a shared TileSet for this pair
 	var ts_key := prim_name + "|" + sec_name
 	var ts: TileSet
 	if _ts_cache.has(ts_key):
 		ts = _ts_cache[ts_key]
 	else:
-		ts = _build_tileset(prim_bot, prim_top, sec_bot, sec_top, prim_name, sec_name)
+		ts = _build_tileset(prim_bot, prim_mid, prim_top, sec_bot, sec_mid, sec_top, prim_name, sec_name)
 		_ts_cache[ts_key] = ts
 
 	# ── Build scene tree ────────────────────────────────────────────────────
@@ -225,9 +223,11 @@ func _process_layout(layout: Dictionary, is_toz_variant: bool = false) -> bool:
 	var terrain := TileMap.new()
 	terrain.name = "TileMapTerrain"
 	terrain.tile_set = ts
-	# Layer 1: top sub-tiles of COVERED metatiles (both layers behind player).
-	# Layer 0 is the default; add_layer(-1) appends a second layer.
-	terrain.add_layer(-1)
+	# Layer 0: bottom sub-tiles (Terrain background)
+	# Layer 1: middle sub-tiles (GBA layering support)
+	# Layer 2: top sub-tiles of COVERED metatiles (Rendered behind player)
+	terrain.add_layer(-1) # Adds Layer 1
+	terrain.add_layer(-1) # Adds Layer 2
 	scene_root.add_child(terrain)
 	terrain.owner = scene_root
 
@@ -242,8 +242,6 @@ func _process_layout(layout: Dictionary, is_toz_variant: bool = false) -> bool:
 	coll.name = "TileMapCollision"
 	coll.tile_set = ts
 	coll.visible = false
-	# Collision layer is controlled by TileSet.set_physics_layer_collision_layer(0, 1).
-	# TileMap in Godot 4 does not expose collision_layer/mask as direct properties.
 	scene_root.add_child(coll)
 	coll.owner = scene_root
 
@@ -269,16 +267,19 @@ func _process_layout(layout: Dictionary, is_toz_variant: bool = false) -> bool:
 			var coll_bits: int = (val & 0x0C00) >> 10
 
 			var src_bot: int
+			var src_mid: int
 			var src_top: int
 			var local_id: int
 
 			if metatile_id >= 512:
-				src_bot = 2 # secondary bottom
-				src_top = 3 # secondary top
+				src_bot = 3 # secondary bottom
+				src_mid = 4 # secondary middle
+				src_top = 5 # secondary top
 				local_id = metatile_id - 512
 			else:
 				src_bot = 0 # primary bottom
-				src_top = 1 # primary top
+				src_mid = 1 # primary middle
+				src_top = 2 # primary top
 				local_id = metatile_id
 
 			var tx: int = local_id % 8
@@ -286,14 +287,16 @@ func _process_layout(layout: Dictionary, is_toz_variant: bool = false) -> bool:
 			var atlas_pos: Vector2i = Vector2i(tx, ty)
 			var cell_pos: Vector2i = Vector2i(x, y)
 
+			# Paint the 3-layer stack
 			terrain.set_cell(0, cell_pos, src_bot, atlas_pos)
+			terrain.set_cell(1, cell_pos, src_mid, atlas_pos)
 
 			# Route top sub-tiles based on metatile layer type.
-			# COVERED (1): both layers render behind the player — put top on terrain layer 1.
+			# COVERED (1): both layers render behind the player — put top on terrain layer 2.
 			# NORMAL (0) or SPLIT (2): top layer renders above player — put on decoration.
 			var attrs: PackedByteArray = prim_attrs if metatile_id < 512 else sec_attrs
 			if _get_layer_type(attrs, local_id) == LAYER_COVERED:
-				terrain.set_cell(1, cell_pos, src_top, atlas_pos)
+				terrain.set_cell(2, cell_pos, src_top, atlas_pos)
 			else:
 				deco.set_cell(0, cell_pos, src_top, atlas_pos)
 
@@ -303,11 +306,8 @@ func _process_layout(layout: Dictionary, is_toz_variant: bool = false) -> bool:
 				or behavior == MB_JUMP_NORTH or behavior == MB_JUMP_SOUTH
 
 			if coll_bits != 0 and not warp_positions.has(cell_pos) and not is_ledge:
-				# Source 4 = solid collision tile with full 16×16 physics polygon.
-				# Warp and ledge tiles are skipped: pokeemerald marks them coll_bits=1
-				# but the GBA engine processes warps/ledges before collision checks.
-				# Player.gd reads ledge behavior via _get_behavior_at_tile() instead.
-				coll.set_cell(0, cell_pos, 4, Vector2i(0, 0))
+				# Source 6 = solid collision tile. 
+				coll.set_cell(0, cell_pos, 6, Vector2i(0, 0))
 
 			# Bucket by encounter type for EncounterZones baking.
 			var enc_type: String = _behavior_to_encounter_type(behavior)
@@ -352,8 +352,8 @@ func _process_layout(layout: Dictionary, is_toz_variant: bool = false) -> bool:
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-func _build_tileset(prim_bot: String, prim_top: String,
-					sec_bot: String, sec_top: String,
+func _build_tileset(prim_bot: String, prim_mid: String, prim_top: String,
+					sec_bot: String, sec_mid: String, sec_top: String,
 					prim_name: String, sec_name: String) -> TileSet:
 	var ts := TileSet.new()
 	ts.tile_size = Vector2i(16, 16)
@@ -367,13 +367,18 @@ func _build_tileset(prim_bot: String, prim_top: String,
 	ts.set_custom_data_layer_name(0, "behavior")
 	ts.set_custom_data_layer_type(0, TYPE_INT)
 
-	# ── Sources 0-3: visual layers (no physics polygons) ──────────────────
-	var paths := [prim_bot, prim_top, sec_bot, sec_top]
-	for source_id in range(4):
-		var tex: Texture2D = load(paths[source_id])
-		if not tex:
-			print("  WARN: could not load texture: ", paths[source_id])
+	# ── Sources 0-5: visual layers (no physics polygons) ──────────────────
+	var paths := [prim_bot, prim_mid, prim_top, sec_bot, sec_mid, sec_top]
+	for source_id in range(6):
+		var path: String = paths[source_id]
+		if not ResourceLoader.exists(path):
+			# print("  INFO: skipping missing layer texture: ", path)
 			continue
+			
+		var tex: Texture2D = load(path)
+		if not tex:
+			continue
+			
 		var src := TileSetAtlasSource.new()
 		src.texture = tex
 		src.texture_region_size = Vector2i(16, 16)
@@ -391,7 +396,7 @@ func _build_tileset(prim_bot: String, prim_top: String,
 		
 		# Load attributes for this source
 		var attrs: PackedByteArray
-		if source_id < 2:
+		if source_id < 3:
 			attrs = _load_attrs(POKEEMERALD + "/data/tilesets/primary/" + prim_name.replace("primary_", "") + "/metatile_attributes.bin")
 		else:
 			attrs = _load_attrs(POKEEMERALD + "/data/tilesets/secondary/" + sec_name.replace("secondary_", "") + "/metatile_attributes.bin")
@@ -400,28 +405,18 @@ func _build_tileset(prim_bot: String, prim_top: String,
 		for tx in range(tiles_x):
 			for ty in range(tiles_y):
 				var atlas_pos := Vector2i(tx, ty)
-				var local_id := ty * 8 + tx
-				var behavior := _get_behavior_byte(attrs, local_id)
+				var tile_idx := ty * 8 + tx
+				var behavior := _get_behavior_byte(attrs, tile_idx)
 				src.get_tile_data(atlas_pos, 0).set_custom_data("behavior", behavior)
 
-	# ── Source 4: invisible solid collision tile ───────────────────────────
+	# ── Source 6: invisible solid collision tile ───────────────────────────
 	# Painted on TileMapCollision wherever coll_bits != 0 in the layout.
-	# TileMapCollision is visible=false so the atlas visual is irrelevant;
-	# only the physics polygon matters at runtime.
-	#
-	# Reuse the primary bottom texture so the source has a serialisable
-	# res:// path — ImageTexture.create_from_image() produces an unsaved
-	# texture that PackedScene cannot write to disk.
-	#
-	# IMPORTANT: ts.add_source() must come BEFORE get_tile_data() so the
-	# TileData inherits the TileSet's physics layer count (otherwise
-	# add_collision_polygon() hits "p_layer_id out of bounds").
 	var col_tex: Texture2D = load(prim_bot)
 	var col_src := TileSetAtlasSource.new()
 	col_src.texture = col_tex
 	col_src.texture_region_size = Vector2i(16, 16)
 	col_src.create_tile(Vector2i(0, 0))
-	ts.add_source(col_src, 4) # ← register FIRST
+	ts.add_source(col_src, 6) # ← register as ID 6
 	var tile_data: TileData = col_src.get_tile_data(Vector2i(0, 0), 0)
 	tile_data.add_collision_polygon(0)
 	# Full 16×16 solid rectangle in tile-local coords (centre = 0,0).
