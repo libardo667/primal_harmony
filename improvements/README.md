@@ -30,6 +30,21 @@ The canonical developer command surface is `python scripts/dev.py ...` as
 defined in `AGENTS.md`. If a required command is unavailable, record a blocked
 result and provide substitute evidence without marking the item done.
 
+Current command groups:
+
+- `python scripts/dev.py quality-strict`
+- `python scripts/dev.py harness list`
+- `python scripts/dev.py harness scene-audit .`
+
+## Test Prereqs
+
+- `python scripts/dev.py quality-strict`: does not require the Godot editor to
+  be open.
+- `python scripts/dev.py harness scene-audit .`: does not require the Godot
+  editor to be open.
+- Godot editor is required for editor-only workflows (for example
+  `tools/build_anim_tilesets.gd` as an EditorScript).
+
 ## Artifact Boundary
 
 Runtime source-of-truth files stay in canonical project paths. Generated run

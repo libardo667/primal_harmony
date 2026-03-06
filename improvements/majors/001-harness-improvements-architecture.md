@@ -5,7 +5,7 @@
 - ID: 001-harness-improvements-architecture
 - Type: major
 - Owner: codex
-- Status: verify
+- Status: done
 - Risk: low
 - Created: 2026-03-06
 - Target Window: 2026-03-06
@@ -113,6 +113,9 @@ Rollback:
   FullName` -> pass (scaffold present).
 - 2026-03-06: Item moved to `verify` pending follow-up major
   `002-canonical-dev-command-surface` for strict gate availability.
+- 2026-03-06: Re-ran strict gate after `002`:
+  - `python scripts/dev.py quality-strict` -> pass
+- 2026-03-06: Item moved from `verify` to `done`.
 
 ## Follow-up Candidates
 

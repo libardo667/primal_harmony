@@ -20,9 +20,9 @@
 
 ## Major Queue
 
-1. `001-harness-improvements-architecture` (verify): establish full
+1. `001-harness-improvements-architecture` (done): establish full
    `improvements/` anchors, schemas, and item taxonomy layout.
-2. `002-canonical-dev-command-surface` (backlog): implement `scripts/dev.py`
+2. `002-canonical-dev-command-surface` (done): implement `scripts/dev.py`
    with stable quality and harness subcommands.
 3. `003-quality-gate-baseline-wiring` (backlog): map project checks to harness
    gates and enforce baseline evidence capture.
@@ -38,9 +38,9 @@
 
 ## Recommended Execution Order
 
-1. Complete `001-harness-improvements-architecture`.
-2. Implement `002-canonical-dev-command-surface`.
-3. Execute one minor and one major through full strict-gate evidence flow.
+1. Execute `003-quality-gate-baseline-wiring`.
+2. Execute `m001-improvements-index-polish`.
+3. Execute `m002-work-item-linting`.
 
 ## Notes
 
