@@ -1,0 +1,149 @@
+{
+  "tileset": "secondary_lavaridge",
+  "fps": 3.75,
+  "bottom_atlas": "res://assets/tilesets/anim/secondary_lavaridge_anim_bottom.png",
+  "middle_atlas": "res://assets/tilesets/anim/secondary_lavaridge_anim_middle.png",
+  "top_atlas": "res://assets/tilesets/anim/secondary_lavaridge_anim_top.png",
+  "animated_metatiles": {
+    "19": {
+      "row": 0,
+      "frame_count": 4
+    },
+    "20": {
+      "row": 1,
+      "frame_count": 4
+    },
+    "21": {
+      "row": 2,
+      "frame_count": 4
+    },
+    "27": {
+      "row": 3,
+      "frame_count": 4
+    },
+    "28": {
+      "row": 4,
+      "frame_count": 4
+    },
+    "30": {
+      "row": 5,
+      "frame_count": 4
+    },
+    "31": {
+      "row": 6,
+      "frame_count": 4
+    },
+    "137": {
+      "row": 7,
+      "frame_count": 4
+    },
+    "185": {
+      "row": 8,
+      "frame_count": 4
+    },
+    "186": {
+      "row": 9,
+      "frame_count": 4
+    },
+    "187": {
+      "row": 10,
+      "frame_count": 4
+    },
+    "188": {
+      "row": 11,
+      "frame_count": 4
+    },
+    "272": {
+      "row": 12,
+      "frame_count": 4
+    },
+    "273": {
+      "row": 13,
+      "frame_count": 4
+    },
+    "274": {
+      "row": 14,
+      "frame_count": 4
+    },
+    "275": {
+      "row": 15,
+      "frame_count": 4
+    },
+    "291": {
+      "row": 16,
+      "frame_count": 4
+    },
+    "301": {
+      "row": 17,
+      "frame_count": 4
+    },
+    "305": {
+      "row": 18,
+      "frame_count": 4
+    },
+    "307": {
+      "row": 19,
+      "frame_count": 4
+    },
+    "333": {
+      "row": 20,
+      "frame_count": 4
+    },
+    "348": {
+      "row": 21,
+      "frame_count": 4
+    },
+    "378": {
+      "row": 22,
+      "frame_count": 4
+    },
+    "379": {
+      "row": 23,
+      "frame_count": 4
+    },
+    "392": {
+      "row": 24,
+      "frame_count": 4
+    },
+    "393": {
+      "row": 25,
+      "frame_count": 4
+    },
+    "394": {
+      "row": 26,
+      "frame_count": 4
+    },
+    "395": {
+      "row": 27,
+      "frame_count": 4
+    },
+    "398": {
+      "row": 28,
+      "frame_count": 4
+    },
+    "399": {
+      "row": 29,
+      "frame_count": 4
+    },
+    "400": {
+      "row": 30,
+      "frame_count": 4
+    },
+    "401": {
+      "row": 31,
+      "frame_count": 4
+    },
+    "406": {
+      "row": 32,
+      "frame_count": 4
+    },
+    "407": {
+      "row": 33,
+      "frame_count": 4
+    },
+    "419": {
+      "row": 34,
+      "frame_count": 4
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "tileset": "secondary_meteor_falls",
+  "fps": 3.75,
+  "bottom_atlas": "res://assets/tilesets/anim/secondary_meteor_falls_anim_bottom.png",
+  "middle_atlas": "res://assets/tilesets/anim/secondary_meteor_falls_anim_middle.png",
+  "top_atlas": "res://assets/tilesets/anim/secondary_meteor_falls_anim_top.png",
+  "animated_metatiles": {
+    "27": {
+      "row": 0,
+      "frame_count": 8
+    },
+    "29": {
+      "row": 1,
+      "frame_count": 8
+    },
+    "35": {
+      "row": 2,
+      "frame_count": 8
+    },
+    "37": {
+      "row": 3,
+      "frame_count": 8
+    },
+    "43": {
+      "row": 4,
+      "frame_count": 8
+    },
+    "44": {
+      "row": 5,
+      "frame_count": 8
+    },
+    "45": {
+      "row": 6,
+      "frame_count": 8
+    },
+    "56": {
+      "row": 7,
+      "frame_count": 8
+    },
+    "57": {
+      "row": 8,
+      "frame_count": 8
+    },
+    "97": {
+      "row": 9,
+      "frame_count": 8
+    },
+    "105": {
+      "row": 10,
+      "frame_count": 8
+    },
+    "112": {
+      "row": 11,
+      "frame_count": 8
+    },
+    "114": {
+      "row": 12,
+      "frame_count": 8
+    },
+    "120": {
+      "row": 13,
+      "frame_count": 8
+    },
+    "121": {
+      "row": 14,
+      "frame_count": 8
+    },
+    "123": {
+      "row": 15,
+      "frame_count": 8
+    },
+    "124": {
+      "row": 16,
+      "frame_count": 8
+    },
+    "128": {
+      "row": 17,
+      "frame_count": 8
+    },
+    "129": {
+      "row": 18,
+      "frame_count": 8
+    },
+    "144": {
+      "row": 19,
+      "frame_count": 8
+    }
+  }
+}

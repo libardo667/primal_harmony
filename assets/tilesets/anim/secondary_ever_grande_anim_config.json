@@ -1,0 +1,149 @@
+{
+  "tileset": "secondary_ever_grande",
+  "fps": 3.75,
+  "bottom_atlas": "res://assets/tilesets/anim/secondary_ever_grande_anim_bottom.png",
+  "middle_atlas": "res://assets/tilesets/anim/secondary_ever_grande_anim_middle.png",
+  "top_atlas": "res://assets/tilesets/anim/secondary_ever_grande_anim_top.png",
+  "animated_metatiles": {
+    "116": {
+      "row": 0,
+      "frame_count": 4
+    },
+    "117": {
+      "row": 1,
+      "frame_count": 4
+    },
+    "118": {
+      "row": 2,
+      "frame_count": 4
+    },
+    "136": {
+      "row": 3,
+      "frame_count": 8
+    },
+    "137": {
+      "row": 4,
+      "frame_count": 8
+    },
+    "138": {
+      "row": 5,
+      "frame_count": 8
+    },
+    "139": {
+      "row": 6,
+      "frame_count": 8
+    },
+    "140": {
+      "row": 7,
+      "frame_count": 8
+    },
+    "141": {
+      "row": 8,
+      "frame_count": 8
+    },
+    "142": {
+      "row": 9,
+      "frame_count": 8
+    },
+    "143": {
+      "row": 10,
+      "frame_count": 8
+    },
+    "144": {
+      "row": 11,
+      "frame_count": 8
+    },
+    "145": {
+      "row": 12,
+      "frame_count": 8
+    },
+    "146": {
+      "row": 13,
+      "frame_count": 8
+    },
+    "147": {
+      "row": 14,
+      "frame_count": 8
+    },
+    "148": {
+      "row": 15,
+      "frame_count": 8
+    },
+    "149": {
+      "row": 16,
+      "frame_count": 8
+    },
+    "150": {
+      "row": 17,
+      "frame_count": 8
+    },
+    "151": {
+      "row": 18,
+      "frame_count": 8
+    },
+    "152": {
+      "row": 19,
+      "frame_count": 8
+    },
+    "153": {
+      "row": 20,
+      "frame_count": 8
+    },
+    "154": {
+      "row": 21,
+      "frame_count": 8
+    },
+    "155": {
+      "row": 22,
+      "frame_count": 8
+    },
+    "156": {
+      "row": 23,
+      "frame_count": 8
+    },
+    "157": {
+      "row": 24,
+      "frame_count": 8
+    },
+    "158": {
+      "row": 25,
+      "frame_count": 8
+    },
+    "159": {
+      "row": 26,
+      "frame_count": 8
+    },
+    "160": {
+      "row": 27,
+      "frame_count": 8
+    },
+    "161": {
+      "row": 28,
+      "frame_count": 8
+    },
+    "162": {
+      "row": 29,
+      "frame_count": 8
+    },
+    "163": {
+      "row": 30,
+      "frame_count": 8
+    },
+    "164": {
+      "row": 31,
+      "frame_count": 8
+    },
+    "165": {
+      "row": 32,
+      "frame_count": 8
+    },
+    "166": {
+      "row": 33,
+      "frame_count": 8
+    },
+    "167": {
+      "row": 34,
+      "frame_count": 8
+    }
+  }
+}

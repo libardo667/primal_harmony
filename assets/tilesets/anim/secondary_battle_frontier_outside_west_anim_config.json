@@ -1,0 +1,133 @@
+{
+  "tileset": "secondary_battle_frontier_outside_west",
+  "fps": 3.75,
+  "bottom_atlas": "res://assets/tilesets/anim/secondary_battle_frontier_outside_west_anim_bottom.png",
+  "middle_atlas": "res://assets/tilesets/anim/secondary_battle_frontier_outside_west_anim_middle.png",
+  "top_atlas": "res://assets/tilesets/anim/secondary_battle_frontier_outside_west_anim_top.png",
+  "animated_metatiles": {
+    "35": {
+      "row": 0,
+      "frame_count": 8
+    },
+    "36": {
+      "row": 1,
+      "frame_count": 8
+    },
+    "37": {
+      "row": 2,
+      "frame_count": 8
+    },
+    "40": {
+      "row": 3,
+      "frame_count": 8
+    },
+    "44": {
+      "row": 4,
+      "frame_count": 8
+    },
+    "45": {
+      "row": 5,
+      "frame_count": 8
+    },
+    "46": {
+      "row": 6,
+      "frame_count": 8
+    },
+    "48": {
+      "row": 7,
+      "frame_count": 8
+    },
+    "49": {
+      "row": 8,
+      "frame_count": 8
+    },
+    "51": {
+      "row": 9,
+      "frame_count": 8
+    },
+    "54": {
+      "row": 10,
+      "frame_count": 8
+    },
+    "55": {
+      "row": 11,
+      "frame_count": 8
+    },
+    "58": {
+      "row": 12,
+      "frame_count": 8
+    },
+    "63": {
+      "row": 13,
+      "frame_count": 8
+    },
+    "220": {
+      "row": 14,
+      "frame_count": 8
+    },
+    "231": {
+      "row": 15,
+      "frame_count": 8
+    },
+    "275": {
+      "row": 16,
+      "frame_count": 8
+    },
+    "279": {
+      "row": 17,
+      "frame_count": 8
+    },
+    "281": {
+      "row": 18,
+      "frame_count": 8
+    },
+    "282": {
+      "row": 19,
+      "frame_count": 8
+    },
+    "370": {
+      "row": 20,
+      "frame_count": 8
+    },
+    "372": {
+      "row": 21,
+      "frame_count": 8
+    },
+    "414": {
+      "row": 22,
+      "frame_count": 4
+    },
+    "415": {
+      "row": 23,
+      "frame_count": 4
+    },
+    "423": {
+      "row": 24,
+      "frame_count": 8
+    },
+    "454": {
+      "row": 25,
+      "frame_count": 8
+    },
+    "455": {
+      "row": 26,
+      "frame_count": 8
+    },
+    "462": {
+      "row": 27,
+      "frame_count": 8
+    },
+    "463": {
+      "row": 28,
+      "frame_count": 8
+    },
+    "502": {
+      "row": 29,
+      "frame_count": 4
+    },
+    "503": {
+      "row": 30,
+      "frame_count": 4
+    }
+  }
+}

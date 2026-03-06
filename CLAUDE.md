@@ -118,9 +118,9 @@ DataManager.get_move(move_id: String) -> MoveData
 
 | Layer | Value | Notes |
 |---|---|---|
-| `TileMapTerrain` | z=0 | Always below characters |
-| Player + NPCs | `int(global_position.y / 16) + 1` | Y-sorted each physics frame |
-| `TileMapDecoration` | z=100 | Set at runtime by `MainGame._load_map()` (z=1 in .tscn) |
+| `TileMapTerrain` | z=0 | Always below characters (COVERED tops on layer 2) |
+| Player + NPCs | `int(global_position.y / 16) + 100` | Y-sorted each physics frame (~100-200) |
+| `TileMapDecoration` | z=500 | Set at runtime by `MainGame._load_map()` — NORMAL/SPLIT tops (roofs, canopy) always above player |
 | Fog overlay `CanvasLayer` | layer=10 | |
 | `DialogueManager` `CanvasLayer` | layer=100 | |
 | `TriageChoiceMenu` `CanvasLayer` | layer=200 | |
@@ -129,7 +129,7 @@ DataManager.get_move(move_id: String) -> MoveData
 
 Each of 440 map scenes (in `maps/hoenn/`) has exactly:
 - `TileMapTerrain` — base layer (z=0)
-- `TileMapDecoration` — decorative layer (z set to 100 at runtime, not in .tscn)
+- `TileMapDecoration` — NORMAL/SPLIT top tiles (z set to 500 at runtime — always above player)
 - `TileMapCollision` — hidden physics layer
 - Root Node2D metadata: `zone_id`, `tile_size`, `map_dimensions_px`
 

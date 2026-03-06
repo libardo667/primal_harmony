@@ -1,0 +1,57 @@
+{
+  "tileset": "secondary_elite_four",
+  "fps": 7.5,
+  "bottom_atlas": "res://assets/tilesets/anim/secondary_elite_four_anim_bottom.png",
+  "middle_atlas": "res://assets/tilesets/anim/secondary_elite_four_anim_middle.png",
+  "top_atlas": "res://assets/tilesets/anim/secondary_elite_four_anim_top.png",
+  "animated_metatiles": {
+    "4": {
+      "row": 0,
+      "frame_count": 4
+    },
+    "5": {
+      "row": 1,
+      "frame_count": 4
+    },
+    "12": {
+      "row": 2,
+      "frame_count": 4
+    },
+    "13": {
+      "row": 3,
+      "frame_count": 4
+    },
+    "213": {
+      "row": 4,
+      "frame_count": 4
+    },
+    "214": {
+      "row": 5,
+      "frame_count": 4
+    },
+    "221": {
+      "row": 6,
+      "frame_count": 4
+    },
+    "222": {
+      "row": 7,
+      "frame_count": 4
+    },
+    "328": {
+      "row": 8,
+      "frame_count": 4
+    },
+    "329": {
+      "row": 9,
+      "frame_count": 4
+    },
+    "330": {
+      "row": 10,
+      "frame_count": 2
+    },
+    "331": {
+      "row": 11,
+      "frame_count": 2
+    }
+  }
+}

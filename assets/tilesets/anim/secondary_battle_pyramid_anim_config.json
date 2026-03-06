@@ -1,0 +1,41 @@
+{
+  "tileset": "secondary_battle_pyramid",
+  "fps": 7.5,
+  "bottom_atlas": "res://assets/tilesets/anim/secondary_battle_pyramid_anim_bottom.png",
+  "middle_atlas": "res://assets/tilesets/anim/secondary_battle_pyramid_anim_middle.png",
+  "top_atlas": "res://assets/tilesets/anim/secondary_battle_pyramid_anim_top.png",
+  "animated_metatiles": {
+    "7": {
+      "row": 0,
+      "frame_count": 3
+    },
+    "14": {
+      "row": 1,
+      "frame_count": 3
+    },
+    "15": {
+      "row": 2,
+      "frame_count": 3
+    },
+    "18": {
+      "row": 3,
+      "frame_count": 3
+    },
+    "22": {
+      "row": 4,
+      "frame_count": 3
+    },
+    "23": {
+      "row": 5,
+      "frame_count": 3
+    },
+    "40": {
+      "row": 6,
+      "frame_count": 3
+    },
+    "43": {
+      "row": 7,
+      "frame_count": 3
+    }
+  }
+}

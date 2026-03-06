@@ -1,0 +1,57 @@
+{
+  "tileset": "secondary_mauville_gym",
+  "fps": 7.5,
+  "bottom_atlas": "res://assets/tilesets/anim/secondary_mauville_gym_anim_bottom.png",
+  "middle_atlas": "res://assets/tilesets/anim/secondary_mauville_gym_anim_middle.png",
+  "top_atlas": "res://assets/tilesets/anim/secondary_mauville_gym_anim_top.png",
+  "animated_metatiles": {
+    "32": {
+      "row": 0,
+      "frame_count": 2
+    },
+    "33": {
+      "row": 1,
+      "frame_count": 2
+    },
+    "34": {
+      "row": 2,
+      "frame_count": 2
+    },
+    "35": {
+      "row": 3,
+      "frame_count": 2
+    },
+    "40": {
+      "row": 4,
+      "frame_count": 2
+    },
+    "41": {
+      "row": 5,
+      "frame_count": 2
+    },
+    "42": {
+      "row": 6,
+      "frame_count": 2
+    },
+    "43": {
+      "row": 7,
+      "frame_count": 2
+    },
+    "64": {
+      "row": 8,
+      "frame_count": 2
+    },
+    "65": {
+      "row": 9,
+      "frame_count": 2
+    },
+    "72": {
+      "row": 10,
+      "frame_count": 2
+    },
+    "73": {
+      "row": 11,
+      "frame_count": 2
+    }
+  }
+}

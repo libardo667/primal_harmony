@@ -1,0 +1,54 @@
+[gd_resource type="TileSetAtlasSource" format=3]
+
+[ext_resource type="Texture2D" path="res://assets/tilesets/anim/secondary_battle_pyramid_anim_middle.png" id="1_6krw4"]
+
+[resource]
+texture = ExtResource("1_6krw4")
+0:0/animation_columns = 3
+0:0/animation_speed = 7.5
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/0 = 0
+0:1/animation_columns = 3
+0:1/animation_speed = 7.5
+0:1/animation_frame_0/duration = 1.0
+0:1/animation_frame_1/duration = 1.0
+0:1/animation_frame_2/duration = 1.0
+0:1/0 = 0
+0:2/animation_columns = 3
+0:2/animation_speed = 7.5
+0:2/animation_frame_0/duration = 1.0
+0:2/animation_frame_1/duration = 1.0
+0:2/animation_frame_2/duration = 1.0
+0:2/0 = 0
+0:3/animation_columns = 3
+0:3/animation_speed = 7.5
+0:3/animation_frame_0/duration = 1.0
+0:3/animation_frame_1/duration = 1.0
+0:3/animation_frame_2/duration = 1.0
+0:3/0 = 0
+0:4/animation_columns = 3
+0:4/animation_speed = 7.5
+0:4/animation_frame_0/duration = 1.0
+0:4/animation_frame_1/duration = 1.0
+0:4/animation_frame_2/duration = 1.0
+0:4/0 = 0
+0:5/animation_columns = 3
+0:5/animation_speed = 7.5
+0:5/animation_frame_0/duration = 1.0
+0:5/animation_frame_1/duration = 1.0
+0:5/animation_frame_2/duration = 1.0
+0:5/0 = 0
+0:6/animation_columns = 3
+0:6/animation_speed = 7.5
+0:6/animation_frame_0/duration = 1.0
+0:6/animation_frame_1/duration = 1.0
+0:6/animation_frame_2/duration = 1.0
+0:6/0 = 0
+0:7/animation_columns = 3
+0:7/animation_speed = 7.5
+0:7/animation_frame_0/duration = 1.0
+0:7/animation_frame_1/duration = 1.0
+0:7/animation_frame_2/duration = 1.0
+0:7/0 = 0

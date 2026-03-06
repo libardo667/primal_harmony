@@ -38,18 +38,28 @@ def strip_magenta(img_path):
     except Exception as e:
         print(f"  Error stripping magenta from {img_path.name}: {e}")
 
-def process_tileset(ts_name, is_primary, primary_name="general"):
+def process_tileset(ts_name, is_primary, primary_name="general", variant_of=None):
+    """Decompile + copy layers for a single tileset.
+
+    Args:
+        variant_of: Parent secondary name for secret-base-style variants.
+    """
     category = "primary" if is_primary else "secondary"
-    full_name = f"{category}_{ts_name}"
-    
+    if variant_of:
+        full_name = f"{category}_{variant_of}_{ts_name}"
+    else:
+        full_name = f"{category}_{ts_name}"
+
     print(f"\n=== Processing {full_name} ===")
-    
+
     # 1. Decompile layers using Porytiles (WSL)
     decompile_args = ["python", str(TOOLS_DIR / "reconstruct_layers.py"), "--tileset", ts_name]
     if not is_primary:
         decompile_args += ["--secondary", "--primary", primary_name]
+    if variant_of:
+        decompile_args += ["--variant-of", variant_of]
     run_command(decompile_args)
-    
+
     # 2. Copy static layers to assets/tilesets/
     src_layers = LAYERS_DIR / full_name
     for layer in ["bottom", "middle", "top"]:
@@ -59,14 +69,6 @@ def process_tileset(ts_name, is_primary, primary_name="general"):
             shutil.copy2(src_png, dest_png)
             strip_magenta(dest_png)
             print(f"  Processed static layer: {dest_png.name}")
-    
-    # 3. Export animation frames (3-layer)
-    # This script processes all tilesets by default, but we'll just run it.
-    # It will skip those without Porytile layers (which we just created)
-    run_command(["python", str(TOOLS_DIR / "export_tileset_anim_frames.py")])
-    
-    # 4. Build Godot .tres resources for animations
-    run_command([str(GODOT_EXE), "--headless", "--script", "res://tools/build_anim_tilesets.gd"])
 
 def main():
     parser = argparse.ArgumentParser(description="Master script for tileset layer reconstruction.")
@@ -74,6 +76,7 @@ def main():
     parser.add_argument("--tileset", type=str, help="Process a specific tileset")
     parser.add_argument("--secondary", action="store_true", help="Flag if --tileset is a secondary")
     parser.add_argument("--primary", type=str, default="general", help="Primary name for secondary")
+    parser.add_argument("--variant-of", type=str, default=None, help="Parent secondary for variant decompilation")
 
     args = parser.parse_args()
 
@@ -81,49 +84,32 @@ def main():
     ASSETS_DIR.mkdir(parents=True, exist_ok=True)
 
     if args.all:
-        import json
-        poke_dir = ROOT_DIR.parent.parent / "pokeemerald"
-        layouts_json = poke_dir / "data" / "layouts" / "layouts.json"
-        with open(layouts_json, "r") as f:
-            data = json.load(f)
-        
-        # Collect unique tilesets
-        # primary -> set of secondaries
-        tileset_map = {}
-        
-        for layout in data["layouts"]:
-            prim_g = layout["primary_tileset"]
-            sec_g = layout["secondary_tileset"]
-            
-            # gTileset_General -> general
-            def clean_name(g):
-                return g.replace("gTileset_", "")[:1].lower() + g.replace("gTileset_", "")[1:]
-            
-            # camel_to_snake
-            def to_snake(s):
-                res = ""
-                for i, c in enumerate(s):
-                    if i > 0 and c.isupper(): res += "_"
-                    res += c.lower()
-                return res
+        # Use reconstruct_layers.py --all which handles everything including
+        # secret base variants and proper primary pairing.
+        run_command(["python", str(TOOLS_DIR / "reconstruct_layers.py"), "--all"])
 
-            prim = to_snake(clean_name(prim_g))
-            sec = to_snake(clean_name(sec_g))
-            
-            if prim not in tileset_map:
-                tileset_map[prim] = set()
-            tileset_map[prim].add(sec)
-        
-        # Process primaries first
-        for prim in sorted(tileset_map.keys()):
-            process_tileset(prim, True)
-            # Then their specific secondaries
-            for sec in sorted(tileset_map[prim]):
-                if sec != "0": # Skip "0" secondary (no tiles)
-                    process_tileset(sec, False, prim)
-                    
+        # Copy all layer PNGs from layers/ to assets/tilesets/.
+        for ts_dir in sorted(LAYERS_DIR.iterdir()):
+            if not ts_dir.is_dir():
+                continue
+            full_name = ts_dir.name
+            for layer in ["bottom", "middle", "top"]:
+                src_png = ts_dir / f"{layer}.png"
+                if src_png.exists():
+                    dest_png = ASSETS_DIR / f"{full_name}_{layer}.png"
+                    shutil.copy2(src_png, dest_png)
+                    strip_magenta(dest_png)
+                    print(f"  Processed: {dest_png.name}")
+
+        # Run animation export + Godot .tres build once at the end.
+        run_command(["python", str(TOOLS_DIR / "export_tileset_anim_frames.py")])
+        run_command([str(GODOT_EXE), "--headless", "--script", "res://tools/build_anim_tilesets.gd"])
+
     elif args.tileset:
-        process_tileset(args.tileset, not args.secondary, args.primary)
+        process_tileset(args.tileset, not args.secondary, args.primary, variant_of=args.variant_of)
+        # Run animation export + Godot .tres build for single-tileset mode.
+        run_command(["python", str(TOOLS_DIR / "export_tileset_anim_frames.py")])
+        run_command([str(GODOT_EXE), "--headless", "--script", "res://tools/build_anim_tilesets.gd"])
     else:
         print("Please specify --all or --tileset <name>")
 

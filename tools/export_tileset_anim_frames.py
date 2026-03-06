@@ -154,8 +154,8 @@ def parse_tileset_anims_c(c_file: Path, pokeemerald_dir: Path):
       queue_anims  : [ { 'array': str, 'dest_tiles': [int,...], 'tile_count': int } ]
                      dest_tiles are tileset-relative tile indices.
     """
-    # Prefer the cleaned version if it exists
-    cleaned_file = c_file.parent.parent.parent / "primal-harmony" / "tools" / "tileset_anims_cleaned.c"
+    # Prefer the cleaned version (gcc -E preprocessed) if it exists
+    cleaned_file = Path(__file__).parent / "tileset_anims_cleaned.c"
     if cleaned_file.exists():
         print(f"  Using cleaned source: {cleaned_file}")
         text = cleaned_file.read_text(encoding='utf-8', errors='replace')
@@ -163,15 +163,24 @@ def parse_tileset_anims_c(c_file: Path, pokeemerald_dir: Path):
         text = c_file.read_text(encoding='utf-8', errors='replace')
 
     # 1. Frame file definitions
-    #    const u16 gTilesetAnims_Foo_FrameN[] = INCBIN_U16("data/.../N.4bpp");
+    #    Single:  const u16 gTilesetAnims_Foo_FrameN[] = INCBIN_U16("data/.../N.4bpp");
+    #    Dual:    const u16 ... = INCBIN_U16("data/.../N_kyogre.4bpp", "data/.../N_groudon.4bpp");
+    #    For dual, we store a tuple of two Paths; patch_src_img_multi handles them.
     frame_files = {}
     for m in re.finditer(
-        r'(gTilesetAnims_\w+)\[\]\s*=\s*INCBIN_U16\("([^"]+\.4bpp)"\)',
+        r'(gTilesetAnims_\w+)\[\]\s*=\s*INCBIN_U16\(([^)]+)\)',
         text
     ):
         name = m.group(1)
-        png = pokeemerald_dir / m.group(2).replace('.4bpp', '.png')
-        frame_files[name] = png
+        args_str = m.group(2)
+        paths = re.findall(r'"([^"]+\.4bpp)"', args_str)
+        if len(paths) == 1:
+            frame_files[name] = pokeemerald_dir / paths[0].replace('.4bpp', '.png')
+        elif len(paths) >= 2:
+            # Dual INCBIN — store tuple of Paths (concatenated vertically at load time)
+            frame_files[name] = tuple(
+                pokeemerald_dir / p.replace('.4bpp', '.png') for p in paths
+            )
 
     # 2. Sequence arrays
     #    const u16 *const gTilesetAnims_Foo[] = { FrameA, FrameB, ... };
@@ -185,92 +194,57 @@ def parse_tileset_anims_c(c_file: Path, pokeemerald_dir: Path):
         sequences[arr] = refs
 
     # 3. VDest arrays (broadcast to multiple tile slots, e.g. Mauville flowers)
+    # After gcc -E preprocessing, these are flat: (u16 *)(0x06000000 + 19456)
+    # where 19456 = (512 + N) * 32, so tile_index = 19456 / 32 = 608 (global).
     vdests = {}
-    # Handles both TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + N) and expanded (0x06000000 + ((512 + N) * 32))
     for m in re.finditer(
         r'(gTilesetAnims_\w+_VDests)\[\]\s*=\s*\{([^}]+)\}',
         text, re.DOTALL
     ):
         name = m.group(1)
         tiles = []
-        for line in m.group(2).split(','):
-            line = line.strip()
-            if not line: continue
-            
-            # Case 1: Original macro
-            ov = re.search(r'TILE_OFFSET_4BPP\(NUM_TILES_IN_PRIMARY\s*\+\s*(\d+)\)', line)
-            if ov:
-                tiles.append(int(ov.group(1)))
+        for entry in m.group(2).split(','):
+            entry = entry.strip()
+            if not entry:
                 continue
-                
-            # Case 2: Expanded macro (0x06000000 + ((512 + N) * 32))
-            ev = re.search(r'0x06000000\s*\+\s*\(\((512\s*\+\s*\d+)\)\s*\*\s*32\)', line)
+            # Match: (u16 *)(0x06000000 + BYTE_OFFSET)  or  (u16 *)(0x6000000 + BYTE_OFFSET)
+            ev = re.search(r'0x0?6000000\s*\+\s*(\d+)', entry)
             if ev:
-                # We want just the N part from (512 + N)
-                n_match = re.search(r'512\s*\+\s*(\d+)', ev.group(1))
-                if n_match:
-                    tiles.append(int(n_match.group(1)))
-                    continue
-            
-            # Case 3: Simple expanded (0x06000000 + (N * 32)) - for primaries
-            sv = re.search(r'0x06000000\s*\+\s*\(\(([^)]+)\)\s*\*\s*32\)', line)
-            if sv:
-                try:
-                    addr_offset = eval(sv.group(1))
-                    tiles.append(addr_offset)
-                except:
-                    pass
-                    
+                byte_offset = int(ev.group(1))
+                tiles.append(byte_offset // 32)  # Convert byte offset to tile index
+                continue
+            # Legacy: TILE_OFFSET_4BPP(NUM_TILES_IN_PRIMARY + N)
+            ov = re.search(r'TILE_OFFSET_4BPP\(NUM_TILES_IN_PRIMARY\s*\+\s*(\d+)\)', entry)
+            if ov:
+                tiles.append(512 + int(ov.group(1)))
+                continue
         vdests[name] = tiles
 
     # 4. AppendTilesetAnimToBuffer calls
+    # After gcc -E, two patterns:
+    #   Pattern A (direct dest): AppendTilesetAnimToBuffer(arr[i], (u16 *)(0x06000000 + BYTE_OFFSET), N * 32);
+    #   Pattern B (VDest array): AppendTilesetAnimToBuffer(arr[i], vdests[j], N * 32);
     queue_anims = []
 
-    def parse_dest(call_text):
-        # Expanded: (u16 *)(0x06000000 + ((508) * 32))
-        # Support newlines/whitespace with \s*
-        m = re.search(r'0x06000000\s*\+\s*\(\s*\(([^)]+)\)\s*\*\s*32\s*\)', call_text)
-        if m:
-            try: return eval(m.group(1).replace('\n', ' '))
-            except: pass
-            
-        # Original: (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(508))
-        m = re.search(r'TILE_OFFSET_4BPP\s*\(\s*(\d+)\s*\)', call_text)
-        if m: return int(m.group(1))
-        return None
-
-    def parse_count(call_text):
-        # Expanded: 4 * 32
-        m = re.search(r',\s*(\d+)\s*\*\s*32\s*\)', call_text)
-        if m: return int(m.group(1))
-        # Original: 4 * TILE_SIZE_4BPP
-        m = re.search(r',\s*(\d+)\s*\*\s*TILE_SIZE_4BPP\s*\)', call_text)
-        if m: return int(m.group(1))
-        return None
-
-    # Pattern A: fixed numeric VRAM dest
-    # AppendTilesetAnimToBuffer(gTilesetAnims_General_Flower[i], (u16 *)(0x06000000 + ((508) * 32)), 4 * 32);
-    for m in re.finditer(r'AppendTilesetAnimToBuffer\s*\(([^;]+);', text):
-        call = m.group(1)
-        if '[' not in call: continue # Likely a VDest version or something else
-        
-        arr_m = re.search(r'(gTilesetAnims_\w+)', call)
-        if not arr_m: continue
-        
-        dest = parse_dest(call)
-        count = parse_count(call + ")") # Add closing parens if missing from group
-        
-        if dest is not None and count is not None:
-            queue_anims.append({
-                'array':      arr_m.group(1),
-                'dest_tiles': [dest],
-                'tile_count': count,
-            })
+    # Pattern A: direct numeric VRAM dest
+    for m in re.finditer(
+        r'AppendTilesetAnimToBuffer\s*\(\s*(gTilesetAnims_\w+)\s*\[[^\]]*\]\s*,'
+        r'\s*\(u16\s*\*\)\s*\(0x0?6000000\s*\+\s*(\d+)\)\s*,'
+        r'\s*(\d+)\s*\*\s*32\s*\)',
+        text
+    ):
+        byte_offset = int(m.group(2))
+        tile_index = byte_offset // 32
+        queue_anims.append({
+            'array':      m.group(1),
+            'dest_tiles': [tile_index],
+            'tile_count': int(m.group(3)),
+        })
 
     # Pattern B: VDest array (broadcast)
     for m in re.finditer(
-        r'AppendTilesetAnimToBuffer\s*\(\s*(gTilesetAnims_\w+)\s*\[.*?\]\s*,'
-        r'\s*(gTilesetAnims_\w+_VDests)\s*\[.*?\]\s*,'
+        r'AppendTilesetAnimToBuffer\s*\(\s*(gTilesetAnims_\w+)\s*\[[^\]]*\]\s*,'
+        r'\s*(gTilesetAnims_\w+_VDests)\s*\[[^\]]*\]\s*,'
         r'\s*(\d+)\s*\*\s*32\s*\)',
         text
     ):
@@ -282,6 +256,100 @@ def parse_tileset_anims_c(c_file: Path, pokeemerald_dir: Path):
         })
 
     return frame_files, sequences, queue_anims
+
+
+# ── Authoritative tileset → animation array mapping ─────────────────────────
+# Derived from pokeemerald/src/tileset_anims.c callback functions.
+# Each TilesetAnim_ callback calls specific QueueAnimTiles_ functions which
+# reference specific gTilesetAnims_ arrays in AppendTilesetAnimToBuffer calls.
+# Mauville_Flower*_B are alternate sequences used in the same callback — include both.
+_TILESET_ANIM_ARRAYS = {
+    "secondary_rustboro": {
+        "gTilesetAnims_Rustboro_WindyWater",
+        "gTilesetAnims_Rustboro_Fountain",
+    },
+    "secondary_dewford": {
+        "gTilesetAnims_Dewford_Flag",
+    },
+    "secondary_slateport": {
+        "gTilesetAnims_Slateport_Balloons",
+    },
+    "secondary_mauville": {
+        "gTilesetAnims_Mauville_Flower1",
+        "gTilesetAnims_Mauville_Flower2",
+        "gTilesetAnims_Mauville_Flower1_B",
+        "gTilesetAnims_Mauville_Flower2_B",
+    },
+    "secondary_lavaridge": {
+        "gTilesetAnims_Lavaridge_Steam",
+        "gTilesetAnims_Lavaridge_Cave_Lava",  # QueueAnimTiles_Lavaridge_Lava
+    },
+    "secondary_ever_grande": {
+        "gTilesetAnims_EverGrande_Flowers",
+    },
+    "secondary_pacifidlog": {
+        "gTilesetAnims_Pacifidlog_LogBridges",
+        "gTilesetAnims_Pacifidlog_WaterCurrents",
+    },
+    "secondary_sootopolis": {
+        "gTilesetAnims_Sootopolis_StormyWater",
+    },
+    "secondary_underwater": {
+        "gTilesetAnims_Underwater_Seaweed",
+    },
+    "secondary_cave": {
+        "gTilesetAnims_Lavaridge_Cave_Lava",  # QueueAnimTiles_Cave_Lava
+    },
+    "secondary_battle_frontier_outside_west": {
+        "gTilesetAnims_BattleFrontierOutsideWest_Flag",
+    },
+    "secondary_battle_frontier_outside_east": {
+        "gTilesetAnims_BattleFrontierOutsideEast_Flag",
+    },
+    "secondary_mauville_gym": {
+        "gTilesetAnims_MauvilleGym_ElectricGates",
+    },
+    "secondary_sootopolis_gym": {
+        "gTilesetAnims_SootopolisGym_SideWaterfall",
+        "gTilesetAnims_SootopolisGym_FrontWaterfall",
+    },
+    "secondary_elite_four": {
+        "gTilesetAnims_EliteFour_WallLights",
+        "gTilesetAnims_EliteFour_FloorLight",
+    },
+    "secondary_bike_shop": {
+        "gTilesetAnims_BikeShop_BlinkingLights",
+    },
+    "secondary_battle_pyramid": {
+        "gTilesetAnims_BattlePyramid_Torch",
+        "gTilesetAnims_BattlePyramid_StatueShadow",
+    },
+}
+
+
+def _load_frame_img(path_or_tuple):
+    """Load a frame image from a single Path or a tuple of Paths (dual INCBIN).
+
+    For dual INCBIN (e.g. Sootopolis stormy water), the two paletted PNGs are
+    concatenated vertically so that patch_src_img writes both halves contiguously
+    into the tile slots, matching GBA behaviour.
+    """
+    if isinstance(path_or_tuple, tuple):
+        parts = []
+        for p in path_or_tuple:
+            if not p.exists():
+                return None
+            parts.append(Image.open(p).convert("P"))
+        total_h = sum(im.height for im in parts)
+        combined = Image.new("P", (parts[0].width, total_h))
+        combined.putpalette(parts[0].getpalette())
+        y_off = 0
+        for im in parts:
+            combined.paste(im, (0, y_off))
+            y_off += im.height
+        return combined
+    else:
+        return Image.open(path_or_tuple).convert("P") if path_or_tuple.exists() else None
 
 
 # ── core builder ─────────────────────────────────────────────────────────────
@@ -306,8 +374,14 @@ def build_anim_atlas_for_tileset(
         applicable = [q for q in queue_anims if q['array'].startswith(f'gTilesetAnims_{prim_camel}_')]
     else:
         src_dir = pokeemerald_dir / "data" / "tilesets" / "secondary" / ts_name.replace("secondary_", "")
-        ts_short = snake_to_camel(ts_name.replace("secondary_", ""))
-        applicable = [q for q in queue_anims if ts_short in q['array'] and not q['array'].endswith('_B')]
+        # Include both secondary-specific animations AND the paired primary's
+        # animations — secondary metatiles can cross-reference primary tiles that
+        # are patched by the primary animation callback (e.g. water, flowers).
+        allowed_arrays = _TILESET_ANIM_ARRAYS.get(ts_name, set())
+        prim_camel = snake_to_camel(paired_primary)
+        applicable = [q for q in queue_anims
+                      if q['array'] in allowed_arrays
+                      or q['array'].startswith(f'gTilesetAnims_{prim_camel}_')]
 
     # Check for Porytiles-decompile output
     layers_base = out_dir.parent / "layers" / ts_name
@@ -357,10 +431,11 @@ def build_anim_atlas_for_tileset(
         if arr not in sequences: continue
         frame_imgs = []
         for fn in sequences[arr]:
-            if fn not in frame_files: frame_imgs.append(None)
+            if fn not in frame_files:
+                frame_imgs.append(None)
             else:
                 p = frame_files[fn]
-                frame_imgs.append(Image.open(p).convert("P") if p.exists() else None)
+                frame_imgs.append(_load_frame_img(p))
         anim_groups.append({
             'array': arr,
             'frame_imgs': frame_imgs,
@@ -384,10 +459,60 @@ def build_anim_atlas_for_tileset(
         print(f"  [SKIP] {ts_name}: no animated metatiles found")
         return None
 
-    max_frames = max(len(grp['frame_imgs']) for grp in anim_groups)
+    # ── Frame-diff filter: only keep metatiles that ACTUALLY change ──────
+    # Render each candidate metatile for all frames.  If every frame is
+    # pixel-identical the metatile is a false positive (it references an
+    # animated tile slot but the animation doesn't visually affect it).
+    # Keeping it on the porytiles static source avoids rendering mismatches.
+    actually_animated = {}
+    for m_idx, anims in metatile_to_anims.items():
+        m_frame_count = max(len(anim_groups[a['group_idx']]['frame_imgs']) for a in anims)
+        frame0_bytes = None
+        differs = False
+        for frame_step in range(m_frame_count):
+            sec_p = base_img.copy()
+            prim_p = prim_img.copy() if prim_img is not None else None
+            for a in anims:
+                grp = anim_groups[a['group_idx']]
+                imgs = grp['frame_imgs']
+                fi = frame_step % len(imgs)
+                if imgs[fi] is not None:
+                    dest = a['dest_tile_start']
+                    if prim_p is not None and dest < 512:
+                        prim_p = patch_src_img(prim_p, prim_tpr, dest, imgs[fi])
+                    elif prim_p is not None:
+                        sec_p = patch_src_img(sec_p, tiles_per_row, dest - 512, imgs[fi])
+                    else:
+                        sec_p = patch_src_img(sec_p, tiles_per_row, dest, imgs[fi])
+            b_tile, t_tile = render_metatile(
+                m_idx, raw, sec_p, palettes, tiles_per_row,
+                primary_img=prim_p, primary_palettes=prim_palettes, primary_tpr=prim_tpr,
+            )
+            ref = Image.new("RGBA", (16, 16), (0, 0, 0, 0))
+            ref.paste(b_tile, (0, 0), b_tile)
+            ref.paste(t_tile, (0, 0), t_tile)
+            fb = ref.tobytes()
+            if frame_step == 0:
+                frame0_bytes = fb
+            elif fb != frame0_bytes:
+                differs = True
+                break
+        if differs:
+            actually_animated[m_idx] = anims
+
+    skipped = len(metatile_to_anims) - len(actually_animated)
+    metatile_to_anims = actually_animated
+
+    if not metatile_to_anims:
+        print(f"  [SKIP] {ts_name}: no animated metatiles found (all {skipped} were static)")
+        return None
+
+    max_frames = max(len(anim_groups[a['group_idx']]['frame_imgs'])
+                     for anims in metatile_to_anims.values() for a in anims)
     sorted_metatiles = sorted(metatile_to_anims.keys())
     num_rows = len(sorted_metatiles)
-    print(f"  {ts_name}: {num_rows} animated metatiles, {max_frames} max frames")
+    print(f"  {ts_name}: {num_rows} animated metatiles, {max_frames} max frames"
+          + (f" (filtered {skipped} static)" if skipped else ""))
 
     atlas_w = max_frames * 16
     atlas_h = num_rows * 16

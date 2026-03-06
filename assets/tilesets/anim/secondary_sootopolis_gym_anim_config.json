@@ -1,0 +1,33 @@
+{
+  "tileset": "secondary_sootopolis_gym",
+  "fps": 7.5,
+  "bottom_atlas": "res://assets/tilesets/anim/secondary_sootopolis_gym_anim_bottom.png",
+  "middle_atlas": "res://assets/tilesets/anim/secondary_sootopolis_gym_anim_middle.png",
+  "top_atlas": "res://assets/tilesets/anim/secondary_sootopolis_gym_anim_top.png",
+  "animated_metatiles": {
+    "104": {
+      "row": 0,
+      "frame_count": 3
+    },
+    "105": {
+      "row": 1,
+      "frame_count": 3
+    },
+    "112": {
+      "row": 2,
+      "frame_count": 3
+    },
+    "113": {
+      "row": 3,
+      "frame_count": 3
+    },
+    "120": {
+      "row": 4,
+      "frame_count": 3
+    },
+    "121": {
+      "row": 5,
+      "frame_count": 3
+    }
+  }
+}

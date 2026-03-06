@@ -1,0 +1,77 @@
+{
+  "tileset": "secondary_island_harbor",
+  "fps": 3.75,
+  "bottom_atlas": "res://assets/tilesets/anim/secondary_island_harbor_anim_bottom.png",
+  "middle_atlas": "res://assets/tilesets/anim/secondary_island_harbor_anim_middle.png",
+  "top_atlas": "res://assets/tilesets/anim/secondary_island_harbor_anim_top.png",
+  "animated_metatiles": {
+    "4": {
+      "row": 0,
+      "frame_count": 8
+    },
+    "9": {
+      "row": 1,
+      "frame_count": 8
+    },
+    "11": {
+      "row": 2,
+      "frame_count": 8
+    },
+    "17": {
+      "row": 3,
+      "frame_count": 8
+    },
+    "19": {
+      "row": 4,
+      "frame_count": 8
+    },
+    "25": {
+      "row": 5,
+      "frame_count": 8
+    },
+    "26": {
+      "row": 6,
+      "frame_count": 8
+    },
+    "48": {
+      "row": 7,
+      "frame_count": 8
+    },
+    "64": {
+      "row": 8,
+      "frame_count": 8
+    },
+    "66": {
+      "row": 9,
+      "frame_count": 8
+    },
+    "424": {
+      "row": 10,
+      "frame_count": 8
+    },
+    "432": {
+      "row": 11,
+      "frame_count": 8
+    },
+    "434": {
+      "row": 12,
+      "frame_count": 8
+    },
+    "440": {
+      "row": 13,
+      "frame_count": 8
+    },
+    "442": {
+      "row": 14,
+      "frame_count": 8
+    },
+    "450": {
+      "row": 15,
+      "frame_count": 8
+    },
+    "451": {
+      "row": 16,
+      "frame_count": 8
+    }
+  }
+}

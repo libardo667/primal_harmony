@@ -1,0 +1,49 @@
+{
+  "tileset": "secondary_fallarbor",
+  "fps": 3.75,
+  "bottom_atlas": "res://assets/tilesets/anim/secondary_fallarbor_anim_bottom.png",
+  "middle_atlas": "res://assets/tilesets/anim/secondary_fallarbor_anim_middle.png",
+  "top_atlas": "res://assets/tilesets/anim/secondary_fallarbor_anim_top.png",
+  "animated_metatiles": {
+    "192": {
+      "row": 0,
+      "frame_count": 8
+    },
+    "193": {
+      "row": 1,
+      "frame_count": 8
+    },
+    "200": {
+      "row": 2,
+      "frame_count": 8
+    },
+    "201": {
+      "row": 3,
+      "frame_count": 8
+    },
+    "204": {
+      "row": 4,
+      "frame_count": 8
+    },
+    "205": {
+      "row": 5,
+      "frame_count": 8
+    },
+    "328": {
+      "row": 6,
+      "frame_count": 8
+    },
+    "329": {
+      "row": 7,
+      "frame_count": 8
+    },
+    "336": {
+      "row": 8,
+      "frame_count": 8
+    },
+    "337": {
+      "row": 9,
+      "frame_count": 8
+    }
+  }
+}
