@@ -4,9 +4,9 @@
 
 - ID: 003-quality-gate-baseline-wiring
 - Type: major
-- Owner: unassigned
-- Status: backlog
-- Risk: medium
+- Owner: codex
+- Status: done
+- Risk: low
 - Created: 2026-03-06
 - Target Window: 2026-03
 - Depends On: 002-canonical-dev-command-surface
@@ -40,6 +40,7 @@ explicit gate mapping:
 ## Files Affected
 
 - scripts/dev.py
+- improvements/README.md
 - improvements/ROADMAP.md
 - improvements/majors/003-quality-gate-baseline-wiring.md
 - improvements/history/* (validation evidence artifacts, if generated)
@@ -51,18 +52,21 @@ explicit gate mapping:
 
 ## Acceptance Criteria
 
-- [ ] `quality-strict` includes explicit Gate 1/2/3 check mapping for this
+- [x] `quality-strict` includes explicit Gate 1/2/3 check mapping for this
       repo.
-- [ ] Risk-tier policy for optional/deeper checks is documented and enforced by
+- [x] Risk-tier policy for optional/deeper checks is documented and enforced by
       command options.
-- [ ] Evidence output is reusable in item execution logs and PR evidence docs.
-- [ ] Required checks run without producing unbounded generated artifacts in
+- [x] Evidence output is reusable in item execution logs and PR evidence docs.
+- [x] Required checks run without producing unbounded generated artifacts in
       source-of-truth paths.
 
 ## Validation Commands
 
+- `python scripts/dev.py quality-strict`
 - `python scripts/dev.py quality-strict --json`
+- `python scripts/dev.py quality-strict --risk low --emit-evidence`
 - `python scripts/dev.py harness list`
+- `python scripts/dev.py harness item-lint --json`
 - `git status --short`
 
 ## Pruning Prevention Controls
@@ -90,8 +94,34 @@ Rollback:
 ## Execution Log
 
 - 2026-03-06: Item drafted from roadmap queue; status `backlog`.
+- 2026-03-06: Item moved to `in_progress`.
+- 2026-03-06: Extended `quality-strict` to explicit harness gate mapping:
+  - Gate 0: `anchor-docs`
+  - Gate 1: `cli-contract`
+  - Gate 2: `data-json-parse`
+  - Gate 3: `python-syntax`
+  - Gate 4: `scene-audit`
+  - Gate 5: `item-lint`
+- 2026-03-06: Added risk-tier policy via `--risk <low|medium|high>` and
+  documented profile-to-gate mapping in command output and
+  `improvements/README.md`.
+- 2026-03-06: Added reusable evidence output via
+  `python scripts/dev.py quality-strict --emit-evidence`.
+- 2026-03-06: Validation:
+  - `python scripts/dev.py quality-strict` -> pass
+  - `python scripts/dev.py quality-strict --json` -> pass
+  - `python scripts/dev.py quality-strict --risk low --emit-evidence` -> pass
+  - `python scripts/dev.py harness list` -> pass
+  - `python scripts/dev.py harness item-lint --json` -> pass
+  - `git status --short` -> pass
+- 2026-03-06: Additional risk-tier proof commands:
+  - `python scripts/dev.py quality-strict --risk medium` -> fail (expected:
+    existing scene-audit finding in
+    `maps/interiors/fallarbor_pokemon_center.tscn` target)
+  - `python scripts/dev.py quality-strict --risk high` -> fail (same Gate 4
+    finding, Gate 5 passes)
+- 2026-03-06: Item moved to `done`.
 
 ## Follow-up Candidates
 
-- m002-work-item-linting
-- m003-rollup-evidence-template
+- scene-audit-remediation-fallarbor-warppoints

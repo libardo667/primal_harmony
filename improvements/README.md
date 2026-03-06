@@ -44,9 +44,17 @@ result and provide substitute evidence without marking the item done.
 Current command groups:
 
 - `python scripts/dev.py quality-strict`
+- `python scripts/dev.py quality-strict --risk <low|medium|high>`
+- `python scripts/dev.py quality-strict --risk low --emit-evidence`
 - `python scripts/dev.py harness list`
 - `python scripts/dev.py harness scene-audit .`
 - `python scripts/dev.py harness item-lint`
+
+Risk-tier gate policy:
+
+- `low`: Gates 0-3 (surface, contract, correctness, build/static)
+- `medium`: Gates 0-4 (adds runtime behavior checks)
+- `high`: Gates 0-5 (adds operational safety checks)
 
 ## Test Prereqs
 

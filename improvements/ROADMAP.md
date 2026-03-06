@@ -5,11 +5,11 @@
 - Product status: core gameplay systems and world content are present, with
   ongoing stabilization and integration work.
 - Architecture status: `improvements/` planning structure and canonical
-  `scripts/dev.py` command surface are installed; deeper gate wiring is queued
-  in major 003.
+  `scripts/dev.py` command surface are installed, including explicit
+  gate-mapped risk profiles (`low|medium|high`).
 - Top risks:
-  - `quality-strict` baseline is intentionally narrow until major 003 expands
-    gate wiring.
+  - Runtime Gate 4 (`scene-audit`) currently fails for a known Fallarbor warp
+    target contract issue.
   - Inconsistent item tracking/evidence for agent-executed changes.
   - Future pruning debt if parallel workflow paths accumulate.
 
@@ -41,8 +41,9 @@
    `improvements/` anchors, schemas, and item taxonomy layout.
 2. [`002-canonical-dev-command-surface`](majors/002-canonical-dev-command-surface.md) (done): implement `scripts/dev.py`
    with stable quality and harness subcommands.
-3. [`003-quality-gate-baseline-wiring`](majors/003-quality-gate-baseline-wiring.md) (backlog): map project checks to harness
+3. [`003-quality-gate-baseline-wiring`](majors/003-quality-gate-baseline-wiring.md) (done): map project checks to harness
    gates and enforce baseline evidence capture.
+4. [`004-warp-contract-reliability-hardening`](majors/004-warp-contract-reliability-hardening.md) (backlog): harden map warp contract validation and evidence discipline after Gate 4 baseline remediation.
 
 ## Minor Queue
 
@@ -52,14 +53,14 @@
    required schema sections.
 3. [`m003-rollup-evidence-template`](minors/m003-rollup-evidence-template.md) (done): add reusable end-of-item
    evidence snippets for common command outcomes.
+4. [`m004-fallarbor-warp-target-fix`](minors/m004-fallarbor-warp-target-fix.md) (backlog): fix missing Fallarbor warp target container causing Gate 4 scene-audit failure.
 
 ## Recommended Execution Order
 
-1. Execute `003-quality-gate-baseline-wiring`.
-2. Run one major and one minor item end-to-end using expanded strict-gate
-   evidence once 003 lands.
-3. Capture a retrospective under `improvements/history/` and queue next
-   minors/majors.
+1. Execute [`m004-fallarbor-warp-target-fix`](minors/m004-fallarbor-warp-target-fix.md) to restore Gate 4 baseline.
+2. Execute [`004-warp-contract-reliability-hardening`](majors/004-warp-contract-reliability-hardening.md).
+3. Run one additional major and one minor end-to-end using medium/high risk
+   profiles once Gate 4 remains green.
 
 ## Notes
 

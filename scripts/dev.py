@@ -14,11 +14,36 @@ from pathlib import Path
 from typing import Callable
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
+CheckFn = Callable[[], tuple[bool, str]]
 
+GATE_LABELS = {
+    0: "surface-control",
+    1: "contract-integrity",
+    2: "correctness",
+    3: "build-static-health",
+    4: "runtime-behavior",
+    5: "operational-safety",
+}
+
+RISK_PROFILE_GATES = {
+    "low": [0, 1, 2, 3],
+    "medium": [0, 1, 2, 3, 4],
+    "high": [0, 1, 2, 3, 4, 5],
+}
+
+
+@dataclass(frozen=True)
+class CheckSpec:
+    name: str
+    gate: int
+    description: str
+    fn: CheckFn
 
 @dataclass
 class CheckResult:
     name: str
+    gate: int
+    gate_label: str
     status: str
     duration_ms: int
     detail: str
@@ -27,13 +52,12 @@ class CheckResult:
 @dataclass
 class QualityReport:
     command: str
+    risk_level: str
+    selected_gates: list[int]
     overall_status: str
     passed: int
     failed: int
     results: list[CheckResult]
-
-
-CheckFn = Callable[[], tuple[bool, str]]
 
 
 def _decode_text(data: bytes, path: Path) -> str:
@@ -69,6 +93,46 @@ def check_anchor_docs() -> tuple[bool, str]:
     if missing:
         return False, f"missing required files: {', '.join(missing)}"
     return True, f"required files present ({len(required)})"
+
+
+def _get_subparser_choices(parser: argparse.ArgumentParser) -> dict[str, argparse.ArgumentParser]:
+    for action in parser._actions:
+        if isinstance(action, argparse._SubParsersAction):
+            return action.choices
+    return {}
+
+
+def _get_option_strings(parser: argparse.ArgumentParser) -> set[str]:
+    options: set[str] = set()
+    for action in parser._actions:
+        options.update(action.option_strings)
+    return options
+
+
+def check_cli_contract() -> tuple[bool, str]:
+    parser = build_parser()
+    root_choices = _get_subparser_choices(parser)
+
+    required_root = {"quality-strict", "harness"}
+    missing_root = sorted(required_root - set(root_choices))
+    if missing_root:
+        return False, f"missing root command(s): {', '.join(missing_root)}"
+
+    harness_parser = root_choices["harness"]
+    harness_choices = _get_subparser_choices(harness_parser)
+    required_harness = {"list", "scene-audit", "item-lint"}
+    missing_harness = sorted(required_harness - set(harness_choices))
+    if missing_harness:
+        return False, f"missing harness command(s): {', '.join(missing_harness)}"
+
+    quality_parser = root_choices["quality-strict"]
+    quality_options = _get_option_strings(quality_parser)
+    required_quality_options = {"--json", "--risk", "--emit-evidence"}
+    missing_quality_options = sorted(required_quality_options - quality_options)
+    if missing_quality_options:
+        return False, f"missing quality-strict option(s): {', '.join(missing_quality_options)}"
+
+    return True, "cli contract checks passed"
 
 
 def check_python_syntax() -> tuple[bool, str]:
@@ -276,19 +340,85 @@ def check_item_lint() -> tuple[bool, str]:
     return True, f"item lint passed for {total_files} file(s)"
 
 
-def run_checks(checks: list[tuple[str, CheckFn]], stop_on_fail: bool = False) -> QualityReport:
+def _build_quality_specs() -> list[CheckSpec]:
+    return [
+        CheckSpec(
+            name="anchor-docs",
+            gate=0,
+            description="authoritative path and anchor presence",
+            fn=check_anchor_docs,
+        ),
+        CheckSpec(
+            name="cli-contract",
+            gate=1,
+            description="command-surface compatibility contract",
+            fn=check_cli_contract,
+        ),
+        CheckSpec(
+            name="data-json-parse",
+            gate=2,
+            description="data correctness parse validation",
+            fn=check_data_json_parse,
+        ),
+        CheckSpec(
+            name="python-syntax",
+            gate=3,
+            description="static syntax/build health",
+            fn=check_python_syntax,
+        ),
+        CheckSpec(
+            name="scene-audit",
+            gate=4,
+            description="runtime-oriented map contract audit",
+            fn=check_scene_audit,
+        ),
+        CheckSpec(
+            name="item-lint",
+            gate=5,
+            description="operational safety via schema-complete item docs",
+            fn=check_item_lint,
+        ),
+    ]
+
+
+def _select_quality_specs(
+    risk_level: str,
+    with_scene_audit: bool,
+    with_item_lint: bool,
+) -> tuple[list[CheckSpec], list[int]]:
+    gate_set = set(RISK_PROFILE_GATES[risk_level])
+    if with_scene_audit:
+        gate_set.add(4)
+    if with_item_lint:
+        gate_set.add(5)
+
+    spec_by_gate = {spec.gate: spec for spec in _build_quality_specs()}
+    selected_gates = sorted(gate_set)
+    selected_specs = [spec_by_gate[gate] for gate in selected_gates if gate in spec_by_gate]
+    return selected_specs, selected_gates
+
+
+def run_checks(
+    command_name: str,
+    risk_level: str,
+    selected_gates: list[int],
+    checks: list[CheckSpec],
+    stop_on_fail: bool = False,
+) -> QualityReport:
     results: list[CheckResult] = []
-    for name, check_fn in checks:
+    for spec in checks:
         started = time.perf_counter()
         try:
-            ok, detail = check_fn()
+            ok, detail = spec.fn()
         except Exception as exc:  # noqa: BLE001
             ok = False
             detail = f"unexpected exception: {exc}"
         elapsed_ms = int((time.perf_counter() - started) * 1000)
         results.append(
             CheckResult(
-                name=name,
+                name=spec.name,
+                gate=spec.gate,
+                gate_label=GATE_LABELS.get(spec.gate, "unknown"),
                 status="pass" if ok else "fail",
                 duration_ms=elapsed_ms,
                 detail=detail,
@@ -300,7 +430,9 @@ def run_checks(checks: list[tuple[str, CheckFn]], stop_on_fail: bool = False) ->
     passed = sum(1 for result in results if result.status == "pass")
     failed = sum(1 for result in results if result.status == "fail")
     return QualityReport(
-        command="quality-strict",
+        command=command_name,
+        risk_level=risk_level,
+        selected_gates=selected_gates,
         overall_status="pass" if failed == 0 else "fail",
         passed=passed,
         failed=failed,
@@ -309,9 +441,16 @@ def run_checks(checks: list[tuple[str, CheckFn]], stop_on_fail: bool = False) ->
 
 
 def print_quality_human(report: QualityReport) -> None:
+    gate_summary = ", ".join(
+        f"{gate}:{GATE_LABELS.get(gate, 'unknown')}" for gate in report.selected_gates
+    )
+    print(f"quality-strict profile: risk={report.risk_level} gates=[{gate_summary}]")
     for result in report.results:
         marker = "PASS" if result.status == "pass" else "FAIL"
-        print(f"[{marker}] {result.name} ({result.duration_ms}ms) - {result.detail}")
+        print(
+            f"[{marker}] [Gate {result.gate} {result.gate_label}] "
+            f"{result.name} ({result.duration_ms}ms) - {result.detail}"
+        )
     print(
         f"quality-strict: {report.overall_status.upper()} "
         f"({report.passed} passed, {report.failed} failed)"
@@ -321,6 +460,11 @@ def print_quality_human(report: QualityReport) -> None:
 def print_quality_json(report: QualityReport) -> None:
     payload = {
         "command": report.command,
+        "risk_level": report.risk_level,
+        "selected_gates": [
+            {"gate": gate, "label": GATE_LABELS.get(gate, "unknown")}
+            for gate in report.selected_gates
+        ],
         "overall_status": report.overall_status,
         "passed": report.passed,
         "failed": report.failed,
@@ -329,22 +473,50 @@ def print_quality_json(report: QualityReport) -> None:
     print(json.dumps(payload, indent=2))
 
 
-def cmd_quality_strict(args: argparse.Namespace) -> int:
-    checks: list[tuple[str, CheckFn]] = [
-        ("anchor-docs", check_anchor_docs),
-        ("python-syntax", check_python_syntax),
-        ("data-json-parse", check_data_json_parse),
-    ]
+def _build_quality_command_text(args: argparse.Namespace) -> str:
+    parts = ["python scripts/dev.py quality-strict", f"--risk {args.risk}"]
     if args.with_scene_audit:
-        checks.append(("scene-audit", check_scene_audit))
+        parts.append("--with-scene-audit")
     if args.with_item_lint:
-        checks.append(("item-lint", check_item_lint))
+        parts.append("--with-item-lint")
+    if args.stop_on_fail:
+        parts.append("--stop-on-fail")
+    if args.json:
+        parts.append("--json")
+    if args.emit_evidence:
+        parts.append("--emit-evidence")
+    return " ".join(parts)
 
-    report = run_checks(checks, stop_on_fail=args.stop_on_fail)
+
+def print_quality_evidence(report: QualityReport, command_text: str) -> None:
+    print("Evidence snippets:")
+    for result in report.results:
+        detail = result.detail.replace("`", "'")
+        print(
+            f"- `{command_text}` [Gate {result.gate} {result.gate_label}] "
+            f"`{result.name}` -> {result.status} (`{detail}`)"
+        )
+
+
+def cmd_quality_strict(args: argparse.Namespace) -> int:
+    checks, selected_gates = _select_quality_specs(
+        risk_level=args.risk,
+        with_scene_audit=args.with_scene_audit,
+        with_item_lint=args.with_item_lint,
+    )
+    report = run_checks(
+        command_name="quality-strict",
+        risk_level=args.risk,
+        selected_gates=selected_gates,
+        checks=checks,
+        stop_on_fail=args.stop_on_fail,
+    )
     if args.json:
         print_quality_json(report)
     else:
         print_quality_human(report)
+    if args.emit_evidence:
+        print_quality_evidence(report, _build_quality_command_text(args))
     return 0 if report.overall_status == "pass" else 1
 
 
@@ -352,6 +524,12 @@ def cmd_harness_list(_: argparse.Namespace) -> int:
     print("Available harness workflows:")
     print("- item-lint")
     print("- scene-audit")
+    print("Quality risk profiles:")
+    for risk in ("low", "medium", "high"):
+        gate_summary = ", ".join(
+            f"{gate}:{GATE_LABELS.get(gate, 'unknown')}" for gate in RISK_PROFILE_GATES[risk]
+        )
+        print(f"- {risk}: gates [{gate_summary}]")
     return 0
 
 
@@ -399,6 +577,15 @@ def build_parser() -> argparse.ArgumentParser:
         help="Print machine-readable JSON summary.",
     )
     quality_parser.add_argument(
+        "--risk",
+        choices=["low", "medium", "high"],
+        default="low",
+        help=(
+            "Risk profile gates: low=0-3, medium=0-4, high=0-5 "
+            "(see `python scripts/dev.py harness list`)."
+        ),
+    )
+    quality_parser.add_argument(
         "--stop-on-fail",
         action="store_true",
         help="Stop after first failed check.",
@@ -412,6 +599,11 @@ def build_parser() -> argparse.ArgumentParser:
         "--with-item-lint",
         action="store_true",
         help="Include work-item schema lint checks in strict checks.",
+    )
+    quality_parser.add_argument(
+        "--emit-evidence",
+        action="store_true",
+        help="Print reusable command-result snippets for item/PR evidence logs.",
     )
     quality_parser.set_defaults(func=cmd_quality_strict)
 
