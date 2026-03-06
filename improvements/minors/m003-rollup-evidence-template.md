@@ -4,8 +4,8 @@
 
 - ID: m003-rollup-evidence-template
 - Type: minor
-- Owner: unassigned
-- Status: backlog
+- Owner: codex
+- Status: done
 - Risk: low
 - Created: 2026-03-06
 - Contract Impact: none
@@ -33,9 +33,9 @@ Create reusable evidence snippets/templates for common validation outcomes:
 
 ## Acceptance Criteria
 
-- [ ] Reusable snippets exist for pass/fail/blocked command outcomes.
-- [ ] Template usage guidance references authoritative source docs.
-- [ ] Evidence snippets remain concise and compatible with existing item schema.
+- [x] Reusable snippets exist for pass/fail/blocked command outcomes.
+- [x] Template usage guidance references authoritative source docs.
+- [x] Evidence snippets remain concise and compatible with existing item schema.
 
 ## Validation Commands
 
@@ -57,3 +57,14 @@ Create reusable evidence snippets/templates for common validation outcomes:
 ## Execution Log
 
 - 2026-03-06: Item drafted from roadmap queue; status `backlog`.
+- 2026-03-06: Item moved to `in_progress`.
+- 2026-03-06: Added reusable validation snippets (pass/fail/blocked) to
+  `improvements/harness/templates/PR_EVIDENCE_TEMPLATE.md`.
+- 2026-03-06: Added concise evidence snippet guidance to
+  `improvements/history/README.md`.
+- 2026-03-06: Added authoritative-reference pointers to `AGENTS.md` and harness
+  protocol/gate docs.
+- 2026-03-06: Validation:
+  - `python scripts/dev.py quality-strict` -> pass
+  - `git status --short` -> pass
+- 2026-03-06: Item moved to `done`.

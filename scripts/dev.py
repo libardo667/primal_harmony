@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import subprocess
 import sys
 import time
@@ -140,6 +141,141 @@ def check_scene_audit() -> tuple[bool, str]:
     return False, f"scene audit failed (exit {completed.returncode}): {trimmed}"
 
 
+def _parse_schema_requirements(schema_path: Path) -> tuple[list[str], list[str]]:
+    text = schema_path.read_text(encoding="utf-8")
+    lines = text.splitlines()
+    required_sections: list[str] = []
+    required_metadata_fields: list[str] = []
+    section_mode = False
+    metadata_mode = False
+
+    section_pattern = re.compile(r"^\d+\.\s+`([^`]+)`\s*$")
+    metadata_pattern = re.compile(r"^- `([^`]+)`")
+
+    for line in lines:
+        stripped = line.strip()
+        if stripped == "## Required Sections":
+            section_mode = True
+            metadata_mode = False
+            continue
+        if stripped == "## Required Metadata Fields":
+            section_mode = False
+            metadata_mode = True
+            continue
+        if stripped.startswith("## ") and stripped not in {
+            "## Required Sections",
+            "## Required Metadata Fields",
+        }:
+            section_mode = False
+            metadata_mode = False
+
+        if section_mode:
+            match = section_pattern.match(stripped)
+            if match:
+                required_sections.append(match.group(1))
+
+        if metadata_mode:
+            match = metadata_pattern.match(stripped)
+            if match:
+                required_metadata_fields.append(match.group(1))
+
+    return required_sections, required_metadata_fields
+
+
+def _extract_metadata_block(lines: list[str]) -> list[str]:
+    in_metadata = False
+    metadata_lines: list[str] = []
+    for line in lines:
+        stripped = line.strip()
+        if stripped == "## Metadata":
+            in_metadata = True
+            continue
+        if in_metadata and stripped.startswith("## "):
+            break
+        if in_metadata:
+            metadata_lines.append(stripped)
+    return metadata_lines
+
+
+def _lint_item_file(
+    path: Path,
+    required_sections: list[str],
+    required_metadata_fields: list[str],
+) -> list[str]:
+    content = path.read_text(encoding="utf-8")
+    lines = content.splitlines()
+    headings = [line.strip() for line in lines if line.startswith("#")]
+    metadata_lines = _extract_metadata_block(lines)
+    issues: list[str] = []
+
+    has_title = any(line.startswith("# ") and not line.startswith("## ") for line in lines)
+    for section in required_sections:
+        if section == "# <title>":
+            if not has_title:
+                issues.append(f"{path.relative_to(REPO_ROOT)}: missing required top-level title heading")
+            continue
+        if section not in headings:
+            issues.append(f"{path.relative_to(REPO_ROOT)}: missing required section heading `{section}`")
+
+    for field in required_metadata_fields:
+        pattern = re.compile(rf"^- `?{re.escape(field)}`?\s*:")
+        if not any(pattern.match(line) for line in metadata_lines):
+            issues.append(f"{path.relative_to(REPO_ROOT)}: missing required metadata field `{field}`")
+
+    return issues
+
+
+def collect_item_lint_issues() -> tuple[list[str], int]:
+    specs = [
+        ("major", REPO_ROOT / "improvements/MAJOR_SCHEMA.md", REPO_ROOT / "improvements/majors"),
+        ("minor", REPO_ROOT / "improvements/MINOR_SCHEMA.md", REPO_ROOT / "improvements/minors"),
+    ]
+
+    issues: list[str] = []
+    total_files = 0
+
+    for item_type, schema_path, items_dir in specs:
+        if not schema_path.exists():
+            issues.append(f"schema missing for {item_type}: {schema_path.relative_to(REPO_ROOT)}")
+            continue
+        if not items_dir.exists():
+            issues.append(f"items directory missing for {item_type}: {items_dir.relative_to(REPO_ROOT)}")
+            continue
+
+        required_sections, required_metadata_fields = _parse_schema_requirements(schema_path)
+        if not required_sections:
+            issues.append(
+                f"{schema_path.relative_to(REPO_ROOT)}: could not parse required sections for {item_type}"
+            )
+            continue
+        if not required_metadata_fields:
+            issues.append(
+                f"{schema_path.relative_to(REPO_ROOT)}: could not parse required metadata fields for {item_type}"
+            )
+            continue
+
+        item_files = sorted(
+            path for path in items_dir.glob("*.md") if path.name.lower() != "readme.md"
+        )
+        total_files += len(item_files)
+        for item_file in item_files:
+            issues.extend(
+                _lint_item_file(item_file, required_sections, required_metadata_fields)
+            )
+
+    return issues, total_files
+
+
+def check_item_lint() -> tuple[bool, str]:
+    issues, total_files = collect_item_lint_issues()
+    if issues:
+        preview = "; ".join(issues[:3])
+        if len(issues) > 3:
+            preview += f"; ... (+{len(issues) - 3} more)"
+        return False, f"item lint failed for {total_files} file(s): {preview}"
+    return True, f"item lint passed for {total_files} file(s)"
+
+
 def run_checks(checks: list[tuple[str, CheckFn]], stop_on_fail: bool = False) -> QualityReport:
     results: list[CheckResult] = []
     for name, check_fn in checks:
@@ -201,6 +337,8 @@ def cmd_quality_strict(args: argparse.Namespace) -> int:
     ]
     if args.with_scene_audit:
         checks.append(("scene-audit", check_scene_audit))
+    if args.with_item_lint:
+        checks.append(("item-lint", check_item_lint))
 
     report = run_checks(checks, stop_on_fail=args.stop_on_fail)
     if args.json:
@@ -212,6 +350,7 @@ def cmd_quality_strict(args: argparse.Namespace) -> int:
 
 def cmd_harness_list(_: argparse.Namespace) -> int:
     print("Available harness workflows:")
+    print("- item-lint")
     print("- scene-audit")
     return 0
 
@@ -222,6 +361,26 @@ def cmd_harness_scene_audit(args: argparse.Namespace) -> int:
         command.append("--json")
     completed = subprocess.run(command, cwd=REPO_ROOT, check=False)  # noqa: S603
     return completed.returncode
+
+
+def cmd_harness_item_lint(args: argparse.Namespace) -> int:
+    issues, total_files = collect_item_lint_issues()
+    if args.json_output:
+        payload = {
+            "workflow": "item-lint",
+            "overall_status": "pass" if not issues else "fail",
+            "files_checked": total_files,
+            "issues": issues,
+        }
+        print(json.dumps(payload, indent=2))
+    else:
+        if issues:
+            print(f"item-lint: FAIL ({len(issues)} issue(s) across {total_files} file(s))")
+            for issue in issues:
+                print(f"- {issue}")
+        else:
+            print(f"item-lint: PASS ({total_files} file(s))")
+    return 0 if not issues else 1
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -248,6 +407,11 @@ def build_parser() -> argparse.ArgumentParser:
         "--with-scene-audit",
         action="store_true",
         help="Include tools/audit_tscn.py in strict checks.",
+    )
+    quality_parser.add_argument(
+        "--with-item-lint",
+        action="store_true",
+        help="Include work-item schema lint checks in strict checks.",
     )
     quality_parser.set_defaults(func=cmd_quality_strict)
 
@@ -283,6 +447,18 @@ def build_parser() -> argparse.ArgumentParser:
         help="Forward --json to tools/audit_tscn.py.",
     )
     scene_audit_parser.set_defaults(func=cmd_harness_scene_audit)
+
+    item_lint_parser = harness_subparsers.add_parser(
+        "item-lint",
+        help="Validate major/minor item docs against local schema requirements.",
+    )
+    item_lint_parser.add_argument(
+        "--json",
+        dest="json_output",
+        action="store_true",
+        help="Print machine-readable item-lint results.",
+    )
+    item_lint_parser.set_defaults(func=cmd_harness_item_lint)
 
     return parser
 

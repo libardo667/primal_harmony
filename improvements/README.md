@@ -3,6 +3,17 @@
 This directory is the project planning and execution workspace defined by
 `AGENTS.md` and the harness under `improvements/harness/`.
 
+## Quick Links
+
+- [Vision](VISION.md)
+- [Roadmap](ROADMAP.md)
+- [Major Queue](majors/README.md)
+- [Minor Queue](minors/README.md)
+- [Major Schema](MAJOR_SCHEMA.md)
+- [Minor Schema](MINOR_SCHEMA.md)
+- [Harness Index](harness/README.md)
+- [History Archive Guide](history/README.md)
+
 ## Structure
 
 - `VISION.md`: product and architecture intent anchor.
@@ -35,6 +46,7 @@ Current command groups:
 - `python scripts/dev.py quality-strict`
 - `python scripts/dev.py harness list`
 - `python scripts/dev.py harness scene-audit .`
+- `python scripts/dev.py harness item-lint`
 
 ## Test Prereqs
 
@@ -49,3 +61,9 @@ Current command groups:
 
 Runtime source-of-truth files stay in canonical project paths. Generated run
 outputs and evidence artifacts are archived under `improvements/history/`.
+
+Archive examples:
+
+- quality gate summaries and command transcripts,
+- retrospective notes and decision snapshots,
+- optional audit outputs generated during investigations.

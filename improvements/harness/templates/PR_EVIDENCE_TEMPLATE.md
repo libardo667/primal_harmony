@@ -21,6 +21,20 @@
 - `<command>` -> <pass|fail|blocked> (<notes>)
 - `<command>` -> <pass|fail|blocked> (<notes>)
 
+## Validation Snippets (Reusable)
+
+Use these short patterns when writing item logs or PR evidence:
+
+- `pass`: `<command>` -> pass (`<key output or summary>`)
+- `fail`: `<command>` -> fail (`<failure summary>`, follow-up: `<item id or fix>`)
+- `blocked`: `<command>` -> blocked (`<reason>`, substitute: `<nearest evidence command>`)
+
+Authoritative references:
+
+- `AGENTS.md` (quality/evidence requirements)
+- `improvements/harness/03-AGENT_EXECUTION_PROTOCOL.md` (validation handling)
+- `improvements/harness/04-QUALITY_GATES.md` (gate expectations)
+
 ## Contract and Compatibility
 
 - Contract/API changes: <none or describe>

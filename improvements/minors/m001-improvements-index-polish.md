@@ -4,8 +4,8 @@
 
 - ID: m001-improvements-index-polish
 - Type: minor
-- Owner: unassigned
-- Status: backlog
+- Owner: codex
+- Status: done
 - Risk: low
 - Created: 2026-03-06
 - Contract Impact: none
@@ -34,9 +34,9 @@ Polish index-level docs to reduce navigation cost:
 
 ## Acceptance Criteria
 
-- [ ] Primary index docs include direct links to major/minor queues.
-- [ ] Schema authority docs are linked from navigation entrypoints.
-- [ ] Archive usage guidance is discoverable from index docs.
+- [x] Primary index docs include direct links to major/minor queues.
+- [x] Schema authority docs are linked from navigation entrypoints.
+- [x] Archive usage guidance is discoverable from index docs.
 
 ## Validation Commands
 
@@ -58,3 +58,10 @@ Polish index-level docs to reduce navigation cost:
 ## Execution Log
 
 - 2026-03-06: Item drafted from roadmap queue; status `backlog`.
+- 2026-03-06: Item moved to `in_progress`.
+- 2026-03-06: Added queue/schema/archive quick links to
+  `improvements/README.md` and `improvements/ROADMAP.md`.
+- 2026-03-06: Validation:
+  - `python scripts/dev.py quality-strict` -> pass
+  - `git status --short` -> pass
+- 2026-03-06: Item moved to `done`.
