@@ -176,6 +176,38 @@ warp_to_A_west:
 
 The audit script checks for both the node existence and the reciprocal warp.
 
+## Validation Requirements for Map-Touching Work
+
+Any work item that touches map scenes (`.tscn` files under `maps/`) MUST run
+the medium-risk quality profile (or stricter) before marking done:
+
+```bash
+# Required for map-touching items (Gates 0-4, includes scene-audit)
+python scripts/dev.py quality-strict --risk medium
+
+# Explicit harness-only scene-audit run (use for targeted triage)
+python scripts/dev.py harness scene-audit .
+
+# JSON output for structured evidence capture
+python scripts/dev.py harness scene-audit . --json
+```
+
+Gate 4 (`runtime-behavior`, `scene-audit`) must be green — zero errors — before
+any map-touching item can be moved to `done`. Warnings and info items should be
+reviewed and either resolved or explicitly noted in the execution log.
+
+**Evidence snippet pattern for item/PR logs:**
+
+```
+- `python scripts/dev.py quality-strict --risk medium --emit-evidence`
+  [Gate 4 runtime-behavior] `scene-audit` -> pass (`scene audit passed`)
+  OR
+  [Gate 4 runtime-behavior] `scene-audit` -> fail (`RESULTS: N errors, N warnings, N info`)
+```
+
+See `improvements/harness/templates/PR_EVIDENCE_TEMPLATE.md` for the full
+map-contract evidence block.
+
 ## Checklist for New Map Scenes
 
 When any agent creates a new map scene, verify:

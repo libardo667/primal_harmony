@@ -43,7 +43,7 @@
    with stable quality and harness subcommands.
 3. [`003-quality-gate-baseline-wiring`](majors/003-quality-gate-baseline-wiring.md) (done): map project checks to harness
    gates and enforce baseline evidence capture.
-4. [`004-warp-contract-reliability-hardening`](majors/004-warp-contract-reliability-hardening.md) (backlog): harden map warp contract validation and evidence discipline after Gate 4 baseline remediation.
+4. [`004-warp-contract-reliability-hardening`](majors/004-warp-contract-reliability-hardening.md) (done): harden map warp contract validation and evidence discipline after Gate 4 baseline remediation.
 5. [`005-narrative-phase-orchestrator`](majors/005-narrative-phase-orchestrator.md) (backlog): implement PhaseOrchestrator to manage 3-phase narrative structure.
 6. [`006-ehi-core-systems`](majors/006-ehi-core-systems.md) (backlog): implement Ecological Harmony Index (EHI) backend and observer pattern.
 7. [`007-toz-framework-and-visual-states`](majors/007-toz-framework-and-visual-states.md) (backlog): implement TOZ technical framework and visual state drivers.
@@ -65,9 +65,11 @@
 
 ## Recommended Execution Order
 
-1. Execute [`004-warp-contract-reliability-hardening`](majors/004-warp-contract-reliability-hardening.md).
-2. Run one additional major and one minor end-to-end using medium/high risk
-   profiles once Gate 4 remains green.
+1. ~~Execute `004-warp-contract-reliability-hardening`.~~ (done)
+2. Execute [`005-narrative-phase-orchestrator`](majors/005-narrative-phase-orchestrator.md) or
+   [`006-ehi-core-systems`](majors/006-ehi-core-systems.md) as the next major.
+3. Run one minor (e.g., `m005-corrupted-starter-selection`) alongside the active major.
+4. Maintain `--risk medium` profile for any map-touching work per `references/scene-contracts.md`.
 
 ## Notes
 

@@ -5,7 +5,7 @@
 - ID: 004-warp-contract-reliability-hardening
 - Type: major
 - Owner: unassigned
-- Status: backlog
+- Status: done
 - Risk: medium
 - Created: 2026-03-06
 - Target Window: 2026-03
@@ -94,6 +94,25 @@ Rollback:
 ## Execution Log
 
 - 2026-03-06: Item drafted from roadmap follow-up queue; status `backlog`.
+- 2026-03-06: Item moved to `in_progress`. Dependent minor `m004` confirmed
+  done; Gate 4 baseline green (0 errors, 0 warnings, 0 info).
+- 2026-03-06: AC1 — Added "Validation Requirements for Map-Touching Work"
+  section to `references/scene-contracts.md`. Explicitly requires `--risk
+  medium` (Gates 0-4) for any map-touching item, with evidence snippet pattern
+  and link to PR template.
+- 2026-03-06: AC2 — Added "Map Contract Evidence" block to
+  `improvements/harness/templates/PR_EVIDENCE_TEMPLATE.md`. Provides reusable
+  pass/fail snippets for Gate 4 scene-audit results in item/PR logs.
+- 2026-03-06: AC3 — Fixed `check_scene_audit()` in `scripts/dev.py` to extract
+  the `RESULTS: N errors, N warnings, N info` line from audit output on
+  failure. Previously returned last output line (often a fix hint or blank),
+  now returns the structured summary for deterministic, actionable Gate 4
+  failure messages.
+- 2026-03-06: AC4 — Validated medium-risk and high-risk profiles:
+  - `python scripts/dev.py quality-strict --risk medium` -> pass (5/5)
+  - `python scripts/dev.py quality-strict --risk high` -> pass (6/6)
+  - `python scripts/dev.py harness scene-audit .` -> pass (0 errors, 0 warnings, 0 info)
+- 2026-03-06: Item moved to `done`.
 
 ## Follow-up Candidates
 

@@ -201,8 +201,10 @@ def check_scene_audit() -> tuple[bool, str]:
     output = (_decode_subprocess_output(stdout) + _decode_subprocess_output(stderr)).strip()
     if completed.returncode == 0:
         return True, "scene audit passed"
-    trimmed = output.splitlines()[-1] if output else "scene audit failed"
-    return False, f"scene audit failed (exit {completed.returncode}): {trimmed}"
+    lines = output.splitlines()
+    results_line = next((ln.strip() for ln in lines if ln.strip().startswith("RESULTS:")), "")
+    detail = results_line if results_line else (lines[-1].strip() if lines else "scene audit failed")
+    return False, f"scene audit failed (exit {completed.returncode}): {detail}"
 
 
 def _parse_schema_requirements(schema_path: Path) -> tuple[list[str], list[str]]:

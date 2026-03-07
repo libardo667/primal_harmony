@@ -42,6 +42,29 @@ Authoritative references:
 - Backward compatibility: <statement>
 - CLI command surface compatibility: <none or describe + migration note>
 
+## Map Contract Evidence (for map-touching items)
+
+Include this block when any `.tscn` files under `maps/` were changed. Required
+gate: medium-risk or stricter (`--risk medium` minimum).
+
+```
+- `python scripts/dev.py quality-strict --risk medium --emit-evidence`
+  [Gate 4 runtime-behavior] `scene-audit` -> pass (`scene audit passed`)
+- `python scripts/dev.py harness scene-audit .`
+  -> pass (RESULTS: 0 errors, 0 warnings, 0 info)
+```
+
+Failure pattern (if Gate 4 is red — do not mark done until resolved):
+
+```
+- `python scripts/dev.py harness scene-audit .`
+  -> fail (RESULTS: N errors, N warnings, N info)
+  follow-up: <item id or inline fix>
+```
+
+See `references/scene-contracts.md` for the full validation requirement and
+per-warp checklist.
+
 ## Pruning Prevention Evidence
 
 - Authoritative path extended: <path/module>
