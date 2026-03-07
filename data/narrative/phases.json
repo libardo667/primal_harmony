@@ -1,0 +1,37 @@
+{
+  "phases": [
+    {
+      "id": 1,
+      "name": "Roots",
+      "label": "Phase One — Roots",
+      "age": 8,
+      "emotional_register": "Safe world with visible cracks. The adults know what to do. The player is absorbing.",
+      "transition_card": null,
+      "entry_flag": "phase_1_started",
+      "completion_flag": "phase_1_complete",
+      "notes": "Tutorial-scale, guided, contained. Set at The Holdfast on Route 117."
+    },
+    {
+      "id": 2,
+      "name": "Pressure",
+      "label": "Phase Two — Pressure",
+      "age": 14,
+      "emotional_register": "The emergency is the background of daily life. The player is contributing but not yet leading.",
+      "transition_card": "Six years later.",
+      "entry_flag": "phase_2_started",
+      "completion_flag": "phase_2_complete",
+      "notes": "Town-scale, civic, constrained. Slateport coastal volunteer work and Dewford detour."
+    },
+    {
+      "id": 3,
+      "name": "Threshold",
+      "label": "Phase Three — Threshold",
+      "age": 20,
+      "emotional_register": "The player is now the one who makes decisions that matter.",
+      "transition_card": "Six years later.",
+      "entry_flag": "phase_3_started",
+      "completion_flag": "phase_3_complete",
+      "notes": "Full game, open, consequential. Kyogre/Groudon awakening crisis. TOZ system active. EHI active."
+    }
+  ]
+}

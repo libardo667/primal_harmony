@@ -44,7 +44,7 @@
 3. [`003-quality-gate-baseline-wiring`](majors/003-quality-gate-baseline-wiring.md) (done): map project checks to harness
    gates and enforce baseline evidence capture.
 4. [`004-warp-contract-reliability-hardening`](majors/004-warp-contract-reliability-hardening.md) (done): harden map warp contract validation and evidence discipline after Gate 4 baseline remediation.
-5. [`005-narrative-phase-orchestrator`](majors/005-narrative-phase-orchestrator.md) (backlog): implement PhaseOrchestrator to manage 3-phase narrative structure.
+5. [`005-narrative-phase-orchestrator`](majors/005-narrative-phase-orchestrator.md) (done): implement PhaseOrchestrator to manage 3-phase narrative structure.
 6. [`006-ehi-core-systems`](majors/006-ehi-core-systems.md) (backlog): implement Ecological Harmony Index (EHI) backend and observer pattern.
 7. [`007-toz-framework-and-visual-states`](majors/007-toz-framework-and-visual-states.md) (backlog): implement TOZ technical framework and visual state drivers.
 8. [`008-rehabilitation-log-and-terminal-logic`](majors/008-rehabilitation-log-and-terminal-logic.md) (backlog): implement persistent Rehabilitation Log and Relocation Terminal logic.
@@ -62,14 +62,42 @@
 6. [`m006-toz-01-ashen-glacier-data`](minors/m006-toz-01-ashen-glacier-data.md) (backlog): operationalize Zone 01 (Ashen Glacier) species and variant data.
 7. [`m007-toz-02-static-sprawl-data`](minors/m007-toz-02-static-sprawl-data.md) (backlog): operationalize Zone 02 (Static Sprawl) data and fast-travel unlocks.
 8. [`m008-triage-catch-refactor`](minors/m008-triage-catch-refactor.md) (backlog): refactor catch system to support gentle Triage Catch mode.
+9. [`m009-phase-orchestrator-maingame-integration`](minors/m009-phase-orchestrator-maingame-integration.md) (backlog): wire PhaseTransitionScreen into MainGame._ready() and add F8 debug hotkey for advance_phase().
+10. [`m010-phase-orchestrator-test-scene`](minors/m010-phase-orchestrator-test-scene.md) (backlog): add test_phase_orchestrator.tscn/.gd consistent with other system test scenes.
+11. [`m011-scene-audit-triage-playbook`](minors/m011-scene-audit-triage-playbook.md) (backlog): add `references/scene-audit-triage.md` covering all 8 audit check codes with canonical fixes.
+12. [`m012-gdscript-syntax-gate`](minors/m012-gdscript-syntax-gate.md) (backlog): add optional `--with-gdscript-lint` flag to Gate 3 to catch GDScript parse errors before Godot load.
 
 ## Recommended Execution Order
 
-1. ~~Execute `004-warp-contract-reliability-hardening`.~~ (done)
-2. Execute [`005-narrative-phase-orchestrator`](majors/005-narrative-phase-orchestrator.md) or
-   [`006-ehi-core-systems`](majors/006-ehi-core-systems.md) as the next major.
-3. Run one minor (e.g., `m005-corrupted-starter-selection`) alongside the active major.
-4. Maintain `--risk medium` profile for any map-touching work per `references/scene-contracts.md`.
+### Wave 1 — Close open gaps (immediate)
+1. ~~`004-warp-contract-reliability-hardening`~~ (done)
+2. ~~`005-narrative-phase-orchestrator`~~ (done)
+3. [`m009`](minors/m009-phase-orchestrator-maingame-integration.md) — wire PhaseTransitionScreen into MainGame; closes 005 integration gap before any phase-dependent story work.
+4. [`m010`](minors/m010-phase-orchestrator-test-scene.md) — PhaseOrchestrator test scene; addresses blocked 005 validation command. Parallelizable with m009.
+
+### Wave 2 — Tooling and quality polish (low-risk, parallelizable with any major)
+5. [`m011`](minors/m011-scene-audit-triage-playbook.md) — scene-audit triage playbook; reference doc with canonical fixes for all 8 audit check codes.
+6. [`m012`](minors/m012-gdscript-syntax-gate.md) — GDScript syntax gate; adds optional `--with-gdscript-lint` to Gate 3.
+
+### Wave 3 — EHI foundation (required before TOZ and rehabilitation work)
+7. [`006-ehi-core-systems`](majors/006-ehi-core-systems.md) — implement EHI backend and observer pattern; foundational dependency for TOZ and Rehab Log.
+
+### Wave 4 — Content and system prep (parallelizable alongside or immediately after 006)
+8. [`m005`](minors/m005-corrupted-starter-selection.md) — corrupted starter data; early-game content that can be spec'd independently of EHI.
+9. [`m008`](minors/m008-triage-catch-refactor.md) — triage catch refactor; harden catch flow before TOZ encounter triggers depend on it.
+
+### Wave 5 — TOZ framework (requires 006)
+10. [`007-toz-framework-and-visual-states`](majors/007-toz-framework-and-visual-states.md) — TOZ technical framework, shader drivers, and zone state management.
+
+### Wave 6 — TOZ content (requires 007)
+11. [`m006`](minors/m006-toz-01-ashen-glacier-data.md) — Ashen Glacier (Zone 01) species and variant data.
+12. [`m007`](minors/m007-toz-02-static-sprawl-data.md) — Static Sprawl (Zone 02) data and fast-travel unlocks.
+
+### Wave 7 — Rehabilitation loop (requires 006; can run parallel to Wave 5–6)
+13. [`008-rehabilitation-log-and-terminal-logic`](majors/008-rehabilitation-log-and-terminal-logic.md) — persistent Rehab Log and Relocation Terminal; closes the catch→rehab→release→EHI loop.
+
+### Standing guardrail
+- Maintain `--risk medium` profile for any map-touching work per `references/scene-contracts.md`.
 
 ## Notes
 
