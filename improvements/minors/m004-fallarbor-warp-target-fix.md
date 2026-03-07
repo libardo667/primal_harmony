@@ -4,8 +4,8 @@
 
 - ID: m004-fallarbor-warp-target-fix
 - Type: minor
-- Owner: unassigned
-- Status: backlog
+- Owner: codex
+- Status: done
 - Risk: low
 - Created: 2026-03-06
 - Contract Impact: backward_compatible
@@ -35,17 +35,17 @@ Add/align required warp target structure in Fallarbor map scenes:
 
 ## Files Affected
 
+- improvements/ROADMAP.md
 - maps/hoenn/cities/fallarbor_town.tscn
-- maps/interiors/fallarbor_pokemon_center.tscn
 - improvements/minors/m004-fallarbor-warp-target-fix.md
 
 ## Acceptance Criteria
 
-- [ ] `scene-audit` no longer reports `warp_target_no_warppoints` for the
+- [x] `scene-audit` no longer reports `warp_target_no_warppoints` for the
       Fallarbor Pokemon Center warp.
-- [ ] Fallarbor interior-to-exterior warp target resolves to explicit warp
+- [x] Fallarbor interior-to-exterior warp target resolves to explicit warp
       point metadata, not fallback.
-- [ ] Medium-risk strict profile passes Gate 4 for this issue.
+- [x] Medium-risk strict profile passes Gate 4 for this issue.
 
 ## Validation Commands
 
@@ -69,3 +69,20 @@ Add/align required warp target structure in Fallarbor map scenes:
 ## Execution Log
 
 - 2026-03-06: Item drafted from roadmap follow-up queue; status `backlog`.
+- 2026-03-06: Item moved to `in_progress`.
+- 2026-03-06: Added `WarpPoints/warp_to_pokemon_center` in
+  `maps/hoenn/cities/fallarbor_town.tscn` with explicit collision layer,
+  collision shape, and reciprocal destination metadata.
+- 2026-03-06: Validation:
+  - `python scripts/dev.py harness scene-audit .` -> pass (0 errors, 0
+    warnings, 0 info)
+  - `python scripts/dev.py quality-strict --risk medium` -> pass (all gates)
+  - `git status --short` -> pass
+- 2026-03-06: Synced roadmap queue state (`m004` set to done) and re-ran
+  validation:
+  - `python scripts/dev.py harness scene-audit .` -> pass (0 errors, 0
+    warnings, 0 info)
+  - `python scripts/dev.py quality-strict --risk medium` -> pass (all gates)
+  - `git status --short` -> modified files limited to roadmap, item doc, and
+    Fallarbor town scene
+- 2026-03-06: Item moved to `done`.

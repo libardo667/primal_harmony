@@ -8,8 +8,8 @@
   `scripts/dev.py` command surface are installed, including explicit
   gate-mapped risk profiles (`low|medium|high`).
 - Top risks:
-  - Runtime Gate 4 (`scene-audit`) currently fails for a known Fallarbor warp
-    target contract issue.
+  - Runtime Gate 4 (`scene-audit`) is currently green after Fallarbor warp
+    contract remediation; maintain this baseline as map content evolves.
   - Inconsistent item tracking/evidence for agent-executed changes.
   - Future pruning debt if parallel workflow paths accumulate.
 
@@ -44,6 +44,10 @@
 3. [`003-quality-gate-baseline-wiring`](majors/003-quality-gate-baseline-wiring.md) (done): map project checks to harness
    gates and enforce baseline evidence capture.
 4. [`004-warp-contract-reliability-hardening`](majors/004-warp-contract-reliability-hardening.md) (backlog): harden map warp contract validation and evidence discipline after Gate 4 baseline remediation.
+5. [`005-narrative-phase-orchestrator`](majors/005-narrative-phase-orchestrator.md) (backlog): implement PhaseOrchestrator to manage 3-phase narrative structure.
+6. [`006-ehi-core-systems`](majors/006-ehi-core-systems.md) (backlog): implement Ecological Harmony Index (EHI) backend and observer pattern.
+7. [`007-toz-framework-and-visual-states`](majors/007-toz-framework-and-visual-states.md) (backlog): implement TOZ technical framework and visual state drivers.
+8. [`008-rehabilitation-log-and-terminal-logic`](majors/008-rehabilitation-log-and-terminal-logic.md) (backlog): implement persistent Rehabilitation Log and Relocation Terminal logic.
 
 ## Minor Queue
 
@@ -53,13 +57,16 @@
    required schema sections.
 3. [`m003-rollup-evidence-template`](minors/m003-rollup-evidence-template.md) (done): add reusable end-of-item
    evidence snippets for common command outcomes.
-4. [`m004-fallarbor-warp-target-fix`](minors/m004-fallarbor-warp-target-fix.md) (backlog): fix missing Fallarbor warp target container causing Gate 4 scene-audit failure.
+4. [`m004-fallarbor-warp-target-fix`](minors/m004-fallarbor-warp-target-fix.md) (done): fix missing Fallarbor warp target container causing Gate 4 scene-audit failure.
+5. [`m005-corrupted-starter-selection`](minors/m005-corrupted-starter-selection.md) (backlog): define initial corrupted starter data and discovery logic.
+6. [`m006-toz-01-ashen-glacier-data`](minors/m006-toz-01-ashen-glacier-data.md) (backlog): operationalize Zone 01 (Ashen Glacier) species and variant data.
+7. [`m007-toz-02-static-sprawl-data`](minors/m007-toz-02-static-sprawl-data.md) (backlog): operationalize Zone 02 (Static Sprawl) data and fast-travel unlocks.
+8. [`m008-triage-catch-refactor`](minors/m008-triage-catch-refactor.md) (backlog): refactor catch system to support gentle Triage Catch mode.
 
 ## Recommended Execution Order
 
-1. Execute [`m004-fallarbor-warp-target-fix`](minors/m004-fallarbor-warp-target-fix.md) to restore Gate 4 baseline.
-2. Execute [`004-warp-contract-reliability-hardening`](majors/004-warp-contract-reliability-hardening.md).
-3. Run one additional major and one minor end-to-end using medium/high risk
+1. Execute [`004-warp-contract-reliability-hardening`](majors/004-warp-contract-reliability-hardening.md).
+2. Run one additional major and one minor end-to-end using medium/high risk
    profiles once Gate 4 remains green.
 
 ## Notes

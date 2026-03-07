@@ -3082,12 +3082,28 @@ sources/3 = SubResource("TileSetAtlasSource_5obfq")
 sources/5 = SubResource("TileSetAtlasSource_2a8tn")
 sources/6 = SubResource("TileSetAtlasSource_8c4g3")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_warp_to_pokemon_center"]
+size = Vector2(16, 16)
+
 [node name="FallarborTown" type="Node2D" unique_id=877118270]
 metadata/zone_id = "ashen_glacier"
 metadata/map_id = "MAP_FALLARBOR_TOWN"
 metadata/is_toz_variant = false
 metadata/tile_size = 16
 metadata/map_dimensions_px = Vector2i(320, 320)
+
+[node name="WarpPoints" type="Node2D" parent="."]
+
+[node name="warp_to_pokemon_center" type="Area2D" parent="WarpPoints"]
+collision_layer = 2
+position = Vector2(232, 120)
+metadata/destination_scene = "res://maps/interiors/fallarbor_pokemon_center.tscn"
+metadata/destination_warp_id = "warp_to_exterior_south"
+metadata/transition_type = "door_enter"
+metadata/notes = "Pokemon Center entrance from Fallarbor exterior"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WarpPoints/warp_to_pokemon_center"]
+shape = SubResource("RectangleShape2D_warp_to_pokemon_center")
 
 [node name="TileMapTerrain" type="TileMap" parent="." unique_id=699795509]
 tile_set = SubResource("TileSet_fkpv2")
